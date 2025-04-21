@@ -1,5 +1,20 @@
-title: Midnight theme
-description: Midnight is a theme for GitHub Pages.
+title: Chris Albert
+description: Chris Albert's personal website  
 show_downloads: true
 google_analytics: 
 theme: jekyll-theme-midnight
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/blog/page:num"
+
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
