@@ -18,8 +18,9 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
-          folder: dist  # The folder you want to deploy
-          branch: gh-pages  # The branch to deploy to
-          clean: true  # Automatically remove deleted files
+          folder: dist
+          branch: gh-pages
+          clean: true
+          single-commit: true
