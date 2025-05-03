@@ -12,8 +12,8 @@ jobs:
         uses: actions/checkout@v3
 
       # Add any build steps here if needed
-      # - name: Build project
-      #   run: npm run build  # Or your build command
+      - name: Build project
+        run: npm run build  # Or your build command
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
