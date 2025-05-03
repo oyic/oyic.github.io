@@ -20,6 +20,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build  # The folder you want to deploy
+          folder: dist  # The folder you want to deploy
           branch: gh-pages  # The branch to deploy to
           clean: true  # Automatically remove deleted files
