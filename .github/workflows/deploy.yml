@@ -24,6 +24,7 @@ jobs:
         with:
           node-version: '18'  # Specify the Node.js version you want to use
           cache: 'npm'
+          cache-key: 'npm-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}'
 
       - name: Install dependencies
         run: npm install
