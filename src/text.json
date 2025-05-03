@@ -1,0 +1,13 @@
+{
+    "about": [
+        "<p>A Senior Full Stack WordPress Developer with 10+ years of experience specializing in custom theme development, plugin creation, and performance optimization. Previous success working at Legend has it delivering high-quality WordPress solutions for New Zealand clients. Expert in modern WordPress frameworks including Roots Sage and FlyntWP, with extensive experience in TailwindCSS and responsive design.</p>",
+        "<p>Proven track record of leading projects and implementing best practices for code quality and site performance. Throughout my career, I've architected scalable WordPress solutions for international clients across diverse industries, consistently delivering websites that exceed performance benchmarks while maintaining exceptional user experiences. My technical expertise spans advanced custom theme development, complex plugin creation, WooCommerce implementations, and Core Web Vitals optimization.</p>",
+        "<p>My approach combines deep technical knowledge with practical business solutions – ensuring websites not only perform exceptionally but also meet critical business objectives. I excel in collaborative environments where I can leverage my experience mentoring development teams and working directly with stakeholders to transform creative concepts into technical realities. Passionate about staying current with emerging WordPress technologies while maintaining a focus on creating clean, maintainable code that drives measurable results.</p>"
+    ],
+    "skills": [
+        "WordPress Development (Advanced)",
+        "Custom Theme Development: Roots Sage, FlyntWP, Underscore, UnderscoresTW",
+        "Custom Plugin Development: ACF & ACF Blocks, WP_Query API, $wpdb",
+        "CMS Customization: Custom Post Types, Taxonomies, API Integrations"
+    ]
+}
