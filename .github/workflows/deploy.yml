@@ -7,8 +7,8 @@ on:
   workflow_dispatch:  # Allows manual triggering of the workflow
 
 permissions:
-  contents: read
-  pages: write
+  contents: write  # Allow write access to the repository contents
+  pages: write     # Allow write access to GitHub Pages
   id-token: write
 
 jobs:
@@ -24,7 +24,6 @@ jobs:
         with:
           node-version: 'latest'  # Specify the Node.js version you want to use
           cache: 'npm'
-          cache-key: "npm-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}"
 
       - name: Install dependencies
         run: npm install
@@ -42,3 +41,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist  # Path to the directory to publish
+          publish_branch: gh-pages  # Specify the branch to deploy to
