@@ -12,5 +12,6 @@ export default defineConfig({
         styleFileNames: 'assets/[name]-[hash].css',
         },
       },
+      outDir: 'public',
   },
 })
