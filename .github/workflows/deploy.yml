@@ -30,6 +30,8 @@ jobs:
 
       - name: Build the project
         run: npm run build
+      - name: Show Build
+        run: ls -la dist
 
       - name: Configure Git
         run: |
