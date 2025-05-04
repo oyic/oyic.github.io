@@ -1,17 +1,31 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
-    base: '',
   plugins: [
     tailwindcss(),
   ],
+  server: {
+    port: 3000,
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  base: './',
   build: {
     rollupOptions: {
-      output: {
-        entryFileNames: 'assets/[name]-[hash].js',
-        styleFileNames: 'assets/[name]-[hash].css',
-        },
+      input: {
+        main: 'index.html',
       },
-      outDir: 'public',
+      output: {
+        entryFileNames: '[name]-[hash].js',
+        assetFileNames: '[name]-[hash].[ext]',
+      },
+    },
+    outDir: 'public',
+    assetsDir: './assets',
+    sourcemap: true,
+  
   },
 })
