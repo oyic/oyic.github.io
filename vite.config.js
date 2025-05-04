@@ -12,7 +12,7 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  base: './',
+//   base: './',
   build: {
     rollupOptions: {
       input: {
