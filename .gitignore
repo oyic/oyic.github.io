@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Editor / OS cruft
+*~
+~$*
+
+# Dev / agent screenshots at root
+/*.png
+/*.jpeg
+
+# Playwright MCP output
+.playwright-mcp/
+
+# Logs
+*.log

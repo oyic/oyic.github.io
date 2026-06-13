@@ -1,0 +1,103 @@
+# Christopher Alberto
+
+Senior Full-Stack WordPress Engineer specializing in high-performance, modular, and accessible WordPress architectures.
+
+- **Email**: oyic@outlook.com
+- **Phone**: +63 939 937 0907
+- **WhatsApp**: +63 917 317 7735
+- **LinkedIn**: [boyic](https://linkedin.com/in/boyic)
+- **GitHub**: [oyic.github.io](https://oyic.github.io)
+- **Location**: Manila, Philippines (Remote — Worldwide)
+- **Status**: Available for freelance & full-time opportunities
+
+---
+
+## Profile Summary
+
+Over 16 years of experience architecting enterprise-grade, custom WordPress builds, plugins, and complex WooCommerce integrations. Focused on modern development workflows, performance optimization (Core Web Vitals), and accessibility (WCAG AA). Expert in FlyntWP, Roots Sage, Timber/Twig, and ACF Pro.
+
+---
+
+## Core Expertise
+
+- **Languages**: PHP (7.x/8.x), JavaScript (ES6+), HTML5, CSS3 / SCSS, SQL
+- **WordPress Stacks**: FlyntWP, Roots Sage, Timber/Twig (Timber & Twig templates), Underscores TW, Gutenberg block editor (FSE), Classic Editor
+- **E-commerce**: WooCommerce custom checkouts, subscriptions, API integrations, multisite scaling
+- **Frontend**: TailwindCSS, AlpineJS, Bootstrap, Foundation, jQuery
+- **Workflows & Tools**: GitHub Actions (CI/CD), ViteJS, LocalWP, WP-CLI, Composer, npm/yarn
+- **AI-Assisted Development**: Cursor, Claude Code, Antigravity, GitHub Copilot
+
+---
+
+## Selected Work & Projects
+
+- **Emma Sleep**: Led multisite blog architecture across 5 countries; optimized for search engine optimization (SEO) and performance at scale.
+- **TAC Insights**: Modular, multilingual WordPress platform with reusable Flynt components for an international event organization.
+- **WM Compliance**: Compliance-driven layouts built with FlyntWP and integrated with custom third-party APIs.
+- **Cathedral Hygiene**: Scalable theme with optimized performance and full accessibility compliance.
+- **NZ Waters**: Modern, responsive WordPress site built on Roots/Sage with custom post types and automated deployment.
+- **Te Arawa Holdings**: Clean, responsive platform for a tribal holding company with custom editorial workflows and SEO.
+- **Western Energy**: Modern web presence for an energy services leader, optimized for speed, security, and global accessibility.
+- **Stella Awards**: High-traffic, voting-based platform engineered to stay fast and stable under massive concurrency.
+- **Suria.my**: Custom WordPress integration for a Malaysian radio station, featuring a bespoke frontend and custom content tools.
+- **Monckton Chambers**: Custom-built on Foundation with advanced taxonomies and granular editorial control.
+- **Higgs & Johnson**: Editorial-led legal platform with advanced taxonomies and structured content workflows.
+
+---
+
+## Professional Experience
+
+### GrowModo | Fullstack WordPress Developer
+*May 2025 — Present (Remote)*
+- Architect and build custom WordPress solutions for global clients using FlyntWP and Roots Sage.
+- Develop custom plugins (booking tools, membership portals) and integrations.
+- Support projects across Wix, Webflow, and Squarespace stacks when needed.
+
+### Legend Has It (New Zealand) | Senior WordPress Developer
+*June 2023 — August 2024 (Full-time)*
+- Led theme development utilizing Roots Sage and ACF Builder for custom layouts.
+- Engineered continuous integration and deployment pipelines using GitHub Actions.
+- Managed on-demand maintenance, security audits, and speed optimizations.
+
+### Digital Glue (United Kingdom) | Senior Web Developer
+*March 2023 — June 2023 (Project)*
+- Delivered custom FlyntWP themes with modular components.
+- Engineered backend logic and frontend component styles for custom client applications.
+
+### Allied Global (United States) | Senior WordPress Developer
+*August 2022 — February 2023 (Project)*
+- Audited, optimized, and maintained Core Web Vitals across launches.
+- Shipped multiple responsive sites for Education Dynamics.
+
+### Emma Sleep (Germany) | Senior Full-Stack WP Engineer
+*February 2020 — May 2022 (Full-time)*
+- Maintained global multisite infrastructure spanning 5 countries.
+- Led front-to-back development and blog SEO performance tuning.
+- Managed bespoke projects for Knight Digital and Square Eye.
+
+### Cloud Employee (United Kingdom) | Sr. WordPress Developer
+*May 2018 — February 2020 (Full-time)*
+- Project management and technical team lead.
+- Shipped a bespoke build for Boom Labs Australia (Suria.my).
+
+### Earlier Roles
+*2010 — 2018*
+- Various roles in WordPress theme, plugin, and frontend development. Detail sheets available on request.
+
+---
+
+## Certifications
+
+- Ultimate WordPress Plugin Course
+- Advanced CSS / SASS
+- WooCommerce
+- JavaScript Essentials
+- Premium WordPress Theme
+- Complete Git Guide
+- Theme Development from Scratch
+- ES6 for Everyone
+- Node.js
+- Beginner JavaScript
+- Webpack
+- Bootstrap
+- Laravel 5.4
