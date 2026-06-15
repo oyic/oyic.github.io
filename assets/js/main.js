@@ -101,7 +101,7 @@
         var show = f === 'all' || card.getAttribute('data-stack') === f;
         if (show) {
           card.classList.remove('is-hidden');
-          if (hasGSAP && !REDUCED) gsap.fromTo(card, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' });
+          if (hasGSAP && !REDUCED) gsap.fromTo(card, { opacity: 0, y: 18 }, { opacity: 1, y: 0, x: 0, rotation: 0, duration: 0.5, ease: 'power2.out', clearProps: 'transform' });
         } else {
           card.classList.add('is-hidden');
         }
@@ -272,42 +272,60 @@
       scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
     });
 
-    // generic fade-ups
+    // generic fade-ups — replay each time the element re-enters view
     gsap.utils.toArray('[data-anim="fade"]').forEach(function (el) {
       gsap.from(el, {
         opacity: 0, y: 30, duration: 0.9, ease: 'power3.out',
-        scrollTrigger: { trigger: el, start: 'top 85%' }
+        scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'restart none none reverse' }
       });
     });
 
-    // word reveals
+    // word reveals — replay each time the element re-enters view
     gsap.utils.toArray('[data-anim="words"]').forEach(function (el) {
       var words = splitWords(el);
       gsap.from(words, {
         opacity: 0, y: 22, duration: 0.7, ease: 'power3.out', stagger: 0.02,
-        scrollTrigger: { trigger: el, start: 'top 82%' }
+        scrollTrigger: { trigger: el, start: 'top 82%', toggleActions: 'restart none none reverse' }
       });
     });
 
-    // stack cells
+    // stack cells — replay each time the grid re-enters view
     gsap.from('[data-anim="cell"]', {
       opacity: 0, y: 40, duration: 0.7, ease: 'power3.out', stagger: 0.08,
-      scrollTrigger: { trigger: '.stack__grid', start: 'top 80%' }
+      scrollTrigger: { trigger: '.stack__grid', start: 'top 80%', toggleActions: 'restart none none reverse' }
     });
 
-    // project cards
-    gsap.from('[data-anim="card"]', {
-      opacity: 0, y: 46, duration: 0.7, ease: 'power3.out',
-      // stagger by row (axis:'y') so both cards in a row rise together — keeps them aligned
-      stagger: { each: 0.12, grid: 'auto', axis: 'y' },
-      clearProps: 'transform',
-      scrollTrigger: { trigger: '.proj__grid', start: 'top 82%' }
+    // project cards — alternating swoop in from the bottom-left / bottom-right corners.
+    // Each row swoops in as it scrolls into view (ScrollTrigger.batch groups the cards
+    // entering together), and replays every time the row re-enters the viewport.
+    var projCards = gsap.utils.toArray('[data-anim="card"]');
+    var cardDir = function (el) { return projCards.indexOf(el) % 2 === 0 ? -1 : 1; }; // -1 = bottom-left, +1 = bottom-right
+    var setCardStart = function (els) {
+      gsap.set(els, {
+        opacity: 0,
+        y: 120,
+        x: function (i, el) { return cardDir(el) * 180; },
+        rotation: function (i, el) { return cardDir(el) * 9; },
+        transformOrigin: '50% 130%'
+      });
+    };
+    setCardStart(projCards); // keep hidden until the row scrolls into view
+    ScrollTrigger.batch('[data-anim="card"]', {
+      start: 'top 88%',
+      onEnter: function (batch) {
+        gsap.to(batch, {
+          opacity: 1, x: 0, y: 0, rotation: 0,
+          duration: 1, ease: 'power3.out', stagger: 0.12, overwrite: true,
+          clearProps: 'transform' // free the inline transform so the :hover lift still works
+        });
+      },
+      onLeaveBack: function (batch) { setCardStart(batch); } // reset so it swoops again on re-entry
     });
 
-    // certs
+    // certs — replay each time the grid re-enters view
     gsap.from('[data-anim="cert"]', {
       opacity: 0, y: 24, duration: 0.5, ease: 'power2.out', stagger: 0.04,
-      scrollTrigger: { trigger: '.certs__grid', start: 'top 85%' }
+      scrollTrigger: { trigger: '.certs__grid', start: 'top 85%', toggleActions: 'restart none none reverse' }
     });
 
     /* ---------------------------------------------- *
@@ -332,10 +350,10 @@
           invalidateOnRefresh: true
         }
       });
-      // reveal cards as they enter horizontally
+      // reveal cards as they enter horizontally — replay when the section re-enters view
       gsap.from(track.querySelectorAll('.exp__card'), {
         opacity: 0, y: 40, duration: 0.6, ease: 'power3.out', stagger: 0.06,
-        scrollTrigger: { trigger: pin, start: 'top 70%' }
+        scrollTrigger: { trigger: pin, start: 'top 70%', toggleActions: 'restart none none reverse' }
       });
       return function () { tween && tween.scrollTrigger && tween.scrollTrigger.kill(); gsap.set(track, { x: 0 }); };
     });
