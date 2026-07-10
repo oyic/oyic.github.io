@@ -65,6 +65,19 @@
    * 3 · Mobile menu (burger)
    * -------------------------------------------------- */
   var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  // Below 880px the closed menu is only hidden via transform/pointer-events
+  // (for the slide-in transition), so it stays in the tab order unless we
+  // also mark it inert — otherwise keyboard users tab into invisible links.
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
   var menuOpen = false;
   function closeMenu() {
     if (!menuOpen) return;
@@ -74,6 +87,7 @@
       burger.classList.remove('is-open');
       burger.setAttribute('aria-expanded', 'false');
     }
+    syncNavInert();
   }
   if (burger) {
     burger.addEventListener('click', function () {
@@ -81,6 +95,7 @@
       document.body.classList.toggle('menu-open', menuOpen);
       burger.classList.toggle('is-open', menuOpen);
       burger.setAttribute('aria-expanded', menuOpen ? 'true' : 'false');
+      syncNavInert();
     });
   }
 

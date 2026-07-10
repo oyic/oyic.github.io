@@ -47,7 +47,7 @@
   <div class="nav__links" id="nav-links">
     <a href="/#about">About</a>
     <a href="/#work">Work</a>
-    <a href="/blog/" class="is-active">Blog</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
     <a href="/#contact">Contact</a>
   </div>
   <div class="nav__actions">
@@ -100,11 +100,22 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
   var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
   if (burger) {
     burger.addEventListener('click', function () {
       var open = document.body.classList.toggle('menu-open');
       burger.classList.toggle('is-open', open);
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
     });
   }
 })();
