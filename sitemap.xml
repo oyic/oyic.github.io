@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/why-your-wordpress-site-is-slow-the-hidden-cost-of-all-in-eb422c/</loc>
+      <lastmod>2026-07-10T15:46:24.524Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/just-install-a-plugin-for-that-my-take-on-when-to-code-it-624b0f/</loc>
       <lastmod>2026-07-10T14:32:30.005Z</lastmod>
       <changefreq>monthly</changefreq>
