@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -7,6 +8,8 @@
 <meta name="description" content="{{description}}" />
 <meta name="author" content="Christopher Alberto" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<!-- if this raw template is ever served directly (e.g. .nojekyll added later), disable indexing -->
+<meta name="robots" content="noindex" />
 <meta name="theme-color" content="#15110C" />
 <link rel="canonical" href="{{canonicalUrl}}" />
 <link rel="alternate" type="application/rss+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
@@ -48,7 +51,6 @@
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to Content</a>
-<div class="progress" id="progress"></div>
 
 <nav class="nav" id="nav" aria-label="Primary">
   <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>

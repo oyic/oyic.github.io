@@ -20,5 +20,10 @@
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
+
+    Note: the static entries above use date-only lastmod values while
+    {{isoDate}} here is a full ISO timestamp; both date-only and full-ISO
+    lastmod are valid per the sitemaps.org spec, so this format difference
+    is intentional, not a bug.
   --><!-- SITEMAP_URLS_END -->
 </urlset>
