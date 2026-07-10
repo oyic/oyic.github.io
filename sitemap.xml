@@ -12,7 +12,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- SITEMAP_URLS_START --><!--
+  <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/just-install-a-plugin-for-that-my-take-on-when-to-code-it-624b0f/</loc>
+      <lastmod>2026-07-10T14:32:30.005Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><!--
     Each publish prepends one url here, format:
     <url>
       <loc>{{canonicalUrl}}</loc>

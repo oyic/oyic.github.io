@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>&quot;Just Install a Plugin For That&quot;: My Take on When to Code It Yourself in WordPress</title>
+      <link href="https://chrisalberto.site/blog/just-install-a-plugin-for-that-my-take-on-when-to-code-it-624b0f/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/just-install-a-plugin-for-that-my-take-on-when-to-code-it-624b0f/</id>
+      <updated>2026-07-10T14:32:30.005Z</updated>
+      <summary>I’ve been building websites with WordPress for, well, longer than I care to admit sometimes.</summary>
+    </entry><entry>
       <title>{{title}}</title>
       <link href="{{canonicalUrl}}" rel="alternate" type="text/html" />
       <id>{{canonicalUrl}}</id>
