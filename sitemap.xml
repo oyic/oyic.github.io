@@ -17,8 +17,10 @@
       <lastmod>2026-07-10T14:32:30.005Z</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
-    </url><!--
-    Each publish prepends one url here, format:
+    </url><!-- SITEMAP_URLS_END -->
+  <!--
+    Each publish prepends one url immediately after SITEMAP_URLS_START
+    above, format:
     <url>
       <loc>{{canonicalUrl}}</loc>
       <lastmod>{{isoDate}}</lastmod>
@@ -26,9 +28,14 @@
       <priority>0.6</priority>
     </url>
 
+    This comment must stay OUTSIDE the SITEMAP_URLS_START/END pair, even
+    though this file's insertion function doesn't currently parse that
+    region (unlike feed.xml's) — kept consistent so both marker-based XML
+    files follow the same, less fragile convention.
+
     Note: the static entries above use date-only lastmod values while
     {{isoDate}} here is a full ISO timestamp; both date-only and full-ISO
     lastmod are valid per the sitemaps.org spec, so this format difference
     is intentional, not a bug.
-  --><!-- SITEMAP_URLS_END -->
+  -->
 </urlset>

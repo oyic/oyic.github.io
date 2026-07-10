@@ -13,11 +13,24 @@
       <id>https://chrisalberto.site/blog/just-install-a-plugin-for-that-my-take-on-when-to-code-it-624b0f/</id>
       <updated>2026-07-10T14:32:30.005Z</updated>
       <summary>I’ve been building websites with WordPress for, well, longer than I care to admit sometimes.</summary>
-    </entry><entry>
+    </entry><!-- FEED_ITEMS_END -->
+  <!--
+    Each publish prepends one entry immediately after FEED_ITEMS_START above
+    (list capped to the 20 most recent), format ({{isoDate}} is the same
+    value already used in blog/_template.html and sitemap.xml — no separate
+    date format needed for this feed):
+    <entry>
       <title>{{title}}</title>
       <link href="{{canonicalUrl}}" rel="alternate" type="text/html" />
       <id>{{canonicalUrl}}</id>
       <updated>{{isoDate}}</updated>
       <summary>{{description}}</summary>
-    </entry><!-- FEED_ITEMS_END -->
+    </entry>
+    This comment must stay OUTSIDE the FEED_ITEMS_START/END pair — the
+    publish renderer's existing-entry cap logic regex-scans everything
+    between those markers for real <entry> elements, and an example entry
+    living inside a comment in that region gets matched as if it were real.
+    Bumping the feed-level <updated> above to match the latest entry is
+    optional best-effort, not required for the feed to remain valid.
+  -->
 </feed>
