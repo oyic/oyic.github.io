@@ -78,37 +78,45 @@
 <p>I’ve been building websites with WordPress for, well, longer than I care to admit sometimes. And in that time, I’ve heard it countless times, and probably even said it myself in a moment of haste: “Oh, you need X? There’s a plugin for that.” It&#39;s the ultimate WordPress mantra, a kind of digital shrug that often means &quot;problem solved, moving on.&quot;</p>
 <p>And honestly, for a lot of things, it’s absolutely true. WordPress’s plugin ecosystem is one of its greatest strengths. Need a complex e-commerce store? WooCommerce is your hero. A robust SEO setup? Yoast or Rank Math have got your back. Advanced security? Wordfence or Sucuri. These are massive, intricate systems that would take even a seasoned developer months, if not years, to replicate properly. For these heavy-hitting, feature-rich requirements, plugins are not just convenient; they&#39;re essential. They bring powerful functionality, often with a decent user interface, and usually a community of support. They democratize web development, letting folks build incredible things without writing a single line of code.</p>
 <p>But here’s the thing. That &quot;just install a plugin for that&quot; mindset, while often helpful, can also lead you down a very tangled path. It’s like, you want to hang a picture, so you buy a power drill that comes with 50 different attachments, a laser level, and an impact driver, when all you really needed was a simple nail and a hammer. Suddenly, you’ve got this huge, multi-function tool taking up space, demanding updates, and frankly, doing a lot more than you ever asked for.</p>
-<p>This is where the conversation shifts from convenience to thoughtful development. For every genuinely complex problem that warrants a plugin, there are ten little tweaks, small customisations, or minor functionalities that get saddled with an entire plugin dedicated to *just that one thing*, plus all the other stuff it carries.</p>
+<p>This is where the conversation shifts from convenience to thoughtful development. For every genuinely complex problem that warrants a plugin, there are ten little tweaks, small customisations, or minor functionalities that get saddled with an entire plugin dedicated to <em>just that one thing</em>, plus all the other stuff it carries.</p>
 <p>Think about it. You want to change the &quot;Read More&quot; text on your blog posts. Or maybe add a simple custom post type for testimonials, without all the fancy testimonial carousels and submission forms that a plugin might bundle. Perhaps you need to conditionally load a script only on one specific page. Or adjust the output of a shortcode just a little bit.</p>
-<p>These are not monumental tasks. Yet, I’ve seen sites where plugins are installed for each of these relatively minor adjustments. And each plugin, no matter how &quot;lightweight&quot; it claims to be, brings its own baggage:
-*   **Extra code:** Even if you only use one tiny feature, the entire plugin’s CSS, JavaScript, PHP files, and sometimes database tables still load. This bloat slows down your site. And slow sites mean unhappy users and lower search engine rankings.
-*   **Security risks:** Every plugin is a potential vulnerability. An abandoned or poorly coded plugin is an open door for bad actors. The more plugins you have, the larger your &quot;attack surface.&quot;
-*   **Maintenance headaches:** Updates. Compatibility issues. The dreaded white screen of death after a core WordPress update because one of your 30 plugins hasn&#39;t caught up yet. It&#39;s a never-ending cycle of vigilance.
-*   **Feature creep:** You need one specific thing, but the plugin offers 20. Suddenly, you’re navigating an overwhelming settings panel just to toggle the one option you care about.
-*   **Dependency:** What happens if the plugin author stops updating it? Or decides to charge a premium for a feature that was once free? You&#39;re stuck, or you have to redo the work with another plugin, or *finally* code it yourself.</p>
-<p>This is where writing a lightweight, custom function truly shines. For those small, specific, single-purpose needs, a few lines of code in your child theme’s `functions.php` file (and yes, *always* use a child theme for this, please!) or even a small, purpose-built custom plugin can be far superior.</p>
-<p>Why?
-*   **Performance:** You write *only* the code you need. No extra CSS, no extraneous JavaScript, no unused database queries. Your site stays lean and fast.
-*   **Control:** You know exactly what the code is doing. No mysterious black boxes. You can modify it, debug it, and understand its impact on your site.
-*   **Security:** Fewer third-party dependencies mean fewer potential vulnerabilities. You&#39;re responsible for your own code, which you (hopefully) understand well.
-*   **Stability:** Less risk of conflicts with other plugins or core WordPress updates. Your custom functions are less likely to break your site because you designed them to be specific and minimal.
-*   **Longevity:** Your code isn&#39;t reliant on an external developer&#39;s whims or business model. It&#39;s yours.</p>
+<p>These are not monumental tasks. Yet, I’ve seen sites where plugins are installed for each of these relatively minor adjustments. And each plugin, no matter how &quot;lightweight&quot; it claims to be, brings its own baggage:</p>
+<ul>
+<li><strong>Extra code:</strong> Even if you only use one tiny feature, the entire plugin’s CSS, JavaScript, PHP files, and sometimes database tables still load. This bloat slows down your site. And slow sites mean unhappy users and lower search engine rankings.</li>
+<li><strong>Security risks:</strong> Every plugin is a potential vulnerability. An abandoned or poorly coded plugin is an open door for bad actors. The more plugins you have, the larger your &quot;attack surface.&quot;</li>
+<li><strong>Maintenance headaches:</strong> Updates. Compatibility issues. The dreaded white screen of death after a core WordPress update because one of your 30 plugins hasn&#39;t caught up yet. It&#39;s a never-ending cycle of vigilance.</li>
+<li><strong>Feature creep:</strong> You need one specific thing, but the plugin offers 20. Suddenly, you’re navigating an overwhelming settings panel just to toggle the one option you care about.</li>
+<li><strong>Dependency:</strong> What happens if the plugin author stops updating it? Or decides to charge a premium for a feature that was once free? You&#39;re stuck, or you have to redo the work with another plugin, or <em>finally</em> code it yourself.</li>
+</ul>
+<p>This is where writing a lightweight, custom function truly shines. For those small, specific, single-purpose needs, a few lines of code in your child theme’s <code>functions.php</code> file (and yes, <em>always</em> use a child theme for this, please!) or even a small, purpose-built custom plugin can be far superior.</p>
+<p>Why?</p>
+<ul>
+<li><strong>Performance:</strong> You write <em>only</em> the code you need. No extra CSS, no extraneous JavaScript, no unused database queries. Your site stays lean and fast.</li>
+<li><strong>Control:</strong> You know exactly what the code is doing. No mysterious black boxes. You can modify it, debug it, and understand its impact on your site.</li>
+<li><strong>Security:</strong> Fewer third-party dependencies mean fewer potential vulnerabilities. You&#39;re responsible for your own code, which you (hopefully) understand well.</li>
+<li><strong>Stability:</strong> Less risk of conflicts with other plugins or core WordPress updates. Your custom functions are less likely to break your site because you designed them to be specific and minimal.</li>
+<li><strong>Longevity:</strong> Your code isn&#39;t reliant on an external developer&#39;s whims or business model. It&#39;s yours.</li>
+</ul>
 <p>Okay, so when do you reach for the code editor instead of the plugin directory?
-My rule of thumb is this: **If WordPress already provides a hook or filter for what I want to do, and it only requires a few lines of PHP, then I&#39;m coding it.**</p>
-<p>Let me give you some concrete examples:
-*   **Custom Post Types &amp; Taxonomies:** Need a CPT for &quot;Services&quot; with a custom taxonomy for &quot;Service Categories&quot;? Instead of installing a CPT UI plugin (which is great for visual users, don&#39;t get me wrong), I&#39;ll often just register them with `register_post_type()` and `register_taxonomy()` in `functions.php`. It&#39;s incredibly light and gives me full control over the arguments.
-*   **Modifying default strings:** Changing the &quot;Howdy&quot; text in the admin bar or the &quot;Powered by WordPress&quot; in the footer? A simple `add_filter()` is all you need. Done in seconds.
-*   **Conditionally loading assets:** Want a specific JS library only on your contact page? Use `wp_enqueue_script()` wrapped in an `is_page(&#39;contact&#39;)` conditional. No heavy plugin just for asset management.
-*   **Custom image sizes:** Defining specific `add_image_size()` calls helps WordPress generate exactly the image dimensions you need for your theme, without needing a plugin to manage this.
-*   **Simple shortcodes:** If you need a quick shortcode to display a specific piece of information or a button with custom styling, `add_shortcode()` is your friend.
-*   **Adjusting query arguments:** Want to show only specific posts on an archive page? `pre_get_posts` filter. Powerful, precise, and extremely efficient.</p>
-<p>Now, I&#39;m not saying become a purist and code absolutely everything. That’s just silly. The goal is efficiency and thoughtful architecture. The line isn&#39;t always perfectly clear, and it shifts with your own skill level and the complexity of the project. If you&#39;re not comfortable with PHP, then a well-vetted plugin might still be the right call for even a &quot;simple&quot; task. The point is to make an *informed* decision, not a knee-jerk one.</p>
-<p>Before you type that search query into the WordPress plugin repository, just pause for a moment. Ask yourself:
-1.  Is this functionality truly complex and multi-faceted, something I wouldn&#39;t want to maintain myself?
-2.  Does WordPress already have a built-in mechanism (like hooks or filters) that I can leverage with a few lines of code?
-3.  How much overhead (performance, security, maintenance) will this plugin add versus coding it myself?
-4.  Am I choosing this plugin purely out of habit or convenience, rather than necessity?</p>
-<p>Sometimes, the answer will still be &quot;plugin.&quot; But sometimes, with a little bit of adventurous coding (and always, *always* testing on a staging site!), you&#39;ll find that crafting a bespoke solution is not just better for your site, but also a deeply satisfying experience. You gain a deeper understanding of WordPress, a cleaner codebase, and a lighter, faster website. And that, my friends, is a win-win-win in my book.</p>
+My rule of thumb is this: <strong>If WordPress already provides a hook or filter for what I want to do, and it only requires a few lines of PHP, then I&#39;m coding it.</strong></p>
+<p>Let me give you some concrete examples:</p>
+<ul>
+<li><strong>Custom Post Types &amp; Taxonomies:</strong> Need a CPT for &quot;Services&quot; with a custom taxonomy for &quot;Service Categories&quot;? Instead of installing a CPT UI plugin (which is great for visual users, don&#39;t get me wrong), I&#39;ll often just register them with <code>register_post_type()</code> and <code>register_taxonomy()</code> in <code>functions.php</code>. It&#39;s incredibly light and gives me full control over the arguments.</li>
+<li><strong>Modifying default strings:</strong> Changing the &quot;Howdy&quot; text in the admin bar or the &quot;Powered by WordPress&quot; in the footer? A simple <code>add_filter()</code> is all you need. Done in seconds.</li>
+<li><strong>Conditionally loading assets:</strong> Want a specific JS library only on your contact page? Use <code>wp_enqueue_script()</code> wrapped in an <code>is_page(&#39;contact&#39;)</code> conditional. No heavy plugin just for asset management.</li>
+<li><strong>Custom image sizes:</strong> Defining specific <code>add_image_size()</code> calls helps WordPress generate exactly the image dimensions you need for your theme, without needing a plugin to manage this.</li>
+<li><strong>Simple shortcodes:</strong> If you need a quick shortcode to display a specific piece of information or a button with custom styling, <code>add_shortcode()</code> is your friend.</li>
+<li><strong>Adjusting query arguments:</strong> Want to show only specific posts on an archive page? <code>pre_get_posts</code> filter. Powerful, precise, and extremely efficient.</li>
+</ul>
+<p>Now, I&#39;m not saying become a purist and code absolutely everything. That’s just silly. The goal is efficiency and thoughtful architecture. The line isn&#39;t always perfectly clear, and it shifts with your own skill level and the complexity of the project. If you&#39;re not comfortable with PHP, then a well-vetted plugin might still be the right call for even a &quot;simple&quot; task. The point is to make an <em>informed</em> decision, not a knee-jerk one.</p>
+<p>Before you type that search query into the WordPress plugin repository, just pause for a moment. Ask yourself:</p>
+<ol>
+<li>Is this functionality truly complex and multi-faceted, something I wouldn&#39;t want to maintain myself?</li>
+<li>Does WordPress already have a built-in mechanism (like hooks or filters) that I can leverage with a few lines of code?</li>
+<li>How much overhead (performance, security, maintenance) will this plugin add versus coding it myself?</li>
+<li>Am I choosing this plugin purely out of habit or convenience, rather than necessity?</li>
+</ol>
+<p>Sometimes, the answer will still be &quot;plugin.&quot; But sometimes, with a little bit of adventurous coding (and always, <em>always</em> testing on a staging site!), you&#39;ll find that crafting a bespoke solution is not just better for your site, but also a deeply satisfying experience. You gain a deeper understanding of WordPress, a cleaner codebase, and a lighter, faster website. And that, my friends, is a win-win-win in my book.</p>
   </div>
 </article>
 
