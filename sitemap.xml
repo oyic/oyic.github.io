@@ -12,7 +12,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- SITEMAP_URLS_START --><!--
+  <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/auto-linkedin-blog-integration-smoke-test-000000/</loc>
+      <lastmod>2026-07-10T13:15:30.874Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><!--
     Each publish prepends one url here, format:
     <url>
       <loc>{{canonicalUrl}}</loc>

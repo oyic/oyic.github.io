@@ -7,18 +7,17 @@
   <id>https://chrisalberto.site/blog/</id>
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
-  <!-- FEED_ITEMS_START --><!--
-    Each publish prepends one entry here (list capped to the 20 most recent),
-    format ({{isoDate}} is the same value already used in blog/_template.html
-    and sitemap.xml — no separate date format needed for this feed):
-    <entry>
+  <!-- FEED_ITEMS_START --><entry>
+      <title>Auto-LinkedIn Blog Integration Smoke Test</title>
+      <link href="https://chrisalberto.site/blog/auto-linkedin-blog-integration-smoke-test-000000/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/auto-linkedin-blog-integration-smoke-test-000000/</id>
+      <updated>2026-07-10T13:15:30.874Z</updated>
+      <summary>This is a one-off smoke test post published by the auto-linkedin blog-publish pipeline to verify the GitHub Contents/Git Data API integration end to end.</summary>
+    </entry><entry>
       <title>{{title}}</title>
       <link href="{{canonicalUrl}}" rel="alternate" type="text/html" />
       <id>{{canonicalUrl}}</id>
       <updated>{{isoDate}}</updated>
       <summary>{{description}}</summary>
-    </entry>
-    Bumping the feed-level <updated> above to match the latest entry is
-    optional best-effort, not required for the feed to remain valid.
-  --><!-- FEED_ITEMS_END -->
+    </entry><!-- FEED_ITEMS_END -->
 </feed>
