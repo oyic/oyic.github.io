@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christopher Alberto — Blog</title>
+    <link>https://chrisalberto.site/blog/</link>
+    <description>Notes on WordPress engineering, WooCommerce builds, and shipping for the modern web.</description>
+    <language>en-us</language>
+    <atom:link href="https://chrisalberto.site/feed.xml" rel="self" type="application/rss+xml" />
+    <!-- FEED_ITEMS_START --><!--
+      Each publish prepends one item here (list capped to the 20 most recent),
+      format (note: pubDate is RFC-822, NOT the {{isoDate}} used in the template):
+      <item>
+        <title>{{title}}</title>
+        <link>{{canonicalUrl}}</link>
+        <guid isPermaLink="true">{{canonicalUrl}}</guid>
+        <pubDate>{{rfc822Date}}</pubDate>
+        <description>{{description}}</description>
+      </item>
+    --><!-- FEED_ITEMS_END -->
+  </channel>
+</rss>
