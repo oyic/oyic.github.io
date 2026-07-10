@@ -435,6 +435,26 @@ a.cert:hover::after{opacity:1;}
 
 /* ====================== BLOG ====================== */
 .blog-list:empty::after{content:"No posts yet — new articles are on the way.";font-family:var(--mono);font-size:14px;color:var(--faint);grid-column:1/-1;padding:40px 0;}
+.post-hero{padding-top:150px;padding-bottom:40px;}
+.post-hero__back{font-family:var(--mono);font-size:13px;color:var(--dim);letter-spacing:.04em;transition:color .2s;}
+.post-hero__back:hover{color:var(--accent);}
+.post-hero__meta{margin-top:22px;font-family:var(--mono);font-size:13px;color:var(--faint);letter-spacing:.06em;text-transform:uppercase;}
+.post-hero__title{font-family:var(--display);font-weight:800;font-size:clamp(32px,5vw,56px);line-height:1.08;letter-spacing:-.02em;margin-top:14px;max-width:820px;}
+.post-cover{margin-top:36px;}
+.post-cover img{width:100%;border-radius:var(--r);border:1px solid var(--line);aspect-ratio:1200/630;object-fit:cover;}
+.article{max-width:720px;margin:48px auto 0;padding-bottom:clamp(90px,12vh,160px);color:var(--dim);font-size:17px;line-height:1.75;}
+.article h2{font-family:var(--display);font-weight:700;font-size:clamp(24px,3vw,32px);color:var(--text);letter-spacing:-.01em;margin:44px 0 16px;}
+.article h3{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.4vw,24px);color:var(--text);margin:34px 0 12px;}
+.article p{margin:0 0 20px;}
+.article a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;}
+.article a:hover{color:var(--accent-2);}
+.article ul,.article ol{margin:0 0 20px;padding-left:22px;}
+.article li{margin-bottom:8px;}
+.article blockquote{border-left:2px solid var(--accent);margin:28px 0;padding:4px 0 4px 20px;color:var(--text);font-style:italic;}
+.article code{font-family:var(--mono);font-size:15px;background:var(--bg-3);border:1px solid var(--line);border-radius:4px;padding:2px 6px;}
+.article pre{background:var(--bg-3);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;overflow-x:auto;margin:0 0 20px;}
+.article pre code{border:none;background:none;padding:0;}
+.article img{border-radius:var(--r);margin:28px 0;}
 
 /* ====================== ANIM HELPERS ====================== */
 .split-line{display:block;overflow:hidden;}
