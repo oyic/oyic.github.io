@@ -8,12 +8,6 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
-      <title>Auto-LinkedIn Blog Integration Smoke Test</title>
-      <link href="https://chrisalberto.site/blog/auto-linkedin-blog-integration-smoke-test-000000/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/auto-linkedin-blog-integration-smoke-test-000000/</id>
-      <updated>2026-07-10T13:15:30.874Z</updated>
-      <summary>This is a one-off smoke test post published by the auto-linkedin blog-publish pipeline to verify the GitHub Contents/Git Data API integration end to end.</summary>
-    </entry><entry>
       <title>{{title}}</title>
       <link href="{{canonicalUrl}}" rel="alternate" type="text/html" />
       <id>{{canonicalUrl}}</id>
