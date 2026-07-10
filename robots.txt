@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /blog/_template.html
 
 # Allow AI Search & Crawler Agents
 User-agent: GPTBot
