@@ -433,6 +433,9 @@ a.cert:hover::after{opacity:1;}
 .footer__top{font-family:var(--mono);font-size:13px;color:var(--dim);display:inline-flex;gap:8px;align-items:center;transition:color .2s;}
 .footer__top:hover{color:var(--accent);}
 
+/* ====================== BLOG ====================== */
+.blog-list:empty::after{content:"No posts yet — new articles are on the way.";font-family:var(--mono);font-size:14px;color:var(--faint);grid-column:1/-1;padding:40px 0;}
+
 /* ====================== ANIM HELPERS ====================== */
 .split-line{display:block;overflow:hidden;}
 .split-line > span{display:inline-block;}

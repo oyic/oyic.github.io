@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog — Christopher Alberto</title>
+<meta name="description" content="Notes on WordPress engineering, WooCommerce builds, and shipping for the modern web — written by Christopher Alberto." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/" />
+<link rel="alternate" type="application/rss+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://chrisalberto.site/blog/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Blog — Christopher Alberto" />
+<meta property="og:description" content="Notes on WordPress engineering, WooCommerce builds, and shipping for the modern web." />
+<meta property="og:image" content="https://chrisalberto.site/assets/images/og-image.jpg" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Blog — Christopher Alberto" />
+<meta property="twitter:description" content="Notes on WordPress engineering, WooCommerce builds, and shipping for the modern web." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/images/og-image.jpg" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+<div class="progress" id="progress"></div>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<section class="section" id="blog-top">
+  <div class="wrap">
+    <div class="sec-head">
+      <h1 class="sec-title">Blog</h1>
+      <span class="sec-line"></span>
+    </div>
+    <p class="about__body">Notes on WordPress engineering, WooCommerce builds, and shipping for the modern web.</p>
+    <div class="proj__grid blog-list" id="blog-list" style="margin-top:clamp(40px,6vh,76px);"><!-- BLOG_LIST_START --><!-- BLOG_LIST_END --></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+})();
+</script>
+
+<!--
+  TEASER CONTRACT for automated publishing (auto-linkedin reads this file via
+  the GitHub Contents API and prepends one block like this right after
+  BLOG_LIST_START for every published post):
+
+  <article class="card blog-card">
+    <a href="{{canonicalUrl}}" class="card__media" data-ph="ARTICLE">
+      <img src="{{image}}" alt="{{imageAlt}}" loading="lazy" />
+    </a>
+    <div class="card__body">
+      <h3><a href="{{canonicalUrl}}">{{title}}</a></h3>
+      <p>{{description}}</p>
+      <div class="card__tags"><span class="tag mono">{{date}}</span></div>
+    </div>
+  </article>
+-->
+</body>
+</html>
