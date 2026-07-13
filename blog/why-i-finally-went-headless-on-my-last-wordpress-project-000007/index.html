@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Why I Finally Went Headless on My Last WordPress Project (And How I CI/CD&#39;d It) — Christopher Alberto</title>
+<meta name="description" content="I remember sitting at my desk a few months back, staring at a particularly gnarly WordPress template file." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Why I Finally Went Headless on My Last WordPress Project (And How I CI/CD&#39;d It)" />
+<meta property="og:description" content="I remember sitting at my desk a few months back, staring at a particularly gnarly WordPress template file." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/cover.png" />
+<meta property="og:image:alt" content="Why I Finally Went Headless on My Last WordPress Project (And How I CI/CD&#39;d It)" />
+<meta property="article:published_time" content="2026-07-13T17:45:03Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/" />
+<meta property="twitter:title" content="Why I Finally Went Headless on My Last WordPress Project (And How I CI/CD&#39;d It)" />
+<meta property="twitter:description" content="I remember sitting at my desk a few months back, staring at a particularly gnarly WordPress template file." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/cover.png" />
+<meta property="twitter:image:alt" content="Why I Finally Went Headless on My Last WordPress Project (And How I CI/CD&#39;d It)" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why I Finally Went Headless on My Last WordPress Project (And How I CI/CD&#39;d It)",
+  "description": "I remember sitting at my desk a few months back, staring at a particularly gnarly WordPress template file.",
+  "image": "https://chrisalberto.site/assets/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/cover.png",
+  "datePublished": "2026-07-13T17:45:03Z",
+  "dateModified": "2026-07-13T17:45:03Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-13T17:45:03Z">July 14, 2026</time></div>
+    <h1 class="post-hero__title">Why I Finally Went Headless on My Last WordPress Project (And How I CI/CD&#39;d It)</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/cover.png" alt="" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>I remember sitting at my desk a few months back, staring at a particularly gnarly WordPress template file. The client wanted lightning-fast page loads, an incredibly interactive front-end, and the ability for their content team to update complex data structures without ever touching a line of code. My gut reaction, given the existing infrastructure, was to start hacking away in PHP like I always did. Then the memories of agonizingly slow page builds, the plugin conflicts, and the general &#34;WordPress slowness&#34; that inevitably creeps in on any custom, high-traffic site flashed before my eyes. Nope. Not again. This time, I decided, we&#39;re going headless.
+
+It was a small mental shift, but a huge technical one. We already had WordPress running as a backend for some other stuff, so ditching it entirely wasn&#39;t an option. The mandate was clear: use WordPress as the content engine, but serve the front-end with something truly modern. So, I spun up a new Next.js project. WordPress became purely a data source. I meticulously designed custom post types for all the distinct content types – events, locations, speaker profiles – and leveraged Advanced Custom Fields to manage all the associated metadata. Dates, images, related content, custom slugs; ACF handled it beautifully. The WP REST API exposed everything exactly as I needed it. I did end up writing a couple of custom API endpoints to pre-process and aggregate some data, like pulling a speaker’s full profile *and* all their upcoming events in a single network request, just to cut down on client-side fetching complexity. That initial setup took about a week to get just right.
+
+The real fun began with CI/CD. I split the project into two distinct GitHub repositories: one for the WordPress backend (themes, custom plugins, `functions.php` tweaks) and another for the Next.js front-end. This separation of concerns made deployments a lot cleaner. For the Next.js app, I set up a straightforward GitHub Actions workflow: on every push to `main`, it&#39;d run `npm install`, `npm run build`, and then deploy directly to Vercel using their CLI and a couple of environment variables stored securely in GitHub Secrets. This part was almost frictionless, once I sorted out a pesky `NEXT_PUBLIC_API_URL` variable that was pointing to `localhost` in production for some reason. Rookie mistake.
+
+The WordPress side was trickier. I didn&#39;t want to redeploy the entire instance every time. My workflow focused on deploying *only* the theme and custom plugin directories. The GitHub Action would SSH into the server, pull the latest changes for just those directories, run `composer install` if there were new dependencies, and then clear any relevant caches. We weren&#39;t doing frequent database migrations for this project, mostly content updates, so that simplified things considerably. The entire front-end deployment pipeline now takes under three minutes from commit to live, which is frankly liberating.
+
+Honestly, going headless isn&#39;t for every WordPress site. If you&#39;re building a simple blog or a brochure site with minimal interactivity, the added complexity of managing two separate codebases and deployment pipelines probably isn&#39;t worth the overhead. You&#39;re adding a whole new layer to troubleshoot. But for sites demanding sub-second load times, dynamic content, and a modern developer experience with frameworks like React or Vue, it&#39;s absolutely the way to go. You get to use the best content management system on the planet (yeah, I said it, still love WP for content) without any of its traditional performance baggage. Just be prepared to put in the work upfront. You won&#39;t regret it.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
