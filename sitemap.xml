@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/that-time-i-rebuilt-a-site-after-its-page-builder-imploded-000009/</loc>
+      <lastmod>2026-07-14T08:26:27Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/</loc>
       <lastmod>2026-07-13T17:45:03Z</lastmod>
       <changefreq>monthly</changefreq>

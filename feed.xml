@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>That Time I Rebuilt a Site After Its Page Builder Imploded</title>
+      <link href="https://chrisalberto.site/blog/that-time-i-rebuilt-a-site-after-its-page-builder-imploded-000009/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/that-time-i-rebuilt-a-site-after-its-page-builder-imploded-000009/</id>
+      <updated>2026-07-14T08:26:27Z</updated>
+      <summary>I remember this one project, maybe three years back now.</summary>
+    </entry><entry>
       <title>Why I Finally Went Headless on My Last WordPress Project (And How I CI/CD&#39;d It)</title>
       <link href="https://chrisalberto.site/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/why-i-finally-went-headless-on-my-last-wordpress-project-000007/</id>
