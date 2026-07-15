@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Beyond the Block Editor: Architecting Headless WordPress with GitHub Actions</title>
+      <link href="https://chrisalberto.site/blog/beyond-the-block-editor-architecting-headless-wordpress-000010/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/beyond-the-block-editor-architecting-headless-wordpress-000010/</id>
+      <updated>2026-07-15T06:38:50Z</updated>
+      <summary>For years, WordPress has been the backbone of countless websites, renowned for its ease of use and vast plugin ecosystem.</summary>
+    </entry><entry>
       <title>That Lighthouse Score and the Headless Rabbit Hole I Fell Down</title>
       <link href="https://chrisalberto.site/blog/that-lighthouse-score-and-the-headless-rabbit-hole-i-fell-000008/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/that-lighthouse-score-and-the-headless-rabbit-hole-i-fell-000008/</id>

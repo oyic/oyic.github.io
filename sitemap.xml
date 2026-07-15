@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/beyond-the-block-editor-architecting-headless-wordpress-000010/</loc>
+      <lastmod>2026-07-15T06:38:50Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/that-lighthouse-score-and-the-headless-rabbit-hole-i-fell-000008/</loc>
       <lastmod>2026-07-14T11:41:22Z</lastmod>
       <changefreq>monthly</changefreq>
