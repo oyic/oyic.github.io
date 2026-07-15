@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Why I Ditched Page Builders for Hand-Coded WordPress: The Performance &amp; Scalability Edge</title>
+      <link href="https://chrisalberto.site/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/</id>
+      <updated>2026-07-15T06:58:50Z</updated>
+      <summary>For years, like many of you, I dabbled extensively with WordPress page builders.</summary>
+    </entry><entry>
       <title>Beyond the Block Editor: Architecting Headless WordPress with GitHub Actions</title>
       <link href="https://chrisalberto.site/blog/beyond-the-block-editor-architecting-headless-wordpress-000010/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/beyond-the-block-editor-architecting-headless-wordpress-000010/</id>

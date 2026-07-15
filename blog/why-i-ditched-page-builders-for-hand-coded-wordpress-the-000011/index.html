@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Why I Ditched Page Builders for Hand-Coded WordPress: The Performance &amp; Scalability Edge — Christopher Alberto</title>
+<meta name="description" content="For years, like many of you, I dabbled extensively with WordPress page builders." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Why I Ditched Page Builders for Hand-Coded WordPress: The Performance &amp; Scalability Edge" />
+<meta property="og:description" content="For years, like many of you, I dabbled extensively with WordPress page builders." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/cover.png" />
+<meta property="og:image:alt" content="Why I Ditched Page Builders for Hand-Coded WordPress: The Performance &amp; Scalability Edge" />
+<meta property="article:published_time" content="2026-07-15T06:58:50Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/" />
+<meta property="twitter:title" content="Why I Ditched Page Builders for Hand-Coded WordPress: The Performance &amp; Scalability Edge" />
+<meta property="twitter:description" content="For years, like many of you, I dabbled extensively with WordPress page builders." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/cover.png" />
+<meta property="twitter:image:alt" content="Why I Ditched Page Builders for Hand-Coded WordPress: The Performance &amp; Scalability Edge" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why I Ditched Page Builders for Hand-Coded WordPress: The Performance &amp; Scalability Edge",
+  "description": "For years, like many of you, I dabbled extensively with WordPress page builders.",
+  "image": "https://chrisalberto.site/assets/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/cover.png",
+  "datePublished": "2026-07-15T06:58:50Z",
+  "dateModified": "2026-07-15T06:58:50Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-15T06:58:50Z">July 15, 2026</time></div>
+    <h1 class="post-hero__title">Why I Ditched Page Builders for Hand-Coded WordPress: The Performance &amp; Scalability Edge</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/cover.png" alt="Why I Ditched Page Builders for Hand-Coded WordPress: The Performance &amp; Scalability Edge" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>For years, like many of you, I dabbled extensively with WordPress page builders. Elementor, Divi, Beaver Builder – they promised visual design, rapid development, and accessibility for non-coders. And for a time, they delivered on that promise, allowing me to spin up sites quickly and efficiently. However, as my own understanding of web performance and long-term project health deepened, I began to see the fundamental limitations and hidden costs of this approach. That&#39;s why I&#39;ve largely transitioned to building custom-coded WordPress themes from the ground up, and I firmly believe it’s a superior path for serious web development.</p>
+<p>The most glaring issue with page builders, in my experience, is the inherent performance penalty. While they make design easy, they often do so by injecting a considerable amount of extra CSS and JavaScript into every page. This bloat, often redundant and unoptimized, slows down page load times significantly. Think about it: a page builder needs to cater to every possible design permutation, so it includes all the styling and scripts it *might* need, whether your specific page uses them or not. This overhead directly impacts Core Web Vitals, leading to poorer user experiences, higher bounce rates, and even a negative hit on search engine rankings. A lean, hand-coded theme, on the other hand, only loads precisely what’s necessary for its specific design and functionality, resulting in lightning-fast load times that delight users and search engines alike.</p>
+<p>Beyond raw speed, the modular scalability of a custom-coded architecture is a game-changer. With a page builder, you&#39;re building within a specific framework, often relying on their proprietary modules and templates. While convenient initially, this can lead to &#34;builder lock-in.&#34; When you need a unique feature or a slight design tweak that isn&#39;t easily achieved through the builder&#39;s options, you&#39;re often left fighting the interface, resorting to hacky custom CSS, or even abandoning the idea altogether. A custom theme, built with modern WordPress development practices like block patterns, custom Gutenberg blocks, or even just well-structured PHP and SASS, allows for true modularity. You build reusable components exactly as you need them, with full control over their markup, styling, and interactivity. This means easier future updates, more consistent branding, and less technical debt.</p>
+<p>Consider the long-term maintainability. When debugging an issue or implementing a significant feature update, navigating a page builder&#39;s generated code can be a nightmare. You&#39;re dealing with layers of nested divs, auto-generated classes, and often inline styles that are difficult to override or understand. With a custom theme, the codebase is transparent, structured logically, and written by you or your team. This predictability and clarity drastically reduce development time for future enhancements or troubleshooting. It’s an investment in a robust, future-proof foundation rather than a quick fix.</p>
+<p>While the initial learning curve for custom WordPress theme development is steeper than dragging and dropping elements, the payoff is immense. You gain complete control, unparalleled performance, and the satisfaction of building a truly bespoke digital experience. For developers looking to elevate their craft, or businesses wanting a website that performs optimally and scales effortlessly without relying on a third-party framework&#39;s quirks, I wholeheartedly advocate for ditching the builders and embracing the power of programmatic, custom-coded architecture. Your users, your SEO, and your future self will thank you for it.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
