@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Building Better: Why I Chose FlyntWP for Lightning-Fast WordPress Development</title>
+      <link href="https://chrisalberto.site/blog/building-better-why-i-chose-flyntwp-for-lightning-fast-000014/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/building-better-why-i-chose-flyntwp-for-lightning-fast-000014/</id>
+      <updated>2026-07-16T17:26:40Z</updated>
+      <summary>I&#39;ve built my fair share of WordPress sites over the years, and I’ve seen the rise and, frankly, the performance fall of many popular low-code page builders.</summary>
+    </entry><entry>
       <title>Decoupling WordPress: Building a Headless Backend with CI/CD for Production</title>
       <link href="https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-backend-with-ci-cd-000012/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-backend-with-ci-cd-000012/</id>

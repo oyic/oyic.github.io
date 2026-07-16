@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/building-better-why-i-chose-flyntwp-for-lightning-fast-000014/</loc>
+      <lastmod>2026-07-16T17:26:40Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-backend-with-ci-cd-000012/</loc>
       <lastmod>2026-07-16T06:52:08Z</lastmod>
       <changefreq>monthly</changefreq>
