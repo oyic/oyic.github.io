@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Decoupling WordPress: Building a Headless Backend with CI/CD for Production</title>
+      <link href="https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-backend-with-ci-cd-000012/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-backend-with-ci-cd-000012/</id>
+      <updated>2026-07-16T06:52:08Z</updated>
+      <summary>I&#39;ve spent years pushing WordPress beyond its blog-centric origins, and lately, my focus has shifted dramatically towards leveraging it as a robust, headless…</summary>
+    </entry><entry>
       <title>From Bloat to Brilliance: Unpacking the Power of Custom-Coded WordPress Themes</title>
       <link href="https://chrisalberto.site/blog/from-bloat-to-brilliance-unpacking-the-power-of-custom-000013/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/from-bloat-to-brilliance-unpacking-the-power-of-custom-000013/</id>
