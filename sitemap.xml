@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/building-beyond-the-builder-why-custom-wordpress-themes-win-000017/</loc>
+      <lastmod>2026-07-17T07:15:26Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/from-bloatware-to-blade-why-sage-is-my-wordpress-000015/</loc>
       <lastmod>2026-07-16T17:34:40Z</lastmod>
       <changefreq>monthly</changefreq>
