@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Building Better WordPress: How Sage Unlocks Clean, Maintainable Code — Christopher Alberto</title>
+<meta name="description" content="For years, the WordPress development landscape felt like a choose-your-own-adventure between spaghetti code and page builder bloat." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/building-better-wordpress-how-sage-unlocks-clean-000023/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/building-better-wordpress-how-sage-unlocks-clean-000023/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Building Better WordPress: How Sage Unlocks Clean, Maintainable Code" />
+<meta property="og:description" content="For years, the WordPress development landscape felt like a choose-your-own-adventure between spaghetti code and page builder bloat." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/building-better-wordpress-how-sage-unlocks-clean-000023/cover.png" />
+<meta property="og:image:alt" content="Building Better WordPress: How Sage Unlocks Clean, Maintainable Code" />
+<meta property="article:published_time" content="2026-07-18T16:20:46Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/building-better-wordpress-how-sage-unlocks-clean-000023/" />
+<meta property="twitter:title" content="Building Better WordPress: How Sage Unlocks Clean, Maintainable Code" />
+<meta property="twitter:description" content="For years, the WordPress development landscape felt like a choose-your-own-adventure between spaghetti code and page builder bloat." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/building-better-wordpress-how-sage-unlocks-clean-000023/cover.png" />
+<meta property="twitter:image:alt" content="Building Better WordPress: How Sage Unlocks Clean, Maintainable Code" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Building Better WordPress: How Sage Unlocks Clean, Maintainable Code",
+  "description": "For years, the WordPress development landscape felt like a choose-your-own-adventure between spaghetti code and page builder bloat.",
+  "image": "https://chrisalberto.site/assets/blog/building-better-wordpress-how-sage-unlocks-clean-000023/cover.png",
+  "datePublished": "2026-07-18T16:20:46Z",
+  "dateModified": "2026-07-18T16:20:46Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/building-better-wordpress-how-sage-unlocks-clean-000023/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-18T16:20:46Z">July 19, 2026</time></div>
+    <h1 class="post-hero__title">Building Better WordPress: How Sage Unlocks Clean, Maintainable Code</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/building-better-wordpress-how-sage-unlocks-clean-000023/cover.png" alt="Building Better WordPress: How Sage Unlocks Clean, Maintainable Code" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>For years, the WordPress development landscape felt like a choose-your-own-adventure between spaghetti code and page builder bloat. As a developer, I found myself constantly searching for a more elegant, organized way to build custom themes, something that respected modern architectural principles without fighting the WordPress core. That search invariably led me to Sage, and frankly, it changed everything about how I approach WordPress projects. Sage isn&#39;t just another theme framework; it&#39;s a philosophy, a commitment to building robust, maintainable websites with a developer-first mindset.</p>
+<p>What truly sets Sage apart is its unwavering dedication to a clean, MVC-like architecture. Unlike traditional WordPress themes where PHP logic often gets tangled directly within `index.php` or `page.php` files, Sage brings the clarity of Blade templating. This means my template files are exactly what they should be: pure presentation. No more complex loops, conditional statements, or data fetching logic polluting the visual markup. Blade offers a clean, intuitive syntax that makes templates a joy to read and write, ensuring the &#34;view&#34; layer of my application remains strictly focused on displaying information, not processing it.</p>
+<p>But how does that data actually get to the templates if not directly within them? This is where Sage&#39;s View Composers shine. View Composers act as the bridge, allowing me to define exactly what data each template needs and then preparing that data cleanly and programmatically. Instead of querying the database directly in my `single.blade.php`, I can create a dedicated Composer that fetches post meta, related articles, or custom fields, and then injects that prepared data into the template. This separation of concerns is powerful, routing data cleanly and ensuring my business logic remains distinct from my presentation layer, making the codebase infinitely more testable and easier to manage.</p>
+<p>Underpinning this entire clean architecture is Acorn, Sage’s integration of many beloved Laravel components, including a powerful dependency injection container. This brings modern PHP development practices directly into the WordPress ecosystem. Need to manage services, configurations, or complex dependencies? Acorn&#39;s container makes it trivial, promoting well-structured, modular code. It means I can write code that&#39;s not just functional, but also robust, scalable, and a pleasure for other developers to jump into. This isn&#39;t just about using fancy tools; it&#39;s about elevating WordPress development to the same standard of craftsmanship seen in other modern PHP frameworks.</p>
+<p>Now, let&#39;s talk about the elephant in the room: page builders like Divi or Elementor. While they promise quick results for non-developers, they often deliver a hidden cost that becomes painfully clear on complex projects. Their database-driven approach, while visually intuitive for front-end design, results in an unmaintainable database bloat of shortcodes, JSON, or custom table entries. Debugging issues or trying to implement custom logic becomes a nightmare of deciphering arcane builder output. Want to version control your design? Good luck tracking changes in a database table. With Sage, every line of code, every template, every composer is a physical file. This means Git works beautifully, development environments are easily replicated, and the entire codebase is transparent, programmatic, and fully under my control. I can confidently say I own every aspect of the site&#39;s functionality and design, rather than being beholden to a builder&#39;s proprietary structure.</p>
+<p>For serious WordPress development, where performance, maintainability, and scalability are paramount, Sage is, unequivocally, the developer&#39;s choice. It’s about building a solid foundation, not just slapping a pretty facade on a fragile structure. If you’re tired of the hacks and the bloat, and you&#39;re ready to embrace a truly modern, organized approach to WordPress, Sage is your answer.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

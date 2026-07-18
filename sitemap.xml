@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/building-better-wordpress-how-sage-unlocks-clean-000023/</loc>
+      <lastmod>2026-07-18T16:20:46Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/building-wordpress-themes-the-right-way-why-sage-cured-my-000019/</loc>
       <lastmod>2026-07-17T08:43:47Z</lastmod>
       <changefreq>monthly</changefreq>
