@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/tired-of-bloat-why-flyntwp-is-my-go-to-for-lean-fast-000022/</loc>
+      <lastmod>2026-07-18T16:30:46Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/building-better-wordpress-how-sage-unlocks-clean-000023/</loc>
       <lastmod>2026-07-18T16:20:46Z</lastmod>
       <changefreq>monthly</changefreq>
