@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions — Christopher Alberto</title>
+<meta name="description" content="My journey into modern web development quickly led me to question the traditional coupled WordPress setup." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions" />
+<meta property="og:description" content="My journey into modern web development quickly led me to question the traditional coupled WordPress setup." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/cover.png" />
+<meta property="og:image:alt" content="Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions" />
+<meta property="article:published_time" content="2026-07-18T17:00:46Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/" />
+<meta property="twitter:title" content="Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions" />
+<meta property="twitter:description" content="My journey into modern web development quickly led me to question the traditional coupled WordPress setup." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/cover.png" />
+<meta property="twitter:image:alt" content="Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions",
+  "description": "My journey into modern web development quickly led me to question the traditional coupled WordPress setup.",
+  "image": "https://chrisalberto.site/assets/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/cover.png",
+  "datePublished": "2026-07-18T17:00:46Z",
+  "dateModified": "2026-07-18T17:00:46Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-18T17:00:46Z">July 19, 2026</time></div>
+    <h1 class="post-hero__title">Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/cover.png" alt="Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>My journey into modern web development quickly led me to question the traditional coupled WordPress setup. While fantastic for many use cases, a monolithic architecture often presents performance and scalability bottlenecks for high-traffic applications or when complex frontend experiences are required. This is precisely where the power of a headless WordPress configuration, leveraging its robust REST API, coupled with a modern JavaScript framework like Next.js and automated CI/CD via GitHub Actions, truly shines. I&#39;ve found this approach offers unparalleled flexibility, speed, and a significantly improved developer experience.</p>
+<p>At its core, a headless WordPress implementation treats WordPress purely as a content management system, decoupling the backend data layer from the frontend presentation layer. WordPress&#39;s built-in REST API is the crucial bridge here, exposing all your posts, pages, custom post types, and taxonomy terms as JSON endpoints. For instance, accessing your posts is as simple as hitting `https://yourdomain.com/wp-json/wp/v2/posts`. Beyond the standard endpoints, I frequently extend the API to include custom fields or specific data relationships. This can be achieved using `register_rest_field` in your theme&#39;s functions.php or a custom plugin, allowing you to append ACF fields or other meta to existing objects. For example, to expose a custom meta field named &#39;my_custom_value&#39; on posts:</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_field(
+        &#39;post&#39;,
+        &#39;my_custom_value&#39;,
+        array(
+            &#39;get_callback&#39;    =&gt; function( $object, $field_name, $request ) {
+                return get_post_meta( $object[&#39;id&#39;], $field_name, true );
+            },
+            &#39;update_callback&#39; =&gt; null,
+            &#39;schema&#39;          =&gt; null,
+        )
+    );
+});</p>
+<p>This snippet registers a new field for the &#39;post&#39; post type, making `my_custom_value` available in the REST API response for each post. This fine-grained control over the API response is essential for building efficient frontends.</p>
+<p>On the frontend, I typically reach for Next.js due to its strong performance characteristics, SEO benefits with server-side rendering (SSR) and static site generation (SSG), and excellent developer experience. Consuming the WordPress REST API in a Next.js application is straightforward. For example, fetching a list of posts for a blog index page might look like this within a `getStaticProps` function:</p>
+<p>export async function getStaticProps() {
+    const res = await fetch(&#39;https://yourdomain.com/wp-json/wp/v2/posts?per_page=10&#39;);
+    const posts = await res.json();
+    return {
+        props: { posts },
+        revalidate: 60 // Incremental Static Regeneration
+    };
+}</p>
+<p>This fetches the latest 10 posts at build time, and then regenerates the page every 60 seconds if new data is available, ensuring fresh content without rebuilding the entire site. This static generation dramatically boosts page load times and reduces server load, a significant improvement over traditional dynamic WordPress page loads.</p>
+<p>The final piece of this advanced architecture is automated CI/CD deployments for the Next.js frontend, managed by GitHub Actions. Manual deployments are prone to errors and consume valuable development time, especially for frequent content updates. A GitHub Actions workflow ensures that every time I push changes to the main branch of my frontend repository, the application is automatically built and deployed to a platform like Vercel or Netlify. Here’s a simplified `deploy-frontend.yml` example for deploying to Vercel:</p>
+<p>name: Deploy Next.js Frontend</p>
+<p>on:
+  push:
+    branches:
+      - main</p>
+<p>jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: &#39;18&#39;
+        cache: &#39;npm&#39;
+    - name: Install dependencies
+      run: npm install
+    - name: Build Next.js app
+      run: npm run build
+    - name: Deploy to Vercel
+      env:
+        VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+        VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      run: npx vercel deploy --prebuilt --prod</p>
+<p>This workflow automates the entire deployment process, from checking out the code and installing dependencies to building the Next.js application and deploying it to Vercel. Crucially, sensitive credentials like VERCEL_ORG_ID, VERCEL_PROJECT_ID, and VERCEL_TOKEN are stored securely as GitHub Secrets, never exposed directly in the workflow file. This ensures consistent, rapid, and secure deployments with every code change, allowing me to focus on development rather than deployment logistics.</p>
+<p>Embracing headless WordPress, a modern frontend, and robust CI/CD pipelines has fundamentally transformed how I build and maintain web projects. It’s a powerful stack that delivers high performance, excellent scalability, and a developer-friendly workflow, setting the stage for future-proof web applications that are both a joy to build and use.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
