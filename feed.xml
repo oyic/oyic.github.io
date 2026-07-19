@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Reclaim Your WordPress: Why Custom Code Obliterates Bloated Builders</title>
+      <link href="https://chrisalberto.site/blog/reclaim-your-wordpress-why-custom-code-obliterates-bloated-000029/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/reclaim-your-wordpress-why-custom-code-obliterates-bloated-000029/</id>
+      <updated>2026-07-19T17:44:50Z</updated>
+      <summary>I’ve seen it countless times: a client needs a WordPress site, and the quickest path seems to be a drag-and-drop builder like Elementor or Divi.</summary>
+    </entry><entry>
       <title>Ditch the Bloat: Why Vanilla WordPress, Custom Blocks, and `$wpdb` are Your Only Path to Enterprise-Grade Performance</title>
       <link href="https://chrisalberto.site/blog/ditch-the-bloat-why-vanilla-wordpress-custom-blocks-and-000028/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/ditch-the-bloat-why-vanilla-wordpress-custom-blocks-and-000028/</id>
