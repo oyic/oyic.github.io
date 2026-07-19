@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Ditch the Bloat: Why Vanilla WordPress, Custom Blocks, and `$wpdb` are Your Only Path to Enterprise-Grade Performance</title>
+      <link href="https://chrisalberto.site/blog/ditch-the-bloat-why-vanilla-wordpress-custom-blocks-and-000028/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/ditch-the-bloat-why-vanilla-wordpress-custom-blocks-and-000028/</id>
+      <updated>2026-07-19T17:23:50Z</updated>
+      <summary>Let&#39;s cut through the marketing fluff and get brutally honest about WordPress development.</summary>
+    </entry><entry>
       <title>Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions</title>
       <link href="https://chrisalberto.site/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/</id>
