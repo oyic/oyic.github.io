@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Decoupling WordPress: Building a Headless Frontend with Next.js and Automated CI/CD</title>
+      <link href="https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/</id>
+      <updated>2026-07-20T04:56:21Z</updated>
+      <summary>We often think of WordPress as a monolithic platform, a backend and frontend tightly coupled, dictating how our content is presented.</summary>
+    </entry><entry>
       <title>Reclaim Your WordPress: Why Custom Code Obliterates Bloated Builders</title>
       <link href="https://chrisalberto.site/blog/reclaim-your-wordpress-why-custom-code-obliterates-bloated-000029/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/reclaim-your-wordpress-why-custom-code-obliterates-bloated-000029/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/why-your-wordpress-site-is-slow-the-hidden-cost-of-all-in-eb422c/</id>
       <updated>2026-07-10T15:46:24.524Z</updated>
       <summary>Let’s be honest.</summary>
-    </entry><entry>
-      <title>&quot;Just Install a Plugin For That&quot;: My Take on When to Code It Yourself in WordPress</title>
-      <link href="https://chrisalberto.site/blog/just-install-a-plugin-for-that-my-take-on-when-to-code-it-624b0f/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/just-install-a-plugin-for-that-my-take-on-when-to-code-it-624b0f/</id>
-      <updated>2026-07-10T14:32:30.005Z</updated>
-      <summary>I’ve been building websites with WordPress for, well, longer than I care to admit sometimes.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

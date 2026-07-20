@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Decoupling WordPress: Building a Headless Frontend with Next.js and Automated CI/CD — Christopher Alberto</title>
+<meta name="description" content="We often think of WordPress as a monolithic platform, a backend and frontend tightly coupled, dictating how our content is presented." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Decoupling WordPress: Building a Headless Frontend with Next.js and Automated CI/CD" />
+<meta property="og:description" content="We often think of WordPress as a monolithic platform, a backend and frontend tightly coupled, dictating how our content is presented." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/cover.png" />
+<meta property="og:image:alt" content="Decoupling WordPress: Building a Headless Frontend with Next.js and Automated CI/CD" />
+<meta property="article:published_time" content="2026-07-20T04:56:21Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/" />
+<meta property="twitter:title" content="Decoupling WordPress: Building a Headless Frontend with Next.js and Automated CI/CD" />
+<meta property="twitter:description" content="We often think of WordPress as a monolithic platform, a backend and frontend tightly coupled, dictating how our content is presented." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/cover.png" />
+<meta property="twitter:image:alt" content="Decoupling WordPress: Building a Headless Frontend with Next.js and Automated CI/CD" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Decoupling WordPress: Building a Headless Frontend with Next.js and Automated CI/CD",
+  "description": "We often think of WordPress as a monolithic platform, a backend and frontend tightly coupled, dictating how our content is presented.",
+  "image": "https://chrisalberto.site/assets/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/cover.png",
+  "datePublished": "2026-07-20T04:56:21Z",
+  "dateModified": "2026-07-20T04:56:21Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-20T04:56:21Z">July 20, 2026</time></div>
+    <h1 class="post-hero__title">Decoupling WordPress: Building a Headless Frontend with Next.js and Automated CI/CD</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/cover.png" alt="Decoupling WordPress: Building a Headless Frontend with Next.js and Automated CI/CD" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>We often think of WordPress as a monolithic platform, a backend and frontend tightly coupled, dictating how our content is presented. However, the true power of modern WordPress development emerges when we decouple it, leveraging its robust content management capabilities as a headless CMS. This approach allows us to build lightning-fast, highly scalable frontends using modern frameworks while keeping content creators comfortable in their familiar WordPress environment.</p>
+<p>At the core of a headless WordPress setup is its REST API. By default, WordPress exposes endpoints for posts, pages, categories, tags, users, and more, all accessible at yourdomain.com/wp-json/wp/v2/. For instance, fetching your latest posts is as simple as making a GET request to yourdomain.com/wp-json/wp/v2/posts. When integrating custom post types or custom fields, plugins like Advanced Custom Fields (ACF) Pro seamlessly expose this data through the same REST API, making your bespoke content structures available for any frontend to consume. For secure access, especially for unpublished content or specific API endpoints, application passwords or JWT authentication are essential considerations.</p>
+<p>Consider building a frontend with Next.js, a popular React framework. Next.js excels at both static site generation (SSG) and server-side rendering (SSR), perfect for consuming data from a headless WordPress instance. For an SSG approach, common for blog posts or static pages, we&#39;d use Next.js&#39;s `getStaticProps` function to fetch data at build time. For example, to fetch all post slugs for static path generation (`getStaticPaths`) and then fetch individual post data:</p>
+<p>async function getStaticProps({ params }) {
+  const res = await fetch(`https://yourwpdomain.com/wp-json/wp/v2/posts?slug=${params.slug}`);
+  const posts = await res.json();
+  const post = posts[0]; // Assuming slug returns a single post
+  return { props: { post } };
+}</p>
+<p>This code snippet illustrates how straightforward it is to pull content from WordPress. The `post` object, once received, contains all the data you’ve configured in WordPress, including custom fields, allowing you to render highly dynamic and rich content on your Next.js frontend without WordPress&#39;s theme layer ever touching the browser.</p>
+<p>Once we have our decoupled frontend, the next logical step is to automate its deployment. Manual deployments are prone to error and time-consuming, especially when content updates in WordPress should ideally trigger a frontend rebuild to reflect the latest changes. This is where Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions becomes invaluable.</p>
+<p>A typical GitHub Actions workflow for a headless Next.js application would live in a file like `.github/workflows/deploy.yml` in your frontend repository. This workflow can be triggered by a push to your `main` branch, a manual dispatch, or even a WordPress webhook that triggers a `repository_dispatch` event on content updates. The latter is powerful, allowing content changes to automatically kick off a new frontend build.</p>
+<p>Within the workflow, we define jobs that run on GitHub&#39;s virtual machines. A `build_and_deploy` job might consist of several steps: first, checking out your repository code (`actions/checkout@v3`). Second, setting up the Node.js environment (`actions/setup-node@v3`) to ensure consistency. Third, installing project dependencies (`npm ci`). Fourth, running the Next.js build command (`npm run build`). Finally, the critical deployment step, which could push the statically generated files to a hosting provider like Vercel, Netlify, or an S3 bucket with CloudFront. For example, a deployment step might involve `npx vercel deploy --prebuilt --prod` using environment variables for authentication tokens securely stored as GitHub Secrets.</p>
+<p>Automating this process ensures that every content update in WordPress or every code change in your frontend repository triggers a fresh, optimized build and deployment. This leads to exceptional site performance, enhanced security by minimizing the attack surface (since the WordPress backend is not directly exposed to visitors), and a superior developer experience, allowing teams to focus on building features rather than managing deployments. Embracing a headless architecture with robust CI/CD is truly the next frontier for scalable WordPress development.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
