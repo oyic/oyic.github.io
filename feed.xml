@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Building Modern WordPress: Why I Chose Sage Over Page Builder Bloat</title>
+      <link href="https://chrisalberto.site/blog/building-modern-wordpress-why-i-chose-sage-over-page-000027/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/building-modern-wordpress-why-i-chose-sage-over-page-000027/</id>
+      <updated>2026-07-20T08:10:23Z</updated>
+      <summary>For years, the WordPress development landscape felt like a compromise.</summary>
+    </entry><entry>
       <title>FlyntWP: My Go-To for Building Lightning-Fast, Bloat-Free WordPress Sites</title>
       <link href="https://chrisalberto.site/blog/flyntwp-my-go-to-for-building-lightning-fast-bloat-free-000026/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/flyntwp-my-go-to-for-building-lightning-fast-bloat-free-000026/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/that-lighthouse-score-and-the-headless-rabbit-hole-i-fell-000008/</id>
       <updated>2026-07-14T11:41:22Z</updated>
       <summary>I remember staring at the Lighthouse report for that client&#39;s old WordPress site last year.</summary>
-    </entry><entry>
-      <title>That Time I Rebuilt a Site After Its Page Builder Imploded</title>
-      <link href="https://chrisalberto.site/blog/that-time-i-rebuilt-a-site-after-its-page-builder-imploded-000009/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/that-time-i-rebuilt-a-site-after-its-page-builder-imploded-000009/</id>
-      <updated>2026-07-14T08:26:27Z</updated>
-      <summary>I remember this one project, maybe three years back now.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
