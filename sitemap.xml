@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/ditch-the-drag-and-drop-why-custom-wordpress-themes-reign-000025/</loc>
+      <lastmod>2026-07-20T05:01:18Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/</loc>
       <lastmod>2026-07-20T04:56:21Z</lastmod>
       <changefreq>monthly</changefreq>
