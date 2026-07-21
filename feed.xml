@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Taming WordPress Bloat: Why I Choose FlyntWP for Lean, Lightning-Fast Builds</title>
+      <link href="https://chrisalberto.site/blog/taming-wordpress-bloat-why-i-choose-flyntwp-for-lean-000031/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/taming-wordpress-bloat-why-i-choose-flyntwp-for-lean-000031/</id>
+      <updated>2026-07-21T08:00:10Z</updated>
+      <summary>I&#39;ve been in the WordPress trenches for a long time, and like many of you, I’ve wrestled with the promise and the peril of page builders.</summary>
+    </entry><entry>
       <title>Beyond Drag-and-Drop: Why I Choose Custom Code for WordPress</title>
       <link href="https://chrisalberto.site/blog/beyond-drag-and-drop-why-i-choose-custom-code-for-wordpress-000030/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/beyond-drag-and-drop-why-i-choose-custom-code-for-wordpress-000030/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/why-i-ditched-page-builders-for-hand-coded-wordpress-the-000011/</id>
       <updated>2026-07-15T06:58:50Z</updated>
       <summary>For years, like many of you, I dabbled extensively with WordPress page builders.</summary>
-    </entry><entry>
-      <title>Beyond the Block Editor: Architecting Headless WordPress with GitHub Actions</title>
-      <link href="https://chrisalberto.site/blog/beyond-the-block-editor-architecting-headless-wordpress-000010/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/beyond-the-block-editor-architecting-headless-wordpress-000010/</id>
-      <updated>2026-07-15T06:38:50Z</updated>
-      <summary>For years, WordPress has been the backbone of countless websites, renowned for its ease of use and vast plugin ecosystem.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
