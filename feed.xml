@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Locking Down a Custom REST Endpoint: The Auth Mistake I Made So You Don&#39;t Have To</title>
+      <link href="https://chrisalberto.site/blog/locking-down-a-custom-rest-endpoint-the-auth-mistake-i-made-000039/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/locking-down-a-custom-rest-endpoint-the-auth-mistake-i-made-000039/</id>
+      <updated>2026-07-21T18:10:35Z</updated>
+      <summary>I found out a custom REST endpoint I&#39;d built for a client&#39;s mobile app was wide open to the public internet when a routine log review turned up a request from…</summary>
+    </entry><entry>
       <title>Sculpting Maintainable WordPress: Why Sage is My Go-To for Clean Code</title>
       <link href="https://chrisalberto.site/blog/sculpting-maintainable-wordpress-why-sage-is-my-go-to-for-000032/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/sculpting-maintainable-wordpress-why-sage-is-my-go-to-for-000032/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-backend-with-ci-cd-000012/</id>
       <updated>2026-07-16T06:52:08Z</updated>
       <summary>I&#39;ve spent years pushing WordPress beyond its blog-centric origins, and lately, my focus has shifted dramatically towards leveraging it as a robust, headless…</summary>
-    </entry><entry>
-      <title>From Bloat to Brilliance: Unpacking the Power of Custom-Coded WordPress Themes</title>
-      <link href="https://chrisalberto.site/blog/from-bloat-to-brilliance-unpacking-the-power-of-custom-000013/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/from-bloat-to-brilliance-unpacking-the-power-of-custom-000013/</id>
-      <updated>2026-07-16T06:41:08Z</updated>
-      <summary>Let&#39;s talk WordPress.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
