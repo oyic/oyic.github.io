@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting Reusable Headers with FlyntWP Partials — Christopher Alberto</title>
+<meta name="description" content="You know the drill." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-reusable-headers-with-flyntwp-partials-000041/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-reusable-headers-with-flyntwp-partials-000041/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting Reusable Headers with FlyntWP Partials" />
+<meta property="og:description" content="You know the drill." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-reusable-headers-with-flyntwp-partials-000041/cover.png" />
+<meta property="og:image:alt" content="Crafting Reusable Headers with FlyntWP Partials" />
+<meta property="article:published_time" content="2026-07-22T18:00:56Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-reusable-headers-with-flyntwp-partials-000041/" />
+<meta property="twitter:title" content="Crafting Reusable Headers with FlyntWP Partials" />
+<meta property="twitter:description" content="You know the drill." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-reusable-headers-with-flyntwp-partials-000041/cover.png" />
+<meta property="twitter:image:alt" content="Crafting Reusable Headers with FlyntWP Partials" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting Reusable Headers with FlyntWP Partials",
+  "description": "You know the drill.",
+  "image": "https://chrisalberto.site/assets/blog/crafting-reusable-headers-with-flyntwp-partials-000041/cover.png",
+  "datePublished": "2026-07-22T18:00:56Z",
+  "dateModified": "2026-07-22T18:00:56Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-reusable-headers-with-flyntwp-partials-000041/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-22T18:00:56Z">July 23, 2026</time></div>
+    <h1 class="post-hero__title">Crafting Reusable Headers with FlyntWP Partials</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-reusable-headers-with-flyntwp-partials-000041/cover.png" alt="Crafting Reusable Headers with FlyntWP Partials" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>You know the drill. You’re building out a new section on a site, maybe a hero, a services list, or a testimonial block. Each time, you need a prominent title, perhaps a subtitle or some intro text. If you’re like me, you probably started by copy-pasting your H2 and paragraph markup, then duplicating your ACF fields in every single component. It works, sure, but it feels… messy. It’s hard to maintain consistency across components, and making a small design tweak means diving into half a dozen files. This is exactly where FlyntWP, with its focus on modular Twig components and programmatic control, shines as a refreshing alternative to the bloat of traditional low-code page builders.</p>
+<p>The real power of FlyntWP lies in its ability to let you build truly modular, reusable pieces of your UI. Instead of letting a page builder dictate your structure, you define it yourself, ensuring a clean DOM that search engines and Core Web Vitals love. Today, I want to walk you through a simple yet incredibly effective pattern: creating a shared Twig partial for common elements like, you guessed it, a block header. This isn&#39;t just about reducing keystrokes; it&#39;s about building a maintainable, consistent design system that keeps your sites snappy, a task made even faster by FlyntWP&#39;s integration with Vite for lightning-fast build speeds.</p>
+<p>Let&#39;s say almost every component on your site needs a primary heading and an optional introductory paragraph. Instead of embedding these fields and their markup directly into every component, we can create a dedicated partial. I typically create a _partials directory right inside my Components folder, then give each partial its own subdirectory for better organization. So, a BlockHeader partial might live at Components/_partials/BlockHeader/index.twig.</p>
+<p>Here’s what that index.twig file might look like for our shared block header:</p>
+<p>{% if data.header_title %}
+  &lt;div class=&#34;block-header&#34;&gt;
+    &lt;h2 class=&#34;block-header__title&#34;&gt;{{ data.header_title }}&lt;/h2&gt;
+    {% if data.header_description %}
+      &lt;div class=&#34;block-header__description&#34;&gt;
+        {{ data.header_description|raw }}
+      &lt;/div&gt;
+    {% endif %}
+  &lt;/div&gt;
+{% endif %}</p>
+<p>Now, for the ACF Pro integration. To power this partial, we need two fields: header_title (a simple text field) and header_description (a WYSIWYG editor for rich text). Instead of adding these fields directly to *every* component’s field group, you can create a &#34;Clonable&#34; field group in ACF and clone it into your main component field groups. This keeps your ACF setup incredibly DRY and centralized. When you clone, you typically want to select &#34;Seamless (no wrapper)&#34; to avoid extra nested arrays in your data structure.</p>
+<p>With our partial defined and ACF fields ready, integrating this header into any FlyntWP component is a breeze. Let&#39;s imagine a BlockCallToAction component. Its index.twig would simply include our new partial:</p>
+<p>&lt;section class=&#34;block-call-to-action&#34;&gt;
+  &lt;div class=&#34;container&#34;&gt;
+    {% include &#39;@_partials/BlockHeader/index.twig&#39; with { data: data } %}
+    {# ... other content specific to BlockCallToAction, like a button or image ... #}
+  &lt;/div&gt;
+&lt;/section&gt;</p>
+<p>The magic here is with { data: data }. This passes the entire data object from the parent component (which contains all its ACF field values) down to the partial. Inside BlockHeader/index.twig, it can then access data.header_title and data.header_description, just as if they were defined directly in the parent. This pattern ensures our partial is completely isolated and reusable, accepting whatever data context you provide.</p>
+<p>The benefits of this approach are massive. First, it&#39;s incredibly DRY (Don&#39;t Repeat Yourself). You define your header markup and styling once, and it&#39;s consistent everywhere. Second, maintenance becomes a joy. Need to change the heading tag from h2 to h3, or add a new CSS class? Edit one file, and every instance across your site is updated instantly. This level of control over your output is exactly why FlyntWP-built sites consistently hit those perfect Core Web Vitals scores—you&#39;re not fighting a page builder&#39;s opinionated, often bloated, markup. Plus, from a development perspective, it speeds up component creation immensely. You’re assembling proven building blocks, not reinventing the wheel.</p>
+<p>This simple _partials pattern is just one example of how FlyntWP empowers you to build fast, clean, and maintainable WordPress sites. It shifts you from fighting bloated interfaces to crafting elegant, programmatic solutions. Give it a try on your next project; you’ll wonder how you ever lived without it.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

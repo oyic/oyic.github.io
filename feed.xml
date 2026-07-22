@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Reusable Headers with FlyntWP Partials</title>
+      <link href="https://chrisalberto.site/blog/crafting-reusable-headers-with-flyntwp-partials-000041/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-reusable-headers-with-flyntwp-partials-000041/</id>
+      <updated>2026-07-22T18:00:56Z</updated>
+      <summary>You know the drill.</summary>
+    </entry><entry>
       <title>The Performance Edge: Ditching Page Builders for Custom WordPress Code</title>
       <link href="https://chrisalberto.site/blog/the-performance-edge-ditching-page-builders-for-custom-000040/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-performance-edge-ditching-page-builders-for-custom-000040/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/tired-of-bloat-why-flyntwp-is-my-go-to-for-lean-fast-000022/</id>
       <updated>2026-07-18T16:30:46Z</updated>
       <summary>For years, I found myself in a constant battle with WordPress page builders.</summary>
-    </entry><entry>
-      <title>Building Better WordPress: How Sage Unlocks Clean, Maintainable Code</title>
-      <link href="https://chrisalberto.site/blog/building-better-wordpress-how-sage-unlocks-clean-000023/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/building-better-wordpress-how-sage-unlocks-clean-000023/</id>
-      <updated>2026-07-18T16:20:46Z</updated>
-      <summary>For years, the WordPress development landscape felt like a choose-your-own-adventure between spaghetti code and page builder bloat.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
