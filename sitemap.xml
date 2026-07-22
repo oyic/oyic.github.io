@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/why-every-custom-post-type-i-ship-now-comes-with-a-000038/</loc>
+      <lastmod>2026-07-22T17:59:27Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/the-pest-test-that-saved-a-client-s-checkout-flow-000034/</loc>
       <lastmod>2026-07-22T17:43:34Z</lastmod>
       <changefreq>monthly</changefreq>

@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Why Every Custom Post Type I Ship Now Comes With a Migration File</title>
+      <link href="https://chrisalberto.site/blog/why-every-custom-post-type-i-ship-now-comes-with-a-000038/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/why-every-custom-post-type-i-ship-now-comes-with-a-000038/</id>
+      <updated>2026-07-22T17:59:27Z</updated>
+      <summary>Two years into a client project, I renamed a post meta key from `_price_override` to `_manual_price_override` to make the intent clearer, pushed it, and…</summary>
+    </entry><entry>
       <title>The Pest Test That Saved a Client&#39;s Checkout Flow</title>
       <link href="https://chrisalberto.site/blog/the-pest-test-that-saved-a-client-s-checkout-flow-000034/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-pest-test-that-saved-a-client-s-checkout-flow-000034/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/building-wordpress-themes-the-right-way-why-sage-cured-my-000019/</id>
       <updated>2026-07-17T08:43:47Z</updated>
       <summary>For years, WordPress theme development felt like a constant battle.</summary>
-    </entry><entry>
-      <title>Ditching the Drag-and-Drop: My Journey to Faster WordPress with FlyntWP</title>
-      <link href="https://chrisalberto.site/blog/ditching-the-drag-and-drop-my-journey-to-faster-wordpress-000018/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/ditching-the-drag-and-drop-my-journey-to-faster-wordpress-000018/</id>
-      <updated>2026-07-17T08:40:47Z</updated>
-      <summary>I&#39;ve spent years building WordPress sites, and while page builders promised speed and ease, they often delivered bloat.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
