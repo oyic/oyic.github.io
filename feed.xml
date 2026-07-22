@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Pest Test That Saved a Client&#39;s Checkout Flow</title>
+      <link href="https://chrisalberto.site/blog/the-pest-test-that-saved-a-client-s-checkout-flow-000034/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-pest-test-that-saved-a-client-s-checkout-flow-000034/</id>
+      <updated>2026-07-22T17:43:34Z</updated>
+      <summary>A client&#39;s checkout flow silently started charging the wrong shipping rate for three days before anyone noticed, because a &#34;quick fix&#34; to a custom pricing…</summary>
+    </entry><entry>
       <title>Automating WordPress Deploys: My Journey from FTP to GitHub Actions and WP-CLI</title>
       <link href="https://chrisalberto.site/blog/automating-wordpress-deploys-my-journey-from-ftp-to-github-000033/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/automating-wordpress-deploys-my-journey-from-ftp-to-github-000033/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/ditching-the-drag-and-drop-my-journey-to-faster-wordpress-000018/</id>
       <updated>2026-07-17T08:40:47Z</updated>
       <summary>I&#39;ve spent years building WordPress sites, and while page builders promised speed and ease, they often delivered bloat.</summary>
-    </entry><entry>
-      <title>Building Beyond the Builder: Why Custom WordPress Themes Win on Performance and Scale</title>
-      <link href="https://chrisalberto.site/blog/building-beyond-the-builder-why-custom-wordpress-themes-win-000017/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/building-beyond-the-builder-why-custom-wordpress-themes-win-000017/</id>
-      <updated>2026-07-17T07:15:26Z</updated>
-      <summary>For anyone diving into WordPress, the allure of page builders like Elementor or Divi is undeniable.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

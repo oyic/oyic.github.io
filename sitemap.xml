@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/the-pest-test-that-saved-a-client-s-checkout-flow-000034/</loc>
+      <lastmod>2026-07-22T17:43:34Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/automating-wordpress-deploys-my-journey-from-ftp-to-github-000033/</loc>
       <lastmod>2026-07-22T17:43:01Z</lastmod>
       <changefreq>monthly</changefreq>
