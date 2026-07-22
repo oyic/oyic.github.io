@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Performance Edge: Ditching Page Builders for Custom WordPress Code</title>
+      <link href="https://chrisalberto.site/blog/the-performance-edge-ditching-page-builders-for-custom-000040/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-performance-edge-ditching-page-builders-for-custom-000040/</id>
+      <updated>2026-07-22T17:59:52Z</updated>
+      <summary>As a developer, I’ve seen the WordPress landscape evolve dramatically.</summary>
+    </entry><entry>
       <title>Why Every Custom Post Type I Ship Now Comes With a Migration File</title>
       <link href="https://chrisalberto.site/blog/why-every-custom-post-type-i-ship-now-comes-with-a-000038/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/why-every-custom-post-type-i-ship-now-comes-with-a-000038/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/building-better-wordpress-how-sage-unlocks-clean-000023/</id>
       <updated>2026-07-18T16:20:46Z</updated>
       <summary>For years, the WordPress development landscape felt like a choose-your-own-adventure between spaghetti code and page builder bloat.</summary>
-    </entry><entry>
-      <title>Building WordPress Themes The Right Way: Why Sage Cured My Development Headaches</title>
-      <link href="https://chrisalberto.site/blog/building-wordpress-themes-the-right-way-why-sage-cured-my-000019/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/building-wordpress-themes-the-right-way-why-sage-cured-my-000019/</id>
-      <updated>2026-07-17T08:43:47Z</updated>
-      <summary>For years, WordPress theme development felt like a constant battle.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
