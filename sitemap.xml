@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/my-flyntwp-pattern-for-truly-reusable-cta-components-000036/</loc>
+      <lastmod>2026-07-22T08:00:50Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/locking-down-a-custom-rest-endpoint-the-auth-mistake-i-made-000039/</loc>
       <lastmod>2026-07-21T18:10:35Z</lastmod>
       <changefreq>monthly</changefreq>

@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>My FlyntWP Pattern for Truly Reusable CTA Components</title>
+      <link href="https://chrisalberto.site/blog/my-flyntwp-pattern-for-truly-reusable-cta-components-000036/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/my-flyntwp-pattern-for-truly-reusable-cta-components-000036/</id>
+      <updated>2026-07-22T08:00:50Z</updated>
+      <summary>One of the most common headaches I used to run into on WordPress projects was the ubiquitous “Call to Action” block.</summary>
+    </entry><entry>
       <title>Locking Down a Custom REST Endpoint: The Auth Mistake I Made So You Don&#39;t Have To</title>
       <link href="https://chrisalberto.site/blog/locking-down-a-custom-rest-endpoint-the-auth-mistake-i-made-000039/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/locking-down-a-custom-rest-endpoint-the-auth-mistake-i-made-000039/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/building-better-why-i-chose-flyntwp-for-lightning-fast-000014/</id>
       <updated>2026-07-16T17:26:40Z</updated>
       <summary>I&#39;ve built my fair share of WordPress sites over the years, and I’ve seen the rise and, frankly, the performance fall of many popular low-code page builders.</summary>
-    </entry><entry>
-      <title>Decoupling WordPress: Building a Headless Backend with CI/CD for Production</title>
-      <link href="https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-backend-with-ci-cd-000012/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-backend-with-ci-cd-000012/</id>
-      <updated>2026-07-16T06:52:08Z</updated>
-      <summary>I&#39;ve spent years pushing WordPress beyond its blog-centric origins, and lately, my focus has shifted dramatically towards leveraging it as a robust, headless…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
