@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/</loc>
+      <lastmod>2026-07-23T17:11:00Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/sage-view-composers-taming-your-custom-post-type-data-for-000042/</loc>
       <lastmod>2026-07-23T17:10:35Z</lastmod>
       <changefreq>monthly</changefreq>

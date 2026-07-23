@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates</title>
+      <link href="https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/</id>
+      <updated>2026-07-23T17:11:00Z</updated>
+      <summary>If you’ve ever found yourself wrestling with a WordPress theme that feels less like a codebase and more like a spaghetti monster made of `WP_Query` loops…</summary>
+    </entry><entry>
       <title>Sage View Composers: Taming Your Custom Post Type Data for Cleaner Templates</title>
       <link href="https://chrisalberto.site/blog/sage-view-composers-taming-your-custom-post-type-data-for-000042/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/sage-view-composers-taming-your-custom-post-type-data-for-000042/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/ditch-the-bloat-why-vanilla-wordpress-custom-blocks-and-000028/</id>
       <updated>2026-07-19T17:23:50Z</updated>
       <summary>Let&#39;s cut through the marketing fluff and get brutally honest about WordPress development.</summary>
-    </entry><entry>
-      <title>Architecting Headless WordPress: Next.js, REST, and Automated CI/CD with GitHub Actions</title>
-      <link href="https://chrisalberto.site/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/</id>
-      <updated>2026-07-18T17:00:46Z</updated>
-      <summary>My journey into modern web development quickly led me to question the traditional coupled WordPress setup.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

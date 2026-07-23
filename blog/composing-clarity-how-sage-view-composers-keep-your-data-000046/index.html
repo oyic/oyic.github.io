@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates — Christopher Alberto</title>
+<meta name="description" content="If you’ve ever found yourself wrestling with a WordPress theme that feels less like a codebase and more like a spaghetti monster made of `WP_Query` loops…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates" />
+<meta property="og:description" content="If you’ve ever found yourself wrestling with a WordPress theme that feels less like a codebase and more like a spaghetti monster made of `WP_Query` loops…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/cover.png" />
+<meta property="og:image:alt" content="Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates" />
+<meta property="article:published_time" content="2026-07-23T17:11:00Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/" />
+<meta property="twitter:title" content="Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates" />
+<meta property="twitter:description" content="If you’ve ever found yourself wrestling with a WordPress theme that feels less like a codebase and more like a spaghetti monster made of `WP_Query` loops…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/cover.png" />
+<meta property="twitter:image:alt" content="Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates",
+  "description": "If you’ve ever found yourself wrestling with a WordPress theme that feels less like a codebase and more like a spaghetti monster made of `WP_Query` loops…",
+  "image": "https://chrisalberto.site/assets/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/cover.png",
+  "datePublished": "2026-07-23T17:11:00Z",
+  "dateModified": "2026-07-23T17:11:00Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-23T17:11:00Z">July 24, 2026</time></div>
+    <h1 class="post-hero__title">Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/cover.png" alt="Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>If you’ve ever found yourself wrestling with a WordPress theme that feels less like a codebase and more like a spaghetti monster made of `WP_Query` loops embedded directly into `index.php`, then you probably understand my frustration. Or, worse, if you’ve had to dig through the inscrutable, database-bloating shortcodes of page builders like Divi or Elementor just to figure out how some data is *supposed* to appear on the frontend, you know the pain. That’s why I’m such a fervent advocate for Sage. It’s not just a theme; it’s a full-stack, developer-first framework that brings modern PHP development practices, an MVC-like architecture, and a huge sigh of relief to the WordPress ecosystem.</p>
+<p>Sage, powered by the bedrock of Acorn, gives us a clean slate. We get dependency injection, a robust service container, and the elegant simplicity of Blade for our templates. This means our templates become purely presentational, as they should be, completely devoid of complex logic or data retrieval. &#34;But how do you get your data to the template then?&#34; you might ask. That&#39;s where View Composers shine, and they&#39;re one of my favorite Sage features for keeping things tidy and testable.</p>
+<p>Let&#39;s imagine you&#39;re building a single post view. In a traditional WordPress theme, you might open `single.php` and immediately see `the_post();`, `setup_postdata()`, `get_post_meta()`, and a bunch of other WordPress functions all mixed in with your HTML. It&#39;s functional, sure, but it&#39;s also a tangled mess that makes future modifications or debugging a nightmare. With Sage, we tackle this by separating the data retrieval from the view itself.</p>
+<p>First, your Blade template, say `resources/views/single.blade.php` (or a partial like `resources/views/partials/content-single.blade.php`), becomes incredibly lean. It just assumes the data it needs is *already there*. It might look something like this:</p>
+<p>@php($post = $post ?? get_post())
+&lt;h1&gt;{{ $post-&gt;post_title }}&lt;/h1&gt;
+&lt;p&gt;{{ $post-&gt;post_content }}&lt;/p&gt;
+&lt;p&gt;Published: {{ $post-&gt;post_date }}&lt;/p&gt;
+@if($author)
+    &lt;p&gt;By: {{ $author }}&lt;/p&gt;
+@endif</p>
+<p>Notice how clean that is? There&#39;s no `WP_Query`, no `get_the_author_meta()`. It&#39;s just displaying variables. The magic happens in a View Composer. We can create a composer, for example, at `app/View/Composers/SinglePostComposer.php`:</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Query;</p>
+<p>class SinglePostComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;single&#39;,
+        &#39;partials.content-single&#39;,
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @return array
+     */
+    public function with()
+    {
+        return [
+            &#39;post&#39; =&gt; get_post(),
+            &#39;author&#39; =&gt; get_the_author_meta(&#39;display_name&#39;, get_post()-&gt;post_author),
+            &#39;related_posts&#39; =&gt; $this-&gt;getRelatedPosts(),
+        ];
+    }</p>
+<p>/**
+     * Example method to retrieve related posts.
+     *
+     * @return array
+     */
+    protected function getRelatedPosts()
+    {
+        $current_post_id = get_post()-&gt;ID;
+        $args = [
+            &#39;post_type&#39; =&gt; &#39;post&#39;,
+            &#39;post__not_in&#39; =&gt; [$current_post_id],
+            &#39;posts_per_page&#39; =&gt; 3,
+            // Add more specific query args here
+        ];
+        return (new WP_Query($args))-&gt;posts;
+    }
+}</p>
+<p>Now, all we need to do is register this composer. The simplest way for theme-specific composers is to add it to your `app/setup.php` file, within the `config(&#39;view.composers&#39;)` array:</p>
+<p>&#39;view.composers&#39; =&gt; [
+    App\View\Composers\SinglePostComposer::class =&gt; [&#39;single&#39;, &#39;partials.content-single&#39;],
+],</p>
+<p>With this setup, whenever the `single` view or the `partials.content-single` partial is rendered, our `SinglePostComposer` springs into action. It fetches the current post object, the author&#39;s display name, and even an example list of related posts, and makes them available as `$post`, `$author`, and `$related_posts` variables directly within your Blade templates.</p>
+<p>The beauty of this approach is multifaceted. Your templates are truly presentational, making them incredibly easy to read, understand, and for frontend developers to work with without fear of breaking backend logic. Your data fetching logic is centralized, reusable, and much easier to test. If you need to change how related posts are queried, you do it in one place within your composer, not scattered across multiple template files. This level of organization and separation of concerns is exactly what elevates Sage development far above the traditional WordPress spaghetti bowl, making our lives as developers genuinely more enjoyable and our codebases exponentially more maintainable.</p>
+<p>This approach means our application structure is clear and predictable. No more digging through page builder shortcodes or arcane WordPress loops just to figure out what data is being displayed. With Sage and View Composers, the data flows cleanly, the templates stay lean, and development becomes a joy.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
