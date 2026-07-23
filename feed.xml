@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Sage View Composers: Taming Your Custom Post Type Data for Cleaner Templates</title>
+      <link href="https://chrisalberto.site/blog/sage-view-composers-taming-your-custom-post-type-data-for-000042/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/sage-view-composers-taming-your-custom-post-type-data-for-000042/</id>
+      <updated>2026-07-23T17:10:35Z</updated>
+      <summary>If you’ve ever found yourself sifting through a WordPress theme’s template-parts directory, only to encounter a spaghetti mess of WP_Query calls interspersed…</summary>
+    </entry><entry>
       <title>Crafting Reusable Content Blocks: ACF Pro Flexible Content with Twig Components</title>
       <link href="https://chrisalberto.site/blog/crafting-reusable-content-blocks-acf-pro-flexible-content-000045/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-reusable-content-blocks-acf-pro-flexible-content-000045/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/architecting-headless-wordpress-next-js-rest-and-automated-000020/</id>
       <updated>2026-07-18T17:00:46Z</updated>
       <summary>My journey into modern web development quickly led me to question the traditional coupled WordPress setup.</summary>
-    </entry><entry>
-      <title>Ditching Divi: Why I Code My WordPress Themes From Scratch</title>
-      <link href="https://chrisalberto.site/blog/ditching-divi-why-i-code-my-wordpress-themes-from-scratch-000021/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/ditching-divi-why-i-code-my-wordpress-themes-from-scratch-000021/</id>
-      <updated>2026-07-18T16:40:46Z</updated>
-      <summary>My journey with WordPress began, like many, with the seductive promise of visual drag-and-drop.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
