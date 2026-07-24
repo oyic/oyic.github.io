@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Bringing Order to Chaos: How Sage View Composers Keep Your Templates Pristine</title>
+      <link href="https://chrisalberto.site/blog/bringing-order-to-chaos-how-sage-view-composers-keep-your-000050/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/bringing-order-to-chaos-how-sage-view-composers-keep-your-000050/</id>
+      <updated>2026-07-24T17:10:39Z</updated>
+      <summary>As a developer, I’ve spent countless hours wrangling WordPress themes that treat data logic and presentation as an inseparable mess.</summary>
+    </entry><entry>
       <title>Crafting a Flexible Call-to-Action with FlyntWP Components and ACF</title>
       <link href="https://chrisalberto.site/blog/crafting-a-flexible-call-to-action-with-flyntwp-components-000049/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-a-flexible-call-to-action-with-flyntwp-components-000049/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/building-modern-wordpress-why-i-chose-sage-over-page-000027/</id>
       <updated>2026-07-20T08:10:23Z</updated>
       <summary>For years, the WordPress development landscape felt like a compromise.</summary>
-    </entry><entry>
-      <title>FlyntWP: My Go-To for Building Lightning-Fast, Bloat-Free WordPress Sites</title>
-      <link href="https://chrisalberto.site/blog/flyntwp-my-go-to-for-building-lightning-fast-bloat-free-000026/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/flyntwp-my-go-to-for-building-lightning-fast-bloat-free-000026/</id>
-      <updated>2026-07-20T08:01:21Z</updated>
-      <summary>I’ve spent years in the WordPress development trenches, and like many of you, I’ve wrestled with the promise and frustration of low-code page builders.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

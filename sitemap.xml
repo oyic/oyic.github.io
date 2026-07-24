@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/bringing-order-to-chaos-how-sage-view-composers-keep-your-000050/</loc>
+      <lastmod>2026-07-24T17:10:39Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/crafting-a-flexible-call-to-action-with-flyntwp-components-000049/</loc>
       <lastmod>2026-07-24T17:00:45Z</lastmod>
       <changefreq>monthly</changefreq>
