@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/exposing-curated-data-building-authenticated-custom-rest-000043/</loc>
+      <lastmod>2026-07-24T03:00:39Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/</loc>
       <lastmod>2026-07-23T17:11:00Z</lastmod>
       <changefreq>monthly</changefreq>
