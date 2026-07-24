@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting a Flexible Call-to-Action with FlyntWP Components and ACF</title>
+      <link href="https://chrisalberto.site/blog/crafting-a-flexible-call-to-action-with-flyntwp-components-000049/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-a-flexible-call-to-action-with-flyntwp-components-000049/</id>
+      <updated>2026-07-24T17:00:45Z</updated>
+      <summary>I&#39;ve been working with WordPress for years, and like many of you, I&#39;ve seen the rise and fall of various approaches to building sites.</summary>
+    </entry><entry>
       <title>Guardrails, Not Gridlock: Why Custom Themes Prevent Design Disasters</title>
       <link href="https://chrisalberto.site/blog/guardrails-not-gridlock-why-custom-themes-prevent-design-000044/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/guardrails-not-gridlock-why-custom-themes-prevent-design-000044/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/flyntwp-my-go-to-for-building-lightning-fast-bloat-free-000026/</id>
       <updated>2026-07-20T08:01:21Z</updated>
       <summary>I’ve spent years in the WordPress development trenches, and like many of you, I’ve wrestled with the promise and frustration of low-code page builders.</summary>
-    </entry><entry>
-      <title>Ditch the Drag-and-Drop: Why Custom WordPress Themes Reign Supreme</title>
-      <link href="https://chrisalberto.site/blog/ditch-the-drag-and-drop-why-custom-wordpress-themes-reign-000025/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/ditch-the-drag-and-drop-why-custom-wordpress-themes-reign-000025/</id>
-      <updated>2026-07-20T05:01:18Z</updated>
-      <summary>There’s no denying the immediate allure of a WordPress page builder.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
