@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Secure, Optimized Custom REST Endpoints in WordPress</title>
+      <link href="https://chrisalberto.site/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/</id>
+      <updated>2026-07-24T03:01:11Z</updated>
+      <summary>When you&#39;re pushing WordPress beyond a traditional CMS, especially into the realm of headless architectures or integrating with external services, crafting…</summary>
+    </entry><entry>
       <title>Exposing Curated Data: Building Authenticated Custom REST API Endpoints in WordPress</title>
       <link href="https://chrisalberto.site/blog/exposing-curated-data-building-authenticated-custom-rest-000043/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/exposing-curated-data-building-authenticated-custom-rest-000043/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/decoupling-wordpress-building-a-headless-frontend-with-next-000024/</id>
       <updated>2026-07-20T04:56:21Z</updated>
       <summary>We often think of WordPress as a monolithic platform, a backend and frontend tightly coupled, dictating how our content is presented.</summary>
-    </entry><entry>
-      <title>Reclaim Your WordPress: Why Custom Code Obliterates Bloated Builders</title>
-      <link href="https://chrisalberto.site/blog/reclaim-your-wordpress-why-custom-code-obliterates-bloated-000029/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/reclaim-your-wordpress-why-custom-code-obliterates-bloated-000029/</id>
-      <updated>2026-07-19T17:44:50Z</updated>
-      <summary>I’ve seen it countless times: a client needs a WordPress site, and the quickest path seems to be a drag-and-drop builder like Elementor or Divi.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

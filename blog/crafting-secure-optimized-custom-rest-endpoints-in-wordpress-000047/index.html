@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting Secure, Optimized Custom REST Endpoints in WordPress — Christopher Alberto</title>
+<meta name="description" content="When you&#39;re pushing WordPress beyond a traditional CMS, especially into the realm of headless architectures or integrating with external services, crafting…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting Secure, Optimized Custom REST Endpoints in WordPress" />
+<meta property="og:description" content="When you&#39;re pushing WordPress beyond a traditional CMS, especially into the realm of headless architectures or integrating with external services, crafting…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/cover.png" />
+<meta property="og:image:alt" content="Crafting Secure, Optimized Custom REST Endpoints in WordPress" />
+<meta property="article:published_time" content="2026-07-24T03:01:11Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/" />
+<meta property="twitter:title" content="Crafting Secure, Optimized Custom REST Endpoints in WordPress" />
+<meta property="twitter:description" content="When you&#39;re pushing WordPress beyond a traditional CMS, especially into the realm of headless architectures or integrating with external services, crafting…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/cover.png" />
+<meta property="twitter:image:alt" content="Crafting Secure, Optimized Custom REST Endpoints in WordPress" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting Secure, Optimized Custom REST Endpoints in WordPress",
+  "description": "When you&#39;re pushing WordPress beyond a traditional CMS, especially into the realm of headless architectures or integrating with external services, crafting…",
+  "image": "https://chrisalberto.site/assets/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/cover.png",
+  "datePublished": "2026-07-24T03:01:11Z",
+  "dateModified": "2026-07-24T03:01:11Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-24T03:01:11Z">July 24, 2026</time></div>
+    <h1 class="post-hero__title">Crafting Secure, Optimized Custom REST Endpoints in WordPress</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/cover.png" alt="Crafting Secure, Optimized Custom REST Endpoints in WordPress" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>When you&#39;re pushing WordPress beyond a traditional CMS, especially into the realm of headless architectures or integrating with external services, crafting your own REST API endpoints becomes essential. Standard WordPress REST API routes are powerful, but sometimes you need a highly optimized, custom-tailored endpoint that serves precisely what&#39;s needed, with specific authentication rules, for a particular consumer application. Today, I want to walk through creating such an endpoint, focusing on efficiency and a simple bearer token authentication scheme.</p>
+<p>Imagine we have a custom post type named `deal` and we need to expose a very specific subset of its data for a mobile app&#39;s &#34;Deals of the Day&#34; widget. This widget only requires the deal&#39;s title, a featured image URL, and a custom `deal_price` meta field. Crucially, it must be secured with a bearer token that only our mobile app possesses.</p>
+<p>First, let&#39;s register our custom REST route. We’ll do this within a plugin or theme&#39;s `functions.php` file, hooked into `rest_api_init`.</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-app/v1&#39;, &#39;/deals-of-day&#39;, [
+        &#39;methods&#39;             =&gt; &#39;GET&#39;,
+        &#39;callback&#39;            =&gt; &#39;my_app_get_deals_of_day&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_app_check_deals_of_day_permission&#39;,
+        &#39;args&#39;                =&gt; [], // No specific arguments for this simple endpoint
+    ] );
+} );</p>
+<p>Here, `&#39;my-app/v1&#39;` is our namespace, preventing clashes with other plugins, and `/deals-of-day` is our route. We specify a `GET` method, our data retrieval callback, and a crucial `permission_callback`.</p>
+<p>Now, for the data retrieval callback, `my_app_get_deals_of_day`. This function will query for our `deal` posts, extract the specific fields, and format them into an easily consumable array.</p>
+<p>function my_app_get_deals_of_day( WP_REST_Request $request ) {
+    $args = [
+        &#39;post_type&#39;      =&gt; &#39;deal&#39;,
+        &#39;post_status&#39;    =&gt; &#39;publish&#39;,
+        &#39;posts_per_page&#39; =&gt; 10, // Limit to 10 deals
+        &#39;meta_query&#39;     =&gt; [ // Only show deals with a price set
+            [
+                &#39;key&#39;     =&gt; &#39;deal_price&#39;,
+                &#39;compare&#39; =&gt; &#39;EXISTS&#39;,
+            ],
+        ],
+        &#39;orderby&#39;        =&gt; &#39;date&#39;,
+        &#39;order&#39;          =&gt; &#39;DESC&#39;,
+    ];</p>
+<p>$deals_query = new WP_Query( $args );
+    $deals_data  = [];</p>
+<p>if ( $deals_query-&gt;have_posts() ) {
+        while ( $deals_query-&gt;have_posts() ) {
+            $deals_query-&gt;the_post();
+            $deal_id = get_the_ID();</p>
+<p>$deals_data[] = [
+                &#39;id&#39;         =&gt; $deal_id,
+                &#39;title&#39;      =&gt; get_the_title(),
+                &#39;image_url&#39;  =&gt; get_the_post_thumbnail_url( $deal_id, &#39;medium&#39; ),
+                &#39;deal_price&#39; =&gt; get_post_meta( $deal_id, &#39;deal_price&#39;, true ),
+            ];
+        }
+        wp_reset_postdata();
+    }</p>
+<p>return new WP_REST_Response( $deals_data, 200 );
+}</p>
+<p>Notice how we use `WP_Query` to fetch only published `deal` posts, limiting the count and ensuring only deals with a `deal_price` are included. We then iterate, extracting `id`, `title`, `image_url` (using &#39;medium&#39; size for efficiency), and the `deal_price` meta field. This keeps the payload lean and relevant to our widget.</p>
+<p>The final, and arguably most critical, piece is the `my_app_check_deals_of_day_permission` callback. This function dictates who can access our endpoint. For our mobile app, we&#39;ll implement a simple bearer token check.</p>
+<p>function my_app_check_deals_of_day_permission( WP_REST_Request $request ) {
+    $auth_header = $request-&gt;get_header( &#39;Authorization&#39; );</p>
+<p>// Define your secret token. In a real application, fetch this securely.
+    // For this example, we&#39;ll use a constant defined in wp-config.php or environment.
+    if ( ! defined( &#39;MY_APP_API_TOKEN&#39; ) ) {
+        error_log( &#39;MY_APP_API_TOKEN is not defined. Please define it in wp-config.php or environment.&#39; );
+        return false;
+    }</p>
+<p>$expected_token = &#39;Bearer &#39; . MY_APP_API_TOKEN;</p>
+<p>if ( empty( $auth_header ) || $auth_header !== $expected_token ) {
+        return new WP_Error(
+            &#39;rest_forbidden&#39;,
+            &#39;You are not authorized to access this resource.&#39;,
+            [ &#39;status&#39; =&gt; 401 ]
+        );
+    }</p>
+<p>return true;
+}</p>
+<p>In a production environment, `MY_APP_API_TOKEN` would be a strong, randomly generated string, securely stored outside your version control (e.g., as an environment variable or in `wp-config.php` via an environment-specific setup). The client (our mobile app) would send this token in the `Authorization` header as `Bearer &lt;token&gt;`. If the header is missing or the token doesn&#39;t match, access is denied with a 401 Unauthorized status.</p>
+<p>This approach gives you fine-grained control over your API. You define exactly what data is returned, minimizing overhead, and implement precise authentication logic tailored to your specific application’s needs. This is the power of extending the WordPress REST API, transforming it into a bespoke backend for your most demanding projects.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
