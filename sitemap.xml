@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/beyond-drag-and-drop-guardrails-for-sanity-in-wordpress-000052/</loc>
+      <lastmod>2026-07-25T05:41:40Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/</loc>
       <lastmod>2026-07-25T03:02:38Z</lastmod>
       <changefreq>monthly</changefreq>
