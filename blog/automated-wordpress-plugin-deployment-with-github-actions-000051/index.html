@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Automated WordPress Plugin Deployment with GitHub Actions and WP-CLI — Christopher Alberto</title>
+<meta name="description" content="Building robust WordPress applications often involves custom plugins and themes that require careful deployment." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Automated WordPress Plugin Deployment with GitHub Actions and WP-CLI" />
+<meta property="og:description" content="Building robust WordPress applications often involves custom plugins and themes that require careful deployment." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/cover.png" />
+<meta property="og:image:alt" content="Automated WordPress Plugin Deployment with GitHub Actions and WP-CLI" />
+<meta property="article:published_time" content="2026-07-25T03:02:38Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/" />
+<meta property="twitter:title" content="Automated WordPress Plugin Deployment with GitHub Actions and WP-CLI" />
+<meta property="twitter:description" content="Building robust WordPress applications often involves custom plugins and themes that require careful deployment." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/cover.png" />
+<meta property="twitter:image:alt" content="Automated WordPress Plugin Deployment with GitHub Actions and WP-CLI" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Automated WordPress Plugin Deployment with GitHub Actions and WP-CLI",
+  "description": "Building robust WordPress applications often involves custom plugins and themes that require careful deployment.",
+  "image": "https://chrisalberto.site/assets/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/cover.png",
+  "datePublished": "2026-07-25T03:02:38Z",
+  "dateModified": "2026-07-25T03:02:38Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-25T03:02:38Z">July 25, 2026</time></div>
+    <h1 class="post-hero__title">Automated WordPress Plugin Deployment with GitHub Actions and WP-CLI</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/cover.png" alt="Automated WordPress Plugin Deployment with GitHub Actions and WP-CLI" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>Building robust WordPress applications often involves custom plugins and themes that require careful deployment. Manually FTPing files or even performing `git pull` operations directly on a server can be tedious, error-prone, and lack the necessary audit trail. This is where a proper CI/CD pipeline shines, allowing us to automate deployments directly from our version control system. Today, I want to walk through setting up a streamlined deployment pipeline for a custom WordPress plugin using GitHub Actions and WP-CLI.</p>
+<p>Our goal is simple: whenever we push changes to the `main` branch of our custom plugin&#39;s GitHub repository, we want those changes to be automatically deployed to our staging server. This ensures our staging environment is always up-to-date with the latest code, ready for testing.</p>
+<p>First, let&#39;s prepare our staging server. We&#39;ll need a user with SSH access that has write permissions to the `wp-content/plugins` directory of your WordPress installation. This user should also have `wp-cli` installed and accessible in its PATH. For security, it&#39;s best to create a dedicated deployment user on your server and configure it for key-based authentication, disabling password login. We&#39;ll generate an SSH key pair for this user; the public key goes into `~/.ssh/authorized_keys` on the server, and the private key will be stored securely in GitHub Secrets.</p>
+<p>Now, let&#39;s craft the GitHub Actions workflow. Create a file named `.github/workflows/deploy.yml` in your plugin&#39;s repository.</p>
+<p>```yaml
+name: Deploy Plugin to Staging</p>
+<p>on:
+  push:
+    branches:
+      - main</p>
+<p>jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3</p>
+<p>- name: Setup SSH
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}</p>
+<p>- name: Deploy plugin files via rsync
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} &gt;&gt; ~/.ssh/known_hosts
+          rsync -avz --exclude &#39;.git/&#39; --exclude &#39;.github/&#39; --exclude &#39;node_modules/&#39; \
+            ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PLUGIN_PATH }}</p>
+<p>- name: Flush WordPress cache
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} &#34;cd ${{ secrets.REMOTE_WP_ROOT_PATH }} &amp;&amp; wp cache flush&#34;
+```</p>
+<p>Let&#39;s break down this YAML. The `on: push` block triggers the workflow whenever changes are pushed to the `main` branch. The `deploy` job runs on `ubuntu-latest`.</p>
+<p>1.  **Checkout code**: This step simply checks out your plugin&#39;s repository onto the GitHub Actions runner.
+2.  **Setup SSH**: Here, we use a community action to set up the SSH agent with our private key. The `SSH_PRIVATE_KEY` secret will hold the private key content we generated earlier.
+3.  **Deploy plugin files via rsync**: This is the core deployment step.
+    *   `mkdir -p ~/.ssh` creates the SSH directory if it doesn&#39;t exist.
+    *   `ssh-keyscan` adds the host key of your staging server to the GitHub Actions runner&#39;s `known_hosts` file, preventing &#34;Are you sure you want to continue connecting?&#34; prompts during `rsync` and `ssh` commands. `SSH_HOST` is another secret storing your server&#39;s IP address or hostname.
+    *   `rsync` copies your plugin&#39;s entire directory (excluding `.git/`, `.github/`, and `node_modules/` to save bandwidth and prevent deploying unnecessary development files) to the `REMOTE_PLUGIN_PATH` on your server. `SSH_USER` holds the deployment username, and `REMOTE_PLUGIN_PATH` should be something like `/var/www/html/wp-content/plugins/your-plugin-slug`.
+4.  **Flush WordPress cache**: After updating plugin files, it&#39;s crucial to flush any object or persistent caches WordPress might be using. We SSH back into the server, navigate to the WordPress root (`REMOTE_WP_ROOT_PATH`), and execute `wp cache flush` using WP-CLI.</p>
+<p>To secure your sensitive information, head to your GitHub repository&#39;s Settings &gt; Secrets &gt; Actions and add the following repository secrets:
+*   `SSH_PRIVATE_KEY`: The *entire* private SSH key (including `-----BEGIN OPENSSH PRIVATE KEY-----` and `-----END OPENSSH PRIVATE KEY-----`).
+*   `SSH_HOST`: Your staging server&#39;s hostname or IP address (e.g., `your-staging-server.com`).
+*   `SSH_USER`: The deployment username on your staging server (e.g., `deployuser`).
+*   `REMOTE_PLUGIN_PATH`: The absolute path to your plugin&#39;s directory on the staging server (e.g., `/var/www/html/wp-content/plugins/my-custom-plugin`).
+*   `REMOTE_WP_ROOT_PATH`: The absolute path to your WordPress root directory on the staging server (e.g., `/var/www/html`).</p>
+<p>With this setup, every push to your `main` branch will automatically trigger the workflow, deploy your plugin, and flush the cache, providing a reliable and efficient deployment process. This foundation can be extended with additional steps like running `composer install` for PHP dependencies or `npm build` for frontend assets before `rsync`, but for a pure backend plugin, this minimal setup is robust and effective.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
