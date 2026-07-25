@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Reusable Image Modules in FlyntWP with Twig and ACF</title>
+      <link href="https://chrisalberto.site/blog/crafting-reusable-image-modules-in-flyntwp-with-twig-and-acf-000053/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-reusable-image-modules-in-flyntwp-with-twig-and-acf-000053/</id>
+      <updated>2026-07-25T17:01:27Z</updated>
+      <summary>When you’re building modern WordPress sites, the last thing you want is a slow, bloated experience, either for yourself as a developer or for your end-users.</summary>
+    </entry><entry>
       <title>Beyond Drag-and-Drop: Guardrails for Sanity in WordPress Content Editing</title>
       <link href="https://chrisalberto.site/blog/beyond-drag-and-drop-guardrails-for-sanity-in-wordpress-000052/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/beyond-drag-and-drop-guardrails-for-sanity-in-wordpress-000052/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/sculpting-maintainable-wordpress-why-sage-is-my-go-to-for-000032/</id>
       <updated>2026-07-21T08:10:20Z</updated>
       <summary>I&#39;ve been building WordPress sites for years, and I&#39;ve seen firsthand how quickly a project can spiral into an unmaintainable mess.</summary>
-    </entry><entry>
-      <title>Taming WordPress Bloat: Why I Choose FlyntWP for Lean, Lightning-Fast Builds</title>
-      <link href="https://chrisalberto.site/blog/taming-wordpress-bloat-why-i-choose-flyntwp-for-lean-000031/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/taming-wordpress-bloat-why-i-choose-flyntwp-for-lean-000031/</id>
-      <updated>2026-07-21T08:00:10Z</updated>
-      <summary>I&#39;ve been in the WordPress trenches for a long time, and like many of you, I’ve wrestled with the promise and the peril of page builders.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
