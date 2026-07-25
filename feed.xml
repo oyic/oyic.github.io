@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Taming Your WordPress Data with Sage View Composers</title>
+      <link href="https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/</id>
+      <updated>2026-07-25T17:11:29Z</updated>
+      <summary>One of the biggest frustrations I hear from developers dealing with legacy WordPress themes, or even modern page-builder monstrosities like Divi or Elementor,…</summary>
+    </entry><entry>
       <title>Crafting Reusable Image Modules in FlyntWP with Twig and ACF</title>
       <link href="https://chrisalberto.site/blog/crafting-reusable-image-modules-in-flyntwp-with-twig-and-acf-000053/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-reusable-image-modules-in-flyntwp-with-twig-and-acf-000053/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/locking-down-a-custom-rest-endpoint-the-auth-mistake-i-made-000039/</id>
       <updated>2026-07-21T18:10:35Z</updated>
       <summary>I found out a custom REST endpoint I&#39;d built for a client&#39;s mobile app was wide open to the public internet when a routine log review turned up a request from…</summary>
-    </entry><entry>
-      <title>Sculpting Maintainable WordPress: Why Sage is My Go-To for Clean Code</title>
-      <link href="https://chrisalberto.site/blog/sculpting-maintainable-wordpress-why-sage-is-my-go-to-for-000032/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/sculpting-maintainable-wordpress-why-sage-is-my-go-to-for-000032/</id>
-      <updated>2026-07-21T08:10:20Z</updated>
-      <summary>I&#39;ve been building WordPress sites for years, and I&#39;ve seen firsthand how quickly a project can spiral into an unmaintainable mess.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Taming Your WordPress Data with Sage View Composers — Christopher Alberto</title>
+<meta name="description" content="One of the biggest frustrations I hear from developers dealing with legacy WordPress themes, or even modern page-builder monstrosities like Divi or Elementor,…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Taming Your WordPress Data with Sage View Composers" />
+<meta property="og:description" content="One of the biggest frustrations I hear from developers dealing with legacy WordPress themes, or even modern page-builder monstrosities like Divi or Elementor,…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/taming-your-wordpress-data-with-sage-view-composers-000054/cover.png" />
+<meta property="og:image:alt" content="Taming Your WordPress Data with Sage View Composers" />
+<meta property="article:published_time" content="2026-07-25T17:11:29Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/" />
+<meta property="twitter:title" content="Taming Your WordPress Data with Sage View Composers" />
+<meta property="twitter:description" content="One of the biggest frustrations I hear from developers dealing with legacy WordPress themes, or even modern page-builder monstrosities like Divi or Elementor,…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/taming-your-wordpress-data-with-sage-view-composers-000054/cover.png" />
+<meta property="twitter:image:alt" content="Taming Your WordPress Data with Sage View Composers" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Taming Your WordPress Data with Sage View Composers",
+  "description": "One of the biggest frustrations I hear from developers dealing with legacy WordPress themes, or even modern page-builder monstrosities like Divi or Elementor,…",
+  "image": "https://chrisalberto.site/assets/blog/taming-your-wordpress-data-with-sage-view-composers-000054/cover.png",
+  "datePublished": "2026-07-25T17:11:29Z",
+  "dateModified": "2026-07-25T17:11:29Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-25T17:11:29Z">July 26, 2026</time></div>
+    <h1 class="post-hero__title">Taming Your WordPress Data with Sage View Composers</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/taming-your-wordpress-data-with-sage-view-composers-000054/cover.png" alt="Taming Your WordPress Data with Sage View Composers" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>One of the biggest frustrations I hear from developers dealing with legacy WordPress themes, or even modern page-builder monstrosities like Divi or Elementor, is the sheer unmaintainability of the codebase. You end up with database bloat, performance issues, and templates that are a chaotic mix of PHP logic and HTML. It&#39;s a nightmare to debug, scale, or hand off. That&#39;s why I champion Sage, the modern WordPress theme starter framework built on Laravel components. It fundamentally changes how you approach WordPress development, turning it into a structured, MVC-like experience.</p>
+<p>Sage, particularly with its integration of Blade templating and Acorn (which brings Laravel&#39;s dependency injection and other goodies to WordPress), forces a separation of concerns that is utterly refreshing. Instead of stuffing `WP_Query` calls and conditional logic directly into your HTML templates, Sage nudges you towards a much cleaner pattern. Your Blade templates should be exactly what they sound like: presentation-focused. They receive data, they display it. They don&#39;t fetch it, process it, or decide its ultimate shape.</p>
+<p>So, how do you get data into those pristine templates without polluting them? Enter View Composers. If you&#39;re familiar with Laravel, these are very similar to their counterparts there. A View Composer is essentially a class that prepares data for a specific view (or set of views) *before* that view is rendered. This is incredibly powerful because it keeps your data-fetching and manipulation logic entirely separate from your presentation layer. No more `while (have_posts()) : the_post();` loops cluttering your Blade files, or `global $post;` just to get some custom field data.</p>
+<p>Let me walk you through a common scenario. Imagine you have a custom post type called &#34;Service,&#34; and you want to display a list of all services on a dedicated &#34;Services&#34; page, which uses a specific page template, say `template-services.blade.php`. In a traditional WordPress theme, you might be tempted to put your `WP_Query` directly into that template file. It would work, but it would tightly couple your template to the data fetching logic, making it harder to read, test, and reuse.</p>
+<p>With Sage, we create a View Composer. I&#39;d typically place this in `app/View/Composers`. Let&#39;s call it `ServicesComposer.php`:</p>
+<p>&lt;?php</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Query;</p>
+<p>class ServicesComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;template-services&#39;,
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @return array
+     */
+    public function with()
+    {
+        return [
+            &#39;services&#39; =&gt; $this-&gt;getServices(),
+        ];
+    }</p>
+<p>/**
+     * Get all services custom post type.
+     *
+     * @return array
+     */
+    protected function getServices()
+    {
+        $query = new WP_Query([
+            &#39;post_type&#39;      =&gt; &#39;service&#39;,
+            &#39;posts_per_page&#39; =&gt; -1,
+            &#39;orderby&#39;        =&gt; &#39;title&#39;,
+            &#39;order&#39;          =&gt; &#39;ASC&#39;,
+        ]);</p>
+<p>return collect($query-&gt;posts)-&gt;map(function ($post) {
+            return [
+                &#39;id&#39;    =&gt; $post-&gt;ID,
+                &#39;title&#39; =&gt; get_the_title($post),
+                &#39;link&#39;  =&gt; get_permalink($post),
+                &#39;excerpt&#39; =&gt; get_the_excerpt($post),
+            ];
+        })-&gt;all();
+    }
+}</p>
+<p>Notice how clean this is. The `$views` property tells Sage which Blade templates this composer applies to. The `with()` method returns an array of data that will be automatically available to those views. Here, I&#39;m fetching all &#39;service&#39; custom post type posts, mapping them into a structured array, and making them available to the template as `$services`. Sage&#39;s Acorn integration provides `collect()`, which is Laravel&#39;s powerful collection utility, making data manipulation a breeze. Because this composer resides in `app/View/Composers`, Sage automatically discovers and registers it. No extra setup is needed!</p>
+<p>Now, our `resources/views/template-services.blade.php` becomes beautifully simple and purely presentational:</p>
+<p>@extends(&#39;layouts.app&#39;)</p>
+<p>@section(&#39;content&#39;)
+    &lt;div class=&#34;container mx-auto py-8&#34;&gt;
+        &lt;h1 class=&#34;text-3xl font-bold mb-6&#34;&gt;{{ App::title() }}&lt;/h1&gt;</p>
+<p>@if (! empty($services))
+            &lt;div class=&#34;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&#34;&gt;
+                @foreach ($services as $service)
+                    &lt;div class=&#34;bg-white p-6 rounded-lg shadow-md&#34;&gt;
+                        &lt;h2 class=&#34;text-xl font-semibold mb-2&#34;&gt;
+                            &lt;a href=&#34;{{ $service[&#39;link&#39;] }}&#34; class=&#34;text-blue-600 hover:underline&#34;&gt;{{ $service[&#39;title&#39;] }}&lt;/a&gt;
+                        &lt;/h2&gt;
+                        &lt;p class=&#34;text-gray-700&#34;&gt;{{ $service[&#39;excerpt&#39;] }}&lt;/p&gt;
+                    &lt;/div&gt;
+                @endforeach
+            &lt;/div&gt;
+        @else
+            &lt;p&gt;No services found at the moment. Please check back later!&lt;/p&gt;
+        @endif
+    &lt;/div&gt;
+@endsection</p>
+<p>The Blade template doesn&#39;t know *how* `$services` got there, only that it *is* there. It iterates over the `$services` array and displays each one. This separation makes your code much easier to read, debug, and maintain. If you need to change how services are queried (e.g., add pagination, filter by category), you only modify `ServicesComposer.php`. Your template remains untouched. If you want to change the HTML markup, you only touch `template-services.blade.php`. This is the essence of clean, maintainable code.</p>
+<p>Embracing Sage, especially features like View Composers, transforms WordPress development from a potentially chaotic scripting exercise into a structured, programmatic craft. You get a codebase that&#39;s a joy to work with, rather than an unmaintainable database bloat, and your templates become truly presentation-focused, exactly as they should be. It’s a game-changer for building robust, scalable WordPress applications.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
