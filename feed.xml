@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>FlyntWP&#39;s Secret Sauce: Composing Reusable Twig Button Components for Speed</title>
+      <link href="https://chrisalberto.site/blog/flyntwp-s-secret-sauce-composing-reusable-twig-button-000057/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/flyntwp-s-secret-sauce-composing-reusable-twig-button-000057/</id>
+      <updated>2026-07-26T17:08:29Z</updated>
+      <summary>If you&#39;ve spent any time in the WordPress ecosystem, you&#39;ve likely encountered the allure – and eventual frustration – of low-code page builders.</summary>
+    </entry><entry>
       <title>When Freedom Becomes Chaos: Guarding Design with Custom WordPress Themes</title>
       <link href="https://chrisalberto.site/blog/when-freedom-becomes-chaos-guarding-design-with-custom-000056/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/when-freedom-becomes-chaos-guarding-design-with-custom-000056/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/automating-wordpress-deploys-my-journey-from-ftp-to-github-000033/</id>
       <updated>2026-07-22T17:43:01Z</updated>
       <summary>I remember the dread of a Friday afternoon deploy.</summary>
-    </entry><entry>
-      <title>Streamlining WordPress Data with Sage View Composers: A Real-World Win</title>
-      <link href="https://chrisalberto.site/blog/streamlining-wordpress-data-with-sage-view-composers-a-real-000037/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/streamlining-wordpress-data-with-sage-view-composers-a-real-000037/</id>
-      <updated>2026-07-22T08:10:50Z</updated>
-      <summary>I&#39;ve wrestled with more WordPress themes than I care to count, and the persistent issue is always the same: getting data into templates without turning…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
