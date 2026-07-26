@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sage View Composers: Keeping Your Blade Templates Presentation-Pure — Christopher Alberto</title>
+<meta name="description" content="You’ve likely felt the frustration of building WordPress themes that quickly devolve into an unmaintainable tangle." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Sage View Composers: Keeping Your Blade Templates Presentation-Pure" />
+<meta property="og:description" content="You’ve likely felt the frustration of building WordPress themes that quickly devolve into an unmaintainable tangle." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/sage-view-composers-keeping-your-blade-templates-000058/cover.png" />
+<meta property="og:image:alt" content="Sage View Composers: Keeping Your Blade Templates Presentation-Pure" />
+<meta property="article:published_time" content="2026-07-26T17:29:16Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/" />
+<meta property="twitter:title" content="Sage View Composers: Keeping Your Blade Templates Presentation-Pure" />
+<meta property="twitter:description" content="You’ve likely felt the frustration of building WordPress themes that quickly devolve into an unmaintainable tangle." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/sage-view-composers-keeping-your-blade-templates-000058/cover.png" />
+<meta property="twitter:image:alt" content="Sage View Composers: Keeping Your Blade Templates Presentation-Pure" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Sage View Composers: Keeping Your Blade Templates Presentation-Pure",
+  "description": "You’ve likely felt the frustration of building WordPress themes that quickly devolve into an unmaintainable tangle.",
+  "image": "https://chrisalberto.site/assets/blog/sage-view-composers-keeping-your-blade-templates-000058/cover.png",
+  "datePublished": "2026-07-26T17:29:16Z",
+  "dateModified": "2026-07-26T17:29:16Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-26T17:29:16Z">July 27, 2026</time></div>
+    <h1 class="post-hero__title">Sage View Composers: Keeping Your Blade Templates Presentation-Pure</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/sage-view-composers-keeping-your-blade-templates-000058/cover.png" alt="Sage View Composers: Keeping Your Blade Templates Presentation-Pure" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>You’ve likely felt the frustration of building WordPress themes that quickly devolve into an unmaintainable tangle. The traditional WordPress loop, sprinkled with `get_posts` calls or even custom queries directly within your `index.php` or `page.php` files, quickly makes templates difficult to read, reuse, and debug. This is precisely the kind of programmatic chaos that Sage, built on top of Laravel&#39;s excellent componentry like Blade and Acorn, seeks to eliminate. We developers choose Sage because it brings an MVC-like structure to WordPress, letting us create clean, presentation-focused templates completely divorced from data retrieval logic.</p>
+<p>Today, I want to dive into a specific technique that embodies this philosophy: View Composers. If you&#39;ve ever found yourself asking, &#34;How do I get complex data into my Blade templates without cluttering them up?&#34;, then View Composers are your answer. They provide a powerful, centralized way to bind data to views, ensuring your Blade files remain purely responsible for displaying information, not fetching it. This is a stark contrast to the database bloat and code spaghetti often found in themes built with drag-and-drop page builders like Divi or Elementor, which, while offering quick visual builds, often sacrifice long-term maintainability and developer sanity.</p>
+<p>Let&#39;s consider a common scenario: you have a custom post type, say &#34;Projects,&#34; and you want to display a list of these projects on your home page, perhaps filtered by a custom taxonomy or other criteria. The &#34;old&#34; way, even with Blade, might involve something like this directly in `resources/views/partials/projects-list.blade.php`:</p>
+<p>@php
+    $args = [&#39;post_type&#39; =&gt; &#39;project&#39;, &#39;posts_per_page&#39; =&gt; 3];
+    $projects = get_posts($args);
+@endphp</p>
+<p>@if (!empty($projects))
+    &lt;section class=&#34;projects&#34;&gt;
+        &lt;h2&gt;Latest Projects&lt;/h2&gt;
+        @foreach ($projects as $project)
+            &lt;article&gt;
+                &lt;h3&gt;{{ $project-&gt;post_title }}&lt;/h3&gt;
+                &lt;p&gt;{{ $project-&gt;post_excerpt }}&lt;/p&gt;
+                &lt;a href=&#34;{{ get_permalink($project-&gt;ID) }}&#34;&gt;View Project&lt;/a&gt;
+            &lt;/article&gt;
+        @endforeach
+    &lt;/section&gt;
+@endif</p>
+<p>While this works, it pollutes your Blade template with data fetching logic. The template is no longer just about presentation; it&#39;s also about *how* to get the project data. This makes the `projects-list.blade.php` less reusable and harder to test.</p>
+<p>This is where View Composers shine. We can extract that data fetching logic into a dedicated class and *compose* it into our view when needed. First, let&#39;s create a new class, say `app/View/Composers/ProjectsComposer.php`:</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;</p>
+<p>class ProjectsComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     * @var array
+     */
+    protected static $views = [
+        &#39;partials.projects-list&#39;,
+        &#39;front-page&#39;, // Or any other view that needs this data
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     * @param  array  $data
+     * @return array
+     */
+    public function with()
+    {
+        $args = [
+            &#39;post_type&#39;      =&gt; &#39;project&#39;,
+            &#39;posts_per_page&#39; =&gt; 3,
+            &#39;orderby&#39;        =&gt; &#39;date&#39;,
+            &#39;order&#39;          =&gt; &#39;DESC&#39;,
+        ];</p>
+<p>return [
+            &#39;projects&#39; =&gt; get_posts($args),
+        ];
+    }
+}</p>
+<p>Now, instead of manually instantiating this composer, we register it with Acorn. The simplest way is to add it to your `config/view.php` file under the `composers` array, or for a more structured approach, within a service provider. Let’s stick to the `setup.php` for quick setup for this example, although a dedicated service provider offers more robust organization for complex applications. In `app/setup.php`, within the `add_filters()` function or directly after it:</p>
+<p>add_action(&#39;after_setup_theme&#39;, function () {
+    // Other theme setup...
+    Roots\view()-&gt;composer([&#39;partials.projects-list&#39;, &#39;front-page&#39;], \App\View\Composers\ProjectsComposer::class);
+});</p>
+<p>With this in place, your `resources/views/partials/projects-list.blade.php` becomes wonderfully simple and purely presentational:</p>
+<p>@if (!empty($projects))
+    &lt;section class=&#34;projects&#34;&gt;
+        &lt;h2&gt;Latest Projects&lt;/h2&gt;
+        @foreach ($projects as $project)
+            &lt;article&gt;
+                &lt;h3&gt;{{ $project-&gt;post_title }}&lt;/h3&gt;
+                &lt;p&gt;{{ $project-&gt;post_excerpt }}&lt;/p&gt;
+                &lt;a href=&#34;{{ get_permalink($project-&gt;ID) }}&#34;&gt;View Project&lt;/a&gt;
+            &lt;/article&gt;
+        @endforeach
+    &lt;/section&gt;
+@endif</p>
+<p>Notice how the `$projects` variable is simply *available* in the template. The template doesn&#39;t care *how* `$projects` got there; it just knows it needs to display them. This drastically improves readability, makes testing the data fetching logic (`ProjectsComposer`) separate from the presentation, and enhances the reusability of your Blade templates.</p>
+<p>This technique is a cornerstone of building robust, maintainable Sage themes. By consistently separating data retrieval from presentation using View Composers and Blade, you&#39;re not just writing code; you&#39;re crafting an organized, programmatic codebase that scales, adapts, and remains a joy to work with, rather than a constant source of frustration and refactoring. Embrace the Sage way, and free your templates from data-fetching burdens!</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

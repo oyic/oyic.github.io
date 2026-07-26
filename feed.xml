@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Sage View Composers: Keeping Your Blade Templates Presentation-Pure</title>
+      <link href="https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/</id>
+      <updated>2026-07-26T17:29:16Z</updated>
+      <summary>You’ve likely felt the frustration of building WordPress themes that quickly devolve into an unmaintainable tangle.</summary>
+    </entry><entry>
       <title>FlyntWP&#39;s Secret Sauce: Composing Reusable Twig Button Components for Speed</title>
       <link href="https://chrisalberto.site/blog/flyntwp-s-secret-sauce-composing-reusable-twig-button-000057/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/flyntwp-s-secret-sauce-composing-reusable-twig-button-000057/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/the-pest-test-that-saved-a-client-s-checkout-flow-000034/</id>
       <updated>2026-07-22T17:43:34Z</updated>
       <summary>A client&#39;s checkout flow silently started charging the wrong shipping rate for three days before anyone noticed, because a &#34;quick fix&#34; to a custom pricing…</summary>
-    </entry><entry>
-      <title>Automating WordPress Deploys: My Journey from FTP to GitHub Actions and WP-CLI</title>
-      <link href="https://chrisalberto.site/blog/automating-wordpress-deploys-my-journey-from-ftp-to-github-000033/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/automating-wordpress-deploys-my-journey-from-ftp-to-github-000033/</id>
-      <updated>2026-07-22T17:43:01Z</updated>
-      <summary>I remember the dread of a Friday afternoon deploy.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
