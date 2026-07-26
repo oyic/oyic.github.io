@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Building a Custom WordPress REST Endpoint for Tailored Data and Permissions — Christopher Alberto</title>
+<meta name="description" content="I&#39;ve spent a lot of time digging into WordPress at the infrastructure level, and one area that frequently comes up is the need for highly specific data…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Building a Custom WordPress REST Endpoint for Tailored Data and Permissions" />
+<meta property="og:description" content="I&#39;ve spent a lot of time digging into WordPress at the infrastructure level, and one area that frequently comes up is the need for highly specific data…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/cover.png" />
+<meta property="og:image:alt" content="Building a Custom WordPress REST Endpoint for Tailored Data and Permissions" />
+<meta property="article:published_time" content="2026-07-26T03:18:16Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/" />
+<meta property="twitter:title" content="Building a Custom WordPress REST Endpoint for Tailored Data and Permissions" />
+<meta property="twitter:description" content="I&#39;ve spent a lot of time digging into WordPress at the infrastructure level, and one area that frequently comes up is the need for highly specific data…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/cover.png" />
+<meta property="twitter:image:alt" content="Building a Custom WordPress REST Endpoint for Tailored Data and Permissions" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Building a Custom WordPress REST Endpoint for Tailored Data and Permissions",
+  "description": "I&#39;ve spent a lot of time digging into WordPress at the infrastructure level, and one area that frequently comes up is the need for highly specific data…",
+  "image": "https://chrisalberto.site/assets/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/cover.png",
+  "datePublished": "2026-07-26T03:18:16Z",
+  "dateModified": "2026-07-26T03:18:16Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-26T03:18:16Z">July 26, 2026</time></div>
+    <h1 class="post-hero__title">Building a Custom WordPress REST Endpoint for Tailored Data and Permissions</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/cover.png" alt="Building a Custom WordPress REST Endpoint for Tailored Data and Permissions" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>I&#39;ve spent a lot of time digging into WordPress at the infrastructure level, and one area that frequently comes up is the need for highly specific data interfaces. While the core WordPress REST API is incredibly powerful and covers most needs, there are times when its default endpoints for posts, pages, or even custom post types just don&#39;t cut it. You might need to combine data from various sources, apply complex transformations, or even expose calculated fields that don&#39;t exist directly in the database, all while enforcing precise authentication and authorization rules. This is where crafting your own custom REST endpoints becomes an essential tool in your advanced WordPress development toolkit.</p>
+<p>Imagine you have a `book` custom post type. The default `wp-json/wp/v2/book` endpoint provides a lot of data, often more than you need, and doesn&#39;t offer specific transformations. What if your mobile app only needs a book&#39;s title, author, and a dynamically generated &#34;availability status&#34; based on custom fields and inventory logic? Or perhaps you need to expose a list of specific book attributes to a third-party service that expects a very particular JSON structure. Trying to modify the default response using filters can quickly become messy and less performant than a purpose-built endpoint.</p>
+<p>Let’s walk through setting up a custom endpoint that serves a list of books, but specifically includes the title, author (from a custom field), and a dynamically calculated &#34;ISBN checksum&#34; value. This endpoint will also enforce that only logged-in users with the `read_private_posts` capability can access it.</p>
+<p>First, we register our custom route within our plugin or theme&#39;s `functions.php`. It&#39;s crucial to hook this into `rest_api_init`.</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-book-api/v1&#39;, &#39;/books-summary&#39;, array(
+        &#39;methods&#39;             =&gt; &#39;GET&#39;,
+        &#39;callback&#39;            =&gt; &#39;my_book_api_get_books_summary&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_book_api_check_permissions&#39;,
+        &#39;args&#39;                =&gt; array(
+            &#39;posts_per_page&#39; =&gt; array(
+                &#39;sanitize_callback&#39; =&gt; &#39;absint&#39;,
+                &#39;default&#39;           =&gt; 10,
+            ),
+        ),
+    ));
+});</p>
+<p>In this snippet, `my-book-api/v1` is our custom namespace, `books-summary` is the endpoint, and we&#39;ve specified a `GET` method. The `callback` points to the function that will generate our data, and `permission_callback` determines who can access it. We also added a simple `posts_per_page` argument with sanitization.</p>
+<p>Next, let’s define our `permission_callback` function. For this example, we’ll ensure only users who can `read_private_posts` are granted access. This grants fine-grained control over who sees your custom data.</p>
+<p>function my_book_api_check_permissions( WP_REST_Request $request ) {
+    return current_user_can( &#39;read_private_posts&#39; );
+}</p>
+<p>Finally, we implement the `callback` function, `my_book_api_get_books_summary`. This is where we perform our custom queries, data transformations, and any dynamic calculations.</p>
+<p>function my_book_api_get_books_summary( WP_REST_Request $request ) {
+    $args = array(
+        &#39;post_type&#39;      =&gt; &#39;book&#39;,
+        &#39;posts_per_page&#39; =&gt; $request-&gt;get_param( &#39;posts_per_page&#39; ),
+        &#39;post_status&#39;    =&gt; &#39;publish&#39;,
+    );</p>
+<p>$books_query = new WP_Query( $args );
+    $books_data  = array();</p>
+<p>if ( $books_query-&gt;have_posts() ) {
+        while ( $books_query-&gt;have_posts() ) {
+            $books_query-&gt;the_post();
+            $book_id     = get_the_ID();
+            $book_isbn   = get_post_meta( $book_id, &#39;_book_isbn&#39;, true ); // Assuming _book_isbn custom field
+            $book_author = get_post_meta( $book_id, &#39;_book_author&#39;, true ); // Assuming _book_author custom field</p>
+<p>// Simulate a dynamic ISBN checksum calculation
+            $isbn_checksum = &#39;N/A&#39;;
+            if ( ! empty( $book_isbn ) ) {
+                $isbn_checksum = substr( md5( $book_isbn ), 0, 8 ); // Simple pseudo-checksum for demo
+            }</p>
+<p>$books_data[] = array(
+                &#39;id&#39;            =&gt; $book_id,
+                &#39;title&#39;         =&gt; get_the_title(),
+                &#39;author&#39;        =&gt; $book_author,
+                &#39;isbn_checksum&#39; =&gt; $isbn_checksum,
+            );
+        }
+        wp_reset_postdata();
+    } else {
+        return new WP_REST_Response( array( &#39;message&#39; =&gt; &#39;No books found&#39; ), 404 );
+    }</p>
+<p>return new WP_REST_Response( $books_data, 200 );
+}</p>
+<p>With these pieces in place, accessing `yourdomain.com/wp-json/my-book-api/v1/books-summary` will now return a clean JSON array of books, each with its `id`, `title`, `author`, and the `isbn_checksum`. Crucially, this endpoint will only serve data if the requesting user passes our `read_private_posts` capability check, providing a robust security layer.</p>
+<p>The power of custom REST endpoints extends far beyond simple data exposure. You can design APIs that aggregate data from multiple CPTs, interact with external services, or perform complex business logic before returning a tailored response. This approach empowers you to build truly decoupled applications on top of WordPress, offering precise control over your data layer and unlocking new possibilities for integrations and front-end experiences. By mastering custom endpoint design, you transform WordPress from a content management system into a powerful data engine for any application.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Building a Custom WordPress REST Endpoint for Tailored Data and Permissions</title>
+      <link href="https://chrisalberto.site/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/</id>
+      <updated>2026-07-26T03:18:16Z</updated>
+      <summary>I&#39;ve spent a lot of time digging into WordPress at the infrastructure level, and one area that frequently comes up is the need for highly specific data…</summary>
+    </entry><entry>
       <title>Taming Your WordPress Data with Sage View Composers</title>
       <link href="https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/my-flyntwp-pattern-for-truly-reusable-cta-components-000036/</id>
       <updated>2026-07-22T08:00:50Z</updated>
       <summary>One of the most common headaches I used to run into on WordPress projects was the ubiquitous “Call to Action” block.</summary>
-    </entry><entry>
-      <title>Locking Down a Custom REST Endpoint: The Auth Mistake I Made So You Don&#39;t Have To</title>
-      <link href="https://chrisalberto.site/blog/locking-down-a-custom-rest-endpoint-the-auth-mistake-i-made-000039/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/locking-down-a-custom-rest-endpoint-the-auth-mistake-i-made-000039/</id>
-      <updated>2026-07-21T18:10:35Z</updated>
-      <summary>I found out a custom REST endpoint I&#39;d built for a client&#39;s mobile app was wide open to the public internet when a routine log review turned up a request from…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
