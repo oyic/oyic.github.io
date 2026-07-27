@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Designing Secure Custom REST Endpoints in WordPress for Internal Tools</title>
+      <link href="https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/</id>
+      <updated>2026-07-27T03:53:03Z</updated>
+      <summary>When architecting a WordPress backend for anything beyond a simple blog, there often comes a point where you need to expose specific data or functionality to…</summary>
+    </entry><entry>
       <title>Sage View Composers: Keeping Your Blade Templates Presentation-Pure</title>
       <link href="https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/why-every-custom-post-type-i-ship-now-comes-with-a-000038/</id>
       <updated>2026-07-22T17:59:27Z</updated>
       <summary>Two years into a client project, I renamed a post meta key from `_price_override` to `_manual_price_override` to make the intent clearer, pushed it, and…</summary>
-    </entry><entry>
-      <title>The Pest Test That Saved a Client&#39;s Checkout Flow</title>
-      <link href="https://chrisalberto.site/blog/the-pest-test-that-saved-a-client-s-checkout-flow-000034/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-pest-test-that-saved-a-client-s-checkout-flow-000034/</id>
-      <updated>2026-07-22T17:43:34Z</updated>
-      <summary>A client&#39;s checkout flow silently started charging the wrong shipping rate for three days before anyone noticed, because a &#34;quick fix&#34; to a custom pricing…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

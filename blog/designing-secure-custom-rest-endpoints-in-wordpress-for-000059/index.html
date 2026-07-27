@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Designing Secure Custom REST Endpoints in WordPress for Internal Tools — Christopher Alberto</title>
+<meta name="description" content="When architecting a WordPress backend for anything beyond a simple blog, there often comes a point where you need to expose specific data or functionality to…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Designing Secure Custom REST Endpoints in WordPress for Internal Tools" />
+<meta property="og:description" content="When architecting a WordPress backend for anything beyond a simple blog, there often comes a point where you need to expose specific data or functionality to…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/cover.png" />
+<meta property="og:image:alt" content="Designing Secure Custom REST Endpoints in WordPress for Internal Tools" />
+<meta property="article:published_time" content="2026-07-27T03:53:03Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/" />
+<meta property="twitter:title" content="Designing Secure Custom REST Endpoints in WordPress for Internal Tools" />
+<meta property="twitter:description" content="When architecting a WordPress backend for anything beyond a simple blog, there often comes a point where you need to expose specific data or functionality to…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/cover.png" />
+<meta property="twitter:image:alt" content="Designing Secure Custom REST Endpoints in WordPress for Internal Tools" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Designing Secure Custom REST Endpoints in WordPress for Internal Tools",
+  "description": "When architecting a WordPress backend for anything beyond a simple blog, there often comes a point where you need to expose specific data or functionality to…",
+  "image": "https://chrisalberto.site/assets/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/cover.png",
+  "datePublished": "2026-07-27T03:53:03Z",
+  "dateModified": "2026-07-27T03:53:03Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-07-27T03:53:03Z">July 27, 2026</time></div>
+    <h1 class="post-hero__title">Designing Secure Custom REST Endpoints in WordPress for Internal Tools</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/cover.png" alt="Designing Secure Custom REST Endpoints in WordPress for Internal Tools" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>When architecting a WordPress backend for anything beyond a simple blog, there often comes a point where you need to expose specific data or functionality to an external, non-WordPress application. This might be an internal dashboard, a mobile app, or another microservice. Relying solely on the default `/wp/v2` endpoints isn&#39;t always granular or secure enough for custom data structures or specific business logic. This is where designing your own custom REST endpoints becomes invaluable, particularly when focusing on robust authentication and precise permission handling.</p>
+<p>My approach for these scenarios typically involves defining a dedicated API namespace and leveraging WordPress&#39;s built-in `register_rest_route` function. Let&#39;s imagine we&#39;re building a plugin that manages internal &#34;Projects,&#34; defined as a custom post type. Our goal is to expose a list of these projects, but only to authorized internal applications, not publicly.</p>
+<p>First, we&#39;d register our custom post type, something like this:</p>
+<p>register_post_type( &#39;project&#39;,
+    array(
+        &#39;labels&#39;      =&gt; array(
+            &#39;name&#39;          =&gt; __( &#39;Projects&#39;, &#39;my-plugin-textdomain&#39; ),
+            &#39;singular_name&#39; =&gt; __( &#39;Project&#39;, &#39;my-plugin-textdomain&#39; ),
+        ),
+        &#39;public&#39;      =&gt; true,
+        &#39;has_archive&#39; =&gt; true,
+        &#39;show_in_rest&#39; =&gt; true, // Important for REST API
+        &#39;capabilities&#39; =&gt; array(
+            &#39;edit_post&#39;          =&gt; &#39;edit_projects&#39;,
+            &#39;read_post&#39;          =&gt; &#39;read_project&#39;,
+            &#39;delete_post&#39;        =&gt; &#39;delete_projects&#39;,
+            &#39;edit_posts&#39;         =&gt; &#39;edit_projects&#39;,
+            &#39;edit_others_posts&#39;  =&gt; &#39;edit_others_projects&#39;,
+            &#39;publish_posts&#39;      =&gt; &#39;publish_projects&#39;,
+            &#39;read_private_posts&#39; =&gt; &#39;read_private_projects&#39;,
+            &#39;create_posts&#39;       =&gt; &#39;edit_projects&#39;,
+        ),
+        &#39;map_meta_cap&#39; =&gt; true,
+    )
+);</p>
+<p>Note the `show_in_rest =&gt; true` which makes the default `/wp/v2/projects` endpoint available. While useful, it might expose more data than we need or in a format not optimized for our external app.</p>
+<p>Next, we define our custom endpoint within a unique namespace (e.g., `my-plugin/v1`). This prevents conflicts and clearly scopes our API.</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-plugin/v1&#39;, &#39;/projects&#39;, array(
+        &#39;methods&#39;             =&gt; &#39;GET&#39;,
+        &#39;callback&#39;            =&gt; &#39;my_plugin_get_projects_callback&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_plugin_projects_permission_check&#39;,
+        &#39;args&#39;                =&gt; array(
+            &#39;status&#39; =&gt; array(
+                &#39;sanitize_callback&#39; =&gt; &#39;sanitize_text_field&#39;,
+                &#39;validate_callback&#39; =&gt; function( $param, $request, $key ) {
+                    return in_array( $param, [ &#39;publish&#39;, &#39;draft&#39;, &#39;pending&#39; ] );
+                },
+                &#39;required&#39;          =&gt; false,
+                &#39;description&#39;       =&gt; &#39;Filter projects by status (publish, draft, pending).&#39;,
+                &#39;type&#39;              =&gt; &#39;string&#39;,
+            ),
+        ),
+    ) );
+} );</p>
+<p>The `callback` function, `my_plugin_get_projects_callback`, is where we fetch and format the project data:</p>
+<p>function my_plugin_get_projects_callback( WP_REST_Request $request ) {
+    $args = array(
+        &#39;post_type&#39;      =&gt; &#39;project&#39;,
+        &#39;posts_per_page&#39; =&gt; -1,
+        &#39;post_status&#39;    =&gt; $request-&gt;get_param( &#39;status&#39; ) ?: &#39;publish&#39;, // Default to &#39;publish&#39;
+    );</p>
+<p>$projects = get_posts( $args );
+    $data = [];
+    foreach ( $projects as $project ) {
+        $data[] = [
+            &#39;id&#39;    =&gt; $project-&gt;ID,
+            &#39;title&#39; =&gt; $project-&gt;post_title,
+            &#39;slug&#39;  =&gt; $project-&gt;post_name,
+            &#39;status&#39;=&gt; $project-&gt;post_status,
+            // Add other custom fields/meta as needed
+        ];
+    }</p>
+<p>return new WP_REST_Response( $data, 200 );
+}</p>
+<p>Now, for authentication. For external applications, relying on cookie-based authentication isn&#39;t practical. This is where Application Passwords shine. Introduced in WordPress 5.6, they allow specific applications to authenticate as a given user without needing their primary password. We define our `permission_callback`, `my_plugin_projects_permission_check`, to leverage this.</p>
+<p>function my_plugin_projects_permission_check( WP_REST_Request $request ) {
+    // Check if the current user (authenticated via Application Password) has the required capability
+    if ( current_user_can( &#39;manage_projects&#39; ) ) { // Or any custom capability specific to your needs
+        return true;
+    }
+    return new WP_REST_Response( &#39;You are not authorized to access this resource.&#39;, 401 );
+}</p>
+<p>To use this, an administrator would go to their WordPress profile, generate an Application Password, and provide it to the external application. The external application would then include it in the `Authorization` header as a Bearer token. For example, a `curl` request might look like this:</p>
+<p>curl -X GET \
+  http://yourdomain.com/wp-json/my-plugin/v1/projects \
+  -H &#39;Authorization: Basic &lt;base64-encoded username:application-password&gt;&#39;</p>
+<p>Remember, the &#34;Basic&#34; authentication header expects a base64-encoded string of `username:application-password`. You&#39;d typically create a specific user role and assign only the necessary custom capabilities (like `manage_projects` we defined for our CPT) to ensure granular access control. This combination of custom endpoints, granular permissions via `permission_callback`, and secure Application Passwords provides a robust, backend-focused solution for exposing WordPress data to the wider application ecosystem. It keeps our data secure, our API clean, and our WordPress core untouched by external application logic.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

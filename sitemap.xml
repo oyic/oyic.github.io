@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/</loc>
+      <lastmod>2026-07-27T03:53:03Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/</loc>
       <lastmod>2026-07-26T17:29:16Z</lastmod>
       <changefreq>monthly</changefreq>
