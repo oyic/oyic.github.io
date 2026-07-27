@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/flyntwp-deep-dive-building-a-flexible-button-component-with-000061/</loc>
+      <lastmod>2026-07-27T17:02:51Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/the-case-of-the-exploded-hero-section-why-guardrails-beat-000060/</loc>
       <lastmod>2026-07-27T05:01:18Z</lastmod>
       <changefreq>monthly</changefreq>
