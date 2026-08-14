@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Bridging Worlds: Passing External API Data to Blade with Sage View Composers</title>
+      <link href="https://chrisalberto.site/blog/bridging-worlds-passing-external-api-data-to-blade-with-000062/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/bridging-worlds-passing-external-api-data-to-blade-with-000062/</id>
+      <updated>2026-08-14T11:38:16Z</updated>
+      <summary>If you’ve spent any significant time building WordPress themes, you know the struggle: templates riddled with PHP logic, `WP_Query` loops mixed with HTML, and…</summary>
+    </entry><entry>
       <title>FlyntWP Deep Dive: Building a Flexible Button Component with Twig &amp; ACF</title>
       <link href="https://chrisalberto.site/blog/flyntwp-deep-dive-building-a-flexible-button-component-with-000061/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/flyntwp-deep-dive-building-a-flexible-button-component-with-000061/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-reusable-content-blocks-acf-pro-flexible-content-000045/</id>
       <updated>2026-07-23T17:00:44Z</updated>
       <summary>It’s no secret that the web is getting heavier.</summary>
-    </entry><entry>
-      <title>Crafting Reusable Headers with FlyntWP Partials</title>
-      <link href="https://chrisalberto.site/blog/crafting-reusable-headers-with-flyntwp-partials-000041/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-reusable-headers-with-flyntwp-partials-000041/</id>
-      <updated>2026-07-22T18:00:56Z</updated>
-      <summary>You know the drill.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
