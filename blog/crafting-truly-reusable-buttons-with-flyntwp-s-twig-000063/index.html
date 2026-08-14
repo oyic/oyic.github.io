@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting Truly Reusable Buttons with FlyntWP&#39;s Twig Components and ACF Pro — Christopher Alberto</title>
+<meta name="description" content="If you&#39;ve spent any time building WordPress sites, you know the struggle: balancing client-friendly content management with a fast, lean, and maintainable…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting Truly Reusable Buttons with FlyntWP&#39;s Twig Components and ACF Pro" />
+<meta property="og:description" content="If you&#39;ve spent any time building WordPress sites, you know the struggle: balancing client-friendly content management with a fast, lean, and maintainable…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/cover.png" />
+<meta property="og:image:alt" content="Crafting Truly Reusable Buttons with FlyntWP&#39;s Twig Components and ACF Pro" />
+<meta property="article:published_time" content="2026-08-14T17:01:03Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/" />
+<meta property="twitter:title" content="Crafting Truly Reusable Buttons with FlyntWP&#39;s Twig Components and ACF Pro" />
+<meta property="twitter:description" content="If you&#39;ve spent any time building WordPress sites, you know the struggle: balancing client-friendly content management with a fast, lean, and maintainable…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/cover.png" />
+<meta property="twitter:image:alt" content="Crafting Truly Reusable Buttons with FlyntWP&#39;s Twig Components and ACF Pro" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting Truly Reusable Buttons with FlyntWP&#39;s Twig Components and ACF Pro",
+  "description": "If you&#39;ve spent any time building WordPress sites, you know the struggle: balancing client-friendly content management with a fast, lean, and maintainable…",
+  "image": "https://chrisalberto.site/assets/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/cover.png",
+  "datePublished": "2026-08-14T17:01:03Z",
+  "dateModified": "2026-08-14T17:01:03Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-14T17:01:03Z">August 15, 2026</time></div>
+    <h1 class="post-hero__title">Crafting Truly Reusable Buttons with FlyntWP&#39;s Twig Components and ACF Pro</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/cover.png" alt="Crafting Truly Reusable Buttons with FlyntWP&#39;s Twig Components and ACF Pro" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>If you&#39;ve spent any time building WordPress sites, you know the struggle: balancing client-friendly content management with a fast, lean, and maintainable codebase. Low-code page builders promise the world, but often deliver bloat, slow page loads, and HTML that looks like it was generated by a particularly confused robot. This is exactly why I’m such an advocate for FlyntWP. It&#39;s not just another theme starter; it&#39;s a philosophy built on structured content and blazing-fast performance. Today, I want to walk you through a core FlyntWP pattern that perfectly illustrates this: creating a truly reusable button component using Twig and ACF Pro.</p>
+<p>Think about a common UI element: the humble button. On most sites, you’ll have buttons in heroes, calls to action, text blocks, footers – everywhere. If you&#39;re hardcoding button HTML directly into every component or relying on page builder modules that generate unique, slightly different markup each time, you&#39;re setting yourself up for a headache. Styles get inconsistent, accessibility becomes a nightmare, and if you ever need to change the base structure of a button, you&#39;re looking at a site-wide search-and-replace operation, praying you didn&#39;t miss anything. FlyntWP offers a superior solution through modular Twig partials.</p>
+<p>Our goal is to define a button once, both in terms of its front-end markup and its backend ACF fields, and then reuse it consistently across our entire site. First, we&#39;ll create a dedicated Twig partial for our button. I like to prefix these reusable, standalone components with an underscore to denote they&#39;re not full &#34;blocks&#34; but rather sub-components or utilities. Let&#39;s create `Components/_Button/_Button.twig`:</p>
+<p>&lt;a href=&#34;{{ data.link.url }}&#34; class=&#34;button button--{{ data.style }}&#34;{% if data.link.target %} target=&#34;{{ data.link.target }}&#34; rel=&#34;noopener noreferrer&#34;{% endif %}&gt;
+  {{ data.link.title }}
+&lt;/a&gt;</p>
+<p>This simple snippet expects a `data` object with a `link` property (which will be an ACF link object) and a `style` property (e.g., &#39;primary&#39;, &#39;secondary&#39;). Notice the `target=&#34;_blank&#34;` and `rel=&#34;noopener noreferrer&#34;` for external links – a good practice baked right into the component. The `button--{{ data.style }}` allows for easy CSS theming based on a selected style.</p>
+<p>Next, we integrate with ACF Pro. In FlyntWP, you&#39;d typically define your ACF field groups within the `Components` folder, specific to each block. However, for something as reusable as a button, we can define a *sub-field group* that can be nested within other components. Imagine an ACF field group named &#34;Button Fields&#34; with fields like:
+-   `link` (Link field type)
+-   `style` (Select field type, with choices like &#39;Primary&#39;, &#39;Secondary&#39;, &#39;Outline&#39;)</p>
+<p>Now, when you create a larger component, say `BlockCallToAction`, you can simply add a &#34;Group&#34; field to its ACF definition and load your &#34;Button Fields&#34; within it. This keeps your ACF definitions DRY (Don&#39;t Repeat Yourself) and ensures consistency across all button instances.</p>
+<p>Finally, we put it all together. Let&#39;s say we have a `BlockCallToAction/index.twig` file for a component that displays some text and a button. Instead of writing out the button HTML directly, we simply include our `_Button` partial, passing it the necessary data from the parent component&#39;s ACF fields:</p>
+<p>&lt;div class=&#34;blockCallToAction&#34;&gt;
+  &lt;div class=&#34;wrapper&#34;&gt;
+    &lt;h2&gt;{{ data.title }}&lt;/h2&gt;
+    &lt;p&gt;{{ data.content }}&lt;/p&gt;</p>
+<p>{% include &#39;Components/_Button/_Button.twig&#39; with {
+      data: {
+        link: data.button.link,
+        style: data.button.style
+      }
+    } only %}
+  &lt;/div&gt;
+&lt;/div&gt;</p>
+<p>In this `BlockCallToAction` example, `data.button` would be the group field from ACF that contains our `link` and `style` fields. We pass `data.button` to the `_Button` partial&#39;s `data` variable. The `only` keyword ensures that only the explicitly passed variables are available to the included template, preventing accidental variable leakage and keeping things clean.</p>
+<p>This approach offers immense benefits. First, it&#39;s incredibly modular. Any change to the `_Button.twig` file instantly updates every button across the site. Second, it enforces design consistency. No more slightly different button markup or classes appearing across pages. Third, the client experience in the backend is streamlined: they fill out intuitive ACF fields for the button, not wrestling with HTML. From a performance perspective, you get a consistently clean, minimal DOM structure, which is a key factor in achieving those flawless Core Web Vitals scores. With FlyntWP&#39;s Vite integration handling the assets, these lean components load almost instantaneously. It&#39;s a pragmatic, developer-friendly way to build fast, beautiful, and maintainable WordPress sites, truly separating content from presentation without the bloat.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
