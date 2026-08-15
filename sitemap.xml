@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/</loc>
+      <lastmod>2026-08-15T17:11:06Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/</loc>
       <lastmod>2026-08-15T17:01:03Z</lastmod>
       <changefreq>monthly</changefreq>

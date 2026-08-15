@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Routing Data Cleanly with Sage View Composers: A Practical Guide</title>
+      <link href="https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/</id>
+      <updated>2026-08-15T17:11:06Z</updated>
+      <summary>If you’ve spent any serious time building WordPress themes, you know the struggle: templates riddled with `WP_Query` calls, `global $post` spaghetti, and…</summary>
+    </entry><entry>
       <title>Crafting Clean UI: Reusable Card Components in FlyntWP with Twig</title>
       <link href="https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/beyond-drag-and-drop-guardrails-for-sanity-in-wordpress-000052/</id>
       <updated>2026-07-25T05:41:40Z</updated>
       <summary>The debate around custom-coded WordPress themes versus low-code page builders like Elementor or Divi is a recurring one in our industry.</summary>
-    </entry><entry>
-      <title>Automated WordPress Plugin Deployment with GitHub Actions and WP-CLI</title>
-      <link href="https://chrisalberto.site/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/</id>
-      <updated>2026-07-25T03:02:38Z</updated>
-      <summary>Building robust WordPress applications often involves custom plugins and themes that require careful deployment.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

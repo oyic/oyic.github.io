@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Routing Data Cleanly with Sage View Composers: A Practical Guide — Christopher Alberto</title>
+<meta name="description" content="If you’ve spent any serious time building WordPress themes, you know the struggle: templates riddled with `WP_Query` calls, `global $post` spaghetti, and…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Routing Data Cleanly with Sage View Composers: A Practical Guide" />
+<meta property="og:description" content="If you’ve spent any serious time building WordPress themes, you know the struggle: templates riddled with `WP_Query` calls, `global $post` spaghetti, and…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/cover.png" />
+<meta property="og:image:alt" content="Routing Data Cleanly with Sage View Composers: A Practical Guide" />
+<meta property="article:published_time" content="2026-08-15T17:11:06Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/" />
+<meta property="twitter:title" content="Routing Data Cleanly with Sage View Composers: A Practical Guide" />
+<meta property="twitter:description" content="If you’ve spent any serious time building WordPress themes, you know the struggle: templates riddled with `WP_Query` calls, `global $post` spaghetti, and…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/cover.png" />
+<meta property="twitter:image:alt" content="Routing Data Cleanly with Sage View Composers: A Practical Guide" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Routing Data Cleanly with Sage View Composers: A Practical Guide",
+  "description": "If you’ve spent any serious time building WordPress themes, you know the struggle: templates riddled with `WP_Query` calls, `global $post` spaghetti, and…",
+  "image": "https://chrisalberto.site/assets/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/cover.png",
+  "datePublished": "2026-08-15T17:11:06Z",
+  "dateModified": "2026-08-15T17:11:06Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-15T17:11:06Z">August 16, 2026</time></div>
+    <h1 class="post-hero__title">Routing Data Cleanly with Sage View Composers: A Practical Guide</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/cover.png" alt="Routing Data Cleanly with Sage View Composers: A Practical Guide" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>If you’ve spent any serious time building WordPress themes, you know the struggle: templates riddled with `WP_Query` calls, `global $post` spaghetti, and `get_field()` sprinkled everywhere. It quickly turns into an unmaintainable mess, making it hard to debug, test, or even understand what data a given template is actually supposed to display. This is precisely why I gravitated towards Sage, and specifically why its View Composer pattern, powered by Acorn, has become an indispensable tool in my workflow. Forget the database bloat and unmanageable interfaces of Divi or Elementor; Sage gives us a clean, programmatic way to build robust sites.</p>
+<p>Sage aims for an MVC-like architecture, encouraging a clear separation of concerns. Your Blade templates should be *purely* presentation. They display data, they don&#39;t fetch it. That&#39;s where View Composers shine. A View Composer is essentially a class that binds data to a specific Blade view or set of views *before* they are rendered. This means your data fetching and manipulation logic lives in a dedicated, testable class, completely separate from your markup.</p>
+<p>Let&#39;s walk through a concrete example. Imagine you have a custom post type called &#39;Project&#39; and you want to display a list of these projects on a dedicated &#34;Our Projects&#34; page. Without a View Composer, you might be tempted to drop a `WP_Query` directly into your `resources/views/pages/projects.blade.php` file. While it works, it immediately violates the principle of separation of concerns. The template becomes responsible for both querying the database and presenting the results.</p>
+<p>Here’s how we do it the Sage way, using a View Composer:</p>
+<p>First, let&#39;s create our composer class. You can place this in `app/View/Composers/ProjectComposer.php`:</p>
+<p>```php
+namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Query;</p>
+<p>class ProjectComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;pages.projects&#39;, // This refers to resources/views/pages/projects.blade.php
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @return array
+     */
+    public function with()
+    {
+        return [
+            &#39;projects&#39; =&gt; $this-&gt;getProjects(),
+        ];
+    }</p>
+<p>/**
+     * Get a list of published projects.
+     *
+     * @return array
+     */
+    protected function getProjects()
+    {
+        $args = [
+            &#39;post_type&#39;      =&gt; &#39;project&#39;,
+            &#39;posts_per_page&#39; =&gt; -1, // Get all projects
+            &#39;post_status&#39;    =&gt; &#39;publish&#39;,
+            &#39;orderby&#39;        =&gt; &#39;title&#39;,
+            &#39;order&#39;          =&gt; &#39;ASC&#39;,
+        ];</p>
+<p>$query = new WP_Query($args);</p>
+<p>return $query-&gt;posts; // Returns an array of WP_Post objects
+    }
+}
+```</p>
+<p>In this `ProjectComposer` class, we define which views it serves (`pages.projects`). The `with()` method is where we define the data we want to pass to our view. Here, it calls a protected `getProjects()` method, which encapsulates all the `WP_Query` logic. This makes the data retrieval logic reusable and isolated.</p>
+<p>Next, we need to tell Sage (or rather, Acorn) to use this composer for our `pages.projects` view. The most common way is to register it in your `config/view.php` file, within the `composers` array:</p>
+<p>```php
+// config/view.php
+&lt;?php</p>
+<p>return [
+    // ... other config ...
+    &#39;composers&#39; =&gt; [
+        &#39;pages.projects&#39; =&gt; \App\View\Composers\ProjectComposer::class,
+    ],
+    // ... other config ...
+];
+```</p>
+<p>Now, your `resources/views/pages/projects.blade.php` becomes incredibly clean and focused purely on presentation:</p>
+<p>```blade
+@extends(&#39;layouts.app&#39;)</p>
+<p>@section(&#39;content&#39;)
+    &lt;div class=&#34;container mx-auto my-8&#34;&gt;
+        &lt;h1 class=&#34;text-3xl font-bold mb-6&#34;&gt;Our Projects&lt;/h1&gt;</p>
+<p>@if (!empty($projects))
+            &lt;div class=&#34;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&#34;&gt;
+                @foreach ($projects as $project)
+                    &lt;div class=&#34;bg-white rounded-lg shadow-md p-6&#34;&gt;
+                        &lt;h2 class=&#34;text-xl font-semibold mb-2&#34;&gt;{{ $project-&gt;post_title }}&lt;/h2&gt;
+                        &lt;p class=&#34;text-gray-600 mb-4&#34;&gt;{{ \wp_trim_words($project-&gt;post_content, 30) }}&lt;/p&gt;
+                        &lt;a href=&#34;{{ \get_permalink($project-&gt;ID) }}&#34; class=&#34;text-blue-500 hover:underline&#34;&gt;View Project&lt;/a&gt;
+                    &lt;/div&gt;
+                @endforeach
+            &lt;/div&gt;
+        @else
+            &lt;p class=&#34;text-gray-700&#34;&gt;No projects found.&lt;/p&gt;
+        @endif
+    &lt;/div&gt;
+@endsection
+```</p>
+<p>Notice how `$projects` is directly available in the template? No `global $post`, no `WP_Query`! The template simply iterates over the `$projects` variable, assuming it has been provided. This is the power of View Composers. Your template designers can focus purely on HTML and CSS, while your developers handle the data logic.</p>
+<p>This approach not only leads to vastly more organized and readable code but also significantly improves maintainability and testability. You can easily unit test your `ProjectComposer` to ensure it fetches the correct data without needing to render the view or even touch the WordPress database directly (with proper mocking). This kind of organized, programmatic codebase is a world away from the often-unmanageable database bloat and convoluted markup generated by page builders, proving Sage truly is the developer&#39;s choice for modern WordPress.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
