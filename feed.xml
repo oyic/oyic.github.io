@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>When &#34;Flexible&#34; Means &#34;Fragile&#34;: Guarding Your WordPress Designs from Accidental Edits</title>
+      <link href="https://chrisalberto.site/blog/when-flexible-means-fragile-guarding-your-wordpress-designs-000035/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/when-flexible-means-fragile-guarding-your-wordpress-designs-000035/</id>
+      <updated>2026-08-15T05:09:32Z</updated>
+      <summary>The word &#34;flexible&#34; sounds good in web development, right?</summary>
+    </entry><entry>
       <title>Crafting a Secure, User-Scoped Project REST Endpoint in WordPress</title>
       <link href="https://chrisalberto.site/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/guardrails-not-gridlock-why-custom-themes-prevent-design-000044/</id>
       <updated>2026-07-24T05:12:37Z</updated>
       <summary>We’ve all been there: a new client project, and the inevitable question of custom WordPress theme versus page builder pops up.</summary>
-    </entry><entry>
-      <title>Crafting Secure, Optimized Custom REST Endpoints in WordPress</title>
-      <link href="https://chrisalberto.site/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-secure-optimized-custom-rest-endpoints-in-wordpress-000047/</id>
-      <updated>2026-07-24T03:01:11Z</updated>
-      <summary>When you&#39;re pushing WordPress beyond a traditional CMS, especially into the realm of headless architectures or integrating with external services, crafting…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
