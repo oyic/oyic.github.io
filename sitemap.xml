@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/decoupling-wordpress-headless-architectures-rest-apis-and-000016/</loc>
+      <lastmod>2026-08-15T03:03:07Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/taming-custom-post-type-data-with-sage-view-composers-000064/</loc>
       <lastmod>2026-08-14T17:11:12Z</lastmod>
       <changefreq>monthly</changefreq>

@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Decoupling WordPress: Headless Architectures, REST APIs, and Automated CI/CD with GitHub Actions</title>
+      <link href="https://chrisalberto.site/blog/decoupling-wordpress-headless-architectures-rest-apis-and-000016/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/decoupling-wordpress-headless-architectures-rest-apis-and-000016/</id>
+      <updated>2026-08-15T03:03:07Z</updated>
+      <summary>I&#39;ve spent years pushing the boundaries of WordPress, and one of the most transformative shifts in recent memory has been the move towards headless…</summary>
+    </entry><entry>
       <title>Taming Custom Post Type Data with Sage View Composers</title>
       <link href="https://chrisalberto.site/blog/taming-custom-post-type-data-with-sage-view-composers-000064/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/taming-custom-post-type-data-with-sage-view-composers-000064/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/exposing-curated-data-building-authenticated-custom-rest-000043/</id>
       <updated>2026-07-24T03:00:39Z</updated>
       <summary>As WordPress evolves into a powerful application framework, the need to expose specific, curated data programmatically, often beyond what the default REST API…</summary>
-    </entry><entry>
-      <title>Composing Clarity: How Sage View Composers Keep Your Data out of Your Templates</title>
-      <link href="https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/composing-clarity-how-sage-view-composers-keep-your-data-000046/</id>
-      <updated>2026-07-23T17:11:00Z</updated>
-      <summary>If you’ve ever found yourself wrestling with a WordPress theme that feels less like a codebase and more like a spaghetti monster made of `WP_Query` loops…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
