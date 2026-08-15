@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Day Sarah Broke Her Site: Why Page Builders Can Be a Trap for Your Design</title>
+      <link href="https://chrisalberto.site/blog/the-day-sarah-broke-her-site-why-page-builders-can-be-a-000066/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-day-sarah-broke-her-site-why-page-builders-can-be-a-000066/</id>
+      <updated>2026-08-15T05:10:28Z</updated>
+      <summary>When discussing WordPress development, the &#34;custom theme vs.</summary>
+    </entry><entry>
       <title>The Day a Client’s “Quick Edit” Broke the Homepage (and Why I Swear by Custom Blocks)</title>
       <link href="https://chrisalberto.site/blog/the-day-a-client-s-quick-edit-broke-the-homepage-and-why-i-000048/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-day-a-client-s-quick-edit-broke-the-homepage-and-why-i-000048/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/bringing-order-to-chaos-how-sage-view-composers-keep-your-000050/</id>
       <updated>2026-07-24T17:10:39Z</updated>
       <summary>As a developer, I’ve spent countless hours wrangling WordPress themes that treat data logic and presentation as an inseparable mess.</summary>
-    </entry><entry>
-      <title>Crafting a Flexible Call-to-Action with FlyntWP Components and ACF</title>
-      <link href="https://chrisalberto.site/blog/crafting-a-flexible-call-to-action-with-flyntwp-components-000049/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-a-flexible-call-to-action-with-flyntwp-components-000049/</id>
-      <updated>2026-07-24T17:00:45Z</updated>
-      <summary>I&#39;ve been working with WordPress for years, and like many of you, I&#39;ve seen the rise and fall of various approaches to building sites.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

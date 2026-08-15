@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/the-day-sarah-broke-her-site-why-page-builders-can-be-a-000066/</loc>
+      <lastmod>2026-08-15T05:10:28Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/the-day-a-client-s-quick-edit-broke-the-homepage-and-why-i-000048/</loc>
       <lastmod>2026-08-15T05:10:10Z</lastmod>
       <changefreq>monthly</changefreq>
