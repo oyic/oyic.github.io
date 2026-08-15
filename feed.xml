@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Day a Client’s “Quick Edit” Broke the Homepage (and Why I Swear by Custom Blocks)</title>
+      <link href="https://chrisalberto.site/blog/the-day-a-client-s-quick-edit-broke-the-homepage-and-why-i-000048/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-day-a-client-s-quick-edit-broke-the-homepage-and-why-i-000048/</id>
+      <updated>2026-08-15T05:10:10Z</updated>
+      <summary>I&#39;ve seen my share of WordPress horror stories, but one incident involving a client and their freshly-launched website really cemented my stance on custom…</summary>
+    </entry><entry>
       <title>When &#34;Flexible&#34; Means &#34;Fragile&#34;: Guarding Your WordPress Designs from Accidental Edits</title>
       <link href="https://chrisalberto.site/blog/when-flexible-means-fragile-guarding-your-wordpress-designs-000035/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/when-flexible-means-fragile-guarding-your-wordpress-designs-000035/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-a-flexible-call-to-action-with-flyntwp-components-000049/</id>
       <updated>2026-07-24T17:00:45Z</updated>
       <summary>I&#39;ve been working with WordPress for years, and like many of you, I&#39;ve seen the rise and fall of various approaches to building sites.</summary>
-    </entry><entry>
-      <title>Guardrails, Not Gridlock: Why Custom Themes Prevent Design Disasters</title>
-      <link href="https://chrisalberto.site/blog/guardrails-not-gridlock-why-custom-themes-prevent-design-000044/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/guardrails-not-gridlock-why-custom-themes-prevent-design-000044/</id>
-      <updated>2026-07-24T05:12:37Z</updated>
-      <summary>We’ve all been there: a new client project, and the inevitable question of custom WordPress theme versus page builder pops up.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
