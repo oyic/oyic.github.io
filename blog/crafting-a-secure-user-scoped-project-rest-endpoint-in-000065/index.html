@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting a Secure, User-Scoped Project REST Endpoint in WordPress — Christopher Alberto</title>
+<meta name="description" content="When WordPress acts as a headless backend or a service API, extending its default REST capabilities becomes essential." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting a Secure, User-Scoped Project REST Endpoint in WordPress" />
+<meta property="og:description" content="When WordPress acts as a headless backend or a service API, extending its default REST capabilities becomes essential." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/cover.png" />
+<meta property="og:image:alt" content="Crafting a Secure, User-Scoped Project REST Endpoint in WordPress" />
+<meta property="article:published_time" content="2026-08-15T03:03:52Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/" />
+<meta property="twitter:title" content="Crafting a Secure, User-Scoped Project REST Endpoint in WordPress" />
+<meta property="twitter:description" content="When WordPress acts as a headless backend or a service API, extending its default REST capabilities becomes essential." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/cover.png" />
+<meta property="twitter:image:alt" content="Crafting a Secure, User-Scoped Project REST Endpoint in WordPress" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting a Secure, User-Scoped Project REST Endpoint in WordPress",
+  "description": "When WordPress acts as a headless backend or a service API, extending its default REST capabilities becomes essential.",
+  "image": "https://chrisalberto.site/assets/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/cover.png",
+  "datePublished": "2026-08-15T03:03:52Z",
+  "dateModified": "2026-08-15T03:03:52Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-15T03:03:52Z">August 15, 2026</time></div>
+    <h1 class="post-hero__title">Crafting a Secure, User-Scoped Project REST Endpoint in WordPress</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/cover.png" alt="Crafting a Secure, User-Scoped Project REST Endpoint in WordPress" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>When WordPress acts as a headless backend or a service API, extending its default REST capabilities becomes essential. We often need to expose custom data types with highly specific access rules. My focus today is demonstrating how to design and implement a secure custom REST endpoint for user-owned data, ensuring users can only retrieve their own content while administrators retain full access.</p>
+<p>Consider a system where users manage &#34;Projects,&#34; each a custom post type linked to its author. The core requirement: `User A` sees only their projects, never `User B`&#39;s. First, a minimal Custom Post Type definition for `project`. While `show_in_rest` can expose it via the default API, we&#39;re building a custom route for granular control. The `author` support is crucial for tracking ownership.</p>
+<p>```php
+function my_plugin_register_project_cpt() {
+    $labels = [&#39;name&#39; =&gt; &#39;Projects&#39;, &#39;singular_name&#39; =&gt; &#39;Project&#39;];
+    $args = [
+        &#39;labels&#39;             =&gt; $labels, &#39;public&#39; =&gt; true,
+        &#39;has_archive&#39;        =&gt; true, &#39;rewrite&#39; =&gt; [&#39;slug&#39; =&gt; &#39;projects&#39;],
+        &#39;show_in_rest&#39;       =&gt; true,
+        &#39;supports&#39;           =&gt; [&#39;title&#39;, &#39;editor&#39;, &#39;author&#39;],
+        &#39;capability_type&#39;    =&gt; &#39;post&#39;, &#39;map_meta_cap&#39; =&gt; true,
+    ];
+    register_post_type(&#39;project&#39;, $args);
+}
+add_action(&#39;init&#39;, &#39;my_plugin_register_project_cpt&#39;);
+```</p>
+<p>The core of our solution is `register_rest_route`, hooked into `rest_api_init`. Here, we define our endpoint (`/my-plugin/v1/projects`), its allowed methods (`GET` via `WP_REST_Server::READABLE`), the data retrieval logic (`callback`), and critically, the initial security gate (`permission_callback`).</p>
+<p>```php
+function my_plugin_register_project_rest_route() {
+    register_rest_route(&#39;my-plugin/v1&#39;, &#39;/projects&#39;, [
+        &#39;methods&#39;             =&gt; WP_REST_Server::READABLE,
+        &#39;callback&#39;            =&gt; &#39;my_plugin_get_user_projects&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_plugin_can_access_projects&#39;,
+        &#39;args&#39;                =&gt; [], // Define validation for query parameters here if needed
+    ]);
+}
+add_action(&#39;rest_api_init&#39;, &#39;my_plugin_register_project_rest_route&#39;);
+```</p>
+<p>The `my_plugin_can_access_projects` function serves as our security pre-check. Its only job is to authorize access to the route itself, not to filter specific data. It verifies the requesting user is logged in and possesses a baseline capability (`read`). If these fail, we return a `WP_Error` with an appropriate HTTP status, preventing the request from proceeding to data retrieval.</p>
+<p>```php
+function my_plugin_can_access_projects(WP_REST_Request $request) {
+    if (!is_user_logged_in()) {
+        return new WP_Error(&#39;rest_forbidden&#39;, &#39;You are not logged in.&#39;, [&#39;status&#39; =&gt; 401]);
+    }
+    if (!current_user_can(&#39;read&#39;)) {
+        return new WP_Error(&#39;rest_forbidden_capability&#39;, &#39;You lack required permissions.&#39;, [&#39;status&#39; =&gt; 403]);
+    }
+    return true; // Authentication and basic capability checks passed.
+}
+```</p>
+<p>This permission callback handles general route access. The actual data scoping—returning only a user&#39;s projects versus all projects—occurs within `my_plugin_get_user_projects`. This separation keeps our security gate focused and our data callback responsible for business logic: querying and filtering based on the authenticated user&#39;s role and ID.</p>
+<p>```php
+function my_plugin_get_user_projects(WP_REST_Request $request) {
+    $args = [&#39;post_type&#39; =&gt; &#39;project&#39;, &#39;posts_per_page&#39; =&gt; -1, &#39;post_status&#39; =&gt; &#39;publish&#39;];
+    $current_user_id = get_current_user_id();</p>
+<p>// Restrict query to current user&#39;s projects unless they are an administrator.
+    if (!user_can($current_user_id, &#39;manage_options&#39;)) {
+        $args[&#39;author&#39;] = $current_user_id;
+    }</p>
+<p>$projects_query = new WP_Query($args);
+    $projects_data = [];</p>
+<p>if ($projects_query-&gt;have_posts()) {
+        while ($projects_query-&gt;have_posts()) {
+            $projects_query-&gt;the_post();
+            $projects_data[] = [
+                &#39;id&#39;          =&gt; get_the_ID(),
+                &#39;title&#39;       =&gt; get_the_title(),
+                &#39;content&#39;     =&gt; apply_filters(&#39;the_content&#39;, get_the_content()),
+                &#39;date&#39;        =&gt; get_the_date(&#39;c&#39;),
+                &#39;author_id&#39;   =&gt; get_the_author_meta(&#39;ID&#39;),
+            ];
+        }
+        wp_reset_postdata();
+    }
+    return new WP_REST_Response($projects_data, 200);
+}
+```</p>
+<p>For authentication, logged-in browser users benefit from automatic cookie transmission, enabling `is_user_logged_in()` and `get_current_user_id()`. For external applications, leverage Application Passwords or OAuth for secure, token-based authentication against these custom endpoints. This pattern empowers you to build secure, decoupled, and highly custom experiences with WordPress as a robust backend.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
