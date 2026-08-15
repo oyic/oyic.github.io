@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting Clean UI: Reusable Card Components in FlyntWP with Twig — Christopher Alberto</title>
+<meta name="description" content="If you&#39;ve spent any time battling slow page builders, wrestling with their generated mountain of div soup, or just generally feeling limited by their low-code…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting Clean UI: Reusable Card Components in FlyntWP with Twig" />
+<meta property="og:description" content="If you&#39;ve spent any time battling slow page builders, wrestling with their generated mountain of div soup, or just generally feeling limited by their low-code…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/cover.png" />
+<meta property="og:image:alt" content="Crafting Clean UI: Reusable Card Components in FlyntWP with Twig" />
+<meta property="article:published_time" content="2026-08-15T17:01:03Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/" />
+<meta property="twitter:title" content="Crafting Clean UI: Reusable Card Components in FlyntWP with Twig" />
+<meta property="twitter:description" content="If you&#39;ve spent any time battling slow page builders, wrestling with their generated mountain of div soup, or just generally feeling limited by their low-code…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/cover.png" />
+<meta property="twitter:image:alt" content="Crafting Clean UI: Reusable Card Components in FlyntWP with Twig" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting Clean UI: Reusable Card Components in FlyntWP with Twig",
+  "description": "If you&#39;ve spent any time battling slow page builders, wrestling with their generated mountain of div soup, or just generally feeling limited by their low-code…",
+  "image": "https://chrisalberto.site/assets/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/cover.png",
+  "datePublished": "2026-08-15T17:01:03Z",
+  "dateModified": "2026-08-15T17:01:03Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-15T17:01:03Z">August 16, 2026</time></div>
+    <h1 class="post-hero__title">Crafting Clean UI: Reusable Card Components in FlyntWP with Twig</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/cover.png" alt="Crafting Clean UI: Reusable Card Components in FlyntWP with Twig" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>If you&#39;ve spent any time battling slow page builders, wrestling with their generated mountain of div soup, or just generally feeling limited by their low-code straitjacket, then you understand the frustration. We&#39;re constantly chasing better performance and cleaner code, but often feel like we&#39;re fighting our own tools. That’s exactly where FlyntWP shines, offering a breath of fresh air with its programmatic, component-driven approach. Today, I want to dive into one of FlyntWP’s superpowers: building truly reusable UI components with Twig, and we&#39;ll do it by creating a simple &#34;Card&#34; component.</p>
+<p>FlyntWP embraces a developer-first methodology. It lets us craft custom, modular blocks of UI using Twig templates, integrate them seamlessly with ACF Pro for content management, and then compile them at lightning speed with Vite. The result? A lean, mean, WordPress machine with a DOM structure so clean, your Core Web Vitals will thank you. No more endless nested divs, no more inline styles fighting for dominance, just pure, semantic HTML.</p>
+<p>Let&#39;s get practical. Imagine we need a &#34;Card&#34; component – a common UI element featuring a title, some text, and perhaps a call-to-action link. Instead of building this from scratch every time or relying on a bloated page builder module, we create it once as a reusable Twig component.</p>
+<p>First, within your FlyntWP theme&#39;s `Components` directory, you&#39;d create a new folder, say `Card`. Inside `Card`, you&#39;ll typically have an `index.twig` file and a `functions.php` file. For a simple display component like our Card, `functions.php` might be minimal, perhaps just registering the component, but the magic happens in `index.twig`:</p>
+<p>&lt;div style=&#34;background-color:#eee; padding: 15px; border-radius: 5px; font-family: monospace; white-space: pre-wrap;&#34;&gt;
+{# Components/Card/index.twig #}
+{% set title = title ?? &#39;&#39; %}
+{% set text = text ?? &#39;&#39; %}
+{% set link_url = link_url ?? &#39;&#39; %}
+{% set link_text = link_text ?? &#39;Learn More&#39; %}</p>
+<p>&lt;div class=&#34;card&#34;&gt;
+  {% if title %}
+    &lt;h3 class=&#34;card__title&#34;&gt;{{ title }}&lt;/h3&gt;
+  {% endif %}
+  {% if text %}
+    &lt;p class=&#34;card__text&#34;&gt;{{ text }}&lt;/p&gt;
+  {% endif %}
+  {% if link_url and link_text %}
+    &lt;a href=&#34;{{ link_url }}&#34; class=&#34;card__link&#34;&gt;{{ link_text }}&lt;/a&gt;
+  {% endif %}
+&lt;/div&gt;
+&lt;/div&gt;</p>
+<p>Notice a few things here: we&#39;re defining default values using the `??` operator, ensuring our component is robust even if some data isn&#39;t passed. The structure is clean, and our CSS classes (`card`, `card__title`, etc.) are ready for styling. This is the essence of a reusable component – it’s a self-contained unit that expects certain variables to be passed to it.</p>
+<p>Now, how do we use this? Let&#39;s say we have a parent component, perhaps a `HeroSection` or a `CardGrid`, which needs to display one or more of these `Card` elements. We can include our `Card` component and pass it the necessary data directly. ACF Pro plays a vital role here; you&#39;d typically define fields within your parent component&#39;s `functions.php` (e.g., using `add_row` for a repeater field of cards) to gather `title`, `text`, `link_url`, and `link_text` from the WordPress admin.</p>
+<p>Then, in your parent component&#39;s `index.twig` file, you might render it like this:</p>
+<p>&lt;div style=&#34;background-color:#eee; padding: 15px; border-radius: 5px; font-family: monospace; white-space: pre-wrap;&#34;&gt;
+{# Components/CardGrid/index.twig (example parent component) #}
+&lt;div class=&#34;card-grid&#34;&gt;
+  {% for card in cards %} {# &#39;cards&#39; would be an ACF Pro repeater field #}
+    {% include &#39;Components/Card/index.twig&#39; with {
+      title: card.card_title,
+      text: card.card_text,
+      link_url: card.card_link.url,
+      link_text: card.card_link.title
+    } only %}
+  {% endfor %}
+&lt;/div&gt;
+&lt;/div&gt;</p>
+<p>Here, `cards` is the variable containing the data from our ACF repeater field. We loop through each `card` item and `include` our `Card` component, explicitly passing the data it expects. The `only` keyword is a nice touch, ensuring that only the specified variables are passed, keeping the component’s scope clean.</p>
+<p>This approach delivers massive benefits. You get incredibly clean DOM structures, which are a cornerstone for excellent Core Web Vitals and SEO. Development becomes faster because you&#39;re reusing well-tested building blocks. Maintenance is a breeze; if you need to tweak the HTML structure of a card, you do it in one place, and the change propagates everywhere. Plus, with Vite under the hood, your build speeds are phenomenal, leading to a much snappier development experience.</p>
+<p>Ditching the page builder bloat for a programmatic, component-driven workflow like this in FlyntWP isn&#39;t just about personal preference; it&#39;s about delivering superior performance, maintainability, and a developer experience that genuinely feels empowering. If you&#39;re ready to build WordPress sites that fly, both for your users and your development team, diving into Twig components with FlyntWP is your next essential step.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

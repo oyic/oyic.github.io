@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Clean UI: Reusable Card Components in FlyntWP with Twig</title>
+      <link href="https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/</id>
+      <updated>2026-08-15T17:01:03Z</updated>
+      <summary>If you&#39;ve spent any time battling slow page builders, wrestling with their generated mountain of div soup, or just generally feeling limited by their low-code…</summary>
+    </entry><entry>
       <title>The Day Sarah Broke Her Site: Why Page Builders Can Be a Trap for Your Design</title>
       <link href="https://chrisalberto.site/blog/the-day-sarah-broke-her-site-why-page-builders-can-be-a-000066/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-day-sarah-broke-her-site-why-page-builders-can-be-a-000066/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/automated-wordpress-plugin-deployment-with-github-actions-000051/</id>
       <updated>2026-07-25T03:02:38Z</updated>
       <summary>Building robust WordPress applications often involves custom plugins and themes that require careful deployment.</summary>
-    </entry><entry>
-      <title>Bringing Order to Chaos: How Sage View Composers Keep Your Templates Pristine</title>
-      <link href="https://chrisalberto.site/blog/bringing-order-to-chaos-how-sage-view-composers-keep-your-000050/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/bringing-order-to-chaos-how-sage-view-composers-keep-your-000050/</id>
-      <updated>2026-07-24T17:10:39Z</updated>
-      <summary>As a developer, I’ve spent countless hours wrangling WordPress themes that treat data logic and presentation as an inseparable mess.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
