@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights</title>
+      <link href="https://chrisalberto.site/blog/securing-custom-wordpress-data-building-an-authenticated-000069/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/securing-custom-wordpress-data-building-an-authenticated-000069/</id>
+      <updated>2026-08-16T03:12:33Z</updated>
+      <summary>As WordPress developers, we frequently encounter scenarios where the default REST API endpoints just don&#39;t cut it.</summary>
+    </entry><entry>
       <title>Routing Data Cleanly with Sage View Composers: A Practical Guide</title>
       <link href="https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-reusable-image-modules-in-flyntwp-with-twig-and-acf-000053/</id>
       <updated>2026-07-25T17:01:27Z</updated>
       <summary>When you’re building modern WordPress sites, the last thing you want is a slow, bloated experience, either for yourself as a developer or for your end-users.</summary>
-    </entry><entry>
-      <title>Beyond Drag-and-Drop: Guardrails for Sanity in WordPress Content Editing</title>
-      <link href="https://chrisalberto.site/blog/beyond-drag-and-drop-guardrails-for-sanity-in-wordpress-000052/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/beyond-drag-and-drop-guardrails-for-sanity-in-wordpress-000052/</id>
-      <updated>2026-07-25T05:41:40Z</updated>
-      <summary>The debate around custom-coded WordPress themes versus low-code page builders like Elementor or Divi is a recurring one in our industry.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

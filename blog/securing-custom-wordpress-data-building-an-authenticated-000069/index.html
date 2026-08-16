@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights — Christopher Alberto</title>
+<meta name="description" content="As WordPress developers, we frequently encounter scenarios where the default REST API endpoints just don&#39;t cut it." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/securing-custom-wordpress-data-building-an-authenticated-000069/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/securing-custom-wordpress-data-building-an-authenticated-000069/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights" />
+<meta property="og:description" content="As WordPress developers, we frequently encounter scenarios where the default REST API endpoints just don&#39;t cut it." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/securing-custom-wordpress-data-building-an-authenticated-000069/cover.png" />
+<meta property="og:image:alt" content="Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights" />
+<meta property="article:published_time" content="2026-08-16T03:12:33Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/securing-custom-wordpress-data-building-an-authenticated-000069/" />
+<meta property="twitter:title" content="Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights" />
+<meta property="twitter:description" content="As WordPress developers, we frequently encounter scenarios where the default REST API endpoints just don&#39;t cut it." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/securing-custom-wordpress-data-building-an-authenticated-000069/cover.png" />
+<meta property="twitter:image:alt" content="Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights",
+  "description": "As WordPress developers, we frequently encounter scenarios where the default REST API endpoints just don&#39;t cut it.",
+  "image": "https://chrisalberto.site/assets/blog/securing-custom-wordpress-data-building-an-authenticated-000069/cover.png",
+  "datePublished": "2026-08-16T03:12:33Z",
+  "dateModified": "2026-08-16T03:12:33Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/securing-custom-wordpress-data-building-an-authenticated-000069/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-16T03:12:33Z">August 16, 2026</time></div>
+    <h1 class="post-hero__title">Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/securing-custom-wordpress-data-building-an-authenticated-000069/cover.png" alt="Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>As WordPress developers, we frequently encounter scenarios where the default REST API endpoints just don&#39;t cut it. Perhaps we need to expose highly specific data structures from a custom plugin, filter content in a unique way, or integrate with an external dashboard that demands a very particular API contract. Rolling your own custom REST endpoint provides the flexibility to meet these exact demands, allowing you to tailor data output and, crucially, secure access to it. Today, I want to walk through building such an endpoint, focusing on a concrete example: exposing &#34;active&#34; projects from a custom plugin, authenticated via WordPress&#39;s native Application Passwords.</p>
+<p>Imagine we’ve built a custom plugin that manages &#34;Projects&#34; as a Custom Post Type (CPT), complete with custom fields like `project_status`. We need an API endpoint to list all currently &#34;active&#34; projects, optionally allowing a search query, for consumption by an external analytics dashboard. This endpoint must only be accessible to authorized applications, not just anyone on the internet.</p>
+<p>Our first step is to register our custom route within the WordPress REST API. We do this by hooking into `rest_api_init`. Here, we define the route&#39;s namespace, path, HTTP method, a callback function to handle the data, and most importantly, a permission callback to enforce access control. I&#39;ll also add a simple argument for search.</p>
+<p>```php
+add_action( &#39;rest_api_init&#39;, &#39;my_plugin_register_project_endpoint&#39; );</p>
+<p>function my_plugin_register_project_endpoint() {
+    register_rest_route( &#39;my-plugin/v1&#39;, &#39;/projects/active&#39;, array(
+        &#39;methods&#39;             =&gt; &#39;GET&#39;,
+        &#39;callback&#39;            =&gt; &#39;my_plugin_get_active_projects&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_plugin_check_project_permissions&#39;,
+        &#39;args&#39;                =&gt; array(
+            &#39;search&#39; =&gt; array(
+                &#39;description&#39;       =&gt; __( &#39;Search string for project titles.&#39;, &#39;my-plugin&#39; ),
+                &#39;type&#39;              =&gt; &#39;string&#39;,
+                &#39;sanitize_callback&#39; =&gt; &#39;sanitize_text_field&#39;,
+                &#39;validate_callback&#39; =&gt; &#39;rest_validate_request_arg&#39;,
+            ),
+        ),
+    ) );
+}
+```</p>
+<p>Next, let&#39;s implement the `my_plugin_get_active_projects` callback function. This function will receive a `WP_REST_Request` object, allowing us to access any query parameters (like our &#39;search&#39; term). Inside, we’ll use a standard `WP_Query` to fetch our &#39;project&#39; CPTs, filtered by a custom field `project_status` set to &#39;active&#39;, and format the results for JSON output.</p>
+<p>```php
+function my_plugin_get_active_projects( WP_REST_Request $request ) {
+    $args = array(
+        &#39;post_type&#39;      =&gt; &#39;project&#39;, // Assuming &#39;project&#39; is a custom post type
+        &#39;post_status&#39;    =&gt; &#39;publish&#39;,
+        &#39;meta_query&#39;     =&gt; array(
+            array(
+                &#39;key&#39;     =&gt; &#39;project_status&#39;, // Assuming a custom field for project status
+                &#39;value&#39;   =&gt; &#39;active&#39;,
+                &#39;compare&#39; =&gt; &#39;=&#39;,
+            ),
+        ),
+        &#39;posts_per_page&#39; =&gt; -1,
+    );</p>
+<p>$search = $request-&gt;get_param( &#39;search&#39; );
+    if ( ! empty( $search ) ) {
+        $args[&#39;s&#39;] = $search;
+    }</p>
+<p>$projects_query = new WP_Query( $args );
+    $projects       = array();</p>
+<p>if ( $projects_query-&gt;have_posts() ) {
+        while ( $projects_query-&gt;have_posts() ) {
+            $projects_query-&gt;the_post();
+            $projects[] = array(
+                &#39;id&#39;          =&gt; get_the_ID(),
+                &#39;title&#39;       =&gt; get_the_title(),
+                &#39;description&#39; =&gt; get_the_excerpt(),
+                &#39;url&#39;         =&gt; get_permalink(),
+                &#39;status&#39;      =&gt; get_post_meta( get_the_ID(), &#39;project_status&#39;, true ),
+            );
+        }
+        wp_reset_postdata();
+    }</p>
+<p>return new WP_REST_Response( $projects, 200 );
+}
+```</p>
+<p>Now for the crucial part: authentication. The `permission_callback` function determines whether the current request is authorized to access the endpoint. WordPress&#39;s native Application Passwords offer a robust, secure way for external applications to authenticate. When an external app sends a request with an Application Password in the Authorization header (Basic Auth format), WordPress authenticates the request against the user who owns that password. Our `permission_callback` then simply checks if that authenticated user has the necessary capabilities. For our example, we&#39;ll check for `edit_posts`, but for real-world scenarios, a custom capability like `read_active_projects` is always preferred for granular control.</p>
+<p>```php
+function my_plugin_check_project_permissions( WP_REST_Request $request ) {
+    // WordPress handles the Application Password validation;
+    // we just need to check the capabilities of the authenticated user.
+    return current_user_can( &#39;edit_posts&#39; );
+}
+```</p>
+<p>To test this, you would generate an Application Password for a user (e.g., an administrator or editor) from their profile page in the WordPress dashboard. Then, your external application would make a GET request to `/wp-json/my-plugin/v1/projects/active` with a `Basic` Authorization header, using the username and Application Password as credentials. For example, `Authorization: Basic [base64_encode(username:application_password)]`.</p>
+<p>By following this pattern, you gain complete control over how your WordPress data is exposed and consumed, moving beyond the standard API to create custom, secure, and performant endpoints perfectly tailored to your infrastructure needs. This capability is fundamental for building sophisticated WordPress-powered ecosystems.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
