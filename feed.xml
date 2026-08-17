@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Beyond Blocks: Crafting Reusable Twig Elements in FlyntWP</title>
+      <link href="https://chrisalberto.site/blog/beyond-blocks-crafting-reusable-twig-elements-in-flyntwp-000075/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/beyond-blocks-crafting-reusable-twig-elements-in-flyntwp-000075/</id>
+      <updated>2026-08-17T17:01:24Z</updated>
+      <summary>I&#39;ve spent years battling with various WordPress page builders, and I know the drill: the initial speed boost quickly gives way to bloated code, agonizing load…</summary>
+    </entry><entry>
       <title>Building a Bulletproof Button: Reusable Twig Components in FlyntWP</title>
       <link href="https://chrisalberto.site/blog/building-a-bulletproof-button-reusable-twig-components-in-000072/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/building-a-bulletproof-button-reusable-twig-components-in-000072/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/flyntwp-s-secret-sauce-composing-reusable-twig-button-000057/</id>
       <updated>2026-07-26T17:08:29Z</updated>
       <summary>If you&#39;ve spent any time in the WordPress ecosystem, you&#39;ve likely encountered the allure – and eventual frustration – of low-code page builders.</summary>
-    </entry><entry>
-      <title>When Freedom Becomes Chaos: Guarding Design with Custom WordPress Themes</title>
-      <link href="https://chrisalberto.site/blog/when-freedom-becomes-chaos-guarding-design-with-custom-000056/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/when-freedom-becomes-chaos-guarding-design-with-custom-000056/</id>
-      <updated>2026-07-26T05:00:32Z</updated>
-      <summary>We all love WordPress for its flexibility, right?</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
