@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Building a Bulletproof Button: Reusable Twig Components in FlyntWP</title>
+      <link href="https://chrisalberto.site/blog/building-a-bulletproof-button-reusable-twig-components-in-000072/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/building-a-bulletproof-button-reusable-twig-components-in-000072/</id>
+      <updated>2026-08-17T17:01:00Z</updated>
+      <summary>When I first stumbled into the world of WordPress development, I spent too long wrestling with page builders.</summary>
+    </entry><entry>
       <title>The Case for Code: How Custom WordPress Themes Save Your Client from Themselves (and Your Design)</title>
       <link href="https://chrisalberto.site/blog/the-case-for-code-how-custom-wordpress-themes-save-your-000074/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-case-for-code-how-custom-wordpress-themes-save-your-000074/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/when-freedom-becomes-chaos-guarding-design-with-custom-000056/</id>
       <updated>2026-07-26T05:00:32Z</updated>
       <summary>We all love WordPress for its flexibility, right?</summary>
-    </entry><entry>
-      <title>Building a Custom WordPress REST Endpoint for Tailored Data and Permissions</title>
-      <link href="https://chrisalberto.site/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/</id>
-      <updated>2026-07-26T03:18:16Z</updated>
-      <summary>I&#39;ve spent a lot of time digging into WordPress at the infrastructure level, and one area that frequently comes up is the need for highly specific data…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
