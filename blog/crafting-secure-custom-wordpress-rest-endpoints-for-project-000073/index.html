@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting Secure, Custom WordPress REST Endpoints for Project Data — Christopher Alberto</title>
+<meta name="description" content="When extending WordPress beyond a traditional CMS, its built-in REST API is a powerful foundation." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting Secure, Custom WordPress REST Endpoints for Project Data" />
+<meta property="og:description" content="When extending WordPress beyond a traditional CMS, its built-in REST API is a powerful foundation." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/cover.png" />
+<meta property="og:image:alt" content="Crafting Secure, Custom WordPress REST Endpoints for Project Data" />
+<meta property="article:published_time" content="2026-08-17T03:29:04Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/" />
+<meta property="twitter:title" content="Crafting Secure, Custom WordPress REST Endpoints for Project Data" />
+<meta property="twitter:description" content="When extending WordPress beyond a traditional CMS, its built-in REST API is a powerful foundation." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/cover.png" />
+<meta property="twitter:image:alt" content="Crafting Secure, Custom WordPress REST Endpoints for Project Data" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting Secure, Custom WordPress REST Endpoints for Project Data",
+  "description": "When extending WordPress beyond a traditional CMS, its built-in REST API is a powerful foundation.",
+  "image": "https://chrisalberto.site/assets/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/cover.png",
+  "datePublished": "2026-08-17T03:29:04Z",
+  "dateModified": "2026-08-17T03:29:04Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-17T03:29:04Z">August 17, 2026</time></div>
+    <h1 class="post-hero__title">Crafting Secure, Custom WordPress REST Endpoints for Project Data</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/cover.png" alt="Crafting Secure, Custom WordPress REST Endpoints for Project Data" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>When extending WordPress beyond a traditional CMS, its built-in REST API is a powerful foundation. However, the default endpoints often don&#39;t provide the granular control or custom data structures required by modern applications. Fetching specific datasets, integrating with internal tools, or exposing unique business logic frequently calls for creating your own, highly tailored REST endpoints. Today, I want to walk through how we can design a secure, custom endpoint to expose specific data from a custom post type, complete with authentication.</p>
+<p>Imagine we have a WordPress site managing &#34;Projects&#34; as a custom post type, each with custom fields like `_project_status` (e.g., &#39;active&#39;, &#39;completed&#39;, &#39;on-hold&#39;) and `_project_deadline`. Our goal is to create a secure endpoint that exclusively returns *active* projects to an internal dashboard application, formatted precisely for its needs, and protected so only authorized systems can access it. The default `/wp/v2/projects` endpoint might expose too much data, or require extensive filtering on the client side, and lack custom authentication mechanisms needed for system-to-system integration.</p>
+<p>The first step is registering our custom route. We&#39;ll use the `register_rest_route` function, typically within a plugin or a theme&#39;s functions.php, ensuring it fires on the `rest_api_init` action. This function takes an API namespace, a route string, and an array of arguments defining the endpoint&#39;s behavior.</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-projects/v1&#39;, &#39;/active&#39;, array(
+        &#39;methods&#39;             =&gt; &#39;GET&#39;,
+        &#39;callback&#39;            =&gt; &#39;my_projects_get_active_projects&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_projects_check_api_key&#39;,
+    ) );
+} );</p>
+<p>Next, let&#39;s implement the `my_projects_get_active_projects` callback function. This function will handle the actual data retrieval and formatting. Inside, we&#39;ll use `WP_Query` to fetch our custom post type posts, specifically filtering for `_project_status` set to &#39;active&#39;. We&#39;ll then loop through the results, extracting and structuring only the necessary data points, ensuring a lean and focused response tailored for our dashboard.</p>
+<p>function my_projects_get_active_projects( $request ) {
+    $args = array(
+        &#39;post_type&#39;      =&gt; &#39;project&#39;,
+        &#39;posts_per_page&#39; =&gt; -1, // Get all active projects
+        &#39;meta_query&#39;     =&gt; array(
+            array(
+                &#39;key&#39;     =&gt; &#39;_project_status&#39;,
+                &#39;value&#39;   =&gt; &#39;active&#39;,
+                &#39;compare&#39; =&gt; &#39;=&#39;,
+            ),
+        ),
+    );</p>
+<p>$projects_query = new WP_Query( $args );
+    $projects_data  = array();</p>
+<p>if ( $projects_query-&gt;have_posts() ) {
+        while ( $projects_query-&gt;have_posts() ) {
+            $projects_query-&gt;the_post();
+            $project_id = get_the_ID();
+            $projects_data[] = array(
+                &#39;id&#39;       =&gt; $project_id,
+                &#39;title&#39;    =&gt; get_the_title(),
+                &#39;status&#39;   =&gt; get_post_meta( $project_id, &#39;_project_status&#39;, true ),
+                &#39;deadline&#39; =&gt; get_post_meta( $project_id, &#39;_project_deadline&#39;, true ),
+                &#39;link&#39;     =&gt; get_permalink( $project_id ),
+            );
+        }
+        wp_reset_postdata();
+    }</p>
+<p>return new WP_REST_Response( $projects_data, 200 );
+}</p>
+<p>Finally, for security, we implement the `my_projects_check_api_key` permission callback. For a simple system-to-system integration, a custom API key (a bearer token) passed in the `Authorization` header is often sufficient. We&#39;ll assume this key is stored securely as an option in our database. While OAuth 2.0 or JWTs offer more robust solutions for complex scenarios, a simple bearer token provides a clear, demonstrable example here.</p>
+<p>function my_projects_check_api_key( $request ) {
+    $api_key        = get_option( &#39;my_projects_api_key&#39; ); // Stored in WP options
+    $auth_header    = $request-&gt;get_header( &#39;authorization&#39; );</p>
+<p>if ( empty( $api_key ) ) {
+        return new WP_Error( &#39;rest_api_key_not_configured&#39;, __( &#39;API key not configured on server.&#39;, &#39;my-projects&#39; ), array( &#39;status&#39; =&gt; 500 ) );
+    }</p>
+<p>if ( empty( $auth_header ) || ! str_contains( $auth_header, &#39;Bearer &#39; ) ) {
+        return new WP_Error( &#39;rest_unauthorized&#39;, __( &#39;Authorization header is missing or malformed.&#39;, &#39;my-projects&#39; ), array( &#39;status&#39; =&gt; 401 ) );
+    }</p>
+<p>$token = str_replace( &#39;Bearer &#39;, &#39;&#39;, $auth_header );</p>
+<p>if ( $token !== $api_key ) {
+        return new WP_Error( &#39;rest_forbidden&#39;, __( &#39;Invalid API key.&#39;, &#39;my-projects&#39; ), array( &#39;status&#39; =&gt; 403 ) );
+    }</p>
+<p>return true; // Access granted
+}</p>
+<p>With these pieces in place, we&#39;ve created a custom, secure WordPress REST endpoint at `/wp-json/my-projects/v1/active`. Our internal dashboard can now make a GET request to this URL, providing the correct `Authorization: Bearer YOUR_API_KEY` header, and receive a perfectly formatted JSON array of active projects. This approach empowers developers to precisely control data exposure, optimize payloads, and implement custom authentication flows, transforming WordPress into a truly adaptable backend for any application.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
