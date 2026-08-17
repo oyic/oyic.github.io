@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Case for Code: How Custom WordPress Themes Save Your Client from Themselves (and Your Design)</title>
+      <link href="https://chrisalberto.site/blog/the-case-for-code-how-custom-wordpress-themes-save-your-000074/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-case-for-code-how-custom-wordpress-themes-save-your-000074/</id>
+      <updated>2026-08-17T05:15:35Z</updated>
+      <summary>We’ve all seen the WordPress debate rage: custom code versus page builders like Elementor or Divi.</summary>
+    </entry><entry>
       <title>Crafting Secure, Custom WordPress REST Endpoints for Project Data</title>
       <link href="https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/building-a-custom-wordpress-rest-endpoint-for-tailored-data-000055/</id>
       <updated>2026-07-26T03:18:16Z</updated>
       <summary>I&#39;ve spent a lot of time digging into WordPress at the infrastructure level, and one area that frequently comes up is the need for highly specific data…</summary>
-    </entry><entry>
-      <title>Taming Your WordPress Data with Sage View Composers</title>
-      <link href="https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/taming-your-wordpress-data-with-sage-view-composers-000054/</id>
-      <updated>2026-07-25T17:11:29Z</updated>
-      <summary>One of the biggest frustrations I hear from developers dealing with legacy WordPress themes, or even modern page-builder monstrosities like Divi or Elementor,…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

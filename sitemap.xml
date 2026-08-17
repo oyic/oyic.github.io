@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/the-case-for-code-how-custom-wordpress-themes-save-your-000074/</loc>
+      <lastmod>2026-08-17T05:15:35Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/</loc>
       <lastmod>2026-08-17T03:29:04Z</lastmod>
       <changefreq>monthly</changefreq>
