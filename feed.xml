@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Day Our Restaurant Menu Became a Ransom Note: Guardrails Over Page Builders</title>
+      <link href="https://chrisalberto.site/blog/the-day-our-restaurant-menu-became-a-ransom-note-guardrails-000078/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-day-our-restaurant-menu-became-a-ransom-note-guardrails-000078/</id>
+      <updated>2026-08-18T05:00:58Z</updated>
+      <summary>We talk a lot about WordPress page builders versus custom code, often diving into technical specs like page load speeds or Core Web Vitals.</summary>
+    </entry><entry>
       <title>Orchestrating WordPress Deployments with WP-CLI and GitHub Actions</title>
       <link href="https://chrisalberto.site/blog/orchestrating-wordpress-deployments-with-wp-cli-and-github-000077/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/orchestrating-wordpress-deployments-with-wp-cli-and-github-000077/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/</id>
       <updated>2026-07-27T03:53:03Z</updated>
       <summary>When architecting a WordPress backend for anything beyond a simple blog, there often comes a point where you need to expose specific data or functionality to…</summary>
-    </entry><entry>
-      <title>Sage View Composers: Keeping Your Blade Templates Presentation-Pure</title>
-      <link href="https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/</id>
-      <updated>2026-07-26T17:29:16Z</updated>
-      <summary>You’ve likely felt the frustration of building WordPress themes that quickly devolve into an unmaintainable tangle.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
