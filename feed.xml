@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Orchestrating WordPress Deployments with WP-CLI and GitHub Actions</title>
+      <link href="https://chrisalberto.site/blog/orchestrating-wordpress-deployments-with-wp-cli-and-github-000077/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/orchestrating-wordpress-deployments-with-wp-cli-and-github-000077/</id>
+      <updated>2026-08-18T03:00:55Z</updated>
+      <summary>I&#39;ve spent countless hours navigating FTP clients, manually sifting through plugin updates, and holding my breath during database migrations.</summary>
+    </entry><entry>
       <title>Beyond Blocks: Crafting Reusable Twig Elements in FlyntWP</title>
       <link href="https://chrisalberto.site/blog/beyond-blocks-crafting-reusable-twig-elements-in-flyntwp-000075/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/beyond-blocks-crafting-reusable-twig-elements-in-flyntwp-000075/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/sage-view-composers-keeping-your-blade-templates-000058/</id>
       <updated>2026-07-26T17:29:16Z</updated>
       <summary>You’ve likely felt the frustration of building WordPress themes that quickly devolve into an unmaintainable tangle.</summary>
-    </entry><entry>
-      <title>FlyntWP&#39;s Secret Sauce: Composing Reusable Twig Button Components for Speed</title>
-      <link href="https://chrisalberto.site/blog/flyntwp-s-secret-sauce-composing-reusable-twig-button-000057/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/flyntwp-s-secret-sauce-composing-reusable-twig-button-000057/</id>
-      <updated>2026-07-26T17:08:29Z</updated>
-      <summary>If you&#39;ve spent any time in the WordPress ecosystem, you&#39;ve likely encountered the allure – and eventual frustration – of low-code page builders.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
