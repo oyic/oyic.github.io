@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-builds-000079/</loc>
+      <lastmod>2026-08-18T18:17:40Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/the-day-our-restaurant-menu-became-a-ransom-note-guardrails-000078/</loc>
       <lastmod>2026-08-18T05:00:58Z</lastmod>
       <changefreq>monthly</changefreq>

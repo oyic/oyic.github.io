@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Reusable Twig Partials for Flawless FlyntWP Builds</title>
+      <link href="https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-builds-000079/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-builds-000079/</id>
+      <updated>2026-08-18T18:17:40Z</updated>
+      <summary>I’ve spent years navigating the complexities of WordPress development, often finding myself at odds with the compromises of traditional low-code page builders.</summary>
+    </entry><entry>
       <title>The Day Our Restaurant Menu Became a Ransom Note: Guardrails Over Page Builders</title>
       <link href="https://chrisalberto.site/blog/the-day-our-restaurant-menu-became-a-ransom-note-guardrails-000078/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-day-our-restaurant-menu-became-a-ransom-note-guardrails-000078/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/the-case-of-the-exploded-hero-section-why-guardrails-beat-000060/</id>
       <updated>2026-07-27T05:01:18Z</updated>
       <summary>I remember a particular phone call that still makes me wince.</summary>
-    </entry><entry>
-      <title>Designing Secure Custom REST Endpoints in WordPress for Internal Tools</title>
-      <link href="https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/designing-secure-custom-rest-endpoints-in-wordpress-for-000059/</id>
-      <updated>2026-07-27T03:53:03Z</updated>
-      <summary>When architecting a WordPress backend for anything beyond a simple blog, there often comes a point where you need to expose specific data or functionality to…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
