@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough — Christopher Alberto</title>
+<meta name="description" content="I’ve had enough of slow, bloated websites." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough" />
+<meta property="og:description" content="I’ve had enough of slow, bloated websites." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/cover.png" />
+<meta property="og:image:alt" content="Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough" />
+<meta property="article:published_time" content="2026-08-19T17:09:46Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/" />
+<meta property="twitter:title" content="Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough" />
+<meta property="twitter:description" content="I’ve had enough of slow, bloated websites." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/cover.png" />
+<meta property="twitter:image:alt" content="Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough",
+  "description": "I’ve had enough of slow, bloated websites.",
+  "image": "https://chrisalberto.site/assets/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/cover.png",
+  "datePublished": "2026-08-19T17:09:46Z",
+  "dateModified": "2026-08-19T17:09:46Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-19T17:09:46Z">August 20, 2026</time></div>
+    <h1 class="post-hero__title">Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/cover.png" alt="Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>I’ve had enough of slow, bloated websites. For too long, the promise of &#34;easy&#34; low-code page builders has delivered a nightmare of inconsistent design, inline styles, and HTML structures so deep and convoluted they make Core Web Vitals scores weep. That’s why I absolutely love building with FlyntWP. It’s a breath of fresh air, providing a lightweight, programmatic approach that puts developers firmly in control, while empowering content editors with just the right amount of flexibility.</p>
+<p>FlyntWP embraces a component-driven architecture built on modular Twig templates and powered by the robust content management of ACF Pro. This combination allows us to create highly reusable, perfectly optimized content blocks that render pristine HTML. Forget the endless `div` soup; with FlyntWP, we build components that are inherently clean, fast, and designed for stellar performance right out of the gate. We’re talking about sub-second build times thanks to Vite, and a DOM structure so lean, Google’s Lighthouse scores will sing.</p>
+<p>Today, I want to walk you through a common pattern: building a reusable &#34;Card&#34; component. This is something every website needs – a flexible block to display an image, title, description, and a call-to-action link. The goal is simple: make it easy for editors to create beautiful cards without ever touching code, ensure the HTML is perfect, and make it reusable across any page where cards are needed.</p>
+<p>First, let&#39;s set up the content structure in ACF Pro. I create a new Field Group named &#34;Card Block.&#34; Within this group, I’ll add four fields:
+1.  **Image**: An &#34;Image&#34; field, returning the Image Array. This ensures we have access to all image data, like alt text and various sizes.
+2.  **Title**: A &#34;Text&#34; field for the card’s main heading.
+3.  **Description**: A &#34;WYSIWYG Editor&#34; field. Crucially, I’ll limit the toolbar options here to prevent editors from injecting unwanted styles or complex formatting. A simple paragraph or two is all we need.
+4.  **Link**: A &#34;Link&#34; field. This gives editors full control over the URL, link text, and target (new window/tab).</p>
+<p>This ACF setup gives editors everything they need while strictly controlling the output to maintain design consistency and a clean DOM.</p>
+<p>Now for the Twig component itself. In FlyntWP, our components live in `src/Components`. I&#39;d create a folder `src/Components/Card` and inside it, an `index.twig` file. This file will receive the data directly from our ACF fields. Here’s a simplified version of what `index.twig` might look like:</p>
+<p>```twig
+&lt;div class=&#34;card {{ options.className }}&#34;&gt;
+    {% if data.image %}
+        &lt;figure class=&#34;card__figure&#34;&gt;
+            &lt;img src=&#34;{{ Image(data.image).src }}&#34; alt=&#34;{{ Image(data.image).alt }}&#34; loading=&#34;lazy&#34; class=&#34;card__image&#34;&gt;
+        &lt;/figure&gt;
+    {% endif %}
+    &lt;div class=&#34;card__content&#34;&gt;
+        {% if data.title %}
+            &lt;h3 class=&#34;card__title&#34;&gt;{{ data.title }}&lt;/h3&gt;
+        {% endif %}
+        {% if data.description %}
+            &lt;div class=&#34;card__description&#34;&gt;{{ data.description }}&lt;/div&gt;
+        {% endif %}
+        {% if data.link %}
+            &lt;a href=&#34;{{ data.link.url }}&#34; target=&#34;{{ data.link.target }}&#34; class=&#34;card__link&#34;&gt;{{ data.link.title }}&lt;/a&gt;
+        {% endif %}
+    &lt;/div&gt;
+&lt;/div&gt;
+```</p>
+<p>In this Twig snippet, `data` contains all the values from our ACF fields. `options.className` is a powerful FlyntWP feature that allows developers to pass additional CSS classes dynamically to the component’s wrapper, enhancing flexibility without needing more ACF fields. Notice the use of `loading=&#34;lazy&#34;` for images – a small but critical detail for performance. The `Image()` function is a custom Twig function FlyntWP provides, making image handling super efficient. We wrap the image in a `figure` for semantic correctness and only render elements if the data exists, preventing empty tags in the DOM.</p>
+<p>Once this component is registered with FlyntWP (typically as a block within a flexible content field), editors can simply drag and drop the &#34;Card&#34; block, fill in the fields, and instantly have a perfectly formed, performant card appear on their page. No drag-and-drop elements for positioning, no messy rich text editor output for layout – just structured content rendered by optimized Twig templates.</p>
+<p>This approach isn’t just about making developers happy; it directly translates into superior user experience. A lightweight DOM means faster page loads, smoother interactions, and ultimately, flawless Core Web Vitals scores. When you’re building with FlyntWP, you&#39;re not just writing code; you’re crafting a faster, cleaner web, one modular, performant component at a time. This programmatic control and emphasis on clean structure is exactly why FlyntWP is my go-to for building high-performance WordPress sites that truly stand out.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

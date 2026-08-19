@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/</loc>
+      <lastmod>2026-08-19T17:09:46Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-builds-000079/</loc>
       <lastmod>2026-08-18T18:17:40Z</lastmod>
       <changefreq>monthly</changefreq>

@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough</title>
+      <link href="https://chrisalberto.site/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/</id>
+      <updated>2026-08-19T17:09:46Z</updated>
+      <summary>I’ve had enough of slow, bloated websites.</summary>
+    </entry><entry>
       <title>Crafting Reusable Twig Partials for Flawless FlyntWP Builds</title>
       <link href="https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-builds-000079/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-builds-000079/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/flyntwp-deep-dive-building-a-flexible-button-component-with-000061/</id>
       <updated>2026-07-27T17:02:51Z</updated>
       <summary>I&#39;ve been working with WordPress for years, and like many of you, I&#39;ve seen the pendulum swing from custom themes to monolithic page builders and back again.</summary>
-    </entry><entry>
-      <title>The Case of the Exploded Hero Section: Why Guardrails Beat Open Canvases</title>
-      <link href="https://chrisalberto.site/blog/the-case-of-the-exploded-hero-section-why-guardrails-beat-000060/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-case-of-the-exploded-hero-section-why-guardrails-beat-000060/</id>
-      <updated>2026-07-27T05:01:18Z</updated>
-      <summary>I remember a particular phone call that still makes me wince.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
