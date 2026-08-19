@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Routing Custom Post Type Data Cleanly with Sage View Composers</title>
+      <link href="https://chrisalberto.site/blog/routing-custom-post-type-data-cleanly-with-sage-view-000082/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/routing-custom-post-type-data-cleanly-with-sage-view-000082/</id>
+      <updated>2026-08-19T17:10:44Z</updated>
+      <summary>If you&#39;ve spent any significant time building WordPress themes, you&#39;ve likely encountered the &#34;template spaghetti&#34; problem.</summary>
+    </entry><entry>
       <title>Crafting Lean, Performant Cards: A FlyntWP Twig Component Walkthrough</title>
       <link href="https://chrisalberto.site/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-lean-performant-cards-a-flyntwp-twig-component-000081/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/bridging-worlds-passing-external-api-data-to-blade-with-000062/</id>
       <updated>2026-08-14T11:38:16Z</updated>
       <summary>If you’ve spent any significant time building WordPress themes, you know the struggle: templates riddled with PHP logic, `WP_Query` loops mixed with HTML, and…</summary>
-    </entry><entry>
-      <title>FlyntWP Deep Dive: Building a Flexible Button Component with Twig &amp; ACF</title>
-      <link href="https://chrisalberto.site/blog/flyntwp-deep-dive-building-a-flexible-button-component-with-000061/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/flyntwp-deep-dive-building-a-flexible-button-component-with-000061/</id>
-      <updated>2026-07-27T17:02:51Z</updated>
-      <summary>I&#39;ve been working with WordPress for years, and like many of you, I&#39;ve seen the pendulum swing from custom themes to monolithic page builders and back again.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
