@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Streamlining WordPress Deployment: WP-CLI and GitHub Actions in Harmony</title>
+      <link href="https://chrisalberto.site/blog/streamlining-wordpress-deployment-wp-cli-and-github-actions-000083/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/streamlining-wordpress-deployment-wp-cli-and-github-actions-000083/</id>
+      <updated>2026-08-20T03:01:07Z</updated>
+      <summary>Managing WordPress deployments manually often feels like a relic from a bygone era.</summary>
+    </entry><entry>
       <title>Routing Custom Post Type Data Cleanly with Sage View Composers</title>
       <link href="https://chrisalberto.site/blog/routing-custom-post-type-data-cleanly-with-sage-view-000082/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/routing-custom-post-type-data-cleanly-with-sage-view-000082/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/</id>
       <updated>2026-08-14T17:01:03Z</updated>
       <summary>If you&#39;ve spent any time building WordPress sites, you know the struggle: balancing client-friendly content management with a fast, lean, and maintainable…</summary>
-    </entry><entry>
-      <title>Bridging Worlds: Passing External API Data to Blade with Sage View Composers</title>
-      <link href="https://chrisalberto.site/blog/bridging-worlds-passing-external-api-data-to-blade-with-000062/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/bridging-worlds-passing-external-api-data-to-blade-with-000062/</id>
-      <updated>2026-08-14T11:38:16Z</updated>
-      <summary>If you’ve spent any significant time building WordPress themes, you know the struggle: templates riddled with PHP logic, `WP_Query` loops mixed with HTML, and…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

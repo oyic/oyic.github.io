@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/streamlining-wordpress-deployment-wp-cli-and-github-actions-000083/</loc>
+      <lastmod>2026-08-20T03:01:07Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/routing-custom-post-type-data-cleanly-with-sage-view-000082/</loc>
       <lastmod>2026-08-19T17:10:44Z</lastmod>
       <changefreq>monthly</changefreq>
