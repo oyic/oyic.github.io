@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Day a Client Dragged a Hero Image Into a Paragraph: The Case for Guardrails</title>
+      <link href="https://chrisalberto.site/blog/the-day-a-client-dragged-a-hero-image-into-a-paragraph-the-000084/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-day-a-client-dragged-a-hero-image-into-a-paragraph-the-000084/</id>
+      <updated>2026-08-20T05:02:14Z</updated>
+      <summary>When I talk to new clients about building their WordPress site, the conversation inevitably turns to &#34;page builders.&#34; Tools like Elementor, Divi, and Beaver…</summary>
+    </entry><entry>
       <title>Streamlining WordPress Deployment: WP-CLI and GitHub Actions in Harmony</title>
       <link href="https://chrisalberto.site/blog/streamlining-wordpress-deployment-wp-cli-and-github-actions-000083/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/streamlining-wordpress-deployment-wp-cli-and-github-actions-000083/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/taming-custom-post-type-data-with-sage-view-composers-000064/</id>
       <updated>2026-08-14T17:11:12Z</updated>
       <summary>One of the biggest frustrations I used to have with traditional WordPress theme development was the inevitable mess that emerged from mixing presentation logic…</summary>
-    </entry><entry>
-      <title>Crafting Truly Reusable Buttons with FlyntWP&#39;s Twig Components and ACF Pro</title>
-      <link href="https://chrisalberto.site/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-truly-reusable-buttons-with-flyntwp-s-twig-000063/</id>
-      <updated>2026-08-14T17:01:03Z</updated>
-      <summary>If you&#39;ve spent any time building WordPress sites, you know the struggle: balancing client-friendly content management with a fast, lean, and maintainable…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
