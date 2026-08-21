@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bridging WordPress Data to Blade: A View Composer for Custom Projects — Christopher Alberto</title>
+<meta name="description" content="When I first stumbled into WordPress development years ago, the common approach often felt like a wild west of WP_Query calls sprinkled directly into template…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Bridging WordPress Data to Blade: A View Composer for Custom Projects" />
+<meta property="og:description" content="When I first stumbled into WordPress development years ago, the common approach often felt like a wild west of WP_Query calls sprinkled directly into template…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/cover.png" />
+<meta property="og:image:alt" content="Bridging WordPress Data to Blade: A View Composer for Custom Projects" />
+<meta property="article:published_time" content="2026-08-21T17:17:09Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/" />
+<meta property="twitter:title" content="Bridging WordPress Data to Blade: A View Composer for Custom Projects" />
+<meta property="twitter:description" content="When I first stumbled into WordPress development years ago, the common approach often felt like a wild west of WP_Query calls sprinkled directly into template…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/cover.png" />
+<meta property="twitter:image:alt" content="Bridging WordPress Data to Blade: A View Composer for Custom Projects" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Bridging WordPress Data to Blade: A View Composer for Custom Projects",
+  "description": "When I first stumbled into WordPress development years ago, the common approach often felt like a wild west of WP_Query calls sprinkled directly into template…",
+  "image": "https://chrisalberto.site/assets/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/cover.png",
+  "datePublished": "2026-08-21T17:17:09Z",
+  "dateModified": "2026-08-21T17:17:09Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-21T17:17:09Z">August 22, 2026</time></div>
+    <h1 class="post-hero__title">Bridging WordPress Data to Blade: A View Composer for Custom Projects</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/cover.png" alt="Bridging WordPress Data to Blade: A View Composer for Custom Projects" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>When I first stumbled into WordPress development years ago, the common approach often felt like a wild west of WP_Query calls sprinkled directly into template files, with functions.php growing into an unmanageable beast. It worked, sure, but scalability and maintainability? Forget about it. That&#39;s why discovering Sage was such a revelation for me. It transformed how I build WordPress sites, bringing a much-needed MVC-like structure and a developer-first mindset to a platform often criticized for its spaghetti code. Today, I want to share one of my favorite Sage features that really helps keep things clean: View Composers, specifically for bringing custom post type data gracefully into your Blade templates.</p>
+<p>One of Sage&#39;s core philosophies, powered by Laravel&#39;s Blade templating engine, is to keep your templates strictly focused on presentation. No database queries, no complex logic—just HTML with a sprinkle of simple loops and conditionals. This separation of concerns is beautiful. But if your Blade template needs data, say, a list of custom &#34;Project&#34; posts, how do you get it there without breaking that clean separation? Enter View Composers.</p>
+<p>A View Composer acts as a middleman. It hooks into the lifecycle of a specific view (or set of views) and allows you to prepare and inject data into that view *before* it&#39;s rendered. This keeps your data retrieval and processing logic out of the template file itself, creating a far more organized and testable codebase. Imagine trying to achieve this kind of clean data routing in a drag-and-drop page builder like Divi or Elementor – it&#39;s a constant battle against their inherent database bloat and UI limitations, often forcing you to use shortcodes or messy inline PHP that completely defeats the purpose of clean architecture. With Sage, it&#39;s programmatic and elegant.</p>
+<p>Let&#39;s walk through a concrete example. Say we have a &#34;Projects&#34; custom post type, and we want to display the five most recent projects on our `page-projects.blade.php` template.</p>
+<p>First, we define our View Composer. In a typical Sage setup using Acorn, you&#39;d put this in `app/View/Composers/ProjectComposer.php`:</p>
+<p>```php
+&lt;?php</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Query;</p>
+<p>class ProjectComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;page-projects&#39;,
+        &#39;partials.content-page-projects&#39;, // If you&#39;re using a partial
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @return array
+     */
+    public function with()
+    {
+        return [
+            &#39;projects&#39; =&gt; $this-&gt;getProjects(),
+        ];
+    }</p>
+<p>/**
+     * Retrieve the latest projects.
+     *
+     * @return array
+     */
+    protected function getProjects()
+    {
+        $query_args = [
+            &#39;post_type&#39;      =&gt; &#39;project&#39;,
+            &#39;posts_per_page&#39; =&gt; 5,
+            &#39;post_status&#39;    =&gt; &#39;publish&#39;,
+            &#39;orderby&#39;        =&gt; &#39;date&#39;,
+            &#39;order&#39;          =&gt; &#39;DESC&#39;,
+            // Add any other query arguments you need
+        ];</p>
+<p>$projects_query = new WP_Query($query_args);</p>
+<p>return $projects_query-&gt;posts;
+    }
+}
+```</p>
+<p>This `ProjectComposer` class is straightforward. We tell it which views (`page-projects.blade.php` and potentially `partials.content-page-projects.blade.php`) it should &#34;compose&#34; for using the `$views` property. The `with()` method returns an associative array, where keys become variables available in your Blade template. Inside `getProjects()`, we perform our standard WordPress query using `WP_Query`. We retrieve the posts and return them.</p>
+<p>Now, in your `page-projects.blade.php` (or `partials.content-page-projects.blade.php`), accessing this data is incredibly clean:</p>
+<p>```blade
+&lt;div class=&#34;projects-list&#34;&gt;
+    @if (!empty($projects))
+        @foreach ($projects as $project)
+            &lt;article class=&#34;project-item&#34;&gt;
+                &lt;h2&gt;&lt;a href=&#34;{{ get_permalink($project-&gt;ID) }}&#34;&gt;{{ $project-&gt;post_title }}&lt;/a&gt;&lt;/h2&gt;
+                &lt;p&gt;{{ get_the_excerpt($project-&gt;ID) }}&lt;/p&gt;
+                {{-- Add more project details here --}}
+            &lt;/article&gt;
+        @endforeach
+    @else
+        &lt;p&gt;No projects found.&lt;/p&gt;
+    @endif
+&lt;/div&gt;
+```</p>
+<p>Notice how `page-projects.blade.php` doesn&#39;t know *how* `$projects` was fetched, only that it&#39;s available. This is the power of separation. Your template is pure presentation. If you need to change the query (e.g., fetch 10 projects instead of 5, or filter by category), you modify the `ProjectComposer`, not the Blade template. This keeps your codebase organized, easy to debug, and incredibly maintainable. It&#39;s a far cry from the unmanageable complexities that can arise from page builders that embed data queries directly into their &#34;modules&#34; or database records, leading to a sprawling mess that’s hard to version control or reason about.</p>
+<p>For me, this simple technique encapsulates why Sage, with its Acorn-powered dependency injection and Blade templating, is the premier choice for modern WordPress development. It empowers you to build robust, clean, and truly maintainable sites, making the development process a joy rather than a constant battle against bloat.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

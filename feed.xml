@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Bridging WordPress Data to Blade: A View Composer for Custom Projects</title>
+      <link href="https://chrisalberto.site/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/</id>
+      <updated>2026-08-21T17:17:09Z</updated>
+      <summary>When I first stumbled into WordPress development years ago, the common approach often felt like a wild west of WP_Query calls sprinkled directly into template…</summary>
+    </entry><entry>
       <title>The Case of Acme Marketing&#39;s Wild West Homepage: Why Fixed Blocks Trump Infinite Freedom</title>
       <link href="https://chrisalberto.site/blog/the-case-of-acme-marketing-s-wild-west-homepage-why-fixed-000088/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-case-of-acme-marketing-s-wild-west-homepage-why-fixed-000088/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/when-flexible-means-fragile-guarding-your-wordpress-designs-000035/</id>
       <updated>2026-08-15T05:09:32Z</updated>
       <summary>The word &#34;flexible&#34; sounds good in web development, right?</summary>
-    </entry><entry>
-      <title>Crafting a Secure, User-Scoped Project REST Endpoint in WordPress</title>
-      <link href="https://chrisalberto.site/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-a-secure-user-scoped-project-rest-endpoint-in-000065/</id>
-      <updated>2026-08-15T03:03:52Z</updated>
-      <summary>When WordPress acts as a headless backend or a service API, extending its default REST capabilities becomes essential.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
