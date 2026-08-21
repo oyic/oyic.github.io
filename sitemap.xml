@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/</loc>
+      <lastmod>2026-08-21T17:18:00Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/crafting-reusable-button-components-in-flyntwp-with-twig-000089/</loc>
       <lastmod>2026-08-21T17:17:43Z</lastmod>
       <changefreq>monthly</changefreq>

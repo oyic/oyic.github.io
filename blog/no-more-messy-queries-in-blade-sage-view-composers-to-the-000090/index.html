@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>No More Messy Queries in Blade: Sage View Composers to the Rescue — Christopher Alberto</title>
+<meta name="description" content="One of the reasons I champion Sage for WordPress development is its unwavering commitment to clean architecture." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="No More Messy Queries in Blade: Sage View Composers to the Rescue" />
+<meta property="og:description" content="One of the reasons I champion Sage for WordPress development is its unwavering commitment to clean architecture." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/cover.png" />
+<meta property="og:image:alt" content="No More Messy Queries in Blade: Sage View Composers to the Rescue" />
+<meta property="article:published_time" content="2026-08-21T17:18:00Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/" />
+<meta property="twitter:title" content="No More Messy Queries in Blade: Sage View Composers to the Rescue" />
+<meta property="twitter:description" content="One of the reasons I champion Sage for WordPress development is its unwavering commitment to clean architecture." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/cover.png" />
+<meta property="twitter:image:alt" content="No More Messy Queries in Blade: Sage View Composers to the Rescue" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "No More Messy Queries in Blade: Sage View Composers to the Rescue",
+  "description": "One of the reasons I champion Sage for WordPress development is its unwavering commitment to clean architecture.",
+  "image": "https://chrisalberto.site/assets/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/cover.png",
+  "datePublished": "2026-08-21T17:18:00Z",
+  "dateModified": "2026-08-21T17:18:00Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-21T17:18:00Z">August 22, 2026</time></div>
+    <h1 class="post-hero__title">No More Messy Queries in Blade: Sage View Composers to the Rescue</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/cover.png" alt="No More Messy Queries in Blade: Sage View Composers to the Rescue" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>One of the reasons I champion Sage for WordPress development is its unwavering commitment to clean architecture. While other themes descend into a chaotic blend of database operations and presentation logic, or worse, become bloated page builder monstrosities like Divi or Elementor that lock you into unmaintainable UIs, Sage keeps things sharp and organized. It embraces an MVC-like pattern, ensuring your templates are purely for presentation, your data is handled cleanly, and your dependencies are managed with modern tools like Acorn. Today, I want to walk through a simple yet powerful technique that embodies this philosophy: using Sage View Composers to deliver data to your Blade templates.</p>
+<p>Imagine you&#39;re building a homepage that needs to display a list of &#34;Featured Products&#34; from a custom post type. In a traditional WordPress theme, you might drop a `WP_Query` directly into your `front-page.php` or even a partial, fetch the data, and then loop through it right there. This works, but it clutters your presentation layer with data fetching logic, making the template harder to read, harder to test, and less reusable. It&#39;s exactly the kind of tight coupling Sage aims to avoid.</p>
+<p>This is where View Composers shine. A View Composer acts as a middleman, preparing data that specific Blade views will need, completely separate from the view itself. It&#39;s like having a dedicated chef preparing all the ingredients *before* they even hit the display plate.</p>
+<p>Let&#39;s create a `FeaturedProductsComposer` to handle our scenario. First, create a new file at `app/View/Composers/FeaturedProductsComposer.php`:</p>
+<p>&lt;?php</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;</p>
+<p>class FeaturedProductsComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;partials.featured-products&#39;,
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @return array
+     */
+    public function with()
+    {
+        $args = [
+            &#39;post_type&#39;      =&gt; &#39;product&#39;,
+            &#39;posts_per_page&#39; =&gt; 3,
+            &#39;meta_key&#39;       =&gt; &#39;is_featured&#39;,
+            &#39;meta_value&#39;     =&gt; &#39;1&#39;,
+            &#39;post_status&#39;    =&gt; &#39;publish&#39;,
+        ];</p>
+<p>$query = new \WP_Query($args);</p>
+<p>$products = [];
+        if ($query-&gt;have_posts()) {
+            while ($query-&gt;have_posts()) {
+                $query-&gt;the_post();
+                $products[] = (object) [
+                    &#39;id&#39;    =&gt; get_the_ID(),
+                    &#39;title&#39; =&gt; get_the_title(),
+                    &#39;link&#39;  =&gt; get_permalink(),
+                    &#39;image&#39; =&gt; get_the_post_thumbnail_url(get_the_ID(), &#39;medium&#39;),
+                ];
+            }
+            wp_reset_postdata();
+        }</p>
+<p>return [
+            &#39;featuredProducts&#39; =&gt; $products,
+        ];
+    }
+}</p>
+<p>In this Composer, we define `$views` as `partials.featured-products`. This tells Sage that this Composer should run whenever the `partials.featured-products` Blade template is about to be rendered. Inside the `with()` method, we perform our `WP_Query`, fetch the desired &#34;Product&#34; posts marked as featured, process them into a clean array of objects containing just the data our template needs (ID, title, link, image), and then return this data. Notice we call `wp_reset_postdata()` to clean up after our custom query, which is crucial for WordPress integrity.</p>
+<p>Now, our `resources/views/partials/featured-products.blade.php` template becomes incredibly simple and focused purely on displaying data:</p>
+<p>&lt;section class=&#34;featured-products&#34;&gt;
+    &lt;h2&gt;Our Featured Products&lt;/h2&gt;
+    @if (!empty($featuredProducts))
+        &lt;div class=&#34;product-grid&#34;&gt;
+            @foreach ($featuredProducts as $product)
+                &lt;div class=&#34;product-card&#34;&gt;
+                    &lt;a href=&#34;{{ $product-&gt;link }}&#34;&gt;
+                        @if ($product-&gt;image)
+                            &lt;img src=&#34;{{ $product-&gt;image }}&#34; alt=&#34;{{ $product-&gt;title }}&#34;&gt;
+                        @endif
+                        &lt;h3&gt;{{ $product-&gt;title }}&lt;/h3&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            @endforeach
+        &lt;/div&gt;
+    @else
+        &lt;p&gt;No featured products available at the moment.&lt;/p&gt;
+    @endif
+&lt;/section&gt;</p>
+<p>To include this partial on your homepage, simply use `@include(&#39;partials.featured-products&#39;)` in your `resources/views/front-page.blade.php`. Because the Composer is automatically discovered by Acorn and assigned to the specified view, the `$featuredProducts` variable will be available to the `partials.featured-products` template without any further effort on your part.</p>
+<p>This approach offers tremendous benefits. Your Blade templates remain lightweight and readable, free from the noise of database queries. Data fetching logic is encapsulated and reusable within its Composer. This separation of concerns makes your codebase more maintainable, easier to debug, and inherently more testable, aligning perfectly with Sage&#39;s vision for a modern, programmatic WordPress development experience. Embrace View Composers, and watch your Sage themes become even cleaner and more robust.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
