@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/the-case-of-acme-marketing-s-wild-west-homepage-why-fixed-000088/</loc>
+      <lastmod>2026-08-21T05:51:58Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/keeping-blade-beautiful-a-sage-view-composer-tutorial-000086/</loc>
       <lastmod>2026-08-20T17:47:05Z</lastmod>
       <changefreq>monthly</changefreq>
