@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/crafting-reusable-button-components-in-flyntwp-with-twig-000089/</loc>
+      <lastmod>2026-08-21T17:17:43Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/</loc>
       <lastmod>2026-08-21T17:17:27Z</lastmod>
       <changefreq>monthly</changefreq>

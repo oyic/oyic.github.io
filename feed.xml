@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Reusable Button Components in FlyntWP with Twig and ACF</title>
+      <link href="https://chrisalberto.site/blog/crafting-reusable-button-components-in-flyntwp-with-twig-000089/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-reusable-button-components-in-flyntwp-with-twig-000089/</id>
+      <updated>2026-08-21T17:17:43Z</updated>
+      <summary>I&#39;ve been working with FlyntWP for a while now, and one of the things that truly sets it apart from the sea of drag-and-drop page builders is its commitment to…</summary>
+    </entry><entry>
       <title>Mastering Modularity: Crafting a Reusable Button Component in FlyntWP</title>
       <link href="https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/the-day-sarah-broke-her-site-why-page-builders-can-be-a-000066/</id>
       <updated>2026-08-15T05:10:28Z</updated>
       <summary>When discussing WordPress development, the &#34;custom theme vs.</summary>
-    </entry><entry>
-      <title>The Day a Client’s “Quick Edit” Broke the Homepage (and Why I Swear by Custom Blocks)</title>
-      <link href="https://chrisalberto.site/blog/the-day-a-client-s-quick-edit-broke-the-homepage-and-why-i-000048/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-day-a-client-s-quick-edit-broke-the-homepage-and-why-i-000048/</id>
-      <updated>2026-08-15T05:10:10Z</updated>
-      <summary>I&#39;ve seen my share of WordPress horror stories, but one incident involving a client and their freshly-launched website really cemented my stance on custom…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
