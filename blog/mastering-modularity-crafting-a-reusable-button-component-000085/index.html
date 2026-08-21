@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mastering Modularity: Crafting a Reusable Button Component in FlyntWP — Christopher Alberto</title>
+<meta name="description" content="I&#39;ve spent years battling slow, bloated WordPress sites, often victims of &#34;convenient&#34; low-code page builders." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Mastering Modularity: Crafting a Reusable Button Component in FlyntWP" />
+<meta property="og:description" content="I&#39;ve spent years battling slow, bloated WordPress sites, often victims of &#34;convenient&#34; low-code page builders." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/mastering-modularity-crafting-a-reusable-button-component-000085/cover.png" />
+<meta property="og:image:alt" content="Mastering Modularity: Crafting a Reusable Button Component in FlyntWP" />
+<meta property="article:published_time" content="2026-08-21T17:17:27Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/" />
+<meta property="twitter:title" content="Mastering Modularity: Crafting a Reusable Button Component in FlyntWP" />
+<meta property="twitter:description" content="I&#39;ve spent years battling slow, bloated WordPress sites, often victims of &#34;convenient&#34; low-code page builders." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/mastering-modularity-crafting-a-reusable-button-component-000085/cover.png" />
+<meta property="twitter:image:alt" content="Mastering Modularity: Crafting a Reusable Button Component in FlyntWP" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Mastering Modularity: Crafting a Reusable Button Component in FlyntWP",
+  "description": "I&#39;ve spent years battling slow, bloated WordPress sites, often victims of &#34;convenient&#34; low-code page builders.",
+  "image": "https://chrisalberto.site/assets/blog/mastering-modularity-crafting-a-reusable-button-component-000085/cover.png",
+  "datePublished": "2026-08-21T17:17:27Z",
+  "dateModified": "2026-08-21T17:17:27Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-21T17:17:27Z">August 22, 2026</time></div>
+    <h1 class="post-hero__title">Mastering Modularity: Crafting a Reusable Button Component in FlyntWP</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/mastering-modularity-crafting-a-reusable-button-component-000085/cover.png" alt="Mastering Modularity: Crafting a Reusable Button Component in FlyntWP" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>I&#39;ve spent years battling slow, bloated WordPress sites, often victims of &#34;convenient&#34; low-code page builders. You know the drill: drag-and-drop promises speed, but delivers agonizing load times, messy HTML, and a developer&#39;s nightmare whenever a design tweak is needed. That&#39;s why I&#39;ve fallen head over heels for FlyntWP. It&#39;s not just a theme starter; it&#39;s a philosophy that empowers you to build lightning-fast, highly maintainable WordPress sites by embracing a programmatic, component-driven approach. Today, I want to pull back the curtain on one of the foundational elements of this philosophy: building truly reusable Twig components, specifically a smart button.</p>
+<p>Think about it: almost every website needs buttons. A Call-to-Action here, a &#34;Read More&#34; there. If you&#39;re using a page builder, you&#39;re likely dragging a &#34;button block&#34; and configuring it dozens of times, resulting in inconsistent styles and unnecessary CSS bloat. With FlyntWP, we approach this differently. We build a single, intelligent button component that can be dropped into any module, configured via ACF Pro, and rendered with pristine HTML. This isn&#39;t just about aesthetics; it&#39;s about a clean DOM, optimized for flawless Core Web Vitals right out of the gate.</p>
+<p>Let&#39;s dive into the code. We establish a dedicated directory for general-purpose components, typically `_Components`. Inside `_Components/Button`, we place `functions.php` and `index.twig`. The `functions.php` registers the Advanced Custom Fields for our button, allowing us to define its text, URL, and style. This makes our button highly configurable from the WordPress admin. Here&#39;s a simplified example of `functions.php` to define the button&#39;s fields:</p>
+<p>```php
+&lt;?php</p>
+<p>namespace Flynt\Components\Button;</p>
+<p>use ACFComposer\ACFComposer;
+use Flynt\FieldVariables;</p>
+<p>add_action(&#39;Flynt/afterRegisterComponents&#39;, function () {
+    ACFComposer::registerSubComponent(&#39;Button&#39;, [
+        &#39;name&#39; =&gt; &#39;Button&#39;,
+        &#39;title&#39; =&gt; &#39;Button&#39;,
+        &#39;fields&#39; =&gt; [
+            [
+                &#39;label&#39; =&gt; __(&#39;Text&#39;, &#39;flynt&#39;),
+                &#39;name&#39; =&gt; &#39;buttonText&#39;,
+                &#39;type&#39; =&gt; &#39;text&#39;,
+                &#39;required&#39; =&gt; 1,
+            ],
+            [
+                &#39;label&#39; =&gt; __(&#39;Link&#39;, &#39;flynt&#39;),
+                &#39;name&#39; =&gt; &#39;buttonLink&#39;,
+                &#39;type&#39; =&gt; &#39;url&#39;,
+                &#39;required&#39; =&gt; 1,
+            ],
+            [
+                &#39;label&#39; =&gt; __(&#39;Style&#39;, &#39;flynt&#39;),
+                &#39;name&#39; =&gt; &#39;buttonStyle&#39;,
+                &#39;type&#39; =&gt; &#39;select&#39;,
+                &#39;choices&#39; =&gt; [
+                    &#39;primary&#39; =&gt; &#39;Primary&#39;,
+                    &#39;secondary&#39; =&gt; &#39;Secondary&#39;,
+                ],
+                &#39;default_value&#39; =&gt; &#39;primary&#39;,
+                &#39;wrapper&#39; =&gt; [
+                    &#39;width&#39; =&gt; &#39;50&#39;,
+                ],
+            ],
+            [
+                &#39;label&#39; =&gt; __(&#39;Open in new tab?&#39;, &#39;flynt&#39;),
+                &#39;name&#39; =&gt; &#39;buttonTargetBlank&#39;,
+                &#39;type&#39; =&gt; &#39;true_false&#39;,
+                &#39;ui&#39; =&gt; 1,
+            ],
+        ]
+    ]);
+});
+```</p>
+<p>With our fields defined, the `index.twig` is where the button&#39;s structure comes to life. Notice how we use the `attributes` variable, a common FlyntWP pattern, to pass in any extra classes or IDs dynamically, keeping our Twig clean and highly flexible.</p>
+<p>```twig
+&lt;a
+    href=&#34;{{ buttonLink }}&#34;
+    class=&#34;button {{ buttonStyle ? &#39;button--&#39; ~ buttonStyle : &#39;&#39; }}&#34;
+    {{ buttonTargetBlank ? &#39;target=&#34;_blank&#34; rel=&#34;noopener&#34;&#39; : &#39;&#39; }}
+    {{ attributes|without(&#39;class&#39;) }}
+&gt;
+    {{ buttonText }}
+&lt;/a&gt;
+```</p>
+<p>Now for the real magic of reusability. Imagine you have a `Hero` module (`_Components/Hero`). You want to place this button inside it. Instead of rewriting the button&#39;s HTML or ACF fields, you simply include our `Button` sub-component. In your `Hero/index.twig`, you might have something like this, passing the button data to the sub-component:</p>
+<p>```twig
+&lt;section class=&#34;hero&#34;&gt;
+    &lt;div class=&#34;container&#34;&gt;
+        &lt;h1&gt;{{ title }}&lt;/h1&gt;
+        &lt;p&gt;{{ content }}&lt;/p&gt;
+        {% if button %}
+            {% include &#39;_Components/Button/index.twig&#39; with button only %}
+        {% endif %}
+    &lt;/div&gt;
+&lt;/section&gt;
+```</p>
+<p>And in your `Hero/functions.php`, you&#39;d include the button fields by simply referencing the registered `Button` sub-component via `FieldVariables::get(&#39;Button&#39;)`:</p>
+<p>```php
+&lt;?php</p>
+<p>namespace Flynt\Components\Hero;</p>
+<p>use ACFComposer\ACFComposer;
+use Flynt\FieldVariables;</p>
+<p>add_action(&#39;Flynt/afterRegisterComponents&#39;, function () {
+    ACFComposer::registerComponent(&#39;Hero&#39;, [
+        &#39;title&#39; =&gt; __(&#39;Hero&#39;, &#39;flynt&#39;),
+        &#39;fields&#39; =&gt; [
+            // Other Hero fields...
+            [
+                &#39;label&#39; =&gt; __(&#39;Button&#39;, &#39;flynt&#39;),
+                &#39;name&#39; =&gt; &#39;button&#39;,
+                &#39;type&#39; =&gt; &#39;group&#39;,
+                &#39;layout&#39; =&gt; &#39;row&#39;,
+                &#39;sub_fields&#39; =&gt; FieldVariables::get(&#39;Button&#39;)
+            ],
+        ]
+    ]);
+});
+```</p>
+<p>This pattern is a game-changer. We&#39;ve created a single source of truth for our button component. Any update to its structure, classes, or available ACF fields happens in one place, instantly propagating across your entire site. This means incredible consistency, reduced development time, and a DOM that&#39;s as lean as possible. Less markup means faster rendering, fewer reflows, and a better chance at nailing those crucial Core Web Vitals metrics like LCP and CLS. Plus, FlyntWP’s integration with Vite ensures your assets are compiled at blistering speeds, so even when you’re building complex sites with dozens of these components, your development workflow stays snappy. This is the power of FlyntWP: programmatic, modular, and performance-first. It&#39;s an investment in a robust, future-proof codebase, freeing you from the performance penalties of traditional page builders and empowering you to build WordPress experiences that truly fly.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

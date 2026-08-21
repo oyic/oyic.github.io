@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/</loc>
+      <lastmod>2026-08-21T17:17:27Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/bridging-wordpress-data-to-blade-a-view-composer-for-custom-000080/</loc>
       <lastmod>2026-08-21T17:17:09Z</lastmod>
       <changefreq>monthly</changefreq>
