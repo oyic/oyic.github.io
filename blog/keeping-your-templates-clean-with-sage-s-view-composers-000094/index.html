@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Keeping Your Templates Clean with Sage&#39;s View Composers — Christopher Alberto</title>
+<meta name="description" content="If you’ve spent any time wrangling WordPress themes, you know the struggle: templates that become a spaghetti monster of PHP logic, database queries, and HTML." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Keeping Your Templates Clean with Sage&#39;s View Composers" />
+<meta property="og:description" content="If you’ve spent any time wrangling WordPress themes, you know the struggle: templates that become a spaghetti monster of PHP logic, database queries, and HTML." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/cover.png" />
+<meta property="og:image:alt" content="Keeping Your Templates Clean with Sage&#39;s View Composers" />
+<meta property="article:published_time" content="2026-08-22T17:18:45Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/" />
+<meta property="twitter:title" content="Keeping Your Templates Clean with Sage&#39;s View Composers" />
+<meta property="twitter:description" content="If you’ve spent any time wrangling WordPress themes, you know the struggle: templates that become a spaghetti monster of PHP logic, database queries, and HTML." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/cover.png" />
+<meta property="twitter:image:alt" content="Keeping Your Templates Clean with Sage&#39;s View Composers" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Keeping Your Templates Clean with Sage&#39;s View Composers",
+  "description": "If you’ve spent any time wrangling WordPress themes, you know the struggle: templates that become a spaghetti monster of PHP logic, database queries, and HTML.",
+  "image": "https://chrisalberto.site/assets/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/cover.png",
+  "datePublished": "2026-08-22T17:18:45Z",
+  "dateModified": "2026-08-22T17:18:45Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-22T17:18:45Z">August 23, 2026</time></div>
+    <h1 class="post-hero__title">Keeping Your Templates Clean with Sage&#39;s View Composers</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/cover.png" alt="Keeping Your Templates Clean with Sage&#39;s View Composers" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>If you’ve spent any time wrangling WordPress themes, you know the struggle: templates that become a spaghetti monster of PHP logic, database queries, and HTML. It&#39;s the kind of code that makes you long for a more structured, maintainable approach – something entirely foreign to the unholy database bloat championed by page builders like Divi or Elementor. That&#39;s precisely why I fell in love with Sage. It brings a clean, MVC-like architecture to WordPress, leveraging modern tools like Blade for templates and Acorn for dependency injection, elevating development to a programmatic art form rather than a frantic exercise in patching together functions.</p>
+<p>One of Sage&#39;s unsung heroes in maintaining this pristine separation of concerns is the View Composer. Think of a View Composer as a backstage manager for your data. Instead of letting your Blade templates directly fetch data, process it, and then display it – a recipe for messy templates – View Composers handle all that heavy lifting *before* the data even reaches the presentation layer. They ensure your Blade files remain purely focused on presentation, making them a joy to read, debug, and maintain.</p>
+<p>Let’s walk through a concrete example. Imagine we have a custom post type called &#39;Book&#39; and we want to display a list of all books on a dedicated archive page, say using the template `resources/views/page-books.blade.php`. A common, less-than-ideal approach would be to dump `WP_Query` calls directly into that Blade file or even its corresponding PHP file. With Sage, we can do much better.</p>
+<p>First, we&#39;ll create a new View Composer. I usually place these in `app/View/Composers`. Let&#39;s call ours `BookArchiveComposer.php`:</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Query;</p>
+<p>class BookArchiveComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;page-books&#39;,
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @param  array  $data
+     * @return array
+     */
+    public function with($data)
+    {
+        return array_merge($data, [
+            &#39;books&#39; =&gt; $this-&gt;getBooks(),
+        ]);
+    }</p>
+<p>/**
+     * Get all books.
+     *
+     * @return array
+     */
+    protected function getBooks()
+    {
+        $query = new WP_Query([
+            &#39;post_type&#39; =&gt; &#39;book&#39;,
+            &#39;posts_per_page&#39; =&gt; -1, // Get all books
+            &#39;orderby&#39; =&gt; &#39;title&#39;,
+            &#39;order&#39; =&gt; &#39;ASC&#39;,
+        ]);</p>
+<p>return collect($query-&gt;posts)-&gt;map(function ($post) {
+            return (object) [ // Return simple object for clean template access
+                &#39;title&#39; =&gt; get_the_title($post),
+                &#39;link&#39; =&gt; get_permalink($post),
+                &#39;excerpt&#39; =&gt; get_the_excerpt($post),
+            ];
+        })-&gt;toArray();
+    }
+}</p>
+<p>In this composer, `protected static $views = [&#39;page-books&#39;];` tells Sage that this composer should run whenever the `page-books` template is rendered. The `with()` method is where the magic happens; it&#39;s responsible for returning an array of data that will be available to the view. Here, I’ve created a private `getBooks()` method to encapsulate the `WP_Query` logic, returning a clean array of book objects. This keeps `with()` focused on preparing what’s passed to the view, and you’ll notice the use of `collect()` – a handy Laravel Collection helper made available through Acorn – to easily transform the `WP_Query` posts into simple, consumable objects.</p>
+<p>Now, our `resources/views/page-books.blade.php` template becomes incredibly neat and focused:</p>
+<p>@extends(&#39;layouts.app&#39;)</p>
+<p>@section(&#39;content&#39;)
+    &lt;div class=&#34;container&#34;&gt;
+        &lt;h1&gt;Our Book Collection&lt;/h1&gt;</p>
+<p>@if ($books)
+            &lt;div class=&#34;grid grid-cols-1 md:grid-cols-3 gap-8&#34;&gt;
+                @foreach ($books as $book)
+                    &lt;article class=&#34;bg-white p-6 shadow rounded&#34;&gt;
+                        &lt;h2 class=&#34;text-xl font-bold mb-2&#34;&gt;
+                            &lt;a href=&#34;{{ $book-&gt;link }}&#34; class=&#34;text-blue-600 hover:text-blue-800&#34;&gt;
+                                {{ $book-&gt;title }}
+                            &lt;/a&gt;
+                        &lt;/h2&gt;
+                        &lt;p class=&#34;text-gray-700&#34;&gt;{{ $book-&gt;excerpt }}&lt;/p&gt;
+                    &lt;/article&gt;
+                @endforeach
+            &lt;/div&gt;
+        @else
+            &lt;p&gt;No books found.&lt;/p&gt;
+        @endif
+    &lt;/div&gt;
+@endsection</p>
+<p>See how `page-books.blade.php` now only focuses on *displaying* the `$books` variable? There’s no `new WP_Query()`, no `have_posts()`, `the_post()`, or `while` loops. The data is simply there, ready to be rendered. This makes your templates highly readable, testable, and reusable. If the data fetching logic for books ever changes, you only touch `BookArchiveComposer.php`, not dozens of presentation files.</p>
+<p>This simple technique is a game-changer. It embodies Sage&#39;s philosophy of bringing modern development practices – like robust separation of concerns and maintainability – to WordPress. By consistently using View Composers, you build a codebase that is predictable, scalable, and a genuine pleasure to work with, a stark contrast to the unwieldy monoliths that plague traditional WordPress development.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

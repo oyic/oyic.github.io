@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Keeping Your Templates Clean with Sage&#39;s View Composers</title>
+      <link href="https://chrisalberto.site/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/</id>
+      <updated>2026-08-22T17:18:45Z</updated>
+      <summary>If you’ve spent any time wrangling WordPress themes, you know the struggle: templates that become a spaghetti monster of PHP logic, database queries, and HTML.</summary>
+    </entry><entry>
       <title>No More Messy Queries in Blade: Sage View Composers to the Rescue</title>
       <link href="https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/routing-data-cleanly-with-sage-view-composers-a-practical-000068/</id>
       <updated>2026-08-15T17:11:06Z</updated>
       <summary>If you’ve spent any serious time building WordPress themes, you know the struggle: templates riddled with `WP_Query` calls, `global $post` spaghetti, and…</summary>
-    </entry><entry>
-      <title>Crafting Clean UI: Reusable Card Components in FlyntWP with Twig</title>
-      <link href="https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-clean-ui-reusable-card-components-in-flyntwp-with-000067/</id>
-      <updated>2026-08-15T17:01:03Z</updated>
-      <summary>If you&#39;ve spent any time battling slow page builders, wrestling with their generated mountain of div soup, or just generally feeling limited by their low-code…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
