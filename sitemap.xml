@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/</loc>
+      <lastmod>2026-08-23T03:51:31Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/automating-wordpress-plugin-deployment-with-wp-cli-and-000091/</loc>
       <lastmod>2026-08-23T03:11:48Z</lastmod>
       <changefreq>monthly</changefreq>

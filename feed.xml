@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Secure, Custom REST Endpoints for WordPress Event Data</title>
+      <link href="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/</id>
+      <updated>2026-08-23T03:51:31Z</updated>
+      <summary>One of the most powerful features of modern WordPress development, particularly when thinking about backend infrastructure, is the ability to extend the REST…</summary>
+    </entry><entry>
       <title>Automating WordPress Plugin Deployment with WP-CLI and GitHub Actions</title>
       <link href="https://chrisalberto.site/blog/automating-wordpress-plugin-deployment-with-wp-cli-and-000091/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/automating-wordpress-plugin-deployment-with-wp-cli-and-000091/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/</id>
       <updated>2026-08-17T03:29:04Z</updated>
       <summary>When extending WordPress beyond a traditional CMS, its built-in REST API is a powerful foundation.</summary>
-    </entry><entry>
-      <title>Securing Custom WordPress Data: Building an Authenticated REST Endpoint for Project Insights</title>
-      <link href="https://chrisalberto.site/blog/securing-custom-wordpress-data-building-an-authenticated-000069/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/securing-custom-wordpress-data-building-an-authenticated-000069/</id>
-      <updated>2026-08-16T03:12:33Z</updated>
-      <summary>As WordPress developers, we frequently encounter scenarios where the default REST API endpoints just don&#39;t cut it.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

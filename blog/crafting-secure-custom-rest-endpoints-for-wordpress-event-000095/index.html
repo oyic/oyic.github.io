@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting Secure, Custom REST Endpoints for WordPress Event Data — Christopher Alberto</title>
+<meta name="description" content="One of the most powerful features of modern WordPress development, particularly when thinking about backend infrastructure, is the ability to extend the REST…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting Secure, Custom REST Endpoints for WordPress Event Data" />
+<meta property="og:description" content="One of the most powerful features of modern WordPress development, particularly when thinking about backend infrastructure, is the ability to extend the REST…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/cover.png" />
+<meta property="og:image:alt" content="Crafting Secure, Custom REST Endpoints for WordPress Event Data" />
+<meta property="article:published_time" content="2026-08-23T03:51:31Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/" />
+<meta property="twitter:title" content="Crafting Secure, Custom REST Endpoints for WordPress Event Data" />
+<meta property="twitter:description" content="One of the most powerful features of modern WordPress development, particularly when thinking about backend infrastructure, is the ability to extend the REST…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/cover.png" />
+<meta property="twitter:image:alt" content="Crafting Secure, Custom REST Endpoints for WordPress Event Data" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting Secure, Custom REST Endpoints for WordPress Event Data",
+  "description": "One of the most powerful features of modern WordPress development, particularly when thinking about backend infrastructure, is the ability to extend the REST…",
+  "image": "https://chrisalberto.site/assets/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/cover.png",
+  "datePublished": "2026-08-23T03:51:31Z",
+  "dateModified": "2026-08-23T03:51:31Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-23T03:51:31Z">August 23, 2026</time></div>
+    <h1 class="post-hero__title">Crafting Secure, Custom REST Endpoints for WordPress Event Data</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/cover.png" alt="Crafting Secure, Custom REST Endpoints for WordPress Event Data" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>One of the most powerful features of modern WordPress development, particularly when thinking about backend infrastructure, is the ability to extend the REST API with custom endpoints. While the core API provides robust access to posts, pages, and users, many advanced applications require exposing highly specific data structures or custom business logic that isn&#39;t covered out of the box. Today, I want to walk through designing and securing a custom REST endpoint, focusing on a concrete example for an event management system.</p>
+<p>Imagine we&#39;re building a plugin that manages various events, and we need a dedicated API endpoint to list only *upcoming* events, accessible only to authenticated users with specific permissions. This isn&#39;t just about showing data; it&#39;s about controlling access and defining a clear contract for external applications.</p>
+<p>First, we register our custom route using the `rest_api_init` action. This establishes our endpoint within the WordPress REST API infrastructure. We define a namespace to avoid conflicts, a specific route, and crucially, the HTTP method allowed, along with callback functions for processing the request and checking permissions.</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-events-plugin/v1&#39;, &#39;/upcoming-events&#39;, [
+        &#39;methods&#39; =&gt; &#39;GET&#39;,
+        &#39;callback&#39; =&gt; &#39;my_events_get_upcoming_events&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_events_check_permissions&#39;,
+        &#39;args&#39; =&gt; [
+            &#39;count&#39; =&gt; [
+                &#39;sanitize_callback&#39; =&gt; &#39;absint&#39;,
+                &#39;validate_callback&#39; =&gt; function( $param, $request, $key ) {
+                    return is_numeric( $param ) &amp;&amp; $param &gt; 0 &amp;&amp; $param &lt;= 50;
+                },
+                &#39;required&#39; =&gt; false,
+                &#39;default&#39; =&gt; 10,
+                &#39;description&#39; =&gt; &#39;Number of upcoming events to retrieve (max 50).&#39;
+            ],
+        ],
+    ] );
+} );</p>
+<p>Notice the `args` array. This is where we define the expected parameters for our endpoint. For our `count` parameter, we don&#39;t just specify a default; we implement both `sanitize_callback` and `validate_callback`. `absint` ensures we only get a positive integer, while our custom `validate_callback` imposes a maximum limit, preventing resource exhaustion from overly large requests. This defensive programming at the API layer is critical for robust infrastructure.</p>
+<p>Next, let&#39;s look at the `callback` function, `my_events_get_upcoming_events`, which handles the actual data retrieval and formatting. For this example, I&#39;ll simulate event data, but in a real-world scenario, this would involve a `WP_Query` or direct database interaction with custom tables.</p>
+<p>function my_events_get_upcoming_events( WP_REST_Request $request ) {
+    $count = $request-&gt;get_param( &#39;count&#39; ); // Already sanitized and validated by args</p>
+<p>// In a real plugin, fetch from custom post types or a dedicated table
+    $all_events = [
+        [ &#39;id&#39; =&gt; 101, &#39;title&#39; =&gt; &#39;Annual Tech Conference&#39;, &#39;date&#39; =&gt; &#39;2023-12-05&#39;, &#39;location&#39; =&gt; &#39;Online&#39;, &#39;organizer&#39; =&gt; &#39;Acme Corp&#39; ],
+        [ &#39;id&#39; =&gt; 102, &#39;title&#39; =&gt; &#39;Local Developer Meetup&#39;, &#39;date&#39; =&gt; &#39;2023-12-18&#39;, &#39;location&#39; =&gt; &#39;Community Hub&#39;, &#39;organizer&#39; =&gt; &#39;Dev Collective&#39; ],
+        [ &#39;id&#39; =&gt; 103, &#39;title&#39; =&gt; &#39;Winter Hackathon&#39;, &#39;date&#39; =&gt; &#39;2024-01-20&#39;, &#39;location&#39; =&gt; &#39;Convention Center&#39;, &#39;organizer&#39; =&gt; &#39;Innovation Labs&#39; ],
+        [ &#39;id&#39; =&gt; 104, &#39;title&#39; =&gt; &#39;AI &amp; ML Summit&#39;, &#39;date&#39; =&gt; &#39;2024-02-10&#39;, &#39;location&#39; =&gt; &#39;Virtual Platform&#39;, &#39;organizer&#39; =&gt; &#39;FutureTech&#39; ],
+    ];</p>
+<p>$upcoming_events = array_filter( $all_events, function( $event ) {
+        return strtotime( $event[&#39;date&#39;] ) &gt; time();
+    } );</p>
+<p>$upcoming_events = array_slice( $upcoming_events, 0, $count );</p>
+<p>if ( empty( $upcoming_events ) ) {
+        return new WP_Error( &#39;no_events_found&#39;, &#39;No upcoming events match your criteria.&#39;, [ &#39;status&#39; =&gt; 404 ] );
+    }</p>
+<p>return new WP_REST_Response( $upcoming_events, 200 );
+}</p>
+<p>Finally, and most importantly for backend security, we implement the `permission_callback`, `my_events_check_permissions`. This function determines who is authorized to access the endpoint. WordPress automatically handles authentication for logged-in users (via cookies/nonces) and also supports Application Passwords or OAuth for external services. Our `permission_callback` leverages `current_user_can()` to check for specific capabilities.</p>
+<p>function my_events_check_permissions( WP_REST_Request $request ) {
+    // For this example, only users who can &#39;edit_posts&#39; (e.g., Authors, Editors, Admins)
+    // are allowed to access this endpoint. For an event management plugin,
+    // you might define a custom capability like &#39;manage_events&#39;.
+    return current_user_can( &#39;edit_posts&#39; );
+}</p>
+<p>This setup ensures that any request to `/wp-json/my-events-plugin/v1/upcoming-events` without proper authentication and authorization will be rejected with a 401 Unauthorized or 403 Forbidden status. By carefully defining your custom REST endpoints, their schema, and especially their authentication and permission callbacks, you gain granular control over how your WordPress application&#39;s data is exposed and consumed, laying a robust foundation for headless architectures or intricate plugin integrations. This is core infrastructure engineering, right within your WordPress codebase.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
