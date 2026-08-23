@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Reusable Buttons in FlyntWP with Sub-Components</title>
+      <link href="https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-with-sub-components-000097/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-with-sub-components-000097/</id>
+      <updated>2026-08-23T17:35:06Z</updated>
+      <summary>I&#39;ve spent years battling the bloat and rigidity of traditional low-code page builders.</summary>
+    </entry><entry>
       <title>The True Cost of &#34;Easy&#34;: When Your WordPress Site Isn&#39;t Truly Yours</title>
       <link href="https://chrisalberto.site/blog/the-true-cost-of-easy-when-your-wordpress-site-isn-t-truly-000092/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-true-cost-of-easy-when-your-wordpress-site-isn-t-truly-000092/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/building-a-bulletproof-button-reusable-twig-components-in-000072/</id>
       <updated>2026-08-17T17:01:00Z</updated>
       <summary>When I first stumbled into the world of WordPress development, I spent too long wrestling with page builders.</summary>
-    </entry><entry>
-      <title>The Case for Code: How Custom WordPress Themes Save Your Client from Themselves (and Your Design)</title>
-      <link href="https://chrisalberto.site/blog/the-case-for-code-how-custom-wordpress-themes-save-your-000074/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-case-for-code-how-custom-wordpress-themes-save-your-000074/</id>
-      <updated>2026-08-17T05:15:35Z</updated>
-      <summary>We’ve all seen the WordPress debate rage: custom code versus page builders like Elementor or Divi.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

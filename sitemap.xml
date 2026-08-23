@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-with-sub-components-000097/</loc>
+      <lastmod>2026-08-23T17:35:06Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/the-true-cost-of-easy-when-your-wordpress-site-isn-t-truly-000092/</loc>
       <lastmod>2026-08-23T05:46:24Z</lastmod>
       <changefreq>monthly</changefreq>
