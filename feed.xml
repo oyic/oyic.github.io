@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The True Cost of &#34;Easy&#34;: When Your WordPress Site Isn&#39;t Truly Yours</title>
+      <link href="https://chrisalberto.site/blog/the-true-cost-of-easy-when-your-wordpress-site-isn-t-truly-000092/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-true-cost-of-easy-when-your-wordpress-site-isn-t-truly-000092/</id>
+      <updated>2026-08-23T05:46:24Z</updated>
+      <summary>My phone rang a few weeks ago, and on the other end was Sarah, owner of Green Thumb Nurseries, a local business I’d been chatting with about their website.</summary>
+    </entry><entry>
       <title>Crafting Secure, Custom REST Endpoints for WordPress Event Data</title>
       <link href="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/the-case-for-code-how-custom-wordpress-themes-save-your-000074/</id>
       <updated>2026-08-17T05:15:35Z</updated>
       <summary>We’ve all seen the WordPress debate rage: custom code versus page builders like Elementor or Divi.</summary>
-    </entry><entry>
-      <title>Crafting Secure, Custom WordPress REST Endpoints for Project Data</title>
-      <link href="https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-secure-custom-wordpress-rest-endpoints-for-project-000073/</id>
-      <updated>2026-08-17T03:29:04Z</updated>
-      <summary>When extending WordPress beyond a traditional CMS, its built-in REST API is a powerful foundation.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
