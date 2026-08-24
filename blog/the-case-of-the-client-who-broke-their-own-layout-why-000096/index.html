@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders — Christopher Alberto</title>
+<meta name="description" content="Alright, let&#39;s talk WordPress." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders" />
+<meta property="og:description" content="Alright, let&#39;s talk WordPress." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/cover.png" />
+<meta property="og:image:alt" content="The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders" />
+<meta property="article:published_time" content="2026-08-24T05:00:50Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/" />
+<meta property="twitter:title" content="The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders" />
+<meta property="twitter:description" content="Alright, let&#39;s talk WordPress." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/cover.png" />
+<meta property="twitter:image:alt" content="The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders",
+  "description": "Alright, let&#39;s talk WordPress.",
+  "image": "https://chrisalberto.site/assets/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/cover.png",
+  "datePublished": "2026-08-24T05:00:50Z",
+  "dateModified": "2026-08-24T05:00:50Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-08-24T05:00:50Z">August 24, 2026</time></div>
+    <h1 class="post-hero__title">The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/cover.png" alt="The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>Alright, let&#39;s talk WordPress. You&#39;re launching a new site, or perhaps revamping an old one, and the perennial question comes up: page builder or custom theme? It’s a debate I’ve had countless times, and while page builders like Elementor or Divi certainly promise a quick start and &#34;visual editing,&#34; I&#39;m here to tell you why, in the long run, investing in a custom-coded theme, specifically with structured Gutenberg blocks, is almost always the smarter play. And it’s not just about site speed, a topic that’s been done to death.</p>
+<p>My reasoning today boils down to one critical, often overlooked aspect: protecting your site&#39;s design integrity from... well, from yourself, or more accurately, from well-meaning clients.</p>
+<p>I once launched a beautiful brochure site for a boutique law firm. We had painstakingly designed a clean, professional layout, complete with specific image-text ratios, carefully chosen typography, and consistent spacing. The client loved it. We trained them on how to update their &#34;About Us&#34; page and add new case studies using their chosen page builder – let’s call it &#34;BuilderX.&#34; They seemed to grasp the basics, and off they went, empowered to manage their own content.</p>
+<p>A month later, I got a frantic email. &#34;Our homepage looks... different. And not in a good way.&#34; I logged in, braced for the worst, and found it. The beautifully crafted hero section, originally a full-width image with a simple text overlay and a call-to-action button, now had a paragraph of dense, unformatted text crammed above the image. Below it, a neatly arranged three-column testimonial section had been &#34;creatively&#34; reordered, with one testimonial now inexplicably half-way down the page, separated by a random horizontal rule and an empty image widget. The consistent padding we’d built in was gone, replaced by a chaotic assortment of manually dragged margins and line breaks.</p>
+<p>What happened? The client, in an admirable but misguided attempt to add &#34;more information&#34; to the homepage quickly, had gotten lost in BuilderX’s drag-and-drop interface. They’d tried to insert a new text block, couldn&#39;t find the &#34;right&#34; place, and simply dragged it wherever it would snap. They wanted to make a testimonial stand out, so they tried to move it, accidentally pulling it out of its containing column and scattering its elements. The builder, designed for ultimate flexibility, offered no guardrails. It let them do *anything*, even if that &#34;anything&#34; actively broke the carefully constructed design.</p>
+<p>This is where custom-coded Gutenberg blocks shine. Instead of giving a client a blank canvas with an infinite toolkit, we provide them with *pre-defined components*. Imagine a &#34;Hero Section Block.&#34; When a client adds it, they aren&#39;t dragging individual images, text boxes, and buttons. They’re presented with fields: &#34;Hero Image Upload,&#34; &#34;Headline Text,&#34; &#34;Body Text,&#34; &#34;Button Label,&#34; &#34;Button Link.&#34; The block *renders* these inputs into the perfectly designed layout, maintaining consistent styling, spacing, and responsiveness.</p>
+<p>Similarly, for the testimonials, instead of a free-form section, we&#39;d provide a &#34;Testimonial Block&#34; that allows them to add new testimonials, each with fields for &#34;Quote,&#34; &#34;Author,&#34; and &#34;Attribution.&#34; The block then automatically arranges these within the design&#39;s constraints, perhaps always displaying three per row or stacking them neatly on mobile.</p>
+<p>This approach isn&#39;t about limiting creativity; it’s about *empowering* content editors within safe, established boundaries. It guarantees design consistency across the entire site, reduces the need for constant &#34;fix-it&#34; calls post-launch, and ensures that the site always looks as professional and polished as it did the day it launched. A custom theme, built with these thoughtful content guardrails, is an investment in long-term site integrity and client peace of mind. It prevents the kind of accidental self-sabotage that &#34;unlimited flexibility&#34; often encourages, proving that sometimes, less choice for the editor means a much better outcome for the site.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

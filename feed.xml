@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders</title>
+      <link href="https://chrisalberto.site/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/</id>
+      <updated>2026-08-24T05:00:50Z</updated>
+      <summary>Alright, let&#39;s talk WordPress.</summary>
+    </entry><entry>
       <title>Streamlining WordPress Plugin Deployment with WP-CLI and GitHub Actions</title>
       <link href="https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployment-with-wp-cli-and-000099/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployment-with-wp-cli-and-000099/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/the-day-our-restaurant-menu-became-a-ransom-note-guardrails-000078/</id>
       <updated>2026-08-18T05:00:58Z</updated>
       <summary>We talk a lot about WordPress page builders versus custom code, often diving into technical specs like page load speeds or Core Web Vitals.</summary>
-    </entry><entry>
-      <title>Orchestrating WordPress Deployments with WP-CLI and GitHub Actions</title>
-      <link href="https://chrisalberto.site/blog/orchestrating-wordpress-deployments-with-wp-cli-and-github-000077/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/orchestrating-wordpress-deployments-with-wp-cli-and-github-000077/</id>
-      <updated>2026-08-18T03:00:55Z</updated>
-      <summary>I&#39;ve spent countless hours navigating FTP clients, manually sifting through plugin updates, and holding my breath during database migrations.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
