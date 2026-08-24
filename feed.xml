@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Day the Client Broke the Layout: Guardrails for Your WordPress Content</title>
+      <link href="https://chrisalberto.site/blog/the-day-the-client-broke-the-layout-guardrails-for-your-000100/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-day-the-client-broke-the-layout-guardrails-for-your-000100/</id>
+      <updated>2026-08-24T05:01:07Z</updated>
+      <summary>There’s a common fork in the road when building a WordPress site: do you lean on the accessible visual power of page builders like Elementor or Divi, or do you…</summary>
+    </entry><entry>
       <title>The Case of the Client Who Broke Their Own Layout: Why Custom Blocks Trump Page Builders</title>
       <link href="https://chrisalberto.site/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-builds-000079/</id>
       <updated>2026-08-18T18:17:40Z</updated>
       <summary>I’ve spent years navigating the complexities of WordPress development, often finding myself at odds with the compromises of traditional low-code page builders.</summary>
-    </entry><entry>
-      <title>The Day Our Restaurant Menu Became a Ransom Note: Guardrails Over Page Builders</title>
-      <link href="https://chrisalberto.site/blog/the-day-our-restaurant-menu-became-a-ransom-note-guardrails-000078/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-day-our-restaurant-menu-became-a-ransom-note-guardrails-000078/</id>
-      <updated>2026-08-18T05:00:58Z</updated>
-      <summary>We talk a lot about WordPress page builders versus custom code, often diving into technical specs like page load speeds or Core Web Vitals.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
