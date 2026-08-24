@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Streamlining WordPress Plugin Deployment with WP-CLI and GitHub Actions</title>
+      <link href="https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployment-with-wp-cli-and-000099/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployment-with-wp-cli-and-000099/</id>
+      <updated>2026-08-24T03:49:26Z</updated>
+      <summary>For anyone managing WordPress sites beyond a simple personal blog, the task of deploying code updates quickly becomes a bottleneck.</summary>
+    </entry><entry>
       <title>Crafting Data with Precision: A View Composer for Your Homepage Projects</title>
       <link href="https://chrisalberto.site/blog/crafting-data-with-precision-a-view-composer-for-your-000098/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-data-with-precision-a-view-composer-for-your-000098/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/orchestrating-wordpress-deployments-with-wp-cli-and-github-000077/</id>
       <updated>2026-08-18T03:00:55Z</updated>
       <summary>I&#39;ve spent countless hours navigating FTP clients, manually sifting through plugin updates, and holding my breath during database migrations.</summary>
-    </entry><entry>
-      <title>Beyond Blocks: Crafting Reusable Twig Elements in FlyntWP</title>
-      <link href="https://chrisalberto.site/blog/beyond-blocks-crafting-reusable-twig-elements-in-flyntwp-000075/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/beyond-blocks-crafting-reusable-twig-elements-in-flyntwp-000075/</id>
-      <updated>2026-08-17T17:01:24Z</updated>
-      <summary>I&#39;ve spent years battling with various WordPress page builders, and I know the drill: the initial speed boost quickly gives way to bloated code, agonizing load…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
