@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Taming the WordPress Wild West: Why Sage is Your Developer&#39;s Dream Theme</title>
+      <link href="https://chrisalberto.site/blog/taming-the-wordpress-wild-west-why-sage-is-your-developer-s-000076/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/taming-the-wordpress-wild-west-why-sage-is-your-developer-s-000076/</id>
+      <updated>2026-09-01T09:11:09Z</updated>
+      <summary>I’ve spent years navigating the treacherous waters of WordPress development, wrestling with themes that promised flexibility but delivered a tangled mess of…</summary>
+    </entry><entry>
       <title>Taming WordPress Data: Clean ACF with Sage View Composers</title>
       <link href="https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/the-day-a-client-dragged-a-hero-image-into-a-paragraph-the-000084/</id>
       <updated>2026-08-20T05:02:14Z</updated>
       <summary>When I talk to new clients about building their WordPress site, the conversation inevitably turns to &#34;page builders.&#34; Tools like Elementor, Divi, and Beaver…</summary>
-    </entry><entry>
-      <title>Streamlining WordPress Deployment: WP-CLI and GitHub Actions in Harmony</title>
-      <link href="https://chrisalberto.site/blog/streamlining-wordpress-deployment-wp-cli-and-github-actions-000083/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/streamlining-wordpress-deployment-wp-cli-and-github-actions-000083/</id>
-      <updated>2026-08-20T03:01:07Z</updated>
-      <summary>Managing WordPress deployments manually often feels like a relic from a bygone era.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
