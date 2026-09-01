@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/building-a-reusable-link-component-with-flyntwp-and-acf-pro-000101/</loc>
+      <lastmod>2026-09-01T17:02:30Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/crafting-reusable-twig-components-in-flyntwp-the-icon-000093/</loc>
       <lastmod>2026-09-01T10:00:52Z</lastmod>
       <changefreq>monthly</changefreq>
