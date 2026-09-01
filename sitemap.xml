@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/the-case-of-the-exploded-team-page-guardrails-over-wild-000070/</loc>
+      <lastmod>2026-09-01T09:00:52Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/the-day-the-client-broke-the-layout-guardrails-for-your-000100/</loc>
       <lastmod>2026-08-24T05:01:07Z</lastmod>
       <changefreq>monthly</changefreq>
