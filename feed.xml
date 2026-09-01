@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Taming WordPress Data: Clean ACF with Sage View Composers</title>
+      <link href="https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/</id>
+      <updated>2026-09-01T09:10:52Z</updated>
+      <summary>When I first started building WordPress sites, I quickly fell into the trap of sprinkling PHP logic directly into my template files.</summary>
+    </entry><entry>
       <title>Building Robust WordPress Deployments with WP-CLI and GitHub Actions</title>
       <link href="https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/streamlining-wordpress-deployment-wp-cli-and-github-actions-000083/</id>
       <updated>2026-08-20T03:01:07Z</updated>
       <summary>Managing WordPress deployments manually often feels like a relic from a bygone era.</summary>
-    </entry><entry>
-      <title>Routing Custom Post Type Data Cleanly with Sage View Composers</title>
-      <link href="https://chrisalberto.site/blog/routing-custom-post-type-data-cleanly-with-sage-view-000082/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/routing-custom-post-type-data-cleanly-with-sage-view-000082/</id>
-      <updated>2026-08-19T17:10:44Z</updated>
-      <summary>If you&#39;ve spent any significant time building WordPress themes, you&#39;ve likely encountered the &#34;template spaghetti&#34; problem.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

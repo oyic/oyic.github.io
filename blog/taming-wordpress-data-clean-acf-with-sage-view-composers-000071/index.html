@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Taming WordPress Data: Clean ACF with Sage View Composers — Christopher Alberto</title>
+<meta name="description" content="When I first started building WordPress sites, I quickly fell into the trap of sprinkling PHP logic directly into my template files." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Taming WordPress Data: Clean ACF with Sage View Composers" />
+<meta property="og:description" content="When I first started building WordPress sites, I quickly fell into the trap of sprinkling PHP logic directly into my template files." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/cover.png" />
+<meta property="og:image:alt" content="Taming WordPress Data: Clean ACF with Sage View Composers" />
+<meta property="article:published_time" content="2026-09-01T09:10:52Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/" />
+<meta property="twitter:title" content="Taming WordPress Data: Clean ACF with Sage View Composers" />
+<meta property="twitter:description" content="When I first started building WordPress sites, I quickly fell into the trap of sprinkling PHP logic directly into my template files." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/cover.png" />
+<meta property="twitter:image:alt" content="Taming WordPress Data: Clean ACF with Sage View Composers" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Taming WordPress Data: Clean ACF with Sage View Composers",
+  "description": "When I first started building WordPress sites, I quickly fell into the trap of sprinkling PHP logic directly into my template files.",
+  "image": "https://chrisalberto.site/assets/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/cover.png",
+  "datePublished": "2026-09-01T09:10:52Z",
+  "dateModified": "2026-09-01T09:10:52Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-01T09:10:52Z">September 1, 2026</time></div>
+    <h1 class="post-hero__title">Taming WordPress Data: Clean ACF with Sage View Composers</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/cover.png" alt="Taming WordPress Data: Clean ACF with Sage View Composers" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>When I first started building WordPress sites, I quickly fell into the trap of sprinkling PHP logic directly into my template files. `the_post();` here, `if (has_post_thumbnail())` there, and `echo get_field(&#39;my_custom_field&#39;);` everywhere. It worked, but it was messy, hard to read, and a nightmare to maintain as projects grew. Then I discovered Sage, and it fundamentally changed how I approach WordPress development. Sage, with its Laravel-inspired architecture, offers a sane, structured way to build themes, and for me, one of its most powerful features is the View Composer, especially when dealing with custom data like Advanced Custom Fields (ACF).</p>
+<p>Sage champions an MVC-like pattern where your Blade templates are pure presentation. They shouldn&#39;t be fetching data, nor should they contain complex conditional logic beyond what&#39;s absolutely necessary for display. That&#39;s where View Composers come in. A View Composer acts as a bridge between your data logic and your views. It&#39;s a class responsible for preparing data to be injected into one or more Blade templates, ensuring your templates remain clean, readable, and focused solely on how information looks, not how it&#39;s retrieved. This is a stark contrast to the database bloat and inline PHP chaos that often comes with visual page builders like Divi or Elementor, which, while quick for non-devs, can leave a seasoned developer pulling their hair out when it comes to custom functionality and performance.</p>
+<p>Let&#39;s walk through a concrete example. Imagine we have a custom post type called &#39;Portfolio Item&#39; and for each item, we&#39;ve added an ACF text field named &#39;project_url&#39;. Our goal is to display this URL as a clickable link on the single portfolio item page. The &#34;old&#34; way would be to just drop `the_field(&#39;project_url&#39;);` directly into `single-portfolio.blade.php`. While functional, it ties data fetching directly to the view.</p>
+<p>With Sage, we’ll create a View Composer. First, let’s define our composer. I like to organize them under `app/View/Composers`. So, we&#39;d create `app/View/Composers/SinglePortfolio.php`:</p>
+<p>```php
+&lt;?php</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Post;</p>
+<p>class SinglePortfolio extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;single-portfolio&#39;,
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @param  array  $data
+     * @return array
+     */
+    public function with($data)
+    {
+        /** @var WP_Post $post */
+        $post = get_post();</p>
+<p>return array_merge($data, [
+            &#39;projectUrl&#39; =&gt; get_field(&#39;project_url&#39;, $post-&gt;ID),
+        ]);
+    }
+}
+```</p>
+<p>Here, we&#39;re extending `Roots\Acorn\View\Composer`, which is part of Sage&#39;s underlying Acorn framework, giving us modern dependency injection capabilities right out of the box. We&#39;ve specified that this composer serves the `single-portfolio` view. Inside the `with()` method, we grab the current post object and then fetch our &#39;project_url&#39; using `get_field()`, passing the post ID for good measure. We then return an array merging our custom data with any existing data that might already be present. Notice we&#39;ve camelCased `projectUrl` – a small convention that keeps things consistent for Blade.</p>
+<p>Now, in our `single-portfolio.blade.php` template, the code becomes beautifully simple and entirely focused on presentation:</p>
+<p>```blade
+@extends(&#39;layouts.app&#39;)</p>
+<p>@section(&#39;content&#39;)
+  @while(have_posts()) @php the_post() @endphp
+    &lt;article @php post_class() @endphp&gt;
+      &lt;header&gt;
+        &lt;h1 class=&#34;entry-title&#34;&gt;{{ get_the_title() }}&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div class=&#34;entry-content&#34;&gt;
+        @if ($projectUrl)
+          &lt;p&gt;Visit the project: &lt;a href=&#34;{{ $projectUrl }}&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;{{ $projectUrl }}&lt;/a&gt;&lt;/p&gt;
+        @endif
+        @php the_content() @endphp
+      &lt;/div&gt;
+    &lt;/article&gt;
+  @endwhile
+@endsection
+```</p>
+<p>Look at that `if ($projectUrl)` condition! We&#39;re just checking for the *presence* of `$projectUrl`, not calling `get_field()` or any other WordPress function directly. The `$projectUrl` variable is simply available in our template, courtesy of the View Composer. This approach keeps your templates entirely declarative and free of complex logic, making them easier to read, test, and maintain. If the data fetching logic for `projectUrl` ever changes, I only need to modify the View Composer, not every single template that might display it. This level of organization and separation of concerns is why Sage, with Acorn and Blade, is my undeniable choice for building robust, modern WordPress themes. It transforms WordPress into a powerful application platform, moving far beyond the ad-hoc, unmaintainable codebases I once struggled with.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/</loc>
+      <lastmod>2026-09-01T09:10:52Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/</loc>
       <lastmod>2026-09-01T09:01:11Z</lastmod>
       <changefreq>monthly</changefreq>
