@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Reusable Twig Components in FlyntWP: The Icon Example</title>
+      <link href="https://chrisalberto.site/blog/crafting-reusable-twig-components-in-flyntwp-the-icon-000093/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-reusable-twig-components-in-flyntwp-the-icon-000093/</id>
+      <updated>2026-09-01T10:00:52Z</updated>
+      <summary>I&#39;m a developer who genuinely enjoys building things, but for years, I wrestled with the bloat and limitations of conventional page builders.</summary>
+    </entry><entry>
       <title>Taming the WordPress Wild West: Why Sage is Your Developer&#39;s Dream Theme</title>
       <link href="https://chrisalberto.site/blog/taming-the-wordpress-wild-west-why-sage-is-your-developer-s-000076/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/taming-the-wordpress-wild-west-why-sage-is-your-developer-s-000076/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/keeping-blade-beautiful-a-sage-view-composer-tutorial-000086/</id>
       <updated>2026-08-20T17:47:05Z</updated>
       <summary>When I first stumbled into the world of WordPress development, I quickly became frustrated with the traditional approach.</summary>
-    </entry><entry>
-      <title>The Day a Client Dragged a Hero Image Into a Paragraph: The Case for Guardrails</title>
-      <link href="https://chrisalberto.site/blog/the-day-a-client-dragged-a-hero-image-into-a-paragraph-the-000084/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-day-a-client-dragged-a-hero-image-into-a-paragraph-the-000084/</id>
-      <updated>2026-08-20T05:02:14Z</updated>
-      <summary>When I talk to new clients about building their WordPress site, the conversation inevitably turns to &#34;page builders.&#34; Tools like Elementor, Divi, and Beaver…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
