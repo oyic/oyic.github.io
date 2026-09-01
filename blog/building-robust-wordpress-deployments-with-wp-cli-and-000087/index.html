@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Building Robust WordPress Deployments with WP-CLI and GitHub Actions — Christopher Alberto</title>
+<meta name="description" content="I&#39;ve spent years wrestling with manual WordPress deployments, and frankly, it&#39;s a productivity killer." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Building Robust WordPress Deployments with WP-CLI and GitHub Actions" />
+<meta property="og:description" content="I&#39;ve spent years wrestling with manual WordPress deployments, and frankly, it&#39;s a productivity killer." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/cover.png" />
+<meta property="og:image:alt" content="Building Robust WordPress Deployments with WP-CLI and GitHub Actions" />
+<meta property="article:published_time" content="2026-09-01T09:01:11Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/" />
+<meta property="twitter:title" content="Building Robust WordPress Deployments with WP-CLI and GitHub Actions" />
+<meta property="twitter:description" content="I&#39;ve spent years wrestling with manual WordPress deployments, and frankly, it&#39;s a productivity killer." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/cover.png" />
+<meta property="twitter:image:alt" content="Building Robust WordPress Deployments with WP-CLI and GitHub Actions" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Building Robust WordPress Deployments with WP-CLI and GitHub Actions",
+  "description": "I&#39;ve spent years wrestling with manual WordPress deployments, and frankly, it&#39;s a productivity killer.",
+  "image": "https://chrisalberto.site/assets/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/cover.png",
+  "datePublished": "2026-09-01T09:01:11Z",
+  "dateModified": "2026-09-01T09:01:11Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-01T09:01:11Z">September 1, 2026</time></div>
+    <h1 class="post-hero__title">Building Robust WordPress Deployments with WP-CLI and GitHub Actions</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/cover.png" alt="Building Robust WordPress Deployments with WP-CLI and GitHub Actions" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>I&#39;ve spent years wrestling with manual WordPress deployments, and frankly, it&#39;s a productivity killer. The fear of breaking a live site, the meticulous steps, the endless FTP transfers – it&#39;s a recipe for burnout and errors. But what if we could automate the entire process, pushing code changes with confidence, knowing our sites are updated quickly and consistently? That&#39;s where WP-CLI and GitHub Actions become an indispensable duo for any serious WordPress engineer.</p>
+<p>At its core, WP-CLI gives us a powerful command-line interface to interact with WordPress installations. It allows us to manage plugins, themes, users, databases, and even the core itself, all without ever touching the admin dashboard. This capability is paramount for automation. Imagine needing to update a custom plugin or theme, flush caches, and run database migrations after a code push. Manually, that&#39;s several steps, each prone to human error. With WP-CLI, these become single, scriptable commands. For instance, `wp plugin update my-custom-plugin` combined with `wp cache flush` handles a significant chunk of a typical deployment, ensuring your site is running the latest code and cleared of any stale data.</p>
+<p>Now, how do we trigger these WP-CLI commands on our remote server automatically? Enter GitHub Actions. This powerful CI/CD platform lets us define workflows that execute when specific events occur in our GitHub repository – like pushing code to the `main` branch. Our goal is to craft a workflow that SSHes into our server, pulls the latest code, and then executes our sequence of WP-CLI commands. This creates a fully automated deployment pipeline, transforming a multi-step manual process into a single Git push.</p>
+<p>Let&#39;s walk through a concrete example. Consider a scenario where we&#39;re deploying updates to a custom theme located in `wp-content/themes/my-theme`. Our GitHub Actions workflow, typically defined in a `.github/workflows/deploy.yml` file, would be triggered by a push to the `main` branch. Inside this YAML file, we would define a `deploy` job that runs on an `ubuntu-latest` runner. The steps would involve first checking out the code from our repository using `actions/checkout@v3`. The crucial next step uses an action like `appleboy/ssh-action@v0.1.6` to establish an SSH connection to our production server.</p>
+<p>The core of this workflow is the `script` parameter within the `appleboy/ssh-action`. Here, we define a sequence of bash commands to be executed on the remote server. First, `cd /var/www/html/your-wordpress-site` navigates to your WordPress installation directory, which you&#39;d adjust to your server&#39;s specific path. Then, `git pull origin main` fetches the latest code from your repository. If your project uses Composer for PHP dependency management, a subsequent `composer install --no-dev --optimize-autoloader` ensures your dependencies are current and optimized for production. Finally, we execute crucial WP-CLI commands: `wp cache flush` to clear any stale object, transient, or opcode caches, `wp option update siteurl &#34;https://your-production-domain.com&#34;` and `wp option update home &#34;https://your-production-domain.com&#34;` to set environment-specific URLs, and critically, `wp db update` to run any pending database migrations defined in your plugins or theme. Each command builds on the last, ensuring a systematic and complete update. Remember that your `SSH_HOST`, `SSH_USERNAME`, and `SSH_PRIVATE_KEY` for the SSH action would be securely configured as GitHub Secrets.</p>
+<p>Automating WordPress deployments with WP-CLI and GitHub Actions transforms a tedious, error-prone task into a streamlined, reliable process. It frees up engineering time, significantly reduces the risk of human error, and ensures your production sites are always up-to-date with your latest code. By investing in a well-defined CI/CD pipeline, you&#39;re not just deploying code; you&#39;re deploying confidence and consistency across all your WordPress projects.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
