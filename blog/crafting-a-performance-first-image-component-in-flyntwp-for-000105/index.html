@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals — Christopher Alberto</title>
+<meta name="description" content="I&#39;ve been building WordPress sites for years, and like many of you, I&#39;ve seen the rise and fall of various page builders." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals" />
+<meta property="og:description" content="I&#39;ve been building WordPress sites for years, and like many of you, I&#39;ve seen the rise and fall of various page builders." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/cover.png" />
+<meta property="og:image:alt" content="Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals" />
+<meta property="article:published_time" content="2026-09-02T17:02:00Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/" />
+<meta property="twitter:title" content="Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals" />
+<meta property="twitter:description" content="I&#39;ve been building WordPress sites for years, and like many of you, I&#39;ve seen the rise and fall of various page builders." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/cover.png" />
+<meta property="twitter:image:alt" content="Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals",
+  "description": "I&#39;ve been building WordPress sites for years, and like many of you, I&#39;ve seen the rise and fall of various page builders.",
+  "image": "https://chrisalberto.site/assets/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/cover.png",
+  "datePublished": "2026-09-02T17:02:00Z",
+  "dateModified": "2026-09-02T17:02:00Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-02T17:02:00Z">September 3, 2026</time></div>
+    <h1 class="post-hero__title">Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/cover.png" alt="Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>I&#39;ve been building WordPress sites for years, and like many of you, I&#39;ve seen the rise and fall of various page builders. While they promise speed and ease, they often deliver bloat, inscrutable DOM structures, and a constant battle against poor Core Web Vitals. That&#39;s why I landed on FlyntWP, and honestly, it&#39;s been a game-changer. It&#39;s the lean, programmatic alternative I always wanted, putting developers back in control of every byte.</p>
+<p>One of the first things you notice when you move from a page builder to FlyntWP is the sheer control you gain over your output. No more div-soup from some drag-and-drop interface – just clean, semantic HTML. This directly translates to blazing fast performance and excellent Core Web Vitals. A prime example of this power is in how you handle images. Instead of letting a builder inject generic `&lt;img&gt;` tags, we can craft a reusable Twig component that&#39;s optimized for speed, responsiveness, and SEO. I want to walk you through exactly how I build my universal `Image` component.</p>
+<p>The goal is a single component that can consume an ACF image object, or a direct URL, and output a perfectly optimized, responsive image tag. This isn&#39;t just about showing an image; it&#39;s about making sure it&#39;s the right size, loads efficiently, and contributes positively to metrics like Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS).</p>
+<p>Here’s the basic structure for `_FlyntComponent/Components/Image/index.twig`:</p>
+<p>{% raw %}
+{# _FlyntComponent/Components/Image/index.twig #}
+{% set imageId = image.ID is defined ? image.ID : null %}
+{% set altText = image.alt is defined and image.alt is not empty ? image.alt : image.title|default(&#39;&#39;) %}
+{% set srcUrl = imageId ? Image(imageId, &#39;full&#39;).src : src|default(&#39;&#39;) %} {# Fallback to direct src URL #}
+{% set imageWidth = image.width|default(&#39;&#39;) %}
+{% set imageHeight = image.height|default(&#39;&#39;) %}</p>
+<p>{% if srcUrl %}
+    &lt;img
+        src=&#34;{{ srcUrl }}&#34;
+        alt=&#34;{{ altText }}&#34;
+        {% if imageId %}
+            srcset=&#34;{{ Image_Srcset(imageId, [&#39;thumbnail&#39;, &#39;medium&#39;, &#39;large&#39;, &#39;full&#39;]) }}&#34;
+            sizes=&#34;{{ sizes|default(&#39;(max-width: 1200px) 100vw, 1200px&#39;) }}&#34; {# Adjust sizes based on your breakpoints #}
+        {% endif %}
+        loading=&#34;{{ loading|default(&#39;lazy&#39;) }}&#34;
+        class=&#34;{{ class|default(&#39;&#39;) }}&#34;
+        {% if imageWidth %}width=&#34;{{ imageWidth }}&#34;{% endif %}
+        {% if imageHeight %}height=&#34;{{ imageHeight }}&#34;{% endif %}
+    &gt;
+{% else %}
+    {# Optionally, render a placeholder or a default image #}
+    {# &lt;img src=&#34;/path/to/placeholder.svg&#34; alt=&#34;Placeholder image&#34; class=&#34;{{ class|default(&#39;&#39;) }}&#34;&gt; #}
+{% endif %}
+{% endraw %}</p>
+<p>Let me break down what&#39;s happening here. First, we&#39;re smartly extracting `ID`, `alt`, `title`, `width`, and `height` from the ACF image object (`image`). This ensures we always have the best possible `alt` text and can provide explicit `width` and `height` attributes, crucial for preventing CLS. We then use Flynt’s built-in `Image()` and `Image_Srcset()` Twig functions, which are incredibly powerful. `Image_Srcset()` automatically generates a responsive `srcset` attribute based on registered WordPress image sizes (like `thumbnail`, `medium`, `large`, `full`), which means the browser can pick the most appropriate image for the user&#39;s device and viewport.</p>
+<p>The `sizes` attribute is critical for telling the browser how much space the image will take up, further optimizing image loading. I’ve included a default, but this is an area you&#39;ll want to customize per component usage to be truly precise. And finally, `loading=&#34;lazy&#34;` is a default, but importantly, you can override it to `eager` for images appearing above the fold (like hero images), giving them priority and boosting LCP.</p>
+<p>To use this component within another module, say a `Hero` component, it&#39;s as simple as this:</p>
+<p>{% raw %}
+{# Component/Hero/index.twig #}
+{% if fields.hero_image %}
+    {% include &#39;_FlyntComponent/Components/Image/index.twig&#39; with {
+        image: fields.hero_image,
+        loading: &#39;eager&#39;, {# This is a hero image, so load it eagerly! #}
+        class: &#39;hero__background-image&#39;
+    } only %}
+{% endif %}
+{% endraw %}</p>
+<p>You pass your ACF image field, any specific `loading` attribute, and additional `class` names directly to your new `Image` component. This level of granular control means you&#39;re always shipping minimal, optimized markup. Combined with Flynt&#39;s Vite-powered build process, which delivers lightning-fast compilation and HMR, you get a development experience that&#39;s as performant as the sites you build. Moving to this programmatic approach for images, and indeed for all your components, is a foundational step towards truly flawless Core Web Vitals and a superior user experience, one `&lt;img&gt;` tag at a time.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
