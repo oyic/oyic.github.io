@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Streamlining Custom Post Data in Sage with View Composers</title>
+      <link href="https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/</id>
+      <updated>2026-09-02T17:10:58Z</updated>
+      <summary>If you&#39;ve spent any time wrestling with traditional WordPress themes, you know the struggle: a sprawling mess of PHP logic directly in your template files,…</summary>
+    </entry><entry>
       <title>Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals</title>
       <link href="https://chrisalberto.site/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-reusable-button-components-in-flyntwp-with-twig-000089/</id>
       <updated>2026-08-21T17:17:43Z</updated>
       <summary>I&#39;ve been working with FlyntWP for a while now, and one of the things that truly sets it apart from the sea of drag-and-drop page builders is its commitment to…</summary>
-    </entry><entry>
-      <title>Mastering Modularity: Crafting a Reusable Button Component in FlyntWP</title>
-      <link href="https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/mastering-modularity-crafting-a-reusable-button-component-000085/</id>
-      <updated>2026-08-21T17:17:27Z</updated>
-      <summary>I&#39;ve spent years battling slow, bloated WordPress sites, often victims of &#34;convenient&#34; low-code page builders.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

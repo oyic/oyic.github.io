@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Streamlining Custom Post Data in Sage with View Composers — Christopher Alberto</title>
+<meta name="description" content="If you&#39;ve spent any time wrestling with traditional WordPress themes, you know the struggle: a sprawling mess of PHP logic directly in your template files,…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Streamlining Custom Post Data in Sage with View Composers" />
+<meta property="og:description" content="If you&#39;ve spent any time wrestling with traditional WordPress themes, you know the struggle: a sprawling mess of PHP logic directly in your template files,…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/cover.png" />
+<meta property="og:image:alt" content="Streamlining Custom Post Data in Sage with View Composers" />
+<meta property="article:published_time" content="2026-09-02T17:10:58Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/" />
+<meta property="twitter:title" content="Streamlining Custom Post Data in Sage with View Composers" />
+<meta property="twitter:description" content="If you&#39;ve spent any time wrestling with traditional WordPress themes, you know the struggle: a sprawling mess of PHP logic directly in your template files,…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/cover.png" />
+<meta property="twitter:image:alt" content="Streamlining Custom Post Data in Sage with View Composers" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Streamlining Custom Post Data in Sage with View Composers",
+  "description": "If you&#39;ve spent any time wrestling with traditional WordPress themes, you know the struggle: a sprawling mess of PHP logic directly in your template files,…",
+  "image": "https://chrisalberto.site/assets/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/cover.png",
+  "datePublished": "2026-09-02T17:10:58Z",
+  "dateModified": "2026-09-02T17:10:58Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-02T17:10:58Z">September 3, 2026</time></div>
+    <h1 class="post-hero__title">Streamlining Custom Post Data in Sage with View Composers</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/cover.png" alt="Streamlining Custom Post Data in Sage with View Composers" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>If you&#39;ve spent any time wrestling with traditional WordPress themes, you know the struggle: a sprawling mess of PHP logic directly in your template files, often intertwined with database queries and frontend markup. And don&#39;t even get me started on the unmaintainable database bloat and obscure code generated by page builders like Divi or Elementor. It’s enough to make any developer cringe. That&#39;s why I&#39;m such a firm believer in Sage, the WordPress starter theme built on Laravel&#39;s Acorn framework. It’s a breath of fresh air, providing an MVC-like architecture that promotes clean code, separation of concerns, and a genuinely enjoyable development experience.</p>
+<p>Today, I want to dive into one of Sage’s most powerful features for keeping your templates pristine: View Composers. My goal is to show you how to elegantly pass data to your Blade templates, specifically when dealing with custom post types and their associated meta fields, ensuring your presentation layer remains purely presentation-focused.</p>
+<p>A View Composer, at its core, is a class that executes logic and binds data to a view *before* that view is rendered. Think of it as a gatekeeper for your template, preparing all the necessary ingredients so your Blade file can simply display them. This completely decouples your data fetching and manipulation logic from your HTML markup.</p>
+<p>Let’s imagine we have a custom post type called `project` and we want to display its custom fields – perhaps a client name, a completion date, and a project description – on its single detail page. Without a View Composer, you’d likely embed `get_the_ID()` and a bunch of `get_field(&#39;custom_field_name&#39;, get_the_ID())` calls directly into your `single-project.blade.php`. It works, but it’s messy and violates the principle of separation of concerns.</p>
+<p>Here&#39;s how we can make this beautiful with a View Composer. First, let&#39;s create our composer class. Inside `app/View/Composers`, I&#39;d create `ProjectComposer.php`:</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Query;</p>
+<p>class ProjectComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;single-project&#39;,
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @param  \Roots\Acorn\View\Component  $view
+     * @return array
+     */
+    public function with($view)
+    {
+        global $post; // Get the current post object</p>
+<p>$project_data = [
+            &#39;id&#39; =&gt; $post-&gt;ID,
+            &#39;title&#39; =&gt; get_the_title($post-&gt;ID),
+            &#39;content&#39; =&gt; apply_filters(&#39;the_content&#39;, $post-&gt;post_content),
+            &#39;client_name&#39; =&gt; get_field(&#39;client_name&#39;, $post-&gt;ID),
+            &#39;completion_date&#39; =&gt; get_field(&#39;completion_date&#39;, $post-&gt;ID),
+            &#39;services&#39; =&gt; get_field(&#39;services&#39;, $post-&gt;ID), // Assuming this is an array or repeater
+        ];</p>
+<p>return [
+            &#39;project&#39; =&gt; (object) $project_data, // Cast to object for cleaner access in Blade
+        ];
+    }
+}</p>
+<p>In this composer, the `with` method is where the magic happens. We&#39;re fetching the current `project` post&#39;s ID, title, content, and several custom fields using ACF&#39;s `get_field()` function. We then package this data into an associative array and return it. Notice `protected static $views = [&#39;single-project&#39;];` – this tells Sage to apply this composer to any view named `single-project`.</p>
+<p>Now, our `resources/views/single-project.blade.php` template becomes incredibly clean and readable:</p>
+<p>@extends(&#39;layouts.app&#39;)</p>
+<p>@section(&#39;content&#39;)
+  @while(have_posts()) @php the_post() @endphp
+    &lt;article @php post_class() @endphp&gt;
+      &lt;header&gt;
+        &lt;h1 class=&#34;entry-title&#34;&gt;{{ $project-&gt;title }}&lt;/h1&gt;
+        @include(&#39;partials.entry-meta&#39;)
+      &lt;/header&gt;</p>
+<p>&lt;div class=&#34;entry-content&#34;&gt;
+        &lt;p&gt;Client: {{ $project-&gt;client_name }}&lt;/p&gt;
+        &lt;p&gt;Completed: {{ $project-&gt;completion_date }}&lt;/p&gt;</p>
+<p>@if (!empty($project-&gt;services))
+          &lt;p&gt;Services:&lt;/p&gt;
+          &lt;ul&gt;
+            @foreach ($project-&gt;services as $service)
+              &lt;li&gt;{{ $service }}&lt;/li&gt;
+            @endforeach
+          &lt;/ul&gt;
+        @endif</p>
+<p>{!! $project-&gt;content !!}
+      &lt;/div&gt;</p>
+<p>&lt;footer&gt;
+        {!! wp_link_pages([&#39;echo&#39; =&gt; 0, &#39;before&#39; =&gt; &#39;&lt;nav class=&#34;page-nav&#34;&gt;&lt;p&gt;&#39; . __(&#39;Pages:&#39;, &#39;sage&#39;), &#39;after&#39; =&gt; &#39;&lt;/p&gt;&lt;/nav&gt;&#39;]) !!}
+      &lt;/footer&gt;</p>
+<p>@php comments_template(&#39;/partials/comments.blade.php&#39;) @endphp
+    &lt;/article&gt;
+  @endwhile
+@endsection</p>
+<p>Notice how we access our `project` data: `$project-&gt;title`, `$project-&gt;client_name`, etc. Our template is now completely free of data-fetching logic, conditionals for `get_field()`, or anything other than pure presentation. If the way we fetch or process `project` data changes, we only need to modify our `ProjectComposer`, not a dozen template files. This promotes reusability, testability, and a far more organized codebase.</p>
+<p>This architectural pattern is a cornerstone of what makes Sage so powerful for developers. It aligns perfectly with the clean, organized, programmatic approach that contrasts sharply with the unmaintainable, often opaque code generated by visual builders. By leveraging View Composers, you keep your WordPress development elegant, efficient, and genuinely enjoyable. Say goodbye to the spaghetti code and welcome the clarity and structure Sage brings!</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
