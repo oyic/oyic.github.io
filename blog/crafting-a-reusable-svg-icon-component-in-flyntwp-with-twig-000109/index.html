@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting a Reusable SVG Icon Component in FlyntWP with Twig &amp; ACF Pro — Christopher Alberto</title>
+<meta name="description" content="I’ve spent years battling the bloat and complexity of visual page builders, watching beautiful designs crumble under mountains of unnecessary divs and inline…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting a Reusable SVG Icon Component in FlyntWP with Twig &amp; ACF Pro" />
+<meta property="og:description" content="I’ve spent years battling the bloat and complexity of visual page builders, watching beautiful designs crumble under mountains of unnecessary divs and inline…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/cover.png" />
+<meta property="og:image:alt" content="Crafting a Reusable SVG Icon Component in FlyntWP with Twig &amp; ACF Pro" />
+<meta property="article:published_time" content="2026-09-03T17:01:03Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/" />
+<meta property="twitter:title" content="Crafting a Reusable SVG Icon Component in FlyntWP with Twig &amp; ACF Pro" />
+<meta property="twitter:description" content="I’ve spent years battling the bloat and complexity of visual page builders, watching beautiful designs crumble under mountains of unnecessary divs and inline…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/cover.png" />
+<meta property="twitter:image:alt" content="Crafting a Reusable SVG Icon Component in FlyntWP with Twig &amp; ACF Pro" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting a Reusable SVG Icon Component in FlyntWP with Twig &amp; ACF Pro",
+  "description": "I’ve spent years battling the bloat and complexity of visual page builders, watching beautiful designs crumble under mountains of unnecessary divs and inline…",
+  "image": "https://chrisalberto.site/assets/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/cover.png",
+  "datePublished": "2026-09-03T17:01:03Z",
+  "dateModified": "2026-09-03T17:01:03Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-03T17:01:03Z">September 4, 2026</time></div>
+    <h1 class="post-hero__title">Crafting a Reusable SVG Icon Component in FlyntWP with Twig &amp; ACF Pro</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/cover.png" alt="Crafting a Reusable SVG Icon Component in FlyntWP with Twig &amp; ACF Pro" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>I’ve spent years battling the bloat and complexity of visual page builders, watching beautiful designs crumble under mountains of unnecessary divs and inline styles. That’s why I gravitated towards FlyntWP – it’s a breath of fresh air, a framework that empowers developers to build fast, clean WordPress sites without compromising on client content management. Forget slow load times and fighting with Core Web Vitals; FlyntWP prioritizes performance and a truly clean DOM from the ground up, largely thanks to its component-driven architecture and sensible build processes.</p>
+<p>Today, I want to dive into a specific technique that really highlights FlyntWP’s power: building a truly reusable SVG icon component. Think about how many times you add social media icons, feature icons, or just general decorative SVGs across a site. In a page builder, you’re often stuck embedding raw SVG code, which is repetitive and hard to update, or relying on icon fonts, which come with their own performance drawbacks. FlyntWP, with its elegant combination of modular Twig components and ACF Pro, offers a far superior solution.</p>
+<p>Our goal is to create a single, flexible Twig partial that we can call from any FlyntWP component, passing in just a few parameters to display the correct icon with the right styling. This keeps our markup DRY (Don&#39;t Repeat Yourself) and makes updates a breeze. Let&#39;s start with the data structure using ACF Pro. For our icons, we’ll create a simple field group that can be attached to any component where we need an icon. I typically make this a &#34;clone&#34; field group so it can be easily included. Inside, we’ll use a `Select` field named `icon_name` with choices like `facebook`, `twitter`, `instagram`, `email`, etc., mapping to the actual SVG file names or classes we’ll use. We might also add a `Text` field for an `icon_class` to allow for custom styling.</p>
+<p>Next, we create our reusable Twig partial. I like to put these in a `templates/partials` folder within my theme, for instance, `templates/partials/_icon.twig`. This partial will take `icon_name` and `icon_class` as arguments. Here’s a simplified version of what that partial might look like:</p>
+<p>{# templates/partials/_icon.twig #}
+{% if icon_name %}
+  &lt;svg class=&#34;icon icon--{{ icon_name }} {{ icon_class|default(&#39;&#39;) }}&#34; aria-hidden=&#34;true&#34;&gt;
+    &lt;use xlink:href=&#34;#icon-{{ icon_name }}&#34;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+{% endif %}</p>
+<p>Let&#39;s break that down. We’re checking if `icon_name` exists. Then, we render an SVG element. The `class` attribute uses BEM-like naming conventions (`icon`, `icon--facebook`) and includes any custom classes passed in via `icon_class`. The magic happens with `&lt;use xlink:href=&#34;#icon-{{ icon_name }}&#34;&gt;&lt;/use&gt;`. This assumes you&#39;re using an SVG sprite, where all your SVGs are compiled into a single file and referenced by their ID. Vite, FlyntWP’s default build tool, makes setting up SVG sprites incredibly easy, pulling all SVGs from a specified directory and optimizing them. This approach means your browser only downloads one SVG file, and individual icons are pulled from that sprite, leading to fantastic performance and clean markup.</p>
+<p>Now, how do we use this reusable partial within a FlyntWP component? Let’s say we have a `BlockHero` component and want to display a social media icon. In `BlockHero/index.twig`, after fetching our ACF data, we can call our `_icon.twig` partial like this:</p>
+<p>{# src/components/BlockHero/index.twig #}
+&lt;div class=&#34;BlockHero-socialLink&#34;&gt;
+  {% include &#39;templates/partials/_icon.twig&#39; with {
+    icon_name: fields.social_icon_name,
+    icon_class: &#39;BlockHero-socialIcon&#39;
+  } %}
+  &lt;a href=&#34;{{ fields.social_link_url }}&#34;&gt;{{ fields.social_link_text }}&lt;/a&gt;
+&lt;/div&gt;</p>
+<p>Here, `fields.social_icon_name` would come directly from our ACF `Select` field on the `BlockHero` component. Notice how clean and semantic this is. We’re not embedding any SVG code; we’re simply telling the component *which* icon to display and giving it a specific class for local styling within the `BlockHero` context. This pattern ensures extreme flexibility and maintainability. Need to change the core structure of how icons are rendered? You change `_icon.twig` once. Need to add a new icon? Add it to your SVG assets folder, update the ACF `Select` field, and it&#39;s available everywhere.</p>
+<p>This level of modularity and programmatic control is precisely why FlyntWP shines. It’s not just about faster builds with Vite or cleaner output; it’s about a developer experience that genuinely enhances productivity and allows you to craft bespoke, high-performance websites without fighting an opinionated system. This approach means a lean DOM, minimal CSS, and ultimately, a fantastic experience for your users and excellent Core Web Vitals scores. Give it a try – you&#39;ll be amazed at how quickly you can build complex layouts with such elegant simplicity.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

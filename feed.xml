@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting a Reusable SVG Icon Component in FlyntWP with Twig &amp; ACF Pro</title>
+      <link href="https://chrisalberto.site/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/</id>
+      <updated>2026-09-03T17:01:03Z</updated>
+      <summary>I’ve spent years battling the bloat and complexity of visual page builders, watching beautiful designs crumble under mountains of unnecessary divs and inline…</summary>
+    </entry><entry>
       <title>The &#34;Meet Our Team&#34; Meltdown: Why Page Builders Lead to Design Drift</title>
       <link href="https://chrisalberto.site/blog/the-meet-our-team-meltdown-why-page-builders-lead-to-design-000108/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-meet-our-team-meltdown-why-page-builders-lead-to-design-000108/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-event-000095/</id>
       <updated>2026-08-23T03:51:31Z</updated>
       <summary>One of the most powerful features of modern WordPress development, particularly when thinking about backend infrastructure, is the ability to extend the REST…</summary>
-    </entry><entry>
-      <title>Automating WordPress Plugin Deployment with WP-CLI and GitHub Actions</title>
-      <link href="https://chrisalberto.site/blog/automating-wordpress-plugin-deployment-with-wp-cli-and-000091/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/automating-wordpress-plugin-deployment-with-wp-cli-and-000091/</id>
-      <updated>2026-08-23T03:11:48Z</updated>
-      <summary>One of the most tedious and error-prone tasks in advanced WordPress development is deploying code changes to staging or production environments.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
