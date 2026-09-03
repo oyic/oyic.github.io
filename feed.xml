@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Securing Custom Post Type Data with WordPress REST API Endpoints and Application Passwords</title>
+      <link href="https://chrisalberto.site/blog/securing-custom-post-type-data-with-wordpress-rest-api-000103/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/securing-custom-post-type-data-with-wordpress-rest-api-000103/</id>
+      <updated>2026-09-03T03:01:06Z</updated>
+      <summary>When building complex WordPress applications, we often find ourselves needing to expose data beyond the default post types and fields available through the…</summary>
+    </entry><entry>
       <title>Streamlining Custom Post Data in Sage with View Composers</title>
       <link href="https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/</id>
       <updated>2026-08-21T17:18:00Z</updated>
       <summary>One of the reasons I champion Sage for WordPress development is its unwavering commitment to clean architecture.</summary>
-    </entry><entry>
-      <title>Crafting Reusable Button Components in FlyntWP with Twig and ACF</title>
-      <link href="https://chrisalberto.site/blog/crafting-reusable-button-components-in-flyntwp-with-twig-000089/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-reusable-button-components-in-flyntwp-with-twig-000089/</id>
-      <updated>2026-08-21T17:17:43Z</updated>
-      <summary>I&#39;ve been working with FlyntWP for a while now, and one of the things that truly sets it apart from the sea of drag-and-drop page builders is its commitment to…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
