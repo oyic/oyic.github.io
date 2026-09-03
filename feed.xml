@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>That Time a Page Builder Made a Client Break Their Own Hero Section</title>
+      <link href="https://chrisalberto.site/blog/that-time-a-page-builder-made-a-client-break-their-own-hero-000104/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/that-time-a-page-builder-made-a-client-break-their-own-hero-000104/</id>
+      <updated>2026-09-03T23:04:13Z</updated>
+      <summary>The debate between custom WordPress themes and page builders like Elementor or Divi is a familiar one in web development circles.</summary>
+    </entry><entry>
       <title>Sculpting Clean Data for Your Sage Templates with View Composers</title>
       <link href="https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000110/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000110/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-with-sub-components-000097/</id>
       <updated>2026-08-23T17:35:06Z</updated>
       <summary>I&#39;ve spent years battling the bloat and rigidity of traditional low-code page builders.</summary>
-    </entry><entry>
-      <title>The True Cost of &#34;Easy&#34;: When Your WordPress Site Isn&#39;t Truly Yours</title>
-      <link href="https://chrisalberto.site/blog/the-true-cost-of-easy-when-your-wordpress-site-isn-t-truly-000092/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-true-cost-of-easy-when-your-wordpress-site-isn-t-truly-000092/</id>
-      <updated>2026-08-23T05:46:24Z</updated>
-      <summary>My phone rang a few weeks ago, and on the other end was Sarah, owner of Green Thumb Nurseries, a local business I’d been chatting with about their website.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/that-time-a-page-builder-made-a-client-break-their-own-hero-000104/</loc>
+      <lastmod>2026-09-03T23:04:13Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000110/</loc>
       <lastmod>2026-09-03T17:10:57Z</lastmod>
       <changefreq>monthly</changefreq>
