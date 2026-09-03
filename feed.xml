@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The &#34;Meet Our Team&#34; Meltdown: Why Page Builders Lead to Design Drift</title>
+      <link href="https://chrisalberto.site/blog/the-meet-our-team-meltdown-why-page-builders-lead-to-design-000108/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-meet-our-team-meltdown-why-page-builders-lead-to-design-000108/</id>
+      <updated>2026-09-03T05:01:52Z</updated>
+      <summary>I remember a particular &#34;Meet Our Team&#34; page for a client that became the poster child for why I&#39;ve moved away from page builders for good.</summary>
+    </entry><entry>
       <title>Crafting Secure, Specialized REST Endpoints in WordPress</title>
       <link href="https://chrisalberto.site/blog/crafting-secure-specialized-rest-endpoints-in-wordpress-000107/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-secure-specialized-rest-endpoints-in-wordpress-000107/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/automating-wordpress-plugin-deployment-with-wp-cli-and-000091/</id>
       <updated>2026-08-23T03:11:48Z</updated>
       <summary>One of the most tedious and error-prone tasks in advanced WordPress development is deploying code changes to staging or production environments.</summary>
-    </entry><entry>
-      <title>Keeping Your Templates Clean with Sage&#39;s View Composers</title>
-      <link href="https://chrisalberto.site/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/</id>
-      <updated>2026-08-22T17:18:45Z</updated>
-      <summary>If you’ve spent any time wrangling WordPress themes, you know the struggle: templates that become a spaghetti monster of PHP logic, database queries, and HTML.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
