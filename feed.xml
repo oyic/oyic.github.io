@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Secure, Specialized REST Endpoints in WordPress</title>
+      <link href="https://chrisalberto.site/blog/crafting-secure-specialized-rest-endpoints-in-wordpress-000107/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-secure-specialized-rest-endpoints-in-wordpress-000107/</id>
+      <updated>2026-09-03T03:03:07Z</updated>
+      <summary>When we talk about extending WordPress beyond its core content management capabilities, the built-in REST API is an invaluable tool.</summary>
+    </entry><entry>
       <title>Securing Custom Post Type Data with WordPress REST API Endpoints and Application Passwords</title>
       <link href="https://chrisalberto.site/blog/securing-custom-post-type-data-with-wordpress-rest-api-000103/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/securing-custom-post-type-data-with-wordpress-rest-api-000103/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/keeping-your-templates-clean-with-sage-s-view-composers-000094/</id>
       <updated>2026-08-22T17:18:45Z</updated>
       <summary>If you’ve spent any time wrangling WordPress themes, you know the struggle: templates that become a spaghetti monster of PHP logic, database queries, and HTML.</summary>
-    </entry><entry>
-      <title>No More Messy Queries in Blade: Sage View Composers to the Rescue</title>
-      <link href="https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/no-more-messy-queries-in-blade-sage-view-composers-to-the-000090/</id>
-      <updated>2026-08-21T17:18:00Z</updated>
-      <summary>One of the reasons I champion Sage for WordPress development is its unwavering commitment to clean architecture.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
