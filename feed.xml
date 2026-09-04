@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Streamlining WordPress Deployments with WP-CLI and GitHub Actions</title>
+      <link href="https://chrisalberto.site/blog/streamlining-wordpress-deployments-with-wp-cli-and-github-000111/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/streamlining-wordpress-deployments-with-wp-cli-and-github-000111/</id>
+      <updated>2026-09-04T03:28:32Z</updated>
+      <summary>For years, deploying WordPress applications felt like a recurring exercise in caution and manual repetition.</summary>
+    </entry><entry>
       <title>That Time a Page Builder Made a Client Break Their Own Hero Section</title>
       <link href="https://chrisalberto.site/blog/that-time-a-page-builder-made-a-client-break-their-own-hero-000104/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/that-time-a-page-builder-made-a-client-break-their-own-hero-000104/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-data-with-precision-a-view-composer-for-your-000098/</id>
       <updated>2026-08-23T17:51:19Z</updated>
       <summary>I’ve spent years navigating the often-murky waters of WordPress theme development, and if there’s one thing that consistently frustrates me, it’s the struggle…</summary>
-    </entry><entry>
-      <title>Crafting Reusable Buttons in FlyntWP with Sub-Components</title>
-      <link href="https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-with-sub-components-000097/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-with-sub-components-000097/</id>
-      <updated>2026-08-23T17:35:06Z</updated>
-      <summary>I&#39;ve spent years battling the bloat and rigidity of traditional low-code page builders.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
