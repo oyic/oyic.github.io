@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>View Composers: Serving Up Clean CPT Data in Sage 10 — Christopher Alberto</title>
+<meta name="description" content="If you’ve spent any time developing custom WordPress themes, you know the struggle: how do you get data from your custom post types (CPTs) and their associated…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="View Composers: Serving Up Clean CPT Data in Sage 10" />
+<meta property="og:description" content="If you’ve spent any time developing custom WordPress themes, you know the struggle: how do you get data from your custom post types (CPTs) and their associated…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/cover.png" />
+<meta property="og:image:alt" content="View Composers: Serving Up Clean CPT Data in Sage 10" />
+<meta property="article:published_time" content="2026-09-04T17:41:37Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/" />
+<meta property="twitter:title" content="View Composers: Serving Up Clean CPT Data in Sage 10" />
+<meta property="twitter:description" content="If you’ve spent any time developing custom WordPress themes, you know the struggle: how do you get data from your custom post types (CPTs) and their associated…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/cover.png" />
+<meta property="twitter:image:alt" content="View Composers: Serving Up Clean CPT Data in Sage 10" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "View Composers: Serving Up Clean CPT Data in Sage 10",
+  "description": "If you’ve spent any time developing custom WordPress themes, you know the struggle: how do you get data from your custom post types (CPTs) and their associated…",
+  "image": "https://chrisalberto.site/assets/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/cover.png",
+  "datePublished": "2026-09-04T17:41:37Z",
+  "dateModified": "2026-09-04T17:41:37Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-04T17:41:37Z">September 5, 2026</time></div>
+    <h1 class="post-hero__title">View Composers: Serving Up Clean CPT Data in Sage 10</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/cover.png" alt="View Composers: Serving Up Clean CPT Data in Sage 10" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>If you’ve spent any time developing custom WordPress themes, you know the struggle: how do you get data from your custom post types (CPTs) and their associated custom fields into your templates without turning them into a tangled mess of `WP_Query` loops and `get_field()` calls? The traditional WordPress approach often blurs the lines between data retrieval and presentation, leading to unmaintainable, hard-to-read code. This is precisely where Sage, and specifically its elegant View Composers powered by Acorn, shine brightest.</p>
+<p>Forget the shortcode soup and database bloat of page builders like Divi or Elementor, where every piece of content becomes an abstract block managed in a visual editor, divorcing it from sane, programmatic control. With Sage, we embrace a structured, MVC-like approach. Our Blade templates should be *purely* presentation. They should know nothing about *how* the data was fetched, only that it’s there, ready to be displayed. View Composers are the unsung heroes that make this separation possible, allowing you to route clean, pre-processed data to your templates.</p>
+<p>Let’s walk through a concrete example. Imagine we have a custom post type called `project` and each project has custom fields like `client` and `status`. Instead of querying these directly in `single-project.blade.php`, we’ll use a View Composer.</p>
+<p>First, create a new composer file, typically in `app/View/Composers/Project.php`:</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;</p>
+<p>class Project extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;single-project&#39;,
+        &#39;partials.content-single-project&#39;, // If you break it into partials
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @return array
+     */
+    public function with()
+    {
+        $post = get_post(); // Get the current global post object</p>
+<p>// Ensure we&#39;re dealing with a &#39;project&#39; post type
+        if (! $post || $post-&gt;post_type !== &#39;project&#39;) {
+            return [];
+        }</p>
+<p>return [
+            &#39;project&#39; =&gt; (object) [
+                &#39;id&#39; =&gt; $post-&gt;ID,
+                &#39;title&#39; =&gt; get_the_title($post),
+                &#39;content&#39; =&gt; apply_filters(&#39;the_content&#39;, $post-&gt;post_content),
+                &#39;client&#39; =&gt; get_field(&#39;client&#39;, $post-&gt;ID), // Using ACF example
+                &#39;status&#39; =&gt; get_field(&#39;status&#39;, $post-&gt;ID),
+                &#39;link&#39; =&gt; get_permalink($post),
+                &#39;thumbnail&#39; =&gt; get_the_post_thumbnail($post, &#39;large&#39;),
+            ],
+        ];
+    }
+}</p>
+<p>This `Project` class extends `Roots\Acorn\View\Composer`, leveraging Acorn&#39;s dependency injection container to handle its lifecycle. The `$views` array tells Sage that this composer should provide data to `single-project.blade.php` (and any other views listed). The `with()` method is where the magic happens: we fetch the current post, extract relevant data, including custom fields using `get_field()` (a common function for ACF users), and package it into a clean object. This object, `$project`, is then made available to our specified Blade templates.</p>
+<p>Now, our `single-project.blade.php` template becomes incredibly clean and focused on presentation:</p>
+<p>@extends(&#39;layouts.app&#39;)</p>
+<p>@section(&#39;content&#39;)
+  &lt;article @php(post_class())&gt;
+    &lt;header&gt;
+      &lt;h1 class=&#34;entry-title&#34;&gt;{{ $project-&gt;title }}&lt;/h1&gt;
+      @if($project-&gt;thumbnail)
+        &lt;figure&gt;{{ $project-&gt;thumbnail }}&lt;/figure&gt;
+      @endif
+    &lt;/header&gt;</p>
+<p>&lt;div class=&#34;entry-content&#34;&gt;
+      &lt;p&gt;Client: {{ $project-&gt;client }}&lt;/p&gt;
+      &lt;p&gt;Status: {{ $project-&gt;status }}&lt;/p&gt;
+      {!! $project-&gt;content !!}
+    &lt;/div&gt;</p>
+<p>&lt;footer&gt;
+      &lt;a href=&#34;{{ $project-&gt;link }}&#34;&gt;View Project&lt;/a&gt;
+    &lt;/footer&gt;
+  &lt;/article&gt;
+@endsection</p>
+<p>Notice the difference: no `get_post()`, no `the_title()`, no `get_field()` directly in the template. Just `$project-&gt;title`, `$project-&gt;client`, and so on. The template is purely concerned with *how* to display `$project`, not *how to get* `$project`. This is a massive win for separation of concerns.</p>
+<p>The benefits here are substantial: your templates are lean and readable, your data fetching logic is centralized and testable within PHP classes, and your overall codebase gains a level of organization that is simply not possible with conventional WordPress theme development or page builder solutions. Sage, through Acorn and its well-designed View Composers, provides the tools to build truly modern, maintainable WordPress applications that developers actually enjoy working on. It’s about bringing programmatic sanity back to your projects.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

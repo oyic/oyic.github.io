@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>View Composers: Serving Up Clean CPT Data in Sage 10</title>
+      <link href="https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/</id>
+      <updated>2026-09-04T17:41:37Z</updated>
+      <summary>If you’ve spent any time developing custom WordPress themes, you know the struggle: how do you get data from your custom post types (CPTs) and their associated…</summary>
+    </entry><entry>
       <title>Crafting Reusable Twig Partials for Flawless FlyntWP Core Web Vitals</title>
       <link href="https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-core-000112/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-core-000112/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/the-case-of-the-client-who-broke-their-own-layout-why-000096/</id>
       <updated>2026-08-24T05:00:50Z</updated>
       <summary>Alright, let&#39;s talk WordPress.</summary>
-    </entry><entry>
-      <title>Streamlining WordPress Plugin Deployment with WP-CLI and GitHub Actions</title>
-      <link href="https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployment-with-wp-cli-and-000099/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployment-with-wp-cli-and-000099/</id>
-      <updated>2026-08-24T03:49:26Z</updated>
-      <summary>For anyone managing WordPress sites beyond a simple personal blog, the task of deploying code updates quickly becomes a bottleneck.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
