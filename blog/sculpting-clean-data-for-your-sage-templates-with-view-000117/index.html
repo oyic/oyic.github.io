@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sculpting Clean Data for Your Sage Templates with View Composers — Christopher Alberto</title>
+<meta name="description" content="Building modern WordPress themes with a focus on maintainability and a clean codebase often feels like an uphill battle, especially if you&#39;re coming from the…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Sculpting Clean Data for Your Sage Templates with View Composers" />
+<meta property="og:description" content="Building modern WordPress themes with a focus on maintainability and a clean codebase often feels like an uphill battle, especially if you&#39;re coming from the…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/cover.png" />
+<meta property="og:image:alt" content="Sculpting Clean Data for Your Sage Templates with View Composers" />
+<meta property="article:published_time" content="2026-09-05T18:05:51Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/" />
+<meta property="twitter:title" content="Sculpting Clean Data for Your Sage Templates with View Composers" />
+<meta property="twitter:description" content="Building modern WordPress themes with a focus on maintainability and a clean codebase often feels like an uphill battle, especially if you&#39;re coming from the…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/cover.png" />
+<meta property="twitter:image:alt" content="Sculpting Clean Data for Your Sage Templates with View Composers" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Sculpting Clean Data for Your Sage Templates with View Composers",
+  "description": "Building modern WordPress themes with a focus on maintainability and a clean codebase often feels like an uphill battle, especially if you&#39;re coming from the…",
+  "image": "https://chrisalberto.site/assets/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/cover.png",
+  "datePublished": "2026-09-05T18:05:51Z",
+  "dateModified": "2026-09-05T18:05:51Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-05T18:05:51Z">September 6, 2026</time></div>
+    <h1 class="post-hero__title">Sculpting Clean Data for Your Sage Templates with View Composers</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/cover.png" alt="Sculpting Clean Data for Your Sage Templates with View Composers" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>Building modern WordPress themes with a focus on maintainability and a clean codebase often feels like an uphill battle, especially if you&#39;re coming from the world of drag-and-drop page builders. While tools like Divi or Elementor promise quick results, they inevitably lead to a bloated database, vendor lock-in, and an unmanageable codebase that no developer wants to inherit. This is precisely why Sage, powered by Acorn and Blade, has become my go-to choice. It offers an MVC-like architecture for WordPress development, ensuring your logic, data, and presentation layers are beautifully separated. Today, I want to dive into one of its most powerful features for achieving this separation: View Composers.</p>
+<p>Too often in WordPress theme development, I see developers fetching data directly within their template files. Maybe it&#39;s a `WP_Query` loop, or a call to `get_post_meta()` scattered throughout `single.php` or `archive.php`. While it &#34;works,&#34; it&#39;s a direct violation of the principle of separation of concerns. Your templates should be purely concerned with presentation – displaying data, not fetching or processing it. This bad habit quickly makes templates hard to read, difficult to debug, and impossible to reuse without duplicating logic.</p>
+<p>This is where Sage&#39;s View Composers come to the rescue, borrowing a concept familiar to Laravel developers. A View Composer is a class that executes when a specific view (or set of views) is rendered, allowing you to bind data to that view *before* it&#39;s ever displayed. It&#39;s the perfect place to gather your custom post types, options, or any other data your template needs, keeping your Blade files pristine and purely focused on markup. Think of it as your backstage manager, preparing all the props and actors before the main show begins.</p>
+<p>Let&#39;s walk through a concrete example. Imagine we have a custom post type called &#34;Service&#34; and we want to display a list of all active services in a sidebar partial, `resources/views/partials/services-sidebar.blade.php`. Instead of dumping a `WP_Query` directly into that partial, let&#39;s use a View Composer.</p>
+<p>First, we create a new composer file, say `app/View/Composers/ServicesComposer.php`:</p>
+<p>```php
+&lt;?php</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Query;</p>
+<p>class ServicesComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;partials.services-sidebar&#39;,
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @param  \Illuminate\View\View  $view
+     * @return array
+     */
+    public function with(\Illuminate\View\View $view)
+    {
+        return [
+            &#39;services&#39; =&gt; $this-&gt;getServices(),
+        ];
+    }</p>
+<p>/**
+     * Get an array of active services.
+     *
+     * @return array
+     */
+    protected function getServices()
+    {
+        $query = new WP_Query([
+            &#39;post_type&#39; =&gt; &#39;service&#39;,
+            &#39;post_status&#39; =&gt; &#39;publish&#39;,
+            &#39;posts_per_page&#39; =&gt; -1,
+            &#39;orderby&#39; =&gt; &#39;menu_order&#39;,
+            &#39;order&#39; =&gt; &#39;ASC&#39;,
+        ]);</p>
+<p>return array_map(function ($post) {
+            return (object) [
+                &#39;title&#39; =&gt; get_the_title($post),
+                &#39;permalink&#39; =&gt; get_permalink($post),
+                // Add any other data you need for the display
+            ];
+        }, $query-&gt;posts);
+    }
+}
+```</p>
+<p>In this `ServicesComposer`, we define `$views` to specify which Blade templates this composer should apply to. The `with()` method returns an associative array, where the keys become available as variables in our targeted view. Here, we&#39;re calling a protected `getServices()` method to encapsulate our `WP_Query` logic, returning a cleaned-up array of service objects.</p>
+<p>Now, our `resources/views/partials/services-sidebar.blade.php` template becomes incredibly simple and readable:</p>
+<p>```blade
+&lt;aside class=&#34;sidebar-services&#34;&gt;
+    &lt;h2&gt;Our Services&lt;/h2&gt;
+    @if (!empty($services))
+        &lt;ul&gt;
+            @foreach ($services as $service)
+                &lt;li&gt;&lt;a href=&#34;{{ $service-&gt;permalink }}&#34;&gt;{{ $service-&gt;title }}&lt;/a&gt;&lt;/li&gt;
+            @endforeach
+        &lt;/ul&gt;
+    @else
+        &lt;p&gt;No services currently available.&lt;/p&gt;
+    @endif
+&lt;/aside&gt;
+```</p>
+<p>Notice how clean that template is! No `WP_Query`, no `have_posts()` or `the_post()`, just plain logic iterating over a `$services` variable that we know will be there. The template only worries about *how* to display the data, not *where* it comes from.</p>
+<p>To make sure our composer is picked up by Sage, we register it. The simplest way for a single theme is in `app/setup.php`, within the `after_setup_theme` action, by adding it to the `Sage::loadViewComposers` array:</p>
+<p>```php
+// app/setup.php
+add_action(&#39;after_setup_theme&#39;, function () {
+    // ... other setup code ...</p>
+<p>/**
+     * Load theme composers.
+     *
+     * @see https://roots.io/docs/sage/10.x/view-composers/
+     */
+    Sage::loadViewComposers(); // Make sure this is called</p>
+<p>// Add your composer here:
+    app(&#39;view&#39;)-&gt;composer(&#39;partials.services-sidebar&#39;, App\View\Composers\ServicesComposer::class);
+}, 20); // Make sure this runs after Sage has loaded its own composers
+```</p>
+<p>With this pattern, your data fetching logic is centralized, reusable, and easily testable. Your templates remain purely presentational, leading to a much more organized, programmatic codebase that developers will genuinely enjoy working with. Sage, with its reliance on modern PHP practices and tools like Blade and Acorn, truly transforms WordPress development from a hacky mess into an elegant, maintainable art form. Embrace View Composers, and you&#39;ll immediately feel the difference in clarity and control over your WordPress projects.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
