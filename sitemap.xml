@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/</loc>
+      <lastmod>2026-09-05T03:38:26Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/</loc>
       <lastmod>2026-09-04T17:41:37Z</lastmod>
       <changefreq>monthly</changefreq>

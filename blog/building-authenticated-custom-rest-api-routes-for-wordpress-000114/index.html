@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Building Authenticated Custom REST API Routes for WordPress Plugins — Christopher Alberto</title>
+<meta name="description" content="When we push the boundaries of WordPress, we often find ourselves needing to expose custom data or functionality beyond what the core REST API offers." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Building Authenticated Custom REST API Routes for WordPress Plugins" />
+<meta property="og:description" content="When we push the boundaries of WordPress, we often find ourselves needing to expose custom data or functionality beyond what the core REST API offers." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/cover.png" />
+<meta property="og:image:alt" content="Building Authenticated Custom REST API Routes for WordPress Plugins" />
+<meta property="article:published_time" content="2026-09-05T03:38:26Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/" />
+<meta property="twitter:title" content="Building Authenticated Custom REST API Routes for WordPress Plugins" />
+<meta property="twitter:description" content="When we push the boundaries of WordPress, we often find ourselves needing to expose custom data or functionality beyond what the core REST API offers." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/cover.png" />
+<meta property="twitter:image:alt" content="Building Authenticated Custom REST API Routes for WordPress Plugins" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Building Authenticated Custom REST API Routes for WordPress Plugins",
+  "description": "When we push the boundaries of WordPress, we often find ourselves needing to expose custom data or functionality beyond what the core REST API offers.",
+  "image": "https://chrisalberto.site/assets/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/cover.png",
+  "datePublished": "2026-09-05T03:38:26Z",
+  "dateModified": "2026-09-05T03:38:26Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-05T03:38:26Z">September 5, 2026</time></div>
+    <h1 class="post-hero__title">Building Authenticated Custom REST API Routes for WordPress Plugins</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/cover.png" alt="Building Authenticated Custom REST API Routes for WordPress Plugins" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>When we push the boundaries of WordPress, we often find ourselves needing to expose custom data or functionality beyond what the core REST API offers. Perhaps your plugin manages a unique dataset, or you need to integrate WordPress with an external application, a mobile app, or another backend service. Crafting a custom REST endpoint is a powerful way to achieve this, but ensuring these endpoints are secure and only accessible to authorized consumers is paramount.</p>
+<p>The process begins with registering your custom route. Let&#39;s imagine we&#39;re building a plugin that manages &#34;Projects&#34; stored as a custom post type. We want an endpoint to list these projects. A basic setup might look like this within your plugin&#39;s main file or an appropriate class:</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-plugin/v1&#39;, &#39;/projects&#39;, array(
+        &#39;methods&#39; =&gt; &#39;GET&#39;,
+        &#39;callback&#39; =&gt; &#39;my_plugin_get_projects&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;__return_true&#39;, // DANGER: For now, it&#39;s open!
+    ));
+});</p>
+<p>function my_plugin_get_projects( $request ) {
+    $args = array(
+        &#39;post_type&#39; =&gt; &#39;project&#39;,
+        &#39;posts_per_page&#39; =&gt; -1,
+    );
+    $projects = get_posts( $args );
+    $data = [];
+    foreach ( $projects as $project ) {
+        $data[] = [
+            &#39;id&#39; =&gt; $project-&gt;ID,
+            &#39;title&#39; =&gt; $project-&gt;post_title,
+            &#39;status&#39; =&gt; get_post_meta( $project-&gt;ID, &#39;_project_status&#39;, true ),
+        ];
+    }
+    return new WP_REST_Response( $data, 200 );
+}</p>
+<p>This works, but notice the `permission_callback` set to `__return_true`. This effectively makes the endpoint public, which is rarely acceptable for sensitive custom data. For machine-to-machine communication, cross-domain requests, or dedicated client applications, traditional WordPress nonces are insufficient. We need robust authentication.</p>
+<p>WordPress provides a robust solution for this: Application Passwords. Introduced in WordPress 5.6, Application Passwords allow users to generate unique, revocable passwords specifically for API access. When an application uses an Application Password, it authenticates as the user who generated it, granting the endpoint access based on that user&#39;s capabilities.</p>
+<p>To leverage Application Passwords, we modify our `permission_callback`. Instead of `__return_true`, we&#39;ll point it to a function that checks the current user&#39;s capabilities. For our &#39;projects&#39; endpoint, let&#39;s say only users with the `edit_posts` capability should be able to list projects.</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-plugin/v1&#39;, &#39;/projects&#39;, array(
+        &#39;methods&#39; =&gt; &#39;GET&#39;,
+        &#39;callback&#39; =&gt; &#39;my_plugin_get_projects&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_plugin_projects_permission_check&#39;,
+    ));
+});</p>
+<p>function my_plugin_projects_permission_check() {
+    // Check if the current user (authenticated via Application Password) has the &#39;edit_posts&#39; capability.
+    // This assumes the user generating the app password has this capability.
+    return current_user_can( &#39;edit_posts&#39; );
+}</p>
+<p>Now, when an external service attempts to access `/wp-json/my-plugin/v1/projects`, it must provide an `Authorization: Basic` header with a base64-encoded string of `username:application_password`. WordPress will then authenticate the request using the provided application password against the user who generated it. If the authentication succeeds, our `my_plugin_projects_permission_check` function runs in the context of that user. `current_user_can(&#39;edit_posts&#39;)` will then accurately reflect if that specific user has the necessary permission.</p>
+<p>For even finer-grained control, you might check for a custom capability: `current_user_can( &#39;manage_my_plugin_projects&#39; )`. This requires you to define and assign that capability when your plugin is activated, usually via the Roles and Capabilities API.</p>
+<p>The `permission_callback` is executed early in the request lifecycle, even before the `callback` function. If it returns `false` or a `WP_Error` object, the main `callback` will not be invoked, and a 401 Unauthorized or 403 Forbidden response will be returned, respectively. This architectural pattern provides a robust and secure gatekeeping mechanism for your custom API endpoints, ensuring that your valuable data is only exposed to trusted consumers authenticated through WordPress&#39;s native security features.</p>
+<p>This approach gives you a solid foundation for building secure, custom integrations with WordPress, making your application a true backend powerhouse for modern web development.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
