@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection — Christopher Alberto</title>
+<meta name="description" content="One of the most common frustrations I&#39;ve encountered with traditional low-code page builders is the sheer amount of bloat they introduce." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection" />
+<meta property="og:description" content="One of the most common frustrations I&#39;ve encountered with traditional low-code page builders is the sheer amount of bloat they introduce." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/cover.png" />
+<meta property="og:image:alt" content="Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection" />
+<meta property="article:published_time" content="2026-09-06T18:16:34Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/" />
+<meta property="twitter:title" content="Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection" />
+<meta property="twitter:description" content="One of the most common frustrations I&#39;ve encountered with traditional low-code page builders is the sheer amount of bloat they introduce." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/cover.png" />
+<meta property="twitter:image:alt" content="Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection",
+  "description": "One of the most common frustrations I&#39;ve encountered with traditional low-code page builders is the sheer amount of bloat they introduce.",
+  "image": "https://chrisalberto.site/assets/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/cover.png",
+  "datePublished": "2026-09-06T18:16:34Z",
+  "dateModified": "2026-09-06T18:16:34Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-06T18:16:34Z">September 7, 2026</time></div>
+    <h1 class="post-hero__title">Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/cover.png" alt="Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>One of the most common frustrations I&#39;ve encountered with traditional low-code page builders is the sheer amount of bloat they introduce. A simple link can end up wrapped in half a dozen divs, each carrying inline styles or redundant classes. This quickly becomes a nightmare for performance, especially when aiming for flawless Core Web Vitals. That&#39;s precisely why I advocate so strongly for FlyntWP – it gives you the power to craft exactly what you need, with no unnecessary baggage. Today, I want to walk you through a prime example of this: creating a simple, reusable Twig component for handling links, ensuring a clean DOM and optimal performance.</p>
+<p>The goal is to have a consistent, flexible way to add links across our site without duplicating code or creating excessive markup. We’ll achieve this by leveraging ACF Pro for our data input and a dedicated Twig component for rendering. First, let&#39;s define our link fields in ACF. I typically create a reusable field group for a &#34;Link&#34; that includes a URL, text, and an optional &#34;open in new tab&#34; toggle. When setting this up in ACF, I use clear field names like `link_url`, `link_text`, and `link_target_blank`. Alternatively, ACF&#39;s native &#34;Link&#34; field type returns an array with `url`, `title`, and `target`, which works perfectly with our component.</p>
+<p>Next, we create our Twig component. In FlyntWP, components live in the `Components` directory. For our link, we&#39;ll create a `Link` folder and an `index.twig` file inside it. This component will be incredibly lean, focusing solely on rendering the `&lt;a&gt;` tag. Here’s what my `Components/Link/index.twig` often looks like:</p>
+<p>{% if link.url %}
+    &lt;a href=&#34;{{ link.url }}&#34;
+       {% if link.target == &#39;_blank&#39; or link.target %}target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;{% endif %}
+       {% if class %}class=&#34;{{ class }}&#34;{% endif %}&gt;
+        {{ link.title|default(&#39;Learn More&#39;) }}
+    &lt;/a&gt;
+{% endif %}</p>
+<p>Notice how concise that is. We check if a `link.url` exists, then we render a standard HTML `&lt;a&gt;` tag. We conditionally add `target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;` if the `link.target` is set to `_blank` (from ACF&#39;s native link field) or simply `true` (from our custom boolean field). We also allow an optional `class` to be passed in, making it easy to style the link using our global utility classes or block-specific styles. This results in a super clean DOM, delivering only the essential markup needed.</p>
+<p>To use this component within any of our FlyntWP block templates, it’s as simple as an `include` statement. Imagine you have an ACF group for a Call-to-Action block, and one of its fields is named `cta_link`. You would simply do this:</p>
+<p>{% include &#39;Components/Link/index.twig&#39; with {
+    link: fields.cta_link,
+    class: &#39;button button--primary&#39;
+} %}</p>
+<p>This approach offers tremendous benefits. Firstly, it’s incredibly modular and reusable. Any time you need a link, you just include this component. Secondly, it guarantees a clean DOM structure, which is a cornerstone for achieving excellent Core Web Vitals. No extra wrapper divs, no unnecessary attributes – just pure, semantic HTML. This directly translates to faster page loads and better user experience. Finally, FlyntWP’s integration with Vite means that even as you&#39;re developing and tweaking these components, your build speeds are blazingly fast, allowing for rapid iteration without waiting around. This combination of programmatic control, modularity, and speed is what makes FlyntWP such a powerful alternative to the bloat of page builders, empowering developers to build truly performant and maintainable WordPress sites.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection</title>
+      <link href="https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/</id>
+      <updated>2026-09-06T18:16:34Z</updated>
+      <summary>One of the most common frustrations I&#39;ve encountered with traditional low-code page builders is the sheer amount of bloat they introduce.</summary>
+    </entry><entry>
       <title>The Homepage Incident: Why Custom WordPress Blocks Save Your Design (and Sanity)</title>
       <link href="https://chrisalberto.site/blog/the-homepage-incident-why-custom-wordpress-blocks-save-your-000119/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-homepage-incident-why-custom-wordpress-blocks-save-your-000119/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/taming-wordpress-data-clean-acf-with-sage-view-composers-000071/</id>
       <updated>2026-09-01T09:10:52Z</updated>
       <summary>When I first started building WordPress sites, I quickly fell into the trap of sprinkling PHP logic directly into my template files.</summary>
-    </entry><entry>
-      <title>Building Robust WordPress Deployments with WP-CLI and GitHub Actions</title>
-      <link href="https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/</id>
-      <updated>2026-09-01T09:01:11Z</updated>
-      <summary>I&#39;ve spent years wrestling with manual WordPress deployments, and frankly, it&#39;s a productivity killer.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

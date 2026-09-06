@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/</loc>
+      <lastmod>2026-09-06T18:16:34Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/the-homepage-incident-why-custom-wordpress-blocks-save-your-000119/</loc>
       <lastmod>2026-09-06T05:15:46Z</lastmod>
       <changefreq>monthly</changefreq>
