@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Homepage Incident: Why Custom WordPress Blocks Save Your Design (and Sanity)</title>
+      <link href="https://chrisalberto.site/blog/the-homepage-incident-why-custom-wordpress-blocks-save-your-000119/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-homepage-incident-why-custom-wordpress-blocks-save-your-000119/</id>
+      <updated>2026-09-06T05:15:46Z</updated>
+      <summary>The call came on a Tuesday afternoon, about three weeks after we’d launched what I thought was a pristine new marketing site for a small B2B SaaS client.</summary>
+    </entry><entry>
       <title>Sculpting Clean Data for Your Sage Templates with View Composers</title>
       <link href="https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/building-robust-wordpress-deployments-with-wp-cli-and-000087/</id>
       <updated>2026-09-01T09:01:11Z</updated>
       <summary>I&#39;ve spent years wrestling with manual WordPress deployments, and frankly, it&#39;s a productivity killer.</summary>
-    </entry><entry>
-      <title>The Case of the Exploded Team Page: Guardrails Over Wild West Editing</title>
-      <link href="https://chrisalberto.site/blog/the-case-of-the-exploded-team-page-guardrails-over-wild-000070/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-case-of-the-exploded-team-page-guardrails-over-wild-000070/</id>
-      <updated>2026-09-01T09:00:52Z</updated>
-      <summary>I once built a beautiful, clean website for a design agency.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

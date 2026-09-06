@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/the-homepage-incident-why-custom-wordpress-blocks-save-your-000119/</loc>
+      <lastmod>2026-09-06T05:15:46Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/</loc>
       <lastmod>2026-09-05T18:05:51Z</lastmod>
       <changefreq>monthly</changefreq>
