@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FlyntWP Tip: Building a Flexible Button Component with Twig &amp; ACF — Christopher Alberto</title>
+<meta name="description" content="I&#39;ve been working with FlyntWP for a while now, and it constantly reminds me why I made the switch from heavy, drag-and-drop page builders." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="FlyntWP Tip: Building a Flexible Button Component with Twig &amp; ACF" />
+<meta property="og:description" content="I&#39;ve been working with FlyntWP for a while now, and it constantly reminds me why I made the switch from heavy, drag-and-drop page builders." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/cover.png" />
+<meta property="og:image:alt" content="FlyntWP Tip: Building a Flexible Button Component with Twig &amp; ACF" />
+<meta property="article:published_time" content="2026-09-06T18:16:52Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/" />
+<meta property="twitter:title" content="FlyntWP Tip: Building a Flexible Button Component with Twig &amp; ACF" />
+<meta property="twitter:description" content="I&#39;ve been working with FlyntWP for a while now, and it constantly reminds me why I made the switch from heavy, drag-and-drop page builders." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/cover.png" />
+<meta property="twitter:image:alt" content="FlyntWP Tip: Building a Flexible Button Component with Twig &amp; ACF" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "FlyntWP Tip: Building a Flexible Button Component with Twig &amp; ACF",
+  "description": "I&#39;ve been working with FlyntWP for a while now, and it constantly reminds me why I made the switch from heavy, drag-and-drop page builders.",
+  "image": "https://chrisalberto.site/assets/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/cover.png",
+  "datePublished": "2026-09-06T18:16:52Z",
+  "dateModified": "2026-09-06T18:16:52Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-06T18:16:52Z">September 7, 2026</time></div>
+    <h1 class="post-hero__title">FlyntWP Tip: Building a Flexible Button Component with Twig &amp; ACF</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/cover.png" alt="FlyntWP Tip: Building a Flexible Button Component with Twig &amp; ACF" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>I&#39;ve been working with FlyntWP for a while now, and it constantly reminds me why I made the switch from heavy, drag-and-drop page builders. If you&#39;re tired of battling sluggish site speeds, bloated DOMs, and an endless array of divs just to style a simple element, then FlyntWP&#39;s philosophy of lightweight, programmatic development with modular Twig components and ACF Pro integration is truly refreshing. It&#39;s about taking back control and building precisely what you need, with performance and maintainability baked in from the start. Today, I want to walk you through a practical example of this power: creating a truly flexible and reusable button component that you can deploy anywhere on your site, ensuring flawless Core Web Vitals and lightning-fast Vite build speeds.</p>
+<p>One of the common frustrations with low-code builders is how difficult it is to create simple, reusable elements without generating excessive markup. A button, for instance, often ends up wrapped in several unnecessary parent divs, each contributing to render-blocking CSS and a higher DOM depth. In FlyntWP, we approach this differently. We define our components as small, self-contained units using Twig for markup and ACF Pro for data input. This means our button component will be pure, clean HTML, and its data will be easily manageable by content editors.</p>
+<p>Let&#39;s dive into setting up our `ComponentButton`. First, we need to define the ACF fields that will power it. In your `components/ComponentButton/functions.php`, you&#39;d register a field group like this:</p>
+<p>add_filter(&#39;Flynt/addComponentData?name=ComponentButton&#39;, function ($data) {
+    $data[&#39;fields&#39;] = [
+        [
+            &#39;label&#39; =&gt; &#39;Button&#39;,
+            &#39;name&#39; =&gt; &#39;button&#39;,
+            &#39;type&#39; =&gt; &#39;group&#39;,
+            &#39;sub_fields&#39; =&gt; [
+                [
+                    &#39;label&#39; =&gt; &#39;Link&#39;,
+                    &#39;name&#39; =&gt; &#39;link&#39;,
+                    &#39;type&#39; =&gt; &#39;link&#39;,
+                    &#39;return_format&#39; =&gt; &#39;array&#39;,
+                ],
+                [
+                    &#39;label&#39; =&gt; &#39;Style&#39;,
+                    &#39;name&#39; =&gt; &#39;style&#39;,
+                    &#39;type&#39; =&gt; &#39;select&#39;,
+                    &#39;choices&#39; =&gt; [
+                        &#39;primary&#39; =&gt; &#39;Primary&#39;,
+                        &#39;secondary&#39; =&gt; &#39;Secondary&#39;,
+                        &#39;outline&#39; =&gt; &#39;Outline&#39;,
+                    ],
+                    &#39;default_value&#39; =&gt; &#39;primary&#39;,
+                    &#39;wrapper&#39; =&gt; [
+                        &#39;width&#39; =&gt; &#39;50&#39;,
+                    ],
+                ],
+            ]
+        ]
+    ];
+    return $data;
+});</p>
+<p>This ACF group gives us a standard WordPress link picker for the URL and text, and a select field for a `style` class, all nested under a &#39;button&#39; group. Now, for the magic in `components/ComponentButton/index.twig`:</p>
+<p>{% set link = fields.button.link %}
+{% set style = fields.button.style ? &#39;button--&#39; ~ fields.button.style : &#39;button--primary&#39; %}</p>
+<p>{% if link.url and link.title %}
+  &lt;a href=&#34;{{ link.url }}&#34; class=&#34;button {{ style }}&#34; target=&#34;{{ link.target ?: &#39;_self&#39; }}&#34; rel=&#34;{{ link.target == &#39;_blank&#39; ? &#39;noopener noreferrer&#39; : &#39;&#39; }}&#34;&gt;
+    {{ link.title }}
+  &lt;/a&gt;
+{% endif %}</p>
+<p>Notice how clean that Twig template is. It directly outputs an `&lt;a&gt;` tag with minimal fuss, dynamically adding classes based on our ACF selection. No extraneous divs, no complex nested structures. This is a crucial aspect of why FlyntWP sites consistently achieve excellent Core Web Vitals scores: the DOM is lean, meaning browsers parse and render pages faster.</p>
+<p>The real power, however, lies in reusability. Instead of duplicating this code or setting up a new ACF field group every time you need a button, you can now *include* `ComponentButton` in other components and pass data to it. For example, if you have a `ComponentHero` and you want to add one or more buttons, your `ComponentHero/index.twig` might look something like this:</p>
+<p>&lt;section class=&#34;hero&#34;&gt;
+  &lt;div class=&#34;hero__content&#34;&gt;
+    &lt;h1&gt;{{ fields.headline }}&lt;/h1&gt;
+    &lt;p&gt;{{ fields.content }}&lt;/p&gt;
+    {% if fields.buttons %}
+      &lt;div class=&#34;hero__actions&#34;&gt;
+        {% for buttonData in fields.buttons %}
+          {% include &#39;Partials/_ComponentButton.twig&#39; with { fields: { button: buttonData.button } } %}
+        {% endfor %}
+      &lt;/div&gt;
+    {% endif %}
+  &lt;/div&gt;
+&lt;/section&gt;</p>
+<p>Here, `fields.buttons` would be an ACF Repeater field in your `ComponentHero`&#39;s `functions.php`, where each row includes the sub-fields from our `ComponentButton`&#39;s &#39;button&#39; group (link, style). Crucially, your `Partials/_ComponentButton.twig` is simply `{% include &#39;components/ComponentButton/index.twig&#39; %}`. By using `include &#39;Partials/_ComponentButton.twig&#39; with { fields: { button: buttonData.button } }`, we&#39;re telling Twig to render our `ComponentButton` using the specific data from *that repeater row*. This ensures the `ComponentButton` always expects its data in the same `fields.button` structure, regardless of where it&#39;s included, making it incredibly powerful for maintaining consistency and speeding up development.</p>
+<p>This pattern exemplifies FlyntWP&#39;s strengths: programmatic control over markup, robust content management with ACF Pro, and a commitment to performance. With Vite handling asset compilation, your development workflow is blazing fast, giving instant feedback on changes. This approach not only results in faster websites with beautiful, clean DOM structures but also a more enjoyable and efficient development process for you. Give it a try; you&#39;ll appreciate the difference.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
