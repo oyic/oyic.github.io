@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting a Secure REST Endpoint for Your WordPress Product Catalog — Christopher Alberto</title>
+<meta name="description" content="When building sophisticated applications atop WordPress, the default REST API, while powerful, doesn&#39;t always provide the exact data structure or access…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting a Secure REST Endpoint for Your WordPress Product Catalog" />
+<meta property="og:description" content="When building sophisticated applications atop WordPress, the default REST API, while powerful, doesn&#39;t always provide the exact data structure or access…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/cover.png" />
+<meta property="og:image:alt" content="Crafting a Secure REST Endpoint for Your WordPress Product Catalog" />
+<meta property="article:published_time" content="2026-09-07T03:38:13Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/" />
+<meta property="twitter:title" content="Crafting a Secure REST Endpoint for Your WordPress Product Catalog" />
+<meta property="twitter:description" content="When building sophisticated applications atop WordPress, the default REST API, while powerful, doesn&#39;t always provide the exact data structure or access…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/cover.png" />
+<meta property="twitter:image:alt" content="Crafting a Secure REST Endpoint for Your WordPress Product Catalog" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting a Secure REST Endpoint for Your WordPress Product Catalog",
+  "description": "When building sophisticated applications atop WordPress, the default REST API, while powerful, doesn&#39;t always provide the exact data structure or access…",
+  "image": "https://chrisalberto.site/assets/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/cover.png",
+  "datePublished": "2026-09-07T03:38:13Z",
+  "dateModified": "2026-09-07T03:38:13Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-07T03:38:13Z">September 7, 2026</time></div>
+    <h1 class="post-hero__title">Crafting a Secure REST Endpoint for Your WordPress Product Catalog</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/cover.png" alt="Crafting a Secure REST Endpoint for Your WordPress Product Catalog" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>When building sophisticated applications atop WordPress, the default REST API, while powerful, doesn&#39;t always provide the exact data structure or access control needed. You might require a highly specific endpoint that filters data, aggregates custom fields, or enforces unique authentication. Today, I&#39;ll demonstrate creating a secure, custom REST API endpoint for a hypothetical product catalog, exposing only &#34;available&#34; products and requiring a specific API key.</p>
+<p>Let&#39;s assume a custom post type `product`, with each having a custom field `_is_available` (`true`/`false`). We need an endpoint returning only available products, perhaps for an external system, secured by an API key.</p>
+<p>First, we register our custom route using `register_rest_route`. This snippet typically lives in your theme&#39;s `functions.php` or a custom plugin. We use a unique namespace and define the endpoint&#39;s path and methods.</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-catalog/v1&#39;, &#39;/products/available&#39;, [
+        &#39;methods&#39;             =&gt; &#39;GET&#39;,
+        &#39;callback&#39;            =&gt; &#39;my_catalog_get_available_products&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_catalog_permission_check&#39;,
+        &#39;args&#39;                =&gt; [
+            &#39;api_key&#39; =&gt; [
+                &#39;sanitize_callback&#39; =&gt; &#39;sanitize_text_field&#39;,
+                &#39;required&#39;          =&gt; true,
+            ],
+        ],
+    ] );
+} );</p>
+<p>The `permission_callback` and `api_key` argument are crucial for security. The `permission_callback` runs *before* our main `callback` and dictates authorization. If it returns `false` or a `WP_Error`, access is denied.</p>
+<p>Now, let&#39;s implement the `permission_callback`. For this example, we&#39;ll store a master API key in `wp-config.php` via `define( &#39;MY_CATALOG_API_KEY&#39;, &#39;your_super_secret_key&#39; );`.</p>
+<p>function my_catalog_permission_check( WP_REST_Request $request ) {
+    $provided_api_key = $request-&gt;get_param( &#39;api_key&#39; );
+    $master_api_key   = defined( &#39;MY_CATALOG_API_KEY&#39; ) ? MY_CATALOG_API_KEY : &#39;&#39;;</p>
+<p>if ( empty( $provided_api_key ) || empty( $master_api_key ) ) {
+        return new WP_Error( &#39;rest_missing_api_key&#39;, &#39;API key is missing or not configured.&#39;, [ &#39;status&#39; =&gt; 401 ] );
+    }</p>
+<p>if ( $provided_api_key !== $master_api_key ) {
+        return new WP_Error( &#39;rest_invalid_api_key&#39;, &#39;Invalid API key provided.&#39;, [ &#39;status&#39; =&gt; 403 ] );
+    }</p>
+<p>return true; // Access granted
+}</p>
+<p>This function compares the request&#39;s `api_key` parameter to our defined master key. A mismatch, or missing key, results in a `WP_Error` object, which WordPress automatically converts to a JSON error response with an appropriate HTTP status.</p>
+<p>Finally, the `my_catalog_get_available_products` callback fetches our products. We use `WP_Query` to retrieve all published `product` posts where `_is_available` is `true`.</p>
+<p>function my_catalog_get_available_products( WP_REST_Request $request ) {
+    $args = [
+        &#39;post_type&#39;      =&gt; &#39;product&#39;,
+        &#39;post_status&#39;    =&gt; &#39;publish&#39;,
+        &#39;posts_per_page&#39; =&gt; -1,
+        &#39;meta_query&#39;     =&gt; [
+            [
+                &#39;key&#39;   =&gt; &#39;_is_available&#39;,
+                &#39;value&#39; =&gt; &#39;true&#39;,
+                &#39;compare&#39; =&gt; &#39;=&#39;,
+            ],
+        ],
+    ];</p>
+<p>$products_query = new WP_Query( $args );
+    $response_data  = [];</p>
+<p>if ( $products_query-&gt;have_posts() ) {
+        while ( $products_query-&gt;have_posts() ) {
+            $products_query-&gt;the_post();
+            $product_id = get_the_ID();
+            $product_data = [
+                &#39;id&#39;          =&gt; $product_id,
+                &#39;title&#39;       =&gt; get_the_title(),
+                &#39;permalink&#39;   =&gt; get_permalink(),
+                &#39;description&#39; =&gt; get_the_excerpt(),
+                &#39;price&#39;       =&gt; get_post_meta( $product_id, &#39;_product_price&#39;, true ),
+                &#39;sku&#39;         =&gt; get_post_meta( $product_id, &#39;_product_sku&#39;, true ),
+            ];
+            $response_data[] = $product_data;
+        }
+        wp_reset_postdata();
+    }</p>
+<p>return new WP_REST_Response( $response_data, 200 );
+}</p>
+<p>Here, we query, iterate, and manually build an array, extracting specific fields and custom meta like `_product_price` and `_product_sku`. This offers precise control over exposed data and its format.</p>
+<p>To test, make a GET request to `yourdomain.com/wp-json/my-catalog/v1/products/available?api_key=YOUR_MASTER_API_KEY`. Without the correct key, you&#39;ll receive an error. Building custom REST endpoints like this empowers you to tailor your WordPress backend to external application needs, providing fine-grained control over data and security—a fundamental skill for advanced WordPress infrastructure.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
