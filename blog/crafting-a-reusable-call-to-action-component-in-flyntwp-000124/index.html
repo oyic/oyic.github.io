@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF — Christopher Alberto</title>
+<meta name="description" content="I&#39;ve spent years battling the bloat of traditional page builders, constantly chasing elusive Core Web Vitals scores while my clients wrestled with complex…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF" />
+<meta property="og:description" content="I&#39;ve spent years battling the bloat of traditional page builders, constantly chasing elusive Core Web Vitals scores while my clients wrestled with complex…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/cover.png" />
+<meta property="og:image:alt" content="Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF" />
+<meta property="article:published_time" content="2026-09-07T17:10:11Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/" />
+<meta property="twitter:title" content="Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF" />
+<meta property="twitter:description" content="I&#39;ve spent years battling the bloat of traditional page builders, constantly chasing elusive Core Web Vitals scores while my clients wrestled with complex…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/cover.png" />
+<meta property="twitter:image:alt" content="Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF",
+  "description": "I&#39;ve spent years battling the bloat of traditional page builders, constantly chasing elusive Core Web Vitals scores while my clients wrestled with complex…",
+  "image": "https://chrisalberto.site/assets/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/cover.png",
+  "datePublished": "2026-09-07T17:10:11Z",
+  "dateModified": "2026-09-07T17:10:11Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-07T17:10:11Z">September 8, 2026</time></div>
+    <h1 class="post-hero__title">Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/cover.png" alt="Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>I&#39;ve spent years battling the bloat of traditional page builders, constantly chasing elusive Core Web Vitals scores while my clients wrestled with complex interfaces. That&#39;s why discovering FlyntWP was such a game-changer. It&#39;s not just another theme framework; it&#39;s a philosophy – one that champions lightweight, programmatic development over drag-and-drop sluggishness. For developers like me who prioritize speed, clean code, and maintainability, FlyntWP offers a refreshing alternative, letting us build precisely what&#39;s needed without the unnecessary overhead. Today, I want to walk you through a specific example: creating a simple yet powerful reusable Call to Action (CTA) component, demonstrating FlyntWP&#39;s core strengths.</p>
+<p>The beauty of FlyntWP lies in its modular component architecture. Each &#34;block&#34; or &#34;component&#34; you build lives in its own self-contained directory, typically consisting of an `index.twig` file for markup, a `functions.php` file for ACF field definitions and component registration, and a `style.scss` for component-specific styling. This clear separation of concerns makes development incredibly intuitive and scalable. For our CTA, we envision a simple button with text and a link, perhaps with an optional style variant, that can be dropped into any flexible content field, a repeater, or even directly into a template.</p>
+<p>First, let&#39;s define the fields our CTA component will need using ACF Pro. Inside your component&#39;s `functions.php` (e.g., `Components/CallToAction/functions.php`), you&#39;d register a field group that includes a text field for the button label and a URL field for the button&#39;s destination. For added flexibility, we might include a select field for a &#34;style variant&#34; to easily switch between primary and secondary button appearances. This programmatic approach ensures consistency and provides a robust data structure that&#39;s easy to manage and query, unlike the often unpredictable data structures generated by visual builders.</p>
+<p>&lt;?php</p>
+<p>namespace Flynt\Components\CallToAction;</p>
+<p>use Flynt\FieldVariables;</p>
+<p>function getACFLayout()
+    {
+        return [
+            &#39;name&#39; =&gt; &#39;CallToAction&#39;,
+            &#39;label&#39; =&gt; &#39;Call to Action&#39;,
+            &#39;sub_fields&#39; =&gt; [
+                [
+                    &#39;label&#39; =&gt; &#39;General&#39;,
+                    &#39;name&#39; =&gt; &#39;generalTab&#39;,
+                    &#39;type&#39; =&gt; &#39;tab&#39;,
+                    &#39;placement&#39; =&gt; &#39;top&#39;,
+                    &#39;endpoint&#39; =&gt; 0
+                ],
+                [
+                    &#39;label&#39; =&gt; &#39;Text&#39;,
+                    &#39;name&#39; =&gt; &#39;text&#39;,
+                    &#39;type&#39; =&gt; &#39;text&#39;,
+                    &#39;required&#39; =&gt; 1
+                ],
+                [
+                    &#39;label&#39; =&gt; &#39;Link&#39;,
+                    &#39;name&#39; =&gt; &#39;link&#39;,
+                    &#39;type&#39; =&gt; &#39;link&#39;,
+                    &#39;required&#39; =&gt; 1
+                ],
+                [
+                    &#39;label&#39; =&gt; &#39;Options&#39;,
+                    &#39;name&#39; =&gt; &#39;optionsTab&#39;,
+                    &#39;type&#39; =&gt; &#39;tab&#39;,
+                    &#39;placement&#39; =&gt; &#39;top&#39;,
+                    &#39;endpoint&#39; =&gt; 0
+                ],
+                [
+                    &#39;label&#39; =&gt; &#39;Style&#39;,
+                    &#39;name&#39; =&gt; &#39;style&#39;,
+                    &#39;type&#39; =&gt; &#39;select&#39;,
+                    &#39;choices&#39; =&gt; [
+                        &#39;primary&#39; =&gt; &#39;Primary&#39;,
+                        &#39;secondary&#39; =&gt; &#39;Secondary&#39;
+                    ],
+                    &#39;default_value&#39; =&gt; &#39;primary&#39;,
+                    &#39;wrapper&#39; =&gt; [
+                        &#39;width&#39; =&gt; &#39;50&#39;
+                    ]
+                ],
+            ]
+        ];
+    }</p>
+<p>With our data structure defined, let&#39;s craft the `index.twig` file. This is where the magic of clean DOM and Twig templating shines. We&#39;ll access our ACF fields directly within the Twig file, ensuring that only the necessary markup is rendered. The class attribute for our button can be dynamically set based on the `style` option, demonstrating Twig&#39;s power for conditional rendering. This approach inherently leads to minimal, semantically correct HTML, which is a dream for SEO and, critically, for achieving those coveted Core Web Vitals scores.</p>
+<p>&lt;div class=&#34;component-call-to-action&#34;&gt;
+        {% if link %}
+            &lt;a href=&#34;{{ link.url }}&#34; target=&#34;{{ link.target }}&#34; class=&#34;button button--{{ style }}&#34; aria-label=&#34;{{ text }}&#34;&gt;
+                {{ text }}
+            &lt;/a&gt;
+        {% endif %}
+    &lt;/div&gt;</p>
+<p>The true power of this setup is its reusability. Once this `CallToAction` component is built, it can be effortlessly added to any Flexible Content field, used within a repeater for multiple CTAs, or even embedded directly into static templates using `{{ renderComponent(&#39;CallToAction&#39;, { ... }) }}`. This not only speeds up development dramatically but also enforces design consistency across the entire site. No more variations of the &#34;same&#34; button because a content editor could tweak individual styles within a page builder. You get a consistent, performant, and easily maintainable codebase, which is invaluable for long-term project health.</p>
+<p>This simple CTA component exemplifies FlyntWP&#39;s core philosophy: building modular, performant, and maintainable WordPress sites. By combining the flexibility of ACF Pro with the power of Twig templating and FlyntWP&#39;s robust component architecture, we can bypass the sluggishness and proprietary lock-in of page builders. The result is a website with a pristine DOM, lightning-fast Vite builds, and an architecture primed for flawless Core Web Vitals. If you&#39;re tired of fighting bloated themes and want to reclaim control over your WordPress development workflow, I highly encourage you to give FlyntWP a serious look. It truly empowers you to build better, faster.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
