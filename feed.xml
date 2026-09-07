@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Escaping the WordPress Mess: Why Sage Delivers True Developer Sanity</title>
+      <link href="https://chrisalberto.site/blog/escaping-the-wordpress-mess-why-sage-delivers-true-000121/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/escaping-the-wordpress-mess-why-sage-delivers-true-000121/</id>
+      <updated>2026-09-07T17:42:31Z</updated>
+      <summary>For years, my journey building custom WordPress themes felt like navigating a beautiful, but increasingly overgrown, garden.</summary>
+    </entry><entry>
       <title>Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF</title>
       <link href="https://chrisalberto.site/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/</id>
       <updated>2026-09-02T17:02:00Z</updated>
       <summary>I&#39;ve been building WordPress sites for years, and like many of you, I&#39;ve seen the rise and fall of various page builders.</summary>
-    </entry><entry>
-      <title>Clean CPT Data Delivery: Using a Sage View Composer for Your Project Archive</title>
-      <link href="https://chrisalberto.site/blog/clean-cpt-data-delivery-using-a-sage-view-composer-for-your-000102/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/clean-cpt-data-delivery-using-a-sage-view-composer-for-your-000102/</id>
-      <updated>2026-09-01T17:11:34Z</updated>
-      <summary>I remember the early days of WordPress theme development, constantly battling global variables and embedding `WP_Query` calls directly into template files.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
