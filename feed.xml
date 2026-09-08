@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Taming Custom Data in Sage: A View Composer Recipe</title>
+      <link href="https://chrisalberto.site/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/</id>
+      <updated>2026-09-08T17:19:47Z</updated>
+      <summary>If you&#39;ve spent any time digging through traditional WordPress theme code, you&#39;ve likely encountered the &#34;Wild West&#34; approach to data retrieval.</summary>
+    </entry><entry>
       <title>Beyond the Loop: Sage View Composers for Clean Data Presentation</title>
       <link href="https://chrisalberto.site/blog/beyond-the-loop-sage-view-composers-for-clean-data-000125/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/beyond-the-loop-sage-view-composers-for-clean-data-000125/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-secure-specialized-rest-endpoints-in-wordpress-000107/</id>
       <updated>2026-09-03T03:03:07Z</updated>
       <summary>When we talk about extending WordPress beyond its core content management capabilities, the built-in REST API is an invaluable tool.</summary>
-    </entry><entry>
-      <title>Securing Custom Post Type Data with WordPress REST API Endpoints and Application Passwords</title>
-      <link href="https://chrisalberto.site/blog/securing-custom-post-type-data-with-wordpress-rest-api-000103/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/securing-custom-post-type-data-with-wordpress-rest-api-000103/</id>
-      <updated>2026-09-03T03:01:06Z</updated>
-      <summary>When building complex WordPress applications, we often find ourselves needing to expose data beyond the default post types and fields available through the…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

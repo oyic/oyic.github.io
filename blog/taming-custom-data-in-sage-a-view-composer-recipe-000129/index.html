@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Taming Custom Data in Sage: A View Composer Recipe — Christopher Alberto</title>
+<meta name="description" content="If you&#39;ve spent any time digging through traditional WordPress theme code, you&#39;ve likely encountered the &#34;Wild West&#34; approach to data retrieval." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Taming Custom Data in Sage: A View Composer Recipe" />
+<meta property="og:description" content="If you&#39;ve spent any time digging through traditional WordPress theme code, you&#39;ve likely encountered the &#34;Wild West&#34; approach to data retrieval." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/cover.png" />
+<meta property="og:image:alt" content="Taming Custom Data in Sage: A View Composer Recipe" />
+<meta property="article:published_time" content="2026-09-08T17:19:47Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/" />
+<meta property="twitter:title" content="Taming Custom Data in Sage: A View Composer Recipe" />
+<meta property="twitter:description" content="If you&#39;ve spent any time digging through traditional WordPress theme code, you&#39;ve likely encountered the &#34;Wild West&#34; approach to data retrieval." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/cover.png" />
+<meta property="twitter:image:alt" content="Taming Custom Data in Sage: A View Composer Recipe" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Taming Custom Data in Sage: A View Composer Recipe",
+  "description": "If you&#39;ve spent any time digging through traditional WordPress theme code, you&#39;ve likely encountered the &#34;Wild West&#34; approach to data retrieval.",
+  "image": "https://chrisalberto.site/assets/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/cover.png",
+  "datePublished": "2026-09-08T17:19:47Z",
+  "dateModified": "2026-09-08T17:19:47Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-08T17:19:47Z">September 9, 2026</time></div>
+    <h1 class="post-hero__title">Taming Custom Data in Sage: A View Composer Recipe</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/cover.png" alt="Taming Custom Data in Sage: A View Composer Recipe" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>If you&#39;ve spent any time digging through traditional WordPress theme code, you&#39;ve likely encountered the &#34;Wild West&#34; approach to data retrieval. Queries run haphazardly, global variables are set with abandon, and your template files end up looking like a confusing mix of HTML, PHP logic, and database calls. It&#39;s the kind of code that makes you long for the clean structure of an MVC framework, a structure that Sage, powered by Laravel&#39;s Acorn and Blade, delivers beautifully. Today, I want to walk through one of my favorite Sage features for keeping our templates lean and focused: the View Composer.</p>
+<p>Sage’s philosophy is to keep your Blade templates purely about presentation. They should receive data and render it, nothing more. This means fetching posts, options, or any other dynamic content shouldn&#39;t happen directly inside resources/views. That&#39;s where View Composers step in, acting as the perfect bridge between your application logic and your views. They allow us to gather all the necessary data for a specific view or set of views and then inject it cleanly, keeping our template files beautifully free of clutter.</p>
+<p>Let&#39;s say you have a custom post type for &#34;Team Members&#34; and you want to display a list of them on various pages using a reusable partial, partials.team-members. The traditional WordPress way might involve putting a WP_Query directly into that partial, or even worse, running it higher up and making the results global. With Sage, we leverage a View Composer to handle that data fetching, ensuring a clean separation of concerns.</p>
+<p>First, we create our View Composer. Following Sage&#39;s conventions, we&#39;ll put it in app/View/Composers/TeamMembersComposer.php:</p>
+<p>&lt;?php</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Query;</p>
+<p>class TeamMembersComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;partials.team-members&#39;,
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @return array
+     */
+    public function with()
+    {
+        return [
+            &#39;team_members&#39; =&gt; $this-&gt;teamMembers(),
+        ];
+    }</p>
+<p>/**
+     * Retrieve a list of team members.
+     *
+     * @return array
+     */
+    protected function teamMembers()
+    {
+        $args = [
+            &#39;post_type&#39;      =&gt; &#39;team_member&#39;, // Replace with your actual CPT slug
+            &#39;posts_per_page&#39; =&gt; -1, // Get all
+            &#39;order&#39;          =&gt; &#39;ASC&#39;,
+            &#39;orderby&#39;        =&gt; &#39;title&#39;,
+        ];</p>
+<p>$query = new WP_Query($args);</p>
+<p>if (!$query-&gt;have_posts()) {
+            return [];
+        }</p>
+<p>return collect($query-&gt;posts)-&gt;map(function ($post) {
+            return [
+                &#39;title&#39;     =&gt; get_the_title($post),
+                &#39;link&#39;      =&gt; get_permalink($post),
+                &#39;thumbnail&#39; =&gt; get_the_post_thumbnail_url($post, &#39;thumbnail&#39;),
+                &#39;job_title&#39; =&gt; get_field(&#39;job_title&#39;, $post-&gt;ID), // Example ACF field
+            ];
+        })-&gt;all();
+    }
+}</p>
+<p>In this file, static $views tells Acorn which Blade template(s) this composer applies to. The with() method returns an associative array, where the keys become variables available in your Blade view. Here, we&#39;re calling a protected teamMembers() method to encapsulate our WP_Query logic, transforming the raw WP_Post objects into a cleaner array of data using Laravel&#39;s collect() helper. Notice how we&#39;re even grabbing an ACF field, job_title, directly here.</p>
+<p>Now, our resources/views/partials/team-members.blade.php can be blissfully unaware of how its data was fetched:</p>
+<p>@if (!empty($team_members))
+    &lt;section class=&#34;team-members&#34;&gt;
+        &lt;h2&gt;Meet Our Team&lt;/h2&gt;
+        &lt;div class=&#34;grid grid-cols-1 md:grid-cols-3 gap-8&#34;&gt;
+            @foreach ($team_members as $member)
+                &lt;article class=&#34;team-member-card bg-white p-6 shadow-lg rounded-lg&#34;&gt;
+                    @if ($member[&#39;thumbnail&#39;])
+                        &lt;img src=&#34;{{ $member[&#39;thumbnail&#39;] }}&#34; alt=&#34;{{ $member[&#39;title&#39;] }}&#34; class=&#34;w-24 h-24 rounded-full mx-auto mb-4 object-cover&#34;&gt;
+                    @endif
+                    &lt;h3 class=&#34;text-xl font-bold text-center&#34;&gt;{{ $member[&#39;title&#39;] }}&lt;/h3&gt;
+                    @if ($member[&#39;job_title&#39;])
+                        &lt;p class=&#34;text-gray-600 text-center text-sm&#34;&gt;{{ $member[&#39;job_title&#39;] }}&lt;/p&gt;
+                    @endif
+                    &lt;a href=&#34;{{ $member[&#39;link&#39;] }}&#34; class=&#34;block text-center mt-3 text-blue-600 hover:underline&#34;&gt;View Profile&lt;/a&gt;
+                &lt;/article&gt;
+            @endforeach
+        &lt;/div&gt;
+    &lt;/section&gt;
+@endif</p>
+<p>See how clean that template is? No WP_Query, no get_posts(), no raw WP_Post objects being manipulated. Just a simple loop over a $team_members array that we *know* will be there, thanks to our View Composer. We&#39;ve separated our data concerns from our presentation concerns, making both easier to read, test, and maintain. This organized, programmatic approach is a stark contrast to the unmanageable database bloat and inline logic often found in page builder solutions like Divi or Elementor, where true separation of concerns is an afterthought, if it exists at all.</p>
+<p>By adopting View Composers, you&#39;re not just writing better Sage code; you&#39;re elevating your entire WordPress development workflow. It&#39;s a small change with massive benefits for code readability, maintainability, and the overall sanity of your development team. Start composing your views today, and experience the clean architecture Sage offers.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
