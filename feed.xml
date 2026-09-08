@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Beyond the Loop: Sage View Composers for Clean Data Presentation</title>
+      <link href="https://chrisalberto.site/blog/beyond-the-loop-sage-view-composers-for-clean-data-000125/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/beyond-the-loop-sage-view-composers-for-clean-data-000125/</id>
+      <updated>2026-09-08T17:19:29Z</updated>
+      <summary>If you&#39;ve ever wrestled with WordPress themes built using page builders like Divi or Elementor, you know the feeling.</summary>
+    </entry><entry>
       <title>Building Flexible Layout Wrappers in FlyntWP with ACF Pro</title>
       <link href="https://chrisalberto.site/blog/building-flexible-layout-wrappers-in-flyntwp-with-acf-pro-000128/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/building-flexible-layout-wrappers-in-flyntwp-with-acf-pro-000128/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/securing-custom-post-type-data-with-wordpress-rest-api-000103/</id>
       <updated>2026-09-03T03:01:06Z</updated>
       <summary>When building complex WordPress applications, we often find ourselves needing to expose data beyond the default post types and fields available through the…</summary>
-    </entry><entry>
-      <title>Streamlining Custom Post Data in Sage with View Composers</title>
-      <link href="https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/</id>
-      <updated>2026-09-02T17:10:58Z</updated>
-      <summary>If you&#39;ve spent any time wrestling with traditional WordPress themes, you know the struggle: a sprawling mess of PHP logic directly in your template files,…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
