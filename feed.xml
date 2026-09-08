@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Building Flexible Layout Wrappers in FlyntWP with ACF Pro</title>
+      <link href="https://chrisalberto.site/blog/building-flexible-layout-wrappers-in-flyntwp-with-acf-pro-000128/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/building-flexible-layout-wrappers-in-flyntwp-with-acf-pro-000128/</id>
+      <updated>2026-09-08T17:03:26Z</updated>
+      <summary>If you’ve ever wrestled with a slow, bloated page builder, you know the frustration.</summary>
+    </entry><entry>
       <title>Escaping the WordPress Mess: Why Sage Delivers True Developer Sanity</title>
       <link href="https://chrisalberto.site/blog/escaping-the-wordpress-mess-why-sage-delivers-true-000121/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/escaping-the-wordpress-mess-why-sage-delivers-true-000121/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/streamlining-custom-post-data-in-sage-with-view-composers-000106/</id>
       <updated>2026-09-02T17:10:58Z</updated>
       <summary>If you&#39;ve spent any time wrestling with traditional WordPress themes, you know the struggle: a sprawling mess of PHP logic directly in your template files,…</summary>
-    </entry><entry>
-      <title>Crafting a Performance-First `Image` Component in FlyntWP for Elite Core Web Vitals</title>
-      <link href="https://chrisalberto.site/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-a-performance-first-image-component-in-flyntwp-for-000105/</id>
-      <updated>2026-09-02T17:02:00Z</updated>
-      <summary>I&#39;ve been building WordPress sites for years, and like many of you, I&#39;ve seen the rise and fall of various page builders.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

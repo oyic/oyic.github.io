@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/building-flexible-layout-wrappers-in-flyntwp-with-acf-pro-000128/</loc>
+      <lastmod>2026-09-08T17:03:26Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/escaping-the-wordpress-mess-why-sage-delivers-true-000121/</loc>
       <lastmod>2026-09-07T17:42:31Z</lastmod>
       <changefreq>monthly</changefreq>
