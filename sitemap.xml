@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/preventing-post-launch-mayhem-custom-blocks-for-bulletproof-000131/</loc>
+      <lastmod>2026-09-09T05:28:25Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/the-case-of-the-exploding-team-page-why-guardrails-beat-000127/</loc>
       <lastmod>2026-09-09T05:12:16Z</lastmod>
       <changefreq>monthly</changefreq>
