@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/beyond-the-field-clean-data-with-sage-view-composers-000133/</loc>
+      <lastmod>2026-09-09T17:21:49Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/crafting-a-reusable-button-component-in-flyntwp-with-twig-000132/</loc>
       <lastmod>2026-09-09T17:01:32Z</lastmod>
       <changefreq>monthly</changefreq>

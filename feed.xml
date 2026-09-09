@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Beyond `the_field()`: Clean Data with Sage View Composers</title>
+      <link href="https://chrisalberto.site/blog/beyond-the-field-clean-data-with-sage-view-composers-000133/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/beyond-the-field-clean-data-with-sage-view-composers-000133/</id>
+      <updated>2026-09-09T17:21:49Z</updated>
+      <summary>If you’ve spent any time digging into WordPress theme development, especially with custom post types and custom fields, you’ve probably run into the common…</summary>
+    </entry><entry>
       <title>Crafting a Reusable Button Component in FlyntWP with Twig and ACF</title>
       <link href="https://chrisalberto.site/blog/crafting-a-reusable-button-component-in-flyntwp-with-twig-000132/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-a-reusable-button-component-in-flyntwp-with-twig-000132/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/streamlining-wordpress-deployments-with-wp-cli-and-github-000111/</id>
       <updated>2026-09-04T03:28:32Z</updated>
       <summary>For years, deploying WordPress applications felt like a recurring exercise in caution and manual repetition.</summary>
-    </entry><entry>
-      <title>That Time a Page Builder Made a Client Break Their Own Hero Section</title>
-      <link href="https://chrisalberto.site/blog/that-time-a-page-builder-made-a-client-break-their-own-hero-000104/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/that-time-a-page-builder-made-a-client-break-their-own-hero-000104/</id>
-      <updated>2026-09-03T23:04:13Z</updated>
-      <summary>The debate between custom WordPress themes and page builders like Elementor or Divi is a familiar one in web development circles.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
