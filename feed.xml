@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting a Reusable Button Component in FlyntWP with Twig and ACF</title>
+      <link href="https://chrisalberto.site/blog/crafting-a-reusable-button-component-in-flyntwp-with-twig-000132/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-a-reusable-button-component-in-flyntwp-with-twig-000132/</id>
+      <updated>2026-09-09T17:01:32Z</updated>
+      <summary>I&#39;ve been building WordPress sites for over a decade, and I can tell you, the rise of page builders, while convenient on the surface, often led me down a path…</summary>
+    </entry><entry>
       <title>Preventing Post-Launch Mayhem: Custom Blocks for Bulletproof Design</title>
       <link href="https://chrisalberto.site/blog/preventing-post-launch-mayhem-custom-blocks-for-bulletproof-000131/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/preventing-post-launch-mayhem-custom-blocks-for-bulletproof-000131/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/that-time-a-page-builder-made-a-client-break-their-own-hero-000104/</id>
       <updated>2026-09-03T23:04:13Z</updated>
       <summary>The debate between custom WordPress themes and page builders like Elementor or Divi is a familiar one in web development circles.</summary>
-    </entry><entry>
-      <title>Sculpting Clean Data for Your Sage Templates with View Composers</title>
-      <link href="https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000110/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000110/</id>
-      <updated>2026-09-03T17:10:57Z</updated>
-      <summary>If you’ve spent any time battling WordPress themes, you know the struggle: templates crammed with database queries, conditional logic tangled with HTML, and a…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
