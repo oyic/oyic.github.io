@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Securely Exposing Custom Post Type Data via WordPress REST Endpoints — Christopher Alberto</title>
+<meta name="description" content="As WordPress evolves into a powerful headless CMS, its REST API becomes a critical interface for external applications." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Securely Exposing Custom Post Type Data via WordPress REST Endpoints" />
+<meta property="og:description" content="As WordPress evolves into a powerful headless CMS, its REST API becomes a critical interface for external applications." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/cover.png" />
+<meta property="og:image:alt" content="Securely Exposing Custom Post Type Data via WordPress REST Endpoints" />
+<meta property="article:published_time" content="2026-09-09T03:42:10Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/" />
+<meta property="twitter:title" content="Securely Exposing Custom Post Type Data via WordPress REST Endpoints" />
+<meta property="twitter:description" content="As WordPress evolves into a powerful headless CMS, its REST API becomes a critical interface for external applications." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/cover.png" />
+<meta property="twitter:image:alt" content="Securely Exposing Custom Post Type Data via WordPress REST Endpoints" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Securely Exposing Custom Post Type Data via WordPress REST Endpoints",
+  "description": "As WordPress evolves into a powerful headless CMS, its REST API becomes a critical interface for external applications.",
+  "image": "https://chrisalberto.site/assets/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/cover.png",
+  "datePublished": "2026-09-09T03:42:10Z",
+  "dateModified": "2026-09-09T03:42:10Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-09T03:42:10Z">September 9, 2026</time></div>
+    <h1 class="post-hero__title">Securely Exposing Custom Post Type Data via WordPress REST Endpoints</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/cover.png" alt="Securely Exposing Custom Post Type Data via WordPress REST Endpoints" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>As WordPress evolves into a powerful headless CMS, its REST API becomes a critical interface for external applications. While the default endpoints cover a lot of ground for standard posts and pages, many advanced projects require exposing highly specific data structures or custom business logic. This is where crafting your own custom REST endpoints comes into play. It&#39;s not just about getting data out; it&#39;s about defining precisely what data, in what format, and under what access conditions. Today, I want to walk through an example of building a secure, custom REST endpoint to serve data from a custom post type, illustrating how to manage authentication and restrict access to sensitive fields.</p>
+<p>Imagine we have a custom post type called &#39;Projects&#39;, and each project has a &#39;client_secret_notes&#39; custom field that should only be visible to authenticated administrators. Our goal is to create an endpoint at `/wp-json/my-api/v1/projects` that lists all projects, but only reveals the &#39;client_secret_notes&#39; field if the request is authenticated and the user has the `manage_options` capability.</p>
+<p>First, we register our route using `register_rest_route`. This typically goes into your theme&#39;s `functions.php` or a custom plugin.</p>
+<p>add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-api/v1&#39;, &#39;/projects&#39;, array(
+        &#39;methods&#39; =&gt; &#39;GET&#39;,
+        &#39;callback&#39; =&gt; &#39;my_api_get_projects&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;__return_true&#39;, // Permissions handled in callback
+    ) );
+} );</p>
+<p>Notice I&#39;ve set `permission_callback` to `__return_true` for the route itself. This allows all requests to hit our callback, where we can then apply granular field-level permissions. For endpoints requiring full protection, you&#39;d put your main permission check here.</p>
+<p>Our `my_api_get_projects` callback function will fetch the projects and process the data before sending it out. This is where the magic of conditional data exposure happens.</p>
+<p>function my_api_get_projects( WP_REST_Request $request ) {
+    $args = array(
+        &#39;post_type&#39; =&gt; &#39;project&#39;,
+        &#39;posts_per_page&#39; =&gt; -1,
+        &#39;post_status&#39; =&gt; &#39;publish&#39;,
+    );
+    $projects = get_posts( $args );</p>
+<p>$data = array();
+    $current_user_can_manage = current_user_can( &#39;manage_options&#39; );</p>
+<p>foreach ( $projects as $project ) {
+        $project_data = array(
+            &#39;id&#39; =&gt; $project-&gt;ID,
+            &#39;title&#39; =&gt; $project-&gt;post_title,
+            &#39;content&#39; =&gt; apply_filters( &#39;the_content&#39;, $project-&gt;post_content ),
+            &#39;status&#39; =&gt; $project-&gt;post_status,
+            // Add other public fields here
+        );</p>
+<p>// Conditionally add sensitive field based on user capabilities
+        if ( $current_user_can_manage ) {
+            $secret_notes = get_post_meta( $project-&gt;ID, &#39;client_secret_notes&#39;, true );
+            if ( ! empty( $secret_notes ) ) {
+                $project_data[&#39;client_secret_notes&#39;] = $secret_notes;
+            }
+        }
+        $data[] = $project_data;
+    }</p>
+<p>return new WP_REST_Response( $data, 200 );
+}</p>
+<p>In this callback, `$current_user_can_manage` is key. `current_user_can()` is a robust way to check a user&#39;s capabilities. If the request comes from an authenticated user (e.g., via a cookie for browser requests or an application password for external clients) and that user has the `manage_options` capability (typically administrators), we retrieve and include the `client_secret_notes`. Otherwise, that field is simply omitted from the response, ensuring sensitive information is never accidentally exposed.</p>
+<p>For external applications like a Next.js frontend or a mobile app, relying on cookie authentication isn&#39;t practical. This is where WordPress application passwords shine. An admin can generate an application password for a specific user, and this password, combined with the username, can be used for Basic Authentication headers (`Authorization: Basic base64_encode(username:password)`). When a request comes in with these credentials, WordPress authenticates the user, and `current_user_can()` then correctly reflects their capabilities. Remember to always use HTTPS for any API calls involving authentication.</p>
+<p>When designing your custom endpoints, always think about the consumer. What data do they truly need? How should it be structured for ease of use? Returning a consistent, well-documented schema prevents breaking changes down the line. Consider pagination for large datasets and proper error handling with `WP_Error` objects. Our example here returns a simple array of objects, but for more complex data, you might nest objects or link to related resources following HATEOAS principles.</p>
+<p>Crafting custom REST endpoints is a powerful skill in advanced WordPress development. It empowers you to transform WordPress from a blogging platform into a bespoke data service tailored to your application&#39;s precise needs, all while maintaining stringent control over data access and security. By carefully defining your routes, implementing robust permission checks in your callbacks, and understanding the nuances of WordPress authentication, you can build secure and scalable APIs that truly extend the platform&#39;s capabilities.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
