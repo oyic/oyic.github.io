@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Case of the Exploding Team Page: Why Guardrails Beat Freeform Builders</title>
+      <link href="https://chrisalberto.site/blog/the-case-of-the-exploding-team-page-why-guardrails-beat-000127/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-case-of-the-exploding-team-page-why-guardrails-beat-000127/</id>
+      <updated>2026-09-09T05:12:16Z</updated>
+      <summary>One of the most frequent battles I find myself fighting in the WordPress trenches isn&#39;t about code bugs or server configurations, but something far more…</summary>
+    </entry><entry>
       <title>Securely Exposing Custom Post Type Data via WordPress REST Endpoints</title>
       <link href="https://chrisalberto.site/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-a-reusable-svg-icon-component-in-flyntwp-with-twig-000109/</id>
       <updated>2026-09-03T17:01:03Z</updated>
       <summary>I’ve spent years battling the bloat and complexity of visual page builders, watching beautiful designs crumble under mountains of unnecessary divs and inline…</summary>
-    </entry><entry>
-      <title>The &#34;Meet Our Team&#34; Meltdown: Why Page Builders Lead to Design Drift</title>
-      <link href="https://chrisalberto.site/blog/the-meet-our-team-meltdown-why-page-builders-lead-to-design-000108/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-meet-our-team-meltdown-why-page-builders-lead-to-design-000108/</id>
-      <updated>2026-09-03T05:01:52Z</updated>
-      <summary>I remember a particular &#34;Meet Our Team&#34; page for a client that became the poster child for why I&#39;ve moved away from page builders for good.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

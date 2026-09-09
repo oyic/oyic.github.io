@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/the-case-of-the-exploding-team-page-why-guardrails-beat-000127/</loc>
+      <lastmod>2026-09-09T05:12:16Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/</loc>
       <lastmod>2026-09-09T03:42:10Z</lastmod>
       <changefreq>monthly</changefreq>
