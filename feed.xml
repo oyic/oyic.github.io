@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting a Secure Custom WordPress REST Endpoint for Event Data</title>
+      <link href="https://chrisalberto.site/blog/crafting-a-secure-custom-wordpress-rest-endpoint-for-event-000134/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-a-secure-custom-wordpress-rest-endpoint-for-event-000134/</id>
+      <updated>2026-09-10T03:14:27Z</updated>
+      <summary>One of the most powerful features for modern WordPress infrastructure engineers is the REST API, and moving beyond core endpoints with custom routes opens up a…</summary>
+    </entry><entry>
       <title>Beyond `the_field()`: Clean Data with Sage View Composers</title>
       <link href="https://chrisalberto.site/blog/beyond-the-field-clean-data-with-sage-view-composers-000133/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/beyond-the-field-clean-data-with-sage-view-composers-000133/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-core-000112/</id>
       <updated>2026-09-04T17:41:21Z</updated>
       <summary>I&#39;ve been working with FlyntWP for a while now, and one of the biggest &#34;aha!&#34; moments for me came from truly embracing the power of reusable Twig partials.</summary>
-    </entry><entry>
-      <title>Streamlining WordPress Deployments with WP-CLI and GitHub Actions</title>
-      <link href="https://chrisalberto.site/blog/streamlining-wordpress-deployments-with-wp-cli-and-github-000111/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/streamlining-wordpress-deployments-with-wp-cli-and-github-000111/</id>
-      <updated>2026-09-04T03:28:32Z</updated>
-      <summary>For years, deploying WordPress applications felt like a recurring exercise in caution and manual repetition.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
