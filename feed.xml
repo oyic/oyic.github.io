@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Smarter Layouts: Reusable Twig Partials in FlyntWP</title>
+      <link href="https://chrisalberto.site/blog/crafting-smarter-layouts-reusable-twig-partials-in-flyntwp-000137/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-smarter-layouts-reusable-twig-partials-in-flyntwp-000137/</id>
+      <updated>2026-09-11T17:00:50Z</updated>
+      <summary>When I first started building WordPress sites, the promise of low-code page builders was alluring.</summary>
+    </entry><entry>
       <title>Crafting a Secure Custom WordPress REST Endpoint for Event Data</title>
       <link href="https://chrisalberto.site/blog/crafting-a-secure-custom-wordpress-rest-endpoint-for-event-000134/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-a-secure-custom-wordpress-rest-endpoint-for-event-000134/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/</id>
       <updated>2026-09-04T17:41:37Z</updated>
       <summary>If you’ve spent any time developing custom WordPress themes, you know the struggle: how do you get data from your custom post types (CPTs) and their associated…</summary>
-    </entry><entry>
-      <title>Crafting Reusable Twig Partials for Flawless FlyntWP Core Web Vitals</title>
-      <link href="https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-core-000112/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-reusable-twig-partials-for-flawless-flyntwp-core-000112/</id>
-      <updated>2026-09-04T17:41:21Z</updated>
-      <summary>I&#39;ve been working with FlyntWP for a while now, and one of the biggest &#34;aha!&#34; moments for me came from truly embracing the power of reusable Twig partials.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
