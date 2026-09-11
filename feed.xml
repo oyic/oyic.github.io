@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Taming WordPress Data: A Sage View Composer for Dynamic Project Lists</title>
+      <link href="https://chrisalberto.site/blog/taming-wordpress-data-a-sage-view-composer-for-dynamic-000138/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/taming-wordpress-data-a-sage-view-composer-for-dynamic-000138/</id>
+      <updated>2026-09-11T17:10:51Z</updated>
+      <summary>If you’ve spent any time battling WordPress theme development, you know the struggle: templates crammed with `query_posts`, `get_field`, and all sorts of data…</summary>
+    </entry><entry>
       <title>Crafting Smarter Layouts: Reusable Twig Partials in FlyntWP</title>
       <link href="https://chrisalberto.site/blog/crafting-smarter-layouts-reusable-twig-partials-in-flyntwp-000137/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-smarter-layouts-reusable-twig-partials-in-flyntwp-000137/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/</id>
       <updated>2026-09-05T03:38:26Z</updated>
       <summary>When we push the boundaries of WordPress, we often find ourselves needing to expose custom data or functionality beyond what the core REST API offers.</summary>
-    </entry><entry>
-      <title>View Composers: Serving Up Clean CPT Data in Sage 10</title>
-      <link href="https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/view-composers-serving-up-clean-cpt-data-in-sage-10-000113/</id>
-      <updated>2026-09-04T17:41:37Z</updated>
-      <summary>If you’ve spent any time developing custom WordPress themes, you know the struggle: how do you get data from your custom post types (CPTs) and their associated…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
