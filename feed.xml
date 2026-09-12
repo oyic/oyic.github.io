@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Passing Custom Data to Blade Templates with Sage View Composers</title>
+      <link href="https://chrisalberto.site/blog/passing-custom-data-to-blade-templates-with-sage-view-000142/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/passing-custom-data-to-blade-templates-with-sage-view-000142/</id>
+      <updated>2026-09-12T17:16:05Z</updated>
+      <summary>When I first started diving deep into WordPress theme development, I was instantly frustrated by the common practice of cramming all sorts of data fetching…</summary>
+    </entry><entry>
       <title>Crafting a Sharable Twig Button Component in FlyntWP for Pixel-Perfect Control</title>
       <link href="https://chrisalberto.site/blog/crafting-a-sharable-twig-button-component-in-flyntwp-for-000141/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-a-sharable-twig-button-component-in-flyntwp-for-000141/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/</id>
       <updated>2026-09-06T18:16:52Z</updated>
       <summary>I&#39;ve been working with FlyntWP for a while now, and it constantly reminds me why I made the switch from heavy, drag-and-drop page builders.</summary>
-    </entry><entry>
-      <title>Crafting a Reusable Link Component in FlyntWP for Core Web Vitals Perfection</title>
-      <link href="https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/</id>
-      <updated>2026-09-06T18:16:34Z</updated>
-      <summary>One of the most common frustrations I&#39;ve encountered with traditional low-code page builders is the sheer amount of bloat they introduce.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
