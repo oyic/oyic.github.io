@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>The Day Our Client Broke Their Own Design: Why Guardrails Matter More Than Drag-and-Drop Freedom</title>
+      <link href="https://chrisalberto.site/blog/the-day-our-client-broke-their-own-design-why-guardrails-000136/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/the-day-our-client-broke-their-own-design-why-guardrails-000136/</id>
+      <updated>2026-09-12T05:08:42Z</updated>
+      <summary>I&#39;ve spent years building WordPress sites, and the conversation always circles back to the same fork in the road: do we use a page builder like Elementor or…</summary>
+    </entry><entry>
       <title>Crafting Secure Custom REST Endpoints in WordPress for External Systems</title>
       <link href="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-in-wordpress-for-000139/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-in-wordpress-for-000139/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/the-homepage-incident-why-custom-wordpress-blocks-save-your-000119/</id>
       <updated>2026-09-06T05:15:46Z</updated>
       <summary>The call came on a Tuesday afternoon, about three weeks after we’d launched what I thought was a pristine new marketing site for a small B2B SaaS client.</summary>
-    </entry><entry>
-      <title>Sculpting Clean Data for Your Sage Templates with View Composers</title>
-      <link href="https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/</id>
-      <updated>2026-09-05T18:05:51Z</updated>
-      <summary>Building modern WordPress themes with a focus on maintainability and a clean codebase often feels like an uphill battle, especially if you&#39;re coming from the…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
