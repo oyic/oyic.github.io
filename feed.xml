@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting a Sharable Twig Button Component in FlyntWP for Pixel-Perfect Control</title>
+      <link href="https://chrisalberto.site/blog/crafting-a-sharable-twig-button-component-in-flyntwp-for-000141/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-a-sharable-twig-button-component-in-flyntwp-for-000141/</id>
+      <updated>2026-09-12T17:15:49Z</updated>
+      <summary>I&#39;m constantly on the hunt for ways to build faster, cleaner websites without sacrificing an ounce of design control or performance.</summary>
+    </entry><entry>
       <title>The Day Our Client Broke Their Own Design: Why Guardrails Matter More Than Drag-and-Drop Freedom</title>
       <link href="https://chrisalberto.site/blog/the-day-our-client-broke-their-own-design-why-guardrails-000136/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-day-our-client-broke-their-own-design-why-guardrails-000136/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-a-reusable-link-component-in-flyntwp-for-core-web-000116/</id>
       <updated>2026-09-06T18:16:34Z</updated>
       <summary>One of the most common frustrations I&#39;ve encountered with traditional low-code page builders is the sheer amount of bloat they introduce.</summary>
-    </entry><entry>
-      <title>The Homepage Incident: Why Custom WordPress Blocks Save Your Design (and Sanity)</title>
-      <link href="https://chrisalberto.site/blog/the-homepage-incident-why-custom-wordpress-blocks-save-your-000119/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-homepage-incident-why-custom-wordpress-blocks-save-your-000119/</id>
-      <updated>2026-09-06T05:15:46Z</updated>
-      <summary>The call came on a Tuesday afternoon, about three weeks after we’d launched what I thought was a pristine new marketing site for a small B2B SaaS client.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
