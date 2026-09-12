@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Secure Custom REST Endpoints in WordPress for External Systems</title>
+      <link href="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-in-wordpress-for-000139/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-in-wordpress-for-000139/</id>
+      <updated>2026-09-12T03:40:20Z</updated>
+      <summary>When you&#39;re pushing WordPress beyond a traditional content management system into a robust application platform, the default REST API, while incredibly…</summary>
+    </entry><entry>
       <title>Taming WordPress Data: A Sage View Composer for Dynamic Project Lists</title>
       <link href="https://chrisalberto.site/blog/taming-wordpress-data-a-sage-view-composer-for-dynamic-000138/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/taming-wordpress-data-a-sage-view-composer-for-dynamic-000138/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/sculpting-clean-data-for-your-sage-templates-with-view-000117/</id>
       <updated>2026-09-05T18:05:51Z</updated>
       <summary>Building modern WordPress themes with a focus on maintainability and a clean codebase often feels like an uphill battle, especially if you&#39;re coming from the…</summary>
-    </entry><entry>
-      <title>Building Authenticated Custom REST API Routes for WordPress Plugins</title>
-      <link href="https://chrisalberto.site/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/building-authenticated-custom-rest-api-routes-for-wordpress-000114/</id>
-      <updated>2026-09-05T03:38:26Z</updated>
-      <summary>When we push the boundaries of WordPress, we often find ourselves needing to expose custom data or functionality beyond what the core REST API offers.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
