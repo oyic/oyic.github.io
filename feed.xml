@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Building Flexible Layouts with FlyntWP: The Twig Content Slot Pattern</title>
+      <link href="https://chrisalberto.site/blog/building-flexible-layouts-with-flyntwp-the-twig-content-000145/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/building-flexible-layouts-with-flyntwp-the-twig-content-000145/</id>
+      <updated>2026-09-13T17:04:02Z</updated>
+      <summary>One of the most common frustrations I hear from developers dealing with traditional low-code page builders is the sheer bloat and inflexibility they introduce.</summary>
+    </entry><entry>
       <title>The Testimonial Section Massacre: Why Guardrails Beat Unlimited Freedom</title>
       <link href="https://chrisalberto.site/blog/the-testimonial-section-massacre-why-guardrails-beat-000144/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/the-testimonial-section-massacre-why-guardrails-beat-000144/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/</id>
       <updated>2026-09-07T17:10:11Z</updated>
       <summary>I&#39;ve spent years battling the bloat of traditional page builders, constantly chasing elusive Core Web Vitals scores while my clients wrestled with complex…</summary>
-    </entry><entry>
-      <title>Crafting a Secure REST Endpoint for Your WordPress Product Catalog</title>
-      <link href="https://chrisalberto.site/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-a-secure-rest-endpoint-for-your-wordpress-product-000122/</id>
-      <updated>2026-09-07T03:38:13Z</updated>
-      <summary>When building sophisticated applications atop WordPress, the default REST API, while powerful, doesn&#39;t always provide the exact data structure or access…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
