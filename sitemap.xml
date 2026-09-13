@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/the-testimonial-section-massacre-why-guardrails-beat-000144/</loc>
+      <lastmod>2026-09-13T05:27:29Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/crafting-a-secure-custom-wordpress-rest-endpoint-for-000143/</loc>
       <lastmod>2026-09-13T03:00:59Z</lastmod>
       <changefreq>monthly</changefreq>
