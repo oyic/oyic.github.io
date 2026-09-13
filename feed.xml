@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting a Secure Custom WordPress REST Endpoint for Internal Tools</title>
+      <link href="https://chrisalberto.site/blog/crafting-a-secure-custom-wordpress-rest-endpoint-for-000143/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-a-secure-custom-wordpress-rest-endpoint-for-000143/</id>
+      <updated>2026-09-13T03:00:59Z</updated>
+      <summary>One of the most powerful capabilities WordPress offers to engineers is the extensibility of its core systems.</summary>
+    </entry><entry>
       <title>Passing Custom Data to Blade Templates with Sage View Composers</title>
       <link href="https://chrisalberto.site/blog/passing-custom-data-to-blade-templates-with-sage-view-000142/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/passing-custom-data-to-blade-templates-with-sage-view-000142/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/automating-wordpress-org-plugin-deployment-with-github-000118/</id>
       <updated>2026-09-07T03:37:54Z</updated>
       <summary>One of the more tedious aspects of maintaining a public WordPress plugin is the deployment process to WordPress.org.</summary>
-    </entry><entry>
-      <title>FlyntWP Tip: Building a Flexible Button Component with Twig &amp; ACF</title>
-      <link href="https://chrisalberto.site/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/flyntwp-tip-building-a-flexible-button-component-with-twig-000120/</id>
-      <updated>2026-09-06T18:16:52Z</updated>
-      <summary>I&#39;ve been working with FlyntWP for a while now, and it constantly reminds me why I made the switch from heavy, drag-and-drop page builders.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
