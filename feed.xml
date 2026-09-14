@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Your First Reusable FlyntWP Component: Building a Bulletproof Button</title>
+      <link href="https://chrisalberto.site/blog/your-first-reusable-flyntwp-component-building-a-000149/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/your-first-reusable-flyntwp-component-building-a-000149/</id>
+      <updated>2026-09-14T17:01:00Z</updated>
+      <summary>If you&#39;ve spent any time wrangling bloated page builders, you know the pain of slow load times, messy HTML, and the constant battle to maintain consistent…</summary>
+    </entry><entry>
       <title>From Pixel-Perfect to &#39;Whoops&#39;: Why My Clients Need Custom WordPress Themes</title>
       <link href="https://chrisalberto.site/blog/from-pixel-perfect-to-whoops-why-my-clients-need-custom-000148/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/from-pixel-perfect-to-whoops-why-my-clients-need-custom-000148/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/building-flexible-layout-wrappers-in-flyntwp-with-acf-pro-000128/</id>
       <updated>2026-09-08T17:03:26Z</updated>
       <summary>If you’ve ever wrestled with a slow, bloated page builder, you know the frustration.</summary>
-    </entry><entry>
-      <title>Escaping the WordPress Mess: Why Sage Delivers True Developer Sanity</title>
-      <link href="https://chrisalberto.site/blog/escaping-the-wordpress-mess-why-sage-delivers-true-000121/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/escaping-the-wordpress-mess-why-sage-delivers-true-000121/</id>
-      <updated>2026-09-07T17:42:31Z</updated>
-      <summary>For years, my journey building custom WordPress themes felt like navigating a beautiful, but increasingly overgrown, garden.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

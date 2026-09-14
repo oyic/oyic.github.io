@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/your-first-reusable-flyntwp-component-building-a-000149/</loc>
+      <lastmod>2026-09-14T17:01:00Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/from-pixel-perfect-to-whoops-why-my-clients-need-custom-000148/</loc>
       <lastmod>2026-09-14T05:32:57Z</lastmod>
       <changefreq>monthly</changefreq>
