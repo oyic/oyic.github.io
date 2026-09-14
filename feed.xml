@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>From Pixel-Perfect to &#39;Whoops&#39;: Why My Clients Need Custom WordPress Themes</title>
+      <link href="https://chrisalberto.site/blog/from-pixel-perfect-to-whoops-why-my-clients-need-custom-000148/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/from-pixel-perfect-to-whoops-why-my-clients-need-custom-000148/</id>
+      <updated>2026-09-14T05:32:57Z</updated>
+      <summary>There&#39;s an undeniable allure to WordPress page builders like Elementor or Divi.</summary>
+    </entry><entry>
       <title>Building Flexible Layouts with FlyntWP: The Twig Content Slot Pattern</title>
       <link href="https://chrisalberto.site/blog/building-flexible-layouts-with-flyntwp-the-twig-content-000145/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/building-flexible-layouts-with-flyntwp-the-twig-content-000145/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/escaping-the-wordpress-mess-why-sage-delivers-true-000121/</id>
       <updated>2026-09-07T17:42:31Z</updated>
       <summary>For years, my journey building custom WordPress themes felt like navigating a beautiful, but increasingly overgrown, garden.</summary>
-    </entry><entry>
-      <title>Crafting a Reusable Call to Action Component in FlyntWP with Twig and ACF</title>
-      <link href="https://chrisalberto.site/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/crafting-a-reusable-call-to-action-component-in-flyntwp-000124/</id>
-      <updated>2026-09-07T17:10:11Z</updated>
-      <summary>I&#39;ve spent years battling the bloat of traditional page builders, constantly chasing elusive Core Web Vitals scores while my clients wrestled with complex…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/from-pixel-perfect-to-whoops-why-my-clients-need-custom-000148/</loc>
+      <lastmod>2026-09-14T05:32:57Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/building-flexible-layouts-with-flyntwp-the-twig-content-000145/</loc>
       <lastmod>2026-09-13T17:04:02Z</lastmod>
       <changefreq>monthly</changefreq>
