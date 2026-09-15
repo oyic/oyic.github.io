@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting Secure Custom REST Endpoints for WordPress: An Approved Review Example — Christopher Alberto</title>
+<meta name="description" content="Developing for WordPress often means pushing beyond its excellent content management features into full-blown application territory." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting Secure Custom REST Endpoints for WordPress: An Approved Review Example" />
+<meta property="og:description" content="Developing for WordPress often means pushing beyond its excellent content management features into full-blown application territory." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/cover.png" />
+<meta property="og:image:alt" content="Crafting Secure Custom REST Endpoints for WordPress: An Approved Review Example" />
+<meta property="article:published_time" content="2026-09-15T03:10:41Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/" />
+<meta property="twitter:title" content="Crafting Secure Custom REST Endpoints for WordPress: An Approved Review Example" />
+<meta property="twitter:description" content="Developing for WordPress often means pushing beyond its excellent content management features into full-blown application territory." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/cover.png" />
+<meta property="twitter:image:alt" content="Crafting Secure Custom REST Endpoints for WordPress: An Approved Review Example" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting Secure Custom REST Endpoints for WordPress: An Approved Review Example",
+  "description": "Developing for WordPress often means pushing beyond its excellent content management features into full-blown application territory.",
+  "image": "https://chrisalberto.site/assets/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/cover.png",
+  "datePublished": "2026-09-15T03:10:41Z",
+  "dateModified": "2026-09-15T03:10:41Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-15T03:10:41Z">September 15, 2026</time></div>
+    <h1 class="post-hero__title">Crafting Secure Custom REST Endpoints for WordPress: An Approved Review Example</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/cover.png" alt="Crafting Secure Custom REST Endpoints for WordPress: An Approved Review Example" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>Developing for WordPress often means pushing beyond its excellent content management features into full-blown application territory. When you need to expose highly specific, filtered data to external services or a decoupled frontend, the default WordPress REST API, while powerful, might not offer the exact granularity or authentication mechanism you require out of the box. This is where designing your own custom REST endpoints becomes not just a convenience, but a necessity for robust infrastructure engineering.</p>
+<p>Consider a scenario where we have a custom post type for &#34;Product Reviews,&#34; and a third-party analytics service needs to consume only the *approved* reviews. Furthermore, this service must authenticate using a simple API key, not a session cookie. Our goal is to build a dedicated, secure endpoint for this purpose.</p>
+<p>First, we register our custom route. This should typically be done within a plugin to ensure portability and separation of concerns. We’ll use the `rest_api_init` action hook.</p>
+<p>```php
+add_action( &#39;rest_api_init&#39;, function () {
+    register_rest_route( &#39;my-plugin/v1&#39;, &#39;/approved-reviews&#39;, array(
+        &#39;methods&#39;             =&gt; &#39;GET&#39;,
+        &#39;callback&#39;            =&gt; &#39;my_plugin_get_approved_reviews&#39;,
+        &#39;permission_callback&#39; =&gt; &#39;my_plugin_api_key_check&#39;,
+        &#39;args&#39;                =&gt; array(
+            &#39;posts_per_page&#39; =&gt; array(
+                &#39;default&#39;           =&gt; 10,
+                &#39;sanitize_callback&#39; =&gt; &#39;absint&#39;,
+            ),
+            &#39;offset&#39; =&gt; array(
+                &#39;sanitize_callback&#39; =&gt; &#39;absint&#39;,
+            ),
+        ),
+    ) );
+} );
+```</p>
+<p>Here, `my-plugin/v1` defines our namespace and versioning, preventing conflicts and offering flexibility for future API changes. The `/approved-reviews` is our specific route. We’ve set `GET` as the allowed method and assigned a `callback` function for data retrieval and a `permission_callback` for authentication. Notice the `args` array; this is crucial for defining expected parameters, their defaults, and sanitization rules, making your API more predictable and secure from malformed inputs.</p>
+<p>Next, we implement the `callback` function, `my_plugin_get_approved_reviews`. This is where we’ll fetch our approved reviews. We’ll assume &#39;review_status&#39; is a custom field (post meta) for our &#39;product_review&#39; custom post type.</p>
+<p>```php
+function my_plugin_get_approved_reviews( WP_REST_Request $request ) {
+    $args = array(
+        &#39;post_type&#39;      =&gt; &#39;product_review&#39;,
+        &#39;post_status&#39;    =&gt; &#39;publish&#39;,
+        &#39;posts_per_page&#39; =&gt; $request-&gt;get_param( &#39;posts_per_page&#39; ),
+        &#39;offset&#39;         =&gt; $request-&gt;get_param( &#39;offset&#39; ),
+        &#39;meta_query&#39;     =&gt; array(
+            array(
+                &#39;key&#39;     =&gt; &#39;review_status&#39;,
+                &#39;value&#39;   =&gt; &#39;approved&#39;,
+                &#39;compare&#39; =&gt; &#39;=&#39;,
+            ),
+        ),
+    );</p>
+<p>$reviews = new WP_Query( $args );
+    $data = array();</p>
+<p>if ( $reviews-&gt;have_posts() ) {
+        while ( $reviews-&gt;have_posts() ) {
+            $reviews-&gt;the_post();
+            $data[] = array(
+                &#39;id&#39;          =&gt; get_the_ID(),
+                &#39;title&#39;       =&gt; get_the_title(),
+                &#39;content&#39;     =&gt; get_the_content(),
+                &#39;author&#39;      =&gt; get_the_author(),
+                &#39;rating&#39;      =&gt; get_post_meta( get_the_ID(), &#39;review_rating&#39;, true ), // Assuming another meta field
+                &#39;date_gmt&#39;    =&gt; get_the_date( &#39;c&#39;, get_the_ID() ),
+            );
+        }
+        wp_reset_postdata();
+    }</p>
+<p>return new WP_REST_Response( $data, 200 );
+}
+```</p>
+<p>This function utilizes `WP_Query` with a `meta_query` to filter for approved reviews, extracts relevant data, and returns it as a `WP_REST_Response` with a 200 status code. The parameters `posts_per_page` and `offset` are safely retrieved from the request object, leveraging the sanitization defined in `register_rest_route`.</p>
+<p>Finally, the critical `permission_callback`: `my_plugin_api_key_check`. For external services, relying on cookie authentication isn&#39;t practical. A shared API key, passed via a custom HTTP header, is a common and effective approach.</p>
+<p>```php
+function my_plugin_api_key_check( WP_REST_Request $request ) {
+    $api_key = $request-&gt;get_header( &#39;X-API-Key&#39; ); // Expecting key in &#39;X-API-Key&#39; header
+    $expected_key = get_option( &#39;my_plugin_analytics_api_key&#39; ); // Stored securely in wp_options</p>
+<p>if ( empty( $expected_key ) ) {
+        error_log( &#39;My Plugin API: Expected API key not set in options.&#39; );
+        return new WP_Error( &#39;rest_api_key_not_configured&#39;, &#39;API key not configured.&#39;, array( &#39;status&#39; =&gt; 500 ) );
+    }</p>
+<p>if ( $api_key &amp;&amp; $api_key === $expected_key ) {
+        return true; // Access granted
+    }</p>
+<p>return new WP_Error( &#39;rest_forbidden&#39;, &#39;Invalid API key.&#39;, array( &#39;status&#39; =&gt; 401 ) );
+}
+```</p>
+<p>Here, we retrieve the API key from the `X-API-Key` HTTP header. The expected key should be stored securely, perhaps in the `wp_options` table, managed via an admin interface, or even as an environment variable in a more sophisticated setup. If the keys match, the callback returns `true`, granting access. Otherwise, it returns a `WP_Error` object, which automatically translates into a structured error response with a 401 Unauthorized status.</p>
+<p>By combining `register_rest_route` with custom callback and permission functions, we gain fine-grained control over what data is exposed, how it&#39;s filtered, and who can access it. This approach provides a robust, extensible foundation for integrating WordPress into complex backend architectures and securely serving tailored data to diverse applications.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

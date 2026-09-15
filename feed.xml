@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Secure Custom REST Endpoints for WordPress: An Approved Review Example</title>
+      <link href="https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-secure-custom-rest-endpoints-for-wordpress-an-000151/</id>
+      <updated>2026-09-15T03:10:41Z</updated>
+      <summary>Developing for WordPress often means pushing beyond its excellent content management features into full-blown application territory.</summary>
+    </entry><entry>
       <title>Clean Data, Clean Templates: A Sage View Composer for Your Projects CPT</title>
       <link href="https://chrisalberto.site/blog/clean-data-clean-templates-a-sage-view-composer-for-your-000150/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/clean-data-clean-templates-a-sage-view-composer-for-your-000150/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/taming-custom-data-in-sage-a-view-composer-recipe-000129/</id>
       <updated>2026-09-08T17:19:47Z</updated>
       <summary>If you&#39;ve spent any time digging through traditional WordPress theme code, you&#39;ve likely encountered the &#34;Wild West&#34; approach to data retrieval.</summary>
-    </entry><entry>
-      <title>Beyond the Loop: Sage View Composers for Clean Data Presentation</title>
-      <link href="https://chrisalberto.site/blog/beyond-the-loop-sage-view-composers-for-clean-data-000125/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/beyond-the-loop-sage-view-composers-for-clean-data-000125/</id>
-      <updated>2026-09-08T17:19:29Z</updated>
-      <summary>If you&#39;ve ever wrestled with WordPress themes built using page builders like Divi or Elementor, you know the feeling.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
