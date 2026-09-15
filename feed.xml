@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Decluttering WordPress Loops with Sage View Composers</title>
+      <link href="https://chrisalberto.site/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/</id>
+      <updated>2026-09-15T17:12:22Z</updated>
+      <summary>If you’ve spent any time developing WordPress themes the traditional way, you’re probably intimately familiar with “the loop.” It’s a powerful but often messy…</summary>
+    </entry><entry>
       <title>Crafting a Reusable Button Component in FlyntWP for Leaner, Faster Sites</title>
       <link href="https://chrisalberto.site/blog/crafting-a-reusable-button-component-in-flyntwp-for-leaner-000153/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/crafting-a-reusable-button-component-in-flyntwp-for-leaner-000153/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/the-case-of-the-exploding-team-page-why-guardrails-beat-000127/</id>
       <updated>2026-09-09T05:12:16Z</updated>
       <summary>One of the most frequent battles I find myself fighting in the WordPress trenches isn&#39;t about code bugs or server configurations, but something far more…</summary>
-    </entry><entry>
-      <title>Securely Exposing Custom Post Type Data via WordPress REST Endpoints</title>
-      <link href="https://chrisalberto.site/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/securely-exposing-custom-post-type-data-via-wordpress-rest-000126/</id>
-      <updated>2026-09-09T03:42:10Z</updated>
-      <summary>As WordPress evolves into a powerful headless CMS, its REST API becomes a critical interface for external applications.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

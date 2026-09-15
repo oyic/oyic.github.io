@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Decluttering WordPress Loops with Sage View Composers — Christopher Alberto</title>
+<meta name="description" content="If you’ve spent any time developing WordPress themes the traditional way, you’re probably intimately familiar with “the loop.” It’s a powerful but often messy…" />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Decluttering WordPress Loops with Sage View Composers" />
+<meta property="og:description" content="If you’ve spent any time developing WordPress themes the traditional way, you’re probably intimately familiar with “the loop.” It’s a powerful but often messy…" />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/cover.png" />
+<meta property="og:image:alt" content="Decluttering WordPress Loops with Sage View Composers" />
+<meta property="article:published_time" content="2026-09-15T17:12:22Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/" />
+<meta property="twitter:title" content="Decluttering WordPress Loops with Sage View Composers" />
+<meta property="twitter:description" content="If you’ve spent any time developing WordPress themes the traditional way, you’re probably intimately familiar with “the loop.” It’s a powerful but often messy…" />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/cover.png" />
+<meta property="twitter:image:alt" content="Decluttering WordPress Loops with Sage View Composers" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Decluttering WordPress Loops with Sage View Composers",
+  "description": "If you’ve spent any time developing WordPress themes the traditional way, you’re probably intimately familiar with “the loop.” It’s a powerful but often messy…",
+  "image": "https://chrisalberto.site/assets/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/cover.png",
+  "datePublished": "2026-09-15T17:12:22Z",
+  "dateModified": "2026-09-15T17:12:22Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-15T17:12:22Z">September 16, 2026</time></div>
+    <h1 class="post-hero__title">Decluttering WordPress Loops with Sage View Composers</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/cover.png" alt="Decluttering WordPress Loops with Sage View Composers" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>If you’ve spent any time developing WordPress themes the traditional way, you’re probably intimately familiar with “the loop.” It’s a powerful but often messy construct where database queries, conditional logic, and HTML markup are all woven together in a single file like `archive.php` or `index.php`. While it gets the job done, it quickly leads to themes that are hard to read, harder to maintain, and nearly impossible to test programmatically. This is precisely the kind of unmaintainable spaghetti code that page builders like Divi or Elementor hide behind a drag-and-drop interface, only to offload the complexity and bloat into your database.</p>
+<p>But what if there was a cleaner way to build WordPress themes? One that embraced modern PHP development principles, separating concerns like an MVC framework, and keeping your presentation layer truly clean? That’s where Sage, powered by Acorn and Blade, truly shines. For me, Sage isn&#39;t just a theme starter; it&#39;s a philosophy – a commitment to an organized, programmatic codebase over database bloat and unmanageable files. Today, I want to walk you through one of my favorite Sage features for achieving this separation: View Composers.</p>
+<p>View Composers allow you to prepare data for a Blade view *before* that view is rendered. Think of them as middleware for your view data. Instead of performing a `WP_Query` directly within your template, you offload that logic to a dedicated PHP class. Your Blade template then receives the data neatly packaged, with no idea (or concern) about where it came from. This keeps your Blade files purely presentation-focused, which is exactly how they should be.</p>
+<p>Let&#39;s consider a practical example. Imagine you have a custom post type called &#34;Project&#34; and you want to display a list of all projects on an archive page or a dedicated custom page template. First, our Blade template, say `resources/views/partials/projects-list.blade.php`, should only care about displaying the projects, not fetching them:</p>
+<p>@if ($projects-&gt;isNotEmpty())
+    &lt;ul class=&#34;projects-grid&#34;&gt;
+        @foreach ($projects as $project)
+            &lt;li&gt;
+                &lt;h3&gt;&lt;a href=&#34;{{ $project-&gt;permalink }}&#34;&gt;{{ $project-&gt;title }}&lt;/a&gt;&lt;/h3&gt;
+                &lt;p&gt;{{ $project-&gt;excerpt }}&lt;/p&gt;
+            &lt;/li&gt;
+        @endforeach
+    &lt;/ul&gt;
+@else
+    &lt;p&gt;No projects found.&lt;/p&gt;
+@endif</p>
+<p>Notice how clean and readable this is? There&#39;s no `WP_Query`, no `have_posts()`, just a loop over a `$projects` collection. Now, let’s create the View Composer that will provide this `$projects` variable. We’ll place this in `app/View/Composers/ProjectsComposer.php`:</p>
+<p>&lt;?php</p>
+<p>namespace App\View\Composers;</p>
+<p>use Roots\Acorn\View\Composer;
+use WP_Query;</p>
+<p>class ProjectsComposer extends Composer
+{
+    /**
+     * List of views served by this composer.
+     *
+     * @var array
+     */
+    protected static $views = [
+        &#39;partials.projects-list&#39;,
+        &#39;template-custom-projects-page&#39;, // Example for a specific page template
+    ];</p>
+<p>/**
+     * Data to be passed to view before rendering.
+     *
+     * @param  \Illuminate\View\View  $view
+     * @return array
+     */
+    public function with($view)
+    {
+        $args = [
+            &#39;post_type&#39;      =&gt; &#39;project&#39;,
+            &#39;posts_per_page&#39; =&gt; -1,
+            &#39;orderby&#39;        =&gt; &#39;title&#39;,
+            &#39;order&#39;          =&gt; &#39;ASC&#39;,
+        ];</p>
+<p>$query = new WP_Query($args);</p>
+<p>$projects = collect($query-&gt;posts)-&gt;map(function ($post) {
+            return [
+                &#39;title&#39;     =&gt; get_the_title($post),
+                &#39;permalink&#39; =&gt; get_permalink($post),
+                &#39;excerpt&#39;   =&gt; get_the_excerpt($post),
+            ];
+        });</p>
+<p>return [
+            &#39;projects&#39; =&gt; $projects,
+        ];
+    }
+}</p>
+<p>In this `ProjectsComposer`, we define which views it applies to via the `$views` property. The `with()` method is where the magic happens: we perform our `WP_Query`, then transform the raw `WP_Post` objects into a clean, easy-to-use collection of associative arrays. This processed data is then returned and automatically made available to the specified Blade views under the key `&#39;projects&#39;`.</p>
+<p>Finally, we need to tell Sage about our new Composer and which views it should bind to. This is typically done in your `config/view.php` file, under the `&#39;composers&#39;` key. Just add an entry like this:</p>
+<p>config/view.php (snippet):
+&lt;?php</p>
+<p>return [
+    // ... other configurations ...</p>
+<p>&#39;composers&#39; =&gt; [
+        \App\View\Composers\ProjectsComposer::class =&gt; [
+            &#39;partials.projects-list&#39;,
+            &#39;template-custom-projects-page&#39;, // Our custom page template
+            &#39;archive-project&#39;, // And the archive page for the &#39;project&#39; post type
+        ],
+        // ... other composers
+    ],
+];</p>
+<p>With this setup, any time you render `partials.projects-list`, `template-custom-projects-page`, or the `archive-project` template, the `$projects` variable will automatically be available in your Blade view, populated with your project data. Your template stays presentation-focused, your logic is encapsulated and testable in the Composer, and your codebase becomes a joy to work with. This clear separation of concerns is a cornerstone of why I choose Sage for every WordPress project – it allows for robust, maintainable, and modern development, leaving the messy, unmaintainable database bloat to those still wrestling with traditional methods or bloated page builders. Give View Composers a try; you&#39;ll wonder how you ever lived without them.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

@@ -13,6 +13,11 @@
     <priority>0.8</priority>
   </url>
   <!-- SITEMAP_URLS_START --><url>
+      <loc>https://chrisalberto.site/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/</loc>
+      <lastmod>2026-09-15T17:12:22Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url><url>
       <loc>https://chrisalberto.site/blog/crafting-a-reusable-button-component-in-flyntwp-for-leaner-000153/</loc>
       <lastmod>2026-09-15T17:01:26Z</lastmod>
       <changefreq>monthly</changefreq>
