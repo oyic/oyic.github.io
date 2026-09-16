@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach — Christopher Alberto</title>
+<meta name="description" content="For too long, deploying changes to WordPress projects has been a manual, often nerve-wracking affair." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach" />
+<meta property="og:description" content="For too long, deploying changes to WordPress projects has been a manual, often nerve-wracking affair." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/cover.png" />
+<meta property="og:image:alt" content="Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach" />
+<meta property="article:published_time" content="2026-09-16T03:18:44Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/" />
+<meta property="twitter:title" content="Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach" />
+<meta property="twitter:description" content="For too long, deploying changes to WordPress projects has been a manual, often nerve-wracking affair." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/cover.png" />
+<meta property="twitter:image:alt" content="Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach",
+  "description": "For too long, deploying changes to WordPress projects has been a manual, often nerve-wracking affair.",
+  "image": "https://chrisalberto.site/assets/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/cover.png",
+  "datePublished": "2026-09-16T03:18:44Z",
+  "dateModified": "2026-09-16T03:18:44Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-16T03:18:44Z">September 16, 2026</time></div>
+    <h1 class="post-hero__title">Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/cover.png" alt="Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>For too long, deploying changes to WordPress projects has been a manual, often nerve-wracking affair. FTP clients, copying files, remembering to flush caches, and praying no one is actively using the site during an update – it’s a recipe for sleepless nights and lost productivity. As engineers focused on robust infrastructure, we know there&#39;s a better way: automation. Today, I want to dive into how we can leverage WP-CLI and GitHub Actions to build a reliable, repeatable deployment pipeline for our custom WordPress plugins.</p>
+<p>Imagine pushing a commit to your `main` branch, and within minutes, those changes are live on your production server, complete with database migrations and cache flushes, all without you touching an SSH client directly. This isn&#39;t just wishful thinking; it&#39;s a standard practice we can implement using two powerful tools. WP-CLI provides the command-line interface to interact with WordPress itself, enabling us to manage plugins, themes, options, and even trigger custom code execution. GitHub Actions, on the other hand, gives us the workflow automation to define a series of steps that execute automatically upon specific Git events.</p>
+<p>Let&#39;s walk through a concrete example: deploying a custom plugin that includes database schema changes. We&#39;ll assume our plugin, `my-custom-plugin`, lives in `wp-content/plugins/my-custom-plugin` on our server and has a method, `My_Custom_Plugin_Updater::run_migrations()`, designed to handle its database updates programmatically. Our goal is to update the plugin code and execute these migrations safely whenever new code is pushed to our `main` branch. This ensures that any new tables or schema modifications required by the plugin are applied before the new code runs, preventing errors.</p>
+<p>First, we need to set up our GitHub Actions workflow. In your plugin&#39;s repository, create a file at `.github/workflows/deploy.yml`. Here&#39;s a simplified version of what it might look like. Note that `secrets.SSH_HOST`, `secrets.SSH_USER`, and `secrets.SSH_PRIVATE_KEY` are GitHub Secrets you&#39;ll configure in your repository settings; this keeps sensitive information out of your version-controlled code. The `appleboy/ssh-action` allows us to securely connect to our production server and execute commands.</p>
+<p>name: Deploy My Custom Plugin</p>
+<p>on:
+  push:
+    branches:
+      - main</p>
+<p>jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3</p>
+<p>- name: Deploy to Production
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/html/wp-content/plugins/my-custom-plugin
+            git pull origin main
+            /usr/local/bin/composer install --no-dev # If your plugin uses Composer for dependencies
+            /usr/local/bin/wp cli eval &#39;My_Custom_Plugin_Updater::run_migrations();&#39; # Execute database migrations
+            /usr/local/bin/wp cache flush # Clear WordPress object cache</p>
+<p>Inside the `script` block, the magic happens. We `cd` into our plugin&#39;s directory on the server, perform a `git pull origin main` to fetch the latest code, and then, crucially, we use WP-CLI. `/usr/local/bin/wp cli eval &#39;My_Custom_Plugin_Updater::run_migrations();&#39;` executes our custom PHP code directly within the WordPress environment, ensuring our database schema is up-to-date. Finally, a `wp cache flush` clears any stale object cache entries, preventing potential display issues from old data. Using absolute paths for `composer` and `wp` is a good practice in non-interactive shell scripts to ensure the correct binaries are executed, especially if your `$PATH` isn&#39;t fully configured in the SSH environment.</p>
+<p>The benefits of this approach are immense. You gain consistency; every deployment follows the exact same steps, eliminating human error. It&#39;s faster and more efficient, freeing up your time for development instead of manual labor. Most importantly, it builds confidence. Knowing that your deployments are automated and reliable allows you to focus on building great features, rather than dreading the next release. This is just one angle of what advanced WordPress development truly means – not just building features, but building robust systems around them to ensure stability and efficiency.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>

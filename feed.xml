@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach</title>
+      <link href="https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/</id>
+      <updated>2026-09-16T03:18:44Z</updated>
+      <summary>For too long, deploying changes to WordPress projects has been a manual, often nerve-wracking affair.</summary>
+    </entry><entry>
       <title>Decluttering WordPress Loops with Sage View Composers</title>
       <link href="https://chrisalberto.site/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/decluttering-wordpress-loops-with-sage-view-composers-000154/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/preventing-post-launch-mayhem-custom-blocks-for-bulletproof-000131/</id>
       <updated>2026-09-09T05:28:25Z</updated>
       <summary>There’s no denying the immediate appeal of a WordPress page builder like Elementor or Divi.</summary>
-    </entry><entry>
-      <title>The Case of the Exploding Team Page: Why Guardrails Beat Freeform Builders</title>
-      <link href="https://chrisalberto.site/blog/the-case-of-the-exploding-team-page-why-guardrails-beat-000127/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/the-case-of-the-exploding-team-page-why-guardrails-beat-000127/</id>
-      <updated>2026-09-09T05:12:16Z</updated>
-      <summary>One of the most frequent battles I find myself fighting in the WordPress trenches isn&#39;t about code bugs or server configurations, but something far more…</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above
