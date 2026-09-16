@@ -8,6 +8,12 @@
   <updated>2026-07-10T00:00:00Z</updated>
   <author><name>Christopher Alberto</name></author>
   <!-- FEED_ITEMS_START --><entry>
+      <title>Crafting Reusable Buttons in FlyntWP: A Twig and ACF Pro Combo for Clean UI</title>
+      <link href="https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/" rel="alternate" type="text/html" />
+      <id>https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/</id>
+      <updated>2026-09-16T17:02:55Z</updated>
+      <summary>One of the biggest frustrations I hear from developers dealing with WordPress is the bloat and performance drain introduced by many low-code page builders.</summary>
+    </entry><entry>
       <title>Streamlining WordPress Plugin Deployments: A WP-CLI and GitHub Actions Approach</title>
       <link href="https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/" rel="alternate" type="text/html" />
       <id>https://chrisalberto.site/blog/streamlining-wordpress-plugin-deployments-a-wp-cli-and-000155/</id>
@@ -121,12 +127,6 @@
       <id>https://chrisalberto.site/blog/crafting-a-reusable-button-component-in-flyntwp-with-twig-000132/</id>
       <updated>2026-09-09T17:01:32Z</updated>
       <summary>I&#39;ve been building WordPress sites for over a decade, and I can tell you, the rise of page builders, while convenient on the surface, often led me down a path…</summary>
-    </entry><entry>
-      <title>Preventing Post-Launch Mayhem: Custom Blocks for Bulletproof Design</title>
-      <link href="https://chrisalberto.site/blog/preventing-post-launch-mayhem-custom-blocks-for-bulletproof-000131/" rel="alternate" type="text/html" />
-      <id>https://chrisalberto.site/blog/preventing-post-launch-mayhem-custom-blocks-for-bulletproof-000131/</id>
-      <updated>2026-09-09T05:28:25Z</updated>
-      <summary>There’s no denying the immediate appeal of a WordPress page builder like Elementor or Divi.</summary>
     </entry><!-- FEED_ITEMS_END -->
   <!--
     Each publish prepends one entry immediately after FEED_ITEMS_START above

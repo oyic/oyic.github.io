@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- The slug placeholder is consumed by the publish renderer to compute the output path/canonicalUrl; it does not appear as a literal token elsewhere in this file. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crafting Reusable Buttons in FlyntWP: A Twig and ACF Pro Combo for Clean UI — Christopher Alberto</title>
+<meta name="description" content="One of the biggest frustrations I hear from developers dealing with WordPress is the bloat and performance drain introduced by many low-code page builders." />
+<meta name="author" content="Christopher Alberto" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/" />
+<link rel="alternate" type="application/atom+xml" title="Christopher Alberto — Blog" href="/feed.xml" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF7A3D'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='50' font-weight='bold' fill='%2315110C' text-anchor='middle'%3EWP%3C/text%3E%3C/svg%3E" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YHSVBHF3WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YHSVBHF3WM');
+</script>
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/" />
+<meta property="og:site_name" content="Christopher Alberto" />
+<meta property="og:title" content="Crafting Reusable Buttons in FlyntWP: A Twig and ACF Pro Combo for Clean UI" />
+<meta property="og:description" content="One of the biggest frustrations I hear from developers dealing with WordPress is the bloat and performance drain introduced by many low-code page builders." />
+<meta property="og:image" content="https://chrisalberto.site/assets/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/cover.png" />
+<meta property="og:image:alt" content="Crafting Reusable Buttons in FlyntWP: A Twig and ACF Pro Combo for Clean UI" />
+<meta property="article:published_time" content="2026-09-16T17:02:55Z" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/" />
+<meta property="twitter:title" content="Crafting Reusable Buttons in FlyntWP: A Twig and ACF Pro Combo for Clean UI" />
+<meta property="twitter:description" content="One of the biggest frustrations I hear from developers dealing with WordPress is the bloat and performance drain introduced by many low-code page builders." />
+<meta property="twitter:image" content="https://chrisalberto.site/assets/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/cover.png" />
+<meta property="twitter:image:alt" content="Crafting Reusable Buttons in FlyntWP: A Twig and ACF Pro Combo for Clean UI" />
+
+<link rel="stylesheet" href="/assets/css/fonts.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Crafting Reusable Buttons in FlyntWP: A Twig and ACF Pro Combo for Clean UI",
+  "description": "One of the biggest frustrations I hear from developers dealing with WordPress is the bloat and performance drain introduced by many low-code page builders.",
+  "image": "https://chrisalberto.site/assets/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/cover.png",
+  "datePublished": "2026-09-16T17:02:55Z",
+  "dateModified": "2026-09-16T17:02:55Z",
+  "author": { "@type": "Person", "name": "Christopher Alberto", "url": "https://chrisalberto.site" },
+  "publisher": { "@type": "Person", "name": "Christopher Alberto" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://chrisalberto.site/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/" }
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <a href="/" class="nav__logo">chrisalberto<span class="accent">.site</span></a>
+  <div class="nav__links" id="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work</a>
+    <a href="/blog/" class="is-active" aria-current="page">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav__actions">
+    <a href="/Christopher-Alberto-Resume.pdf" download class="nav__cta nav__cta--resume">↓ Resume</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main-content">
+<article>
+  <header class="post-hero wrap">
+    <a href="/blog/" class="post-hero__back">← All posts</a>
+    <div class="post-hero__meta"><time datetime="2026-09-16T17:02:55Z">September 17, 2026</time></div>
+    <h1 class="post-hero__title">Crafting Reusable Buttons in FlyntWP: A Twig and ACF Pro Combo for Clean UI</h1>
+  </header>
+  <figure class="post-cover wrap">
+    <img src="https://chrisalberto.site/assets/blog/crafting-reusable-buttons-in-flyntwp-a-twig-and-acf-pro-000157/cover.png" alt="Crafting Reusable Buttons in FlyntWP: A Twig and ACF Pro Combo for Clean UI" width="1200" height="630" loading="eager" fetchpriority="high" />
+  </figure>
+  <div class="article wrap">
+<p>One of the biggest frustrations I hear from developers dealing with WordPress is the bloat and performance drain introduced by many low-code page builders. They promise speed, but often deliver an unholy mess of nested divs and inline styles, crippling Core Web Vitals and making custom styling a nightmare. That&#39;s why I&#39;m such a proponent of FlyntWP. It’s not about avoiding code; it&#39;s about writing *better* code, programmatically defining your content structures and UI with a focus on speed, modularity, and maintainability. Today, I want to walk you through a foundational technique: building a truly reusable button component using Twig and ACF Pro.</p>
+<p>The magic of FlyntWP lies in its component-driven architecture. Instead of dragging and dropping pre-built, rigid modules, you define your own &#34;blocks&#34; – self-contained units of UI and functionality. Let’s say we need a button that we can drop into various places: a hero section, a call-to-action block, or even a footer. We want it to be configurable with a label, a URL, and perhaps an optional target.</p>
+<p>First, we create a new component folder for our reusable button. Following FlyntWP&#39;s convention, this might live under `Components/PartialButton`. Inside this folder, our core UI will be in `index.twig`. This Twig file will accept data as &#34;props,&#34; much like a modern JavaScript component. For a button, it&#39;s quite simple:</p>
+<p>&lt;div style=&#34;background-color: #f7f7f7; padding: 10px; border-radius: 5px;&#34;&gt;
+  &lt;pre&gt;
+{% set url = data.link.url|default(&#39;#&#39;) %}
+{% set label = data.link.title|default(&#39;Learn More&#39;) %}
+{% set target = data.link.target|default(&#39;_self&#39;) %}
+{% set classes = data.classes|default(&#39;&#39;) %}</p>
+<p>&lt;a href=&#34;{{ url }}&#34; target=&#34;{{ target }}&#34; class=&#34;button {{ classes }}&#34;&gt;
+  {{ label }}
+&lt;/a&gt;
+  &lt;/pre&gt;
+&lt;/div&gt;</p>
+<p>Notice how clean that is. It expects a `data` object, specifically a `link` object (which is how ACF Pro&#39;s Link field returns data) and optional `classes`. If `data.link` isn&#39;t provided, it falls back to sensible defaults. This is crucial for reusability. The `button` class will be styled by our main theme&#39;s CSS, bundled efficiently by Vite.</p>
+<p>Now, how do we get this `data` into our Twig file from the WordPress admin? This is where ACF Pro shines with programmatic field group definitions. Inside the same `Components/PartialButton` folder, we&#39;ll create a `functions.php` file. This file will register an ACF field group specifically for our button. While FlyntWP blocks are typically registered using `acf_register_block_type`, for a *partial* component like our button, which isn&#39;t a standalone block but rather a piece *within* other blocks, we just need the field group.</p>
+<p>&lt;div style=&#34;background-color: #f7f7f7; padding: 10px; border-radius: 5px;&#34;&gt;
+  &lt;pre&gt;
+&lt;?php</p>
+<p>namespace Flynt\Components\PartialButton;</p>
+<p>use ACFComposer\ACFComposer;
+use Flynt\FieldVariables;</p>
+<p>function register_field_group()
+{
+    ACFComposer::registerFieldGroup([
+        &#39;name&#39; =&gt; &#39;PartialButton&#39;,
+        &#39;title&#39; =&gt; &#39;Partial: Button&#39;,
+        &#39;fields&#39; =&gt; [
+            FieldVariables::setLink(&#39;link&#39;, [
+                &#39;label&#39; =&gt; __(&#39;Button Link&#39;, &#39;flynt&#39;),
+                &#39;required&#39; =&gt; 1,
+            ]),
+            FieldVariables::addText(&#39;classes&#39;, [
+                &#39;label&#39; =&gt; __(&#39;Additional Classes&#39;, &#39;flynt&#39;),
+                &#39;instructions&#39; =&gt; __(&#39;Add custom CSS classes for styling.&#39;, &#39;flynt&#39;),
+                &#39;wrapper&#39; =&gt; [
+                    &#39;width&#39; =&gt; &#39;50&#39;,
+                ],
+            ]),
+        ],
+        &#39;location&#39; =&gt; [
+            [
+                [
+                    &#39;param&#39; =&gt; &#39;post_type&#39;,
+                    &#39;operator&#39; =&gt; &#39;==&#39;,
+                    &#39;value&#39; =&gt; &#39;post&#39;, // This is just a placeholder; typically used in a parent component.
+                ],
+            ],
+        ],
+        &#39;hide_on_screen&#39; =&gt; &#39;&#39;,
+    ]);
+}
+  &lt;/pre&gt;
+&lt;/div&gt;</p>
+<p>The `FieldVariables::setLink()` and `FieldVariables::addText()` are FlyntWP helpers that streamline ACF field definitions, but it&#39;s essentially `acf_add_local_field_group` under the hood. The `location` here is a bit tricky for a *partial* component because it doesn&#39;t appear directly in the editor. Instead, we use this field group definition when embedding the button into a parent block, like a `BlockHero` component.</p>
+<p>For example, if we had a `BlockHero` component, its `functions.php` would include our `PartialButton`&#39;s fields like this:</p>
+<p>&lt;div style=&#34;background-color: #f7f7f7; padding: 10px; border-radius: 5px;&#34;&gt;
+  &lt;pre&gt;
+// ... in BlockHero/functions.php
+use Flynt\Components\PartialButton\register_field_group as PartialButton; // Alias it
+// ...
+ACFComposer::registerFieldGroup([
+    &#39;name&#39; =&gt; &#39;BlockHeroFields&#39;,
+    // ... other fields
+    &#39;fields&#39; =&gt; [
+        // ... hero specific fields
+        PartialButton::getGroup([&#39;name&#39; =&gt; &#39;buttonLink&#39;]), // Embed the button fields
+    ],
+    // ...
+]);
+  &lt;/pre&gt;
+&lt;/div&gt;</p>
+<p>Then, in `BlockHero/index.twig`, we’d simply include our button:</p>
+<p>&lt;div style=&#34;background-color: #f7f7f7; padding: 10px; border-radius: 5px;&#34;&gt;
+  &lt;pre&gt;
+{% include &#39;Components/PartialButton/index.twig&#39; with { data: fields.buttonLink } %}
+  &lt;/pre&gt;
+&lt;/div&gt;</p>
+<p>This pattern is incredibly powerful. We’ve defined our button&#39;s UI and its ACF fields *once*. We can then reuse it across our entire site, confident that its markup is consistent, semantic, and free of extraneous divs. When the client updates the button&#39;s content in the admin, it&#39;s reflected everywhere it&#39;s used. This programmatic approach ensures a lean DOM, lightning-fast build speeds with Vite, and ultimately, flawless Core Web Vitals, all while giving content editors the control they need, but without the page builder bloat. It&#39;s the best of both worlds, truly.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <span class="mono">© 2026 Christopher Alberto — Senior Full-Stack WordPress Engineer</span>
+  <a href="/#top" class="footer__top">Back to top <span class="accent">↑</span></a>
+</footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var nav = document.getElementById('nav');
+  function onScroll() { if (nav) nav.classList.toggle('scrolled', (window.scrollY || 0) > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('nav-links');
+  var mobileNavQuery = window.matchMedia('(max-width: 880px)');
+  function syncNavInert() {
+    if (!navLinks) return;
+    var hidden = mobileNavQuery.matches && !document.body.classList.contains('menu-open');
+    if (hidden) navLinks.setAttribute('inert', '');
+    else navLinks.removeAttribute('inert');
+  }
+  mobileNavQuery.addEventListener('change', syncNavInert);
+  syncNavInert();
+  if (burger) {
+    burger.addEventListener('click', function () {
+      var open = document.body.classList.toggle('menu-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      syncNavInert();
+    });
+  }
+})();
+</script>
+</body>
+</html>
